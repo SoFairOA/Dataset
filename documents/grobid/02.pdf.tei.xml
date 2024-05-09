@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main"></title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Alexandre</forename><surname>Hocquet</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">LHSP</orgName>
+								<address>
+									<addrLine>Archives Henri Poincaré</addrLine>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Université de Lorraine &amp; CNRS</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Frédéric</forename><surname>Wieber</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">LHSP</orgName>
+								<address>
+									<addrLine>Archives Henri Poincaré</addrLine>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Université de Lorraine &amp; CNRS</orgName>
+							</affiliation>
+						</author>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/MAHC.2018.1221048</idno>
+					<note type="submission">Submitted on 9 Nov 2018</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-09T13:41+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>HAL is a multi-disciplinary open access archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from teaching and research institutions in France or abroad, or from public or private research centers. L'archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non, émanant des établissements d'enseignement et de recherche français ou étrangers, des laboratoires publics ou privés.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>develop "computational tools and techniques [that] offer a new method of attack in the continuing effort [in the chemical community] to obtain chemical information." <ref type="bibr" target="#b2">2</ref> Thus, the computer is a pivotal element of this scientific community, even though it is considered here as a tool, not as the object of the science in question. The adjective "computational," a typical word from the 1980s and 1990s, is essential: it is a scientific world of "computational science," not "computer science."</p><p>Numerous studies deal with the relations between computing and scientific activity, some of which are even considered as classics. Themes such as the "computerization of science" 3 or, for example, the mutual shaping of computing and biology <ref type="bibr" target="#b4">4</ref> or the emergence of computerized evidence-based medicine <ref type="bibr" target="#b5">5</ref> explore their interplay. Computational science has been addressed by scholars, for example, the philosophical significance of its rise for scientific method <ref type="bibr" target="#b6">6</ref> or the emergence of Monte Carlo simulations. <ref type="bibr" target="#b7">7</ref> Many works also exist in the history of software, <ref type="bibr" target="#b8">8</ref> either about the software viewed as an industrial <ref type="bibr" target="#b9">9</ref> or professional <ref type="bibr" target="#b10">10</ref> activity or about the difficulty and complexity of writing such a history. <ref type="bibr" target="#b11">11</ref> Yet software per se in computational science has attracted less attention, even if Spencer has conducted ethnographic research within a computational fluid dynamics laboratory about a piece of software. <ref type="bibr" target="#b12">12</ref> Our way to address the issue of software in computational science is to focus on application software in computational chemistry designed to model physico-chemical properties, <ref type="bibr" target="#b13">13</ref> a kind of software designed within the community and for the community. The actors are computer users in the sense that they do not create novel computing hardware or languages. They rely on the evolution of hardware and operating software designed by others. Yet some of these "users" do code, and some are software developers, sellers, or even marketers. This community has a variety of different, mixed profiles when it comes to using or developing software.</p><p>The activity of developing computational tools in a particular scientific community leads to multiple tensions among the scientists involved as well in the development, distribution, and maintenance as well as in the use of software. Developing, using, and distributing software leads these actors to reflect on many things, among which are what scientific activity should or may be, what kind of relationship exists between scientific methods and the software implementing these methods, how their coding work is rewarded, which form of intellectual property to resort to, and whether to commercialize their research products. They also wonder about their ideal concept of the openness of science.</p><p>To make explicit these tensions, we rely on a corpus that is suitable for revealing such tensions, namely, a mailing list. This type of corpus has already been the subject of various studies in sociology and communication sciences <ref type="bibr" target="#b14">14</ref> but very few in the field of the history of science. The informality of this kind of natively digital corpus allows unveiling the tensions between the actors, unlike the corpora of published scientific papers. In the context of this article, we present the so-called Computational Chemistry List that we use as a corpus, and we focus specifically on two extracted threaded conversations that show how the issues of methods, code, reproducibility of results, intellectual property, and software marketing are articulated.To be able to understand these tensions in a broader context, we first discuss the emergence of computational chemistry and its relationship to the computer. It is also important to understand the broader context of relationships between computational chemistry and the industry (the pharmaceutical industry and the hardware manufacturing industry) in times of mobilization of American universities to produce innovation. <ref type="bibr" target="#b15">15</ref> These elements of context are fundamental to understanding the specificities of the tensions raised by software in the particular scientific field of computational chemistry. Issues regarding openness in science, such as reproducibility or epistemic transparency of methods, are specific in a scientific discipline involved in modeling, where calculability is a fundamental question. In our case study, the issue of parameterization of models is crucial given the particular history of theoretical approaches in chemistry. This issue has consequences for the topics of openness, reproducibility, and epistemic transparency and leads to controversial situations among the actors regarding the interrelations between models and software. Here the question of the openness of a science within which software packages are being developed, used, and distributed is discussed in a particular way in computational chemistry. This field permits us to understand these issues both epistemologically and socially. Moreover, our case study takes place in a specific technical, political, and economic context that exacerbates tensions regarding these issues: the democratization of the computer, encouraged scientific entrepreneurship in academia, the position of the scientific discipline between two powerful industries participate in tensions between academic and business norms, and between diffusion and robustness of methods. For these reasons, we believe computational chemistry is an interesting case study for addressing the interrelations between models and software: its context is specific enough to unveil the tensions posed by these issues, yet it allows one to draw general conclusions regarding those interrelations.</p><p>After having set some elements of context, and analyzed the two threaded conversations we have chosen, we will then discuss the tensions at stake to conclude our views about the roots of these tensions. We will argue, first, that models and software must be addressed together. Interrelations between both lead to the idea that transparency and validity of computational methods are complex, and that they are a source of tensions for chemists. Second, the materialization of models into software is a way of spreading modeling methods in the broader field of chemistry (and not only computational chemistry), but it is a problematic way. Finally, translating models into software in the broader context of relationships between computational chemistry and the industry leads to tensions between academic norms and software distribution norms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Historical Perspective on Computational Chemistry</head><p>To understand the issues at stake in computational chemistry, we first dig into its epistemic roots. Scientists construct models in ways that are linked to the phenomena their models try to represent and to the theories they can use, but also to the technological, professional, economic, and political context in which they work. These epistemic roots are a pivotal step to understanding how the models they construct are then translated into software, and how these models influence the actors' discourses and the tensions at stake between them. In Mahoney's words, these models, and their translations in software, are "operative representations," <ref type="bibr" target="#b16">16</ref> which are central to our study.</p><p>Computational chemistry has roots in the history of chemistry in at least two ways. On the one hand, "quantum chemistry" as a scientific field is the legacy in chemistry of the scientific breakthrough of quantum mechanics in the 1920s and 1930s. On the other hand, "molecular mechanics" as a field emerged in the 1960s in the sector of physical organic chemistry <ref type="bibr" target="#b17">17</ref> and biophysics, in the era of the revolution of physical instrumentation (infrared spectroscopy, NMR, etc.) in the chemistry lab. <ref type="bibr" target="#b18">18</ref> The mathematical modeling of molecules is an idea that came to chemists long before computers were available. Quantum chemistry is a scientific field that has existed since the first papers about the Schrödinger equation in the late 1920s. Theoretical physicists left quantum chemists with a very practical problem: to imagine theories (and models) to describe molecules in a way that could be calculable and useful to chemists. <ref type="bibr" target="#b19">19</ref> They were the heirs of a reductionist worldview of microphysics, and the naming of the most popular quantum chemical theory ("ab initio") reflects the idea that the self-acclaimed scientific robustness of a model is based on the universality of its theory and tools and should not have to deal with the tinkering of parameters (or at least in their narratives). <ref type="bibr" target="#b20">20</ref> In practice, calculating was done with pencil and paper, desk calculators, and then the use of excess computer time on the first supercomputers during the 1950s, <ref type="bibr" target="#b21">21</ref> with little rewards in terms of how big the molecules that could be actually calculated were. <ref type="bibr" target="#b22">22</ref> Parallel to this, in the 1950s and 1960s, and because the computing facilities were attracting the interest of many scientific fields, a new kind of molecular structure theory arose, based on far simpler theoretical grounds, on a traditional conception of molecules in chemistry, and developed entirely on the pragmatic idea of tackling the modeling of what is actually computable. Organic chemists but also biophysicists showed interest in a theory based on a Newtonian classical mechanics view of molecules introduced by infrared spectroscopists (an increasingly popular method in the organic laboratory at that time). <ref type="bibr" target="#b23">23</ref> The benefit from this simplistic theory was the perspective to compute the properties of molecules ranging from the smallest to the most frequently encountered in organic, biological, and pharmaceutical chemistry, by the computational standards of the time. <ref type="bibr" target="#b24">24</ref> It was an ad-hoc modeling, based on tinkering parameters to fit experimental results, but an efficient one, to the detriment of the universality of the model: this ad-hoc modeling proved successful for a limited (but meaningful) number of molecular families (cycloalkanes, peptides, sugars, etc.), and the necessary parameterization to achieve results was at the expense of specialization. Each scientific team developed and parameterized their own method (a so-called empirical force field). Each team relied on different (and often competitive) protocols, based on different (and sometimes incompatible) spectroscopical or thermodynamical results, to actually define their parameters.</p><p>We can describe the situation as the parallel development of two different ways to model molecules. The first one is "quantum chemistry," concerned with the universality of their modeling, and impaired by the complexity of the mathematical and numerical formalism. The other is "molecular mechanics," concerned with the efficiency of computation to actually calculate some properties of significant molecules, and impaired by the sisyphal task of parameterization and the fragmentation of methods.</p><p>Yet the demarcation between them became blurred throughout the evolution of their respective fields, especially as the promises of the computer blossomed. During the 1960s, the so-called semiempirical methods emerged: they were based on quantum calculations and thus formed a part of quantum chemistry, but they shared the idea of feasibility with molecular mechanics (the so-called empirical methods). To be actually computable, the quantum methods should be simplified and, above all, parameterized to achieve computability (the lengthiest calculations of the model should be replaced by empirical parameters). Similarly as in molecular mechanics, different and sometimes competitive semiempirical methods, based on different parameterizations, appeared in the 1970s.</p><p>In the words of Ann Johnson, <ref type="bibr" target="#b25">25</ref> these ways of modeling represent distinct "technical knowledge communities," from different disciplinary backgrounds, with different underlying theories and even different epistemic traditions. Quantum chemistry as a keyword mentioned in publications, though rapidly growing through the 1980s and the 1990s, is superseded by molecular mechanics around the year 1990. Molecular mechanics, by the wider spectrum of studied molecules, became the favored modeling activity on the industrial side at that time and thus the first to give birth to a commercial activity of selling and licensing software in the field. <ref type="bibr" target="#b26">26</ref> Yet all these ways of modeling were united by their common tool, the computer, and above all, they shared a concern for parameterization of their models.</p><p>In 1974, the COMP, "Computers in Chemistry," division was created in the American Chemical Society (ACS). During the 1980s, a new scientific field called "computational chemistry" emerged in the keywords used in scientific papers and in conference calls for papers, but also in the academic and industrial research job offers or in reports from supercomputing centers, "leading to the recognition of a new kind of chemist, different from a theoretical chemist, different from a physical chemist, an organic chemist, a spectroscopist or a biophysicist." <ref type="bibr" target="#b27">27</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Computational Chemistry and Computers</head><p>The computer as a scientific tool had also evolved in the meantime, changing from an instrument of "Big Science," a federally funded facility, one that was difficult to access both financially and technically, to a common device, one that would fit in every lab for many purposes: a networked, ready-to-use scientific tool that could be locally programmed and tinkered. Quantum chemists who had envisioned the use of computers to help in their calculations needed (and had) an inclination toward computing, but they also needed relations within the military bureaucracy and the computer sciences to persuade them to take advantage of the excess computer time on the supercomputers to use them for their own needs, something that none of the policy makers at that time could foresee as a promising computational application. <ref type="bibr" target="#b28">28</ref> During the 1950s and 1960s, the military and other government agencies funded computing science directly through grants and contracts, but also indirectly by buying the products of the computer manufacturers, <ref type="bibr" target="#b29">29</ref> and theoretical chemists were only a minuscule part of that plan. Yet, by the beginning of the 1980s, computational chemistry had turned from a minor user of supercomputing facilities in the era of "federally funded Big Science" into a major client of the computing resources in the United States: 30 percent of the NSF supercomputing centers were dedicated to calculations in computational chemistry. <ref type="bibr" target="#b30">30</ref> In the meantime, the transformations of computer hardware were accompanied by transformations of computer software. It was not until the late 1960s that software became a product that could be purchased separately from the computer. Software development schedules slipped, costs rose tremendously, errors were harder to locate and correct with the increased complexity of codes, and revisions of the software were harder to implement. <ref type="bibr" target="#b31">31</ref> Whereas hardware development was growing faster and faster, software development appeared to increase very slowly.</p><p>The development of the personal computer paved the way for a software industry, now that hardware was becoming standardized, thus lessening the problem of portability. In the 1980s, most of the actions and profits were in the software business, which led to a shakeout of the industry into a few major players. <ref type="bibr" target="#b32">32</ref> IBM was the dominant company in the computer industry in the 1960s and 1970s, whereas the software company Microsoft became dominant in the 1990s. Through mergers and acquisitions, the personal computer software industry concentrated into a few dominant players (like Microsoft) with lock-in strategies to turn the users captive: a "winner takes all" market, very different from the mainframe software industry of the 1970s.</p><p>This paradigm of the software industry in the 1980s and the 1990s was the computing world in which computational chemists were evolving, unlike the computer scientists that designed the Internet <ref type="bibr" target="#b33">33</ref> and expressed strong opinions about software licensing <ref type="bibr" target="#b34">34</ref> in a soon-to-be political movement of free or open source software. It was also a world where software was becoming a dominant industry, an exemplary business adventure, including in the academic world.</p><p>In the era of workstations and personal computers, computational chemists merged computational methods into software packages. The aforementioned "technical knowledge communities" were then united by the computer as their tool, even more in times when it was becoming more accessible.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Computational Chemistry and the Industry</head><p>The changes in the academic world in the United States at the beginning of the 1980s have been described by many as a radical turn in structure. <ref type="bibr" target="#b35">35,</ref><ref type="bibr" target="#b36">36</ref> Especially relevant to our concerns is the change in the patterns of research funding, from dominant federal (and above all military) funding to a "R&amp;D competitiveness coalition" 37 that supposedly turned public scientific investigation into a pragmatic, profitoriented activity, led by the idea that "innovation drives economy." <ref type="bibr" target="#b38">38</ref> It is well documented that, in large part, the very structure of the university changed, with the creation of "patent or technology transfer offices" designed to make research activity, commerce, and innovation more and more compatible.</p><p>The eagerness to patent everything in the American universities had not waited for the Bayh-Dole Act. Some universities invested early in policies of technology transfer, <ref type="bibr" target="#b39">39</ref> but the influence of the Bayh-Dole Act as a mechanics of change is relevant because the entire academic world had to follow the precursors' steps, especially in the field of licensing or patenting academic software. <ref type="bibr" target="#b40">40</ref> Computational chemists in academia were thus stimulated or pressured by these October-December 2017 7 transformations. They were involved with industry, and this involvement was threefold: they were of course concerned with software as a business, because the software industry at that time was acting as a paragon of supposedly successful business models, and also because of the academic atmosphere leading scientists into entrepreneurship science. Computational chemists were also involved with the computer manufacturing industry. The giants like IBM were recognizing computational chemistry as a new major force in the field of supercomputing. For example, IBM was a major investor in one of the big molecular modeling software vendors, Polygen. <ref type="bibr" target="#b41">41</ref> Computational chemists were also one of the best customers (and advertisers) for those who manufactured workstations with high graphical capabilities such as Silicon Graphics. The third reason why corporations with an academic computational chemistry background were created during the 1980s is that a potential market for computational chemistry modeling had been envisioned by the pharmaceutical chemists and hardware vendors. Structure calculations were viewed by pharmaceutical industry R&amp;D departments as a "technological promise" <ref type="bibr" target="#b42">42</ref> of potential savings in the discovery and assessment of new drugs (Rational Drug Design) in a context of ever rising costs of new drug leads. <ref type="bibr" target="#b43">43</ref> Corporate computational chemistry teams dedicated to pharmaceutical research were created in-house, or corporate funding was invested into academic groups to produce results or to develop software.</p><p>The influence of the pharmaceutical industry on computational chemistry as a scientific field was also a cultural one: the most successful narratives of entrepreneurship science came from the neighbored field of biotechnology, <ref type="bibr" target="#b44">44</ref> a scientific domain itself involved with the same industry. Furthermore, the pharmaceutical scientific field and industry share a culture of secrecy and patenting rather than publishing and sharing results, which consequently influences the scientific fields that deal with them. <ref type="bibr" target="#b45">45</ref> Software developed by computational chemists was turning from "user-oriented" programs to "market-oriented" packages. The merging of methods into packages was conceived with the aim of enlarging the user base.</p><p>Software was programmed once and then sent to the Quantum Chemistry Program Exchange to be given away to any interested party for free and "as is." <ref type="bibr" target="#b46">46</ref> It was now planned, designed, and developed to be distributed in the academic and industrial disciplines of chemistry that could benefit from computational methods. In the 1980s, the number of publications using commercial computational chemistry software grew exponentially, as grew the number of chemistry calculations published in the industry. <ref type="bibr" target="#b47">47</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Computational Chemistry List</head><p>It is in this context that the Computational Chemistry (mailing) List (CCL) was created in January 1991 by Jan Labanowski, a computational chemist, then an employee of the Ohio Supercomputing Center. The purpose of the list was to gather a fledgling community of researchers. As computational chemistry was a field in its infancy, the chemists willing to use computational tools lacked education in the field, and the scientists who developed these tools found a unique way to disseminate them. The primary goal of the CCL was to "educate and get educated." <ref type="bibr" target="#b48">48</ref> The rules of this list, as defined by the moderator, allow anyone to contribute, making the CCL particularly inclusive. From graduate students to senior researchers, from code developers to "end users," from hardware vendors to software marketing sales forces, the CCL was (and still is) the arena where all the people linked one way or another to molecular modeling software could debate. It is hard to assess the representativeness of the population of the CCL subscribers in terms of social or professional profiles within the computational chemistry community, but it is safe to say that grossly each profile has a loquacious enough character among the CCL subscribers to speak up.</p><p>The CCL grew steadily in terms of number of subscribers and number of daily messages from 1991 to 1995, when it reached a plateau of several thousands subscribers and a dozen daily messages. The topics encountered in the CCL, apart from announcements of academic events and requests for literature, are opinions or help wanted on scientific topics. <ref type="bibr" target="#b49">49</ref> The main kind of topic is a request for help in using software. The CCL was more often than not the quickest way to find help from peers, creating an atmosphere of mutual aid but also sometimes an atmosphere of resentment when commercial software is accused of outsourcing its maintenance duties. Yet commercial announcements are explicitly allowed in the CCL unlike in most academic forums: this epitomizes the intimate relationship between the academic and economic worlds in the field of computational chemistry.</p><p>It would be naive to view the CCL as a public sphere with abolished hierarchies. A few anthropological studies of mailing lists have shown how issues of gender or more generally issues of differences of status can interfere in, or even structure, an Internet-based conversation. <ref type="bibr" target="#b50">50</ref> It is untrue that no relationships of power or authority exist among the participants of the list, but it is also true that they are different from what they are within a laboratory, or in a conference, or in the process of publishing a paper, and they have thus led to new forms of interactions in the debates. As Grier and Campbell put it in their study of Listserv, <ref type="bibr" target="#b51">51</ref> the mailing list is a place where the participants of the list interact within the community without acting in front of an audience.</p><p>Topics that evolve into passionate debates, or even heated arguments, can be valuable pieces of information from a historical perspective, even though they are unhealthy for the list itself. Given that discussion is possible and even encouraged if not considered offtopic, the most controversial tensions within the community generate interesting threaded conversations where a variety of actors within the community can interact. In a similar way that "scientific controversies" are interesting for science studies scholars to learn about the scientific, political, and social matters at stake, "flame wars" (threaded conversations in which the topic is controversial enough to degenerate into a self-sustaining avalanche of posts) <ref type="bibr" target="#b52">52</ref> represent a way of identifying which topics are actually a source of tensions within the community. Provocative posters tend to disrupt the harmony of the community by posting on controversial topics, thus forcing the community to react, degenerating into a flame war. Yet the flame war incites the community to discuss and debate about sensitive matters, forcing the members out of a polite stance and thus leading them to reveal otherwise concealed opinions. <ref type="bibr" target="#b53">53</ref> In this regard, the threaded conversations provide an interesting material for investigating the actors' day-to-day practices and discourses in a kind of microhistory. In this study, we focus on a qualitative analysis of two chosen heated threads that illustrate the issues regarding software and their evolution throughout the 1990s. The comparative analysis of the debates and arguments, and of the context and the actors, provides substantial information to characterize these issues.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>1993: The First CCL Flame War Ever</head><p>The first conversation thread we want to discuss to disclose some of the tensions produced by software within the chemists' community starts on 23 June 1993, with a seemingly innocuous message. Twenty-nine posts from eighteen subscribers will follow for ten days. This thread constitutes the first flame war ever on the CCL. In comparison with contemporary flame wars, the number and density of the messages are relatively small. The year 1993 was an era of bandwidth frugality. The first message is an announcement. Andy Holder, then Assistant Professor of Computational/Organic Chemistry at the University of Missouri-Kansas City and president of a scientific software company named Semichem, Inc., announces the publication of a paper providing results for a new quantum chemistry semiempirical method called "SAM1." In this message, Holder writes: "This [the paper] is primarily a listing of results for the new method for a vast array of systems. … A more complete paper describing the model will be forthcoming." <ref type="bibr" target="#b54">54</ref> The last sentence is what will launch the debate. Graham Hurst (then working for the software company Hypercube, Inc.) wrote in the second message of the thread: "this [Holder's] post disturbs me." <ref type="bibr" target="#b55">55</ref> Hurst considers that "it will be impossible to independently reproduce these results" because the model leading to the results has not already been published. He adds: "If the method has not yet been published, then the results should not have been accepted for publication since they cannot be verified." Thus, the initial problem of the flame war is an epistemological problem associated with a problem of publication ethics: as the details of the model used to produce the published results have not been published, the results cannot be independently reproduced and verified and are thus not considered as publishable.</p><p>Figure <ref type="figure" target="#fig_0">1</ref> portrays the dynamical organization and ramifications of the thread, showing who is responding to whom. Three directions of discussion are opened in response to Hurst's post. First, the question of how possible it is to verify the validity of the results is discussed as well as the possibility to reprogram the computational method oneself. Is the information necessary to reprogram the method available? A discussion then opens regarding more generally the issue of the parameters that are used in semiempirical methods. These parameters are central in the different semiempirical methods used, and they are not always made publicly available. They are sometimes hidden in the source code of the program, which is not always made public. As one of the participant of the thread writes: "we should like to know your opinion on the actual trend in commercializing computational packages without source codes. Does this trend encourage the development of science? And also: up to what limit a computational package can be considered as a product of a single research group?" <ref type="bibr" target="#b56">56</ref> Thus, the epistemological question of verifying the results is associated with the questions of the openness of the source code, of the commercialization of computational packages, and of the computational methods as a scientific public good (a public good at the disposal of the community, but equally produced by it).</p><p>In the second direction of the discussion, the tension between the world of academic research and the world of scientific software corporations is underlined. In response to Hurst's message, Holder concedes that it is not always easy to clearly distinguish scientific from entrepreneurial activities. The scientists' participation in scientific software corporations, along with the costs necessary to develop software, telescopes the values (openness, reproducibility) that the actors associate with science. As Holder puts it: "So, while Dr. Hurst's point is well-taken and fully subscribed to by me both in my capacity as a university researcher and president of Semichem, there is no intention to "hide" anything. I understand the sensitivity of this issue and I am committed to the pursuit of science in an open atmosphere. … The development of SAM1 is my primary research activity at UMKC, but Semichem is also spending money to develop this method and will be giving it to the scientific community freely. We withhold only our code. … It should be noted, however, that some interests are not scientific, but competitive" (emphasis added). <ref type="bibr" target="#b57">57</ref> In the third direction of discussion, the problem of publication ethics is discussed. The importance of the peer review process in scientific publishing is underlined, and some contributors ask if reviewers do a good job when accepting for publication results that have been obtained by a computational method not fully (and openly) described. The question leads more generally to contrast proprietary methods and open scientific literature. As Mark Thompson, then research scientist at the Pacific Northwest Laboratory and developer of a freely licensed molecular modeling program called Argus, writes: "I feel very strongly that when a new method is developed and implemented that it must pass the peer review process to gain legitimacy in the scientific community, regardless of whether most other scientists care to re-implement that method or not. Proprietary methods are fine, as long as it is openly known that they are proprietary. Results of proprietary methods do not belong in the open scientific literature." <ref type="bibr" target="#b58">58</ref> Of course, these three directions of discussion are interrelated.</p><p>The sixth message of the thread, written by Douglas Smith (then Assistant Professor of Chemistry at the University of Toledo), is particularly revealing. In this long post, Smith responds point by point, using interleaved posting, to Thompson's whole message. The tensions produced by software within the community are interestingly expressed by contrasting how scientists believe they should act with what they actually do. Thompson has written that "good science is that of reproducibility and independent verification." <ref type="bibr" target="#b59">59</ref> Smith points out that it is "universally true and accepted" but "rarely followed." <ref type="bibr" target="#b60">60</ref> Smith uses as an example the issue of parameters used in molecular mechanics, which are regularly modified and adjusted for a particular study without being published in the paper relating to that particular study. More generally, the very nature of such a method (and of semiempirical methods) leads to a multiplication of the parameters used without a clear disclosure of which parameters are used when producing various results. The problem is then more general than for the single case of the "SAM1" method. In practice, chemists act in a way that differs from what they say they should do. Thompson also writes: "If the results of a new method are published without sufficiently describing the method to fulfill the above criteria [reproducibility and independent verification], then I personally could not take the results seriously." <ref type="bibr" target="#b61">61</ref> Here again, Smith considers that if this position points to "a real problem," it is "utopian and most likely not practical," because of "the proprietary nature of commercial software," <ref type="bibr" target="#b62">62</ref> and because some people use this type of software as a "black box." He then adds: "Besides, who ever said we had to reveal all our secrets and make them readily available and accessible? When software copyrights and patents really provide adequate protection, maybe I will agree with that attitude." <ref type="bibr" target="#b63">63</ref> Finally, if "results of proprietary methods do not belong in the open scientific literature," as Thompson has written, "where do they belong?" Smith replies. According to him, the situation is complicated: "what about the difference between someone in industry who paid for the source code for MacroModel as compared to the academic, such as myself, who only gets binaries? Are my results to be less acceptable because I don't have the absolute method available? Or are the industrial results less acceptable because they can be the results of tweaking the code?" <ref type="bibr" target="#b64">64</ref> In Smith's post, the discrepancy between the kind of values (openness, reproducibility) the actors associate with science and their actual practices associated with computational methods and software is clearly highlighted. Because of the very nature of (semi)empirical methods, which lack epistemic transparency, because of the proprietary nature of some software packages, and because of the possibility to use software as a black box, the question of the norms of sound science is in practice difficult to resolve. Moreover, computational chemists ask the question how the difficult and tedious October-December 2017 11 work of programming can be recognized. Can this recognition be obtained by publishing programs or by adequately protecting them? ("When software copyrights and patents really provide adequate protection," Smith writes.) The complexity of the issue of software copyrights and patents is then stressed in many subsequent posts of the thread. The mentioning of patents, copyrights, and licenses in numerous later posts is often done in an interrogative mode, and the thread finally dies of attrition after a general sense of uncertainty about what the future holds regarding the relationships between these intellectual property notions and the tensions they expressed beforehand.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2001: The Great Gaussian Flame War</head><p>The second conversation thread we want to discuss starts on 5 December 2001. Forty-five posts from thirty-three subscribers will be sent in the following seven days. In comparison with the first thread, the number and frequency of messages is higher, reflecting the change in email usage. Here again, the first message is an announcement that seems to be innocuous. Jen-Shiang Kenny Yu, then a Ph.D. student in the Department of Chemistry of National Tsing Hua University (Taiwan), indicates in his message that the results of a benchmark performed in his lab, for PC computers, of the "popular electronic structure program Gaussian" are made publicly available on a webpage. This benchmark has been carried out for several combinations of microprocessors and random-access memory devices. <ref type="bibr" target="#b65">65</ref> If computing in computational chemistry was mainly performed on workstations in the 1990s, this benchmark shows that desktop computing is going to break through in the 2000s.</p><p>Figure <ref type="figure" target="#fig_1">2</ref> portrays the dynamical organization of the thread, just like Figure <ref type="figure" target="#fig_0">1</ref>. The messages in the 1993 thread were mainly pluritopical, the different branches of the thread being interrelated, whereas the messages of the 2001 thread are mostly monotopical. After his first announcement message, Yu posts three other messages. His second and third messages show that the benchmark, and notably one technical question, interests many people. As Yu writes in his third message: "There are several persons asking about the makefile <ref type="bibr" target="#b66">66</ref> to compile Gaussian 98 with Intel Fortran compiler." <ref type="bibr" target="#b67">67</ref> However, Yu also indicates, in this same post: "We'll post the detail [of the makefile] on our website after we make sure that it won't violate the license agreement of Gaussian." <ref type="bibr" target="#b68">68</ref> This question of violating the license agreement is what will set the thread on fire. In his fourth and last message, Yu thus writes: "We have got the information from Gaussian Inc. that distributing the modified version of makefile or the instructions is violation to the license agreement." <ref type="bibr" target="#b69">69</ref> From this starting point, the discussion is launched on what the license of scientific software can or must allow, and the flame war begins with the intervention of the CEO of Gaussian, Inc., himself, Mike Frisch.</p><p>The first reaction to Yu's last message comes from Richard Walsh, then Project Manager in Cluster Computing, Computational Chemistry and Finance for netASPx, Inc.. He writes: "What about a simple description of how to do it without any lines directly copied from the file? That is your intellectual property which I assume that you are free to distribute?" <ref type="bibr" target="#b70">70</ref> Then the policy of Gaussian, Inc. is challenged, in a deliberately provocative way, by Chris Klein (then at the Department of Applied Biosciences, Pharmaceutical Chemistry, Swiss Federal Institute of Technology/ ETH Zurich), by metaphorically translating Gaussian policy to the automotive business: "the company's policy, translated to the automobile business, appears to be: "OK, we'll sell you the car (program), but you have to produce the proper key (makefile) yourself … if you copy the key from someone, we'll sue you … maybe we can give you the key for the trunk. Rather strange way of doing business." <ref type="bibr" target="#b71">71</ref> In a third reaction to Yu's last message, Serguei Patchkovskii (then Research Council Officer in the Theory and Computation Group of the Steacie Institute for Molecular Sciences, National Research Council Canada, Ottawa) argues that the Gaussian license is very restrictive: "Taken literally, this license prevents you from even -posting-Gaussian output to this list (or from providing it as a supplementary information in a scientific publication), for two reasons: a) it discloses performance data, and b) the output may prove to be of use to one of Gaussian, Inc. competitors." <ref type="bibr" target="#b72">72</ref> The issue of the licensing policy of Gaussian, Inc. is thereafter pivotal in the remaining of the thread.</p><p>Mike Frisch replies to these criticisms, and notably to Klein's provocative automobile analogy, by pointing out that, unlike many other software vendors, Gaussian, Inc. provides the source code of Gaussian as well as "makefiles for supported platforms and compilers." <ref type="bibr" target="#b73">73</ref> He then adds that making the program run on other platforms, with other compilers and makefiles that have not been tested by the company will lead, if made public, to unreliable versions of the program being used and then to problems for the technical support of Gaussian. He concludes: "The normal way of doing business, which is what most of our competitors do, would be to not license the source code at all and hence not be subject to criticism of the terms of the source license." <ref type="bibr" target="#b74">74</ref> His defense is then articulated around the availability of the source code, which is seen as being fundamental for scientific software because it allows epistemic transparency, and around the question of the support Gaussian, Inc. has to offer to its purchasers and users.</p><p>The thread then splits into two topics: (1) the issue of the technical support and user-friendliness of Gaussian and (2) the articulation between the availability of the source code, the possibility (or not) of implementing the software on different platforms, and the stability of the software associated with its protection by Gaussian, Inc. Regarding technical support and user-friendliness, the discussion starts with a post by Max Valdez (Maximiliano Valdez González, National Autonomous University of Mexico). He writes: "I think Gaussian is a great tool, but it has a LOT of little secrets and "bugs," and the support is not so good." <ref type="bibr" target="#b75">75</ref> He tries to refute Frisch's argument about the problems that will emerge for the technical support of Gaussian if unreliable versions of the program were used. He adds that most of the questions he has posed to Gaussian technical support have finally been answered when asked on the CCL list. If a community of users constitutes a more effective support than the official support, then why "Gaussian doesn't have a more open policy to allow end users to communicate improvements, or new ideas specially for new compilers and boxes?" (emphasis added). <ref type="bibr" target="#b76">76</ref> This discussion about support and end users then leads to the question of the user-friendliness of Gaussian. Phil Hultin, then Associate Professor of Chemistry at the University of Manitoba, Winnipeg, indicates that he represents "a new kind of scientist working with tools like Gaussian." <ref type="bibr" target="#b77">77</ref> Hultin is an experimentalist (in organic chemistry), not a "computer whiz" (his expression). For end users such as himself, Hultin considers that an effort has to be made to improve the quality of the Gaussian manual and to provide a userfriendly interface. Hutlin's post shows that computational tools and software are being democratized at this time in chemistry, in particular because they can be implemented on computers that are cheaper and more accessible. Several messages then discuss this democratization phenomenon. Hultin's suggestion is, for example, criticized because it would lead to so-called "black-box" software. Some computational chemists ("computer whizzes" in Hultin's words) reject such black boxes because they lack epistemic transparency. We can see here that "open" in the sense of providing epistemic transparency by making the source code readable is different from "open" as empowering larger audiences of end users by providing more transparent software for such users. Even if he later concentrates on the issue of the user-friendliness of Gaussian, this is this entire complexity of the issue of the openness and transparency of Gaussian that Hultin tries to express when he writes "maybe people would be less prone to jump on Gaussian (as they have over this makefile thing) if they didn't feel that the philosophy of Gaussian Inc. was similar to that of the 'high priest' -only the initiates will have the secrets revealed and then only after years of study." <ref type="bibr" target="#b78">78</ref> The topic of the second branch of the conversation thread shows another dimension of this complexity. "Open," in the sense of providing epistemic transparency by rendering the source code readable, does not satisfy all the "computer whizzes." The discussion continues with messages asking why Gaussian could not take into consideration the makefile Yu has developed and try to test it. The debated question is then to know who can contribute to Gaussian and how it can be used. Is scientific software a public good, which has to be developed, maintained, and enhanced collectively, or is it a private product whose protection against derivatives guarantees its stability? Finally, the discussion ends with posts that question the significance of having the source code available if it is not possible to use it on different systems by modifying the makefile, <ref type="bibr" target="#b79">79</ref> and posts that ask for easier compilation routines to increase the portability of the software, as well as the availability of a comprehensive test suite to verify the compilation, as a desired sound scientific practice. <ref type="bibr" target="#b80">80</ref> We now want to focus on which issues are unveiled from the debates within these two threads.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Multiple Tensions</head><p>The epistemological nature of the models in computational chemistry implies that epistemic transparency is an ideal vision of modeling. The very nature of the models, for example, in semiempirical methods such as SAM1, requires time-consuming work of parameterization. Parameterization poses a problem of reproducibility and transparency. Scientific parameters designed to make the model actually produce robust results possess their own epistemic problems (such as calibration, theory groundedness, fitting, or [lack of] universality). But there is more: parameters are also intertwined with the coding of the method to make the program run. The entanglement of scientific and coding parameters is turning the concept of reproducibility into a problematic issue because of the complexity of the code. The consequence is that the reproducibility as well as reprogramming of a method, even with an open source code, is highly unlikely, and even more so with a mere publication in hand. This epistemic opacity is a source of tensions and is criticized, for example, from the point of view of experimental chemistry. This epistemic situation and the tensions implied by parameterization are constitutive of computational chemistry.</p><p>The lack of transparency is also present in other aspects of software. Not only do software vendors sometimes choose to sell (or license) only executables/binaries, but when they do provide an open source code (to comply with an epistemically sound science), the accompanying licensing strategies may consist in prohibiting to manipulate/modify/reveal/ benchmark/test said source code, generating frustration among end-users. In other words, code openness is criticized as worthless if it does not go along software openness: if other scientists cannot compile, test, and benchmark the code, then the transparency issue is also an interoperability issue. Software is thus also linked to hardware.</p><p>A tension exists between the desire for computing power and efficiency (in a rapidly evolving hardware world) and the epistemic robustness linked to the scientific software: it must produce sound results in a growing variety of hardware conditions. This tension arises in times when hardware becomes increasingly available in the laboratory. In 2001, the personal computer became a common scientific tool in the laboratory, as well as a tool that one can tinker with to improve in-house performance. The great Pentium versus AMD processor competition (typical of those times) translates into the desire for benchmarking the modeling software with diverse hardware environments, something that restrictions on compilation hinder.</p><p>Tensions also proceed from the confrontation of an idealized scientific world with a scientific world in a context of software. Academic publishing, which constitutes the traditional form of academic reward, is central in the actors' ideal concept of the openness of science. Yet, because software is more than just code, but also a commodity, scientific activity then shares concerns with the industrial sector. In a world where software is also a business, issues of intellectual property or software distribution in general mix with the traditional concerns of the scientific world. The difficulty in financing continuing development or the difficulty in establishing a serene relation with users/customers regarding development and maintenance choke with scientific ethos concerns. This leads, for example, to the question of the lack of scientific recognition for software development in the 1993 conversation thread, or to the discussion of the effectiveness of the technical support of Gaussian in the 2001 thread. In this regard, the developers (and vendors) who license their proprietary software with an open source code but draconian restrictions on its use are trying to limit potential exploitation of their code by competitors, but they also argue that compilation of the software that would not comply with the in-house rules could lead to unsound scientific results.</p><p>In the narratives of the posters, this issue is expressed as "science as a public good" versus "software as a commodity." The fact that software, as the materialization of a scientific model is developed "with taxpayers' funds" (a popular expression in the threads) by academics, appears to many as conflicting with software viewed as a business model. Whereas academic institutions may promote so-called technology transfer by fostering scientific entrepreneurship for computational chemistry software, the idea that the federally funded development of scientific models is turned into a business model (and a promising one for corporate molecular modeling, especially in the pharmaceutical industry) is frowned upon by a large part of the community, and this raised concerns, particularly in 1993. There is a tension between the idea that modeling software, as a scientific tool, should be considered a public tool and, as such, one that belongs to the scientific community, including in its potential to be enhanced (and maintained), and the idea that, as a tool developed by a small team, in a commercial context, strict licensing policies help to keep software stable, which guarantees the production of sound scientific results.</p><p>Especially for "commercialized" software, the issues of (lack of) maintenance and support and the issue of the "black box" syndrome further divides the community in other terms: first appears the issue of different kinds of software users, then follows the issue of different kinds of support for corporate and academic users, and even the issue of different kinds of modeling parameters (and different levels of secrecy) for the same method in a corporate or academic environment. There are also different kinds of users in terms of computing literacy, leading to a divide between lay users and "computer whizzes." The lay users express their concerns (and they often find it hard to achieve legitimacy on the list) from the viewpoint of an experimental chemist who wishes to use computational tools: they need to appropriate the software, and they have a hard time doing so as they are easily accused of turning modeling into unsound science (by merely pushing buttons), and they find themselves delegitimized. The tension here for software developers lies in the dichotomy between augmenting their users/market shares and keeping the control of software (as a method, as a code, and as a commodity). <ref type="bibr" target="#b81">81</ref> Throughout the 1990s, molecular modeling software shared issues with a growing industry of software in general. More precisely, molecular modeling software, as a promising technology, was promoted by hardware vendors and bought by the pharmaceutical industry: the concern with the software "business model" was preeminent for the CCL posters. References to "the market" as a regulating force is not uncommon in CCL messages to characterize what a sound business practice should be. Yet this scientific software targets scholars, some of them working in the (pharmaceutical) industry, some of them in academia. It is a market niche and one where potential customers have very different resources. In particular, the software support that the former can afford and the latter cannot is a divisive topic. On the other hand, this scientific software is sometimes designed in a corporate environment, sometimes in an academic one, and sometimes in an academic structure that turned into entrepreneurship.</p><p>Finally, debate is phrased in 1993 in terms of publication reward, acknowledgment of coding work, and copyrighting and patenting concerns about software, and CCL posters express uncertainty regarding these issues. In 2001 tensions now arise with a technical argument over a particular software licensing policy that integrates a very large part of these issues, a business conflict between the software and its competitors, a conflict between the software and some of its users, a conflict between different categories of users, and a conflict dividing the scientific community. It is striking that in 1993, questions are asked about methods, and reproducibility issues are expressed in abstract terms of publication and code openness. In 2001 the open source code issue was a very practical one, and the tension arose from the inability to create makefiles because of licensing restrictive policies. Licensing then implies multiple concerns: scientific concerns (the source code of Gaussian is readable to preserve epistemic transparency), intellectual property concerns (rewarding the work of programming), and business concerns (restrictions to the use of the source code to limit its potential exploitation by competitors).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Roots of Tensions</head><p>From the discussion of these multiple tensions, we now dig into their roots. Our first point is an epistemological one: in a computational science, models and software must be addressed together. Interrelations between both lead to the idea that transparency and validity of computational methods are complex, and that they are a source of tensions for chemists.</p><p>If it is interesting and necessary to discuss the structure, properties, and epistemological status of models, as is common in the philosophy of science, we think that it is necessary to understand models in relation to software that embody them, which give them their productivity. In turn, understanding software (in computational sciences) needs to take into account the models they express, that is, "the representations of world" scientists translate in a way the computer can "understand." These representations depend on the communities of scientists involved and the histories of the ways they represent the portion of the world they are interested in. <ref type="bibr" target="#b82">82</ref> The interest in discussing both models and software can be seen in the specific relationships between computational chemistry models and computational chemistry software. The complexity of the parameterization is central in the modeling activity. This fact has to be understood in the context of the calculability problems quantum approaches in chemistry have faced. In the case of molecular mechanics methods, the choice of a particular representation of matter, which is consistent with a classical conception of molecules, also leads to a necessary complex work of parameterization. The choices of sets of parameters, made locally by such or such research group for such or such group of molecules, lead to models whose epistemic transparency is questioned by the actors themselves. What is interesting for our argument is that this lack of transparency of models has repercussions for the status of software: the question of the openness of the source code is, for example, made more salient in the 1993 flame wars knowing the importance of parameterization in modeling. Finally, materializing models into software may result in black-boxing models into push-button software. Many actors fear this prospect, which deepens in return the question of the lack of epistemic transparency of the models. This kind of bidirectional repercussion shows clearly that discussing both models and software is crucial.</p><p>As the 2001 conversation thread shows, this materialization of models into software also leads to addressing the validity of methods, not only in terms of model transparency, or transparency of software as openness of the source code, but as well in terms of how the software is compiled (this implies hardware concerns). The epistemic validity of the scientific results produced when running software is thus not just an issue of translating models' transparency into software, it is also entangled with compiling software, hence the issue of benchmarking software for various hardware configurations. The software licensing and maintenance policy is then in question. It could be seen as a form of protection, developers and maintainers being responsible for the reliability of the scientific tool that the software is. But it could also be criticized as impeding the performance and reliability of scientific software.</p><p>Our second point is about discipline dynamics: a second kind of tensions arise between two groups of actors, well represented in the 2001 thread. The first group comprises the scientists who develop and/or use as expert-users computational chemistry software. The other one is represented by Phil Hultin, an experimental chemist and lay-user of computational tools. Tensions arise between these two groups because as the second group ask for more user-friendliness, the first group fear a phenomenon of using models as black boxes. This fear is associated with the epistemic status of models, as already discussed. But it has also to be understood in the broader context of the somewhat difficult recognition of modeling and simulation as sound science in the whole field of chemistry. Computational chemists have to be particularly cautious concerning the question of the validity of the results they produce to gain credit. However, distributing more user-friendly software can be a way to enlarge the community of users and then to gain recognition in the chemists' community.</p><p>The materialization of models into software is in this manner a way of being recognized in chemistry, but a problematic way, and this leads to tensions. In this sense, the question of the recognition, trustworthiness, and diffusion of computational chemical software in chemistry can probably be analyzed as the adoption of a new instrument, which has to be constituted as trustworthy but also user-friendly.</p><p>Our last point in regard to social norms is that translating models into software in the broader context of relationships between computational chemistry and the industry leads to tensions between academic norms (publishing as reward) and software distribution norms (licensing, commodification).</p><p>In the 1993 thread, chemists typically associate transparency with open scientific literature, publication being classically viewed as the major form of reward in academic norms. As coding is not rewarded within academic norms, business norms of software commodification are used by some developers. This leads to the issue of licensing software and to the debated question of knowing if a scientific software is a public good, which has to be developed, maintained, and enhanced collectively, or a private product, whose protection against derivatives guarantees its stability. The clash between these two types of norms is manifest in the 1993 thread when being expressed by contrasting how scientists view openness as an ideal scientific value and their actual practices. The relations with the pharmaceutical industry, with its culture of secrecy, exacerbate these tensions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Openness</head><p>Openness has been ubiquitous in our account of the threaded conversations in the CCL, and more generally in computational chemists' concerns over the years. It has been employed by the actors, but also in our account, with many different meanings. These meanings, and the ambiguities associated with this polysemy, are revealed by the tensions highlighted in our study.</p><p>Openness is to be understood first of all as an ideal value associated with an ideal vision of science. It is often referred to by the actors as an essential norm, but also as an argument to distinguish between ideal science and real practices. This first meaning is associated with a more practical meaning of openness as epistemic transparency and reproducibility of methods, associated with the concept of publishing in the scientific literature. The role of publication as scientific reward and of reviewing process as the warrant of the validity of scientific results is discussed in this context.</p><p>Yet the epistemic transparency of the scientific methods developed is blurred by the fact that these methods are entangled with their programming. Another meaning of openness is the openness of the source code, and our examples show that this is understood in two ways. First, associated with epistemic transparency, an open source code is a readable source code. But the 2001 thread shows that this widely accepted meaning is criticized as being not enough, the readability being considered by some actors as useless without the possibility of compiling/testing/benchmarking. Moreover, the licensing policies that software developers choose to adhere to regulate the mutual shaping of methods, software, and hardware. The next meaning of openness is thus about the openness of the policy of the software: how the licensing policy frames the practices of the end-users and how the corporate policy (especially regarding support and maintenance) shapes diverse categories of users.</p><p>At a sociological level, the issue of how inclusive the community of computational tools users is debated. End-users want user-friendliness to become empowered, whereas lead-users argue against computational tools as black-boxes to preserve scientific soundness. The issue of different levels of support/maintenance or even licensing underlines the various statuses of the actors: academic or industrial users, academic developers, corporate developers, and vendors. The last meaning of openness is thus understood as empowerment of categories of users.</p><p>Finally, beyond the study of a particular computational scientific field, our story addresses the general issue of "scientific openness" as a blurred concept. "Openness" may have even different meanings in other contexts, and it is of course beyond our scope here to address them all. Yet our study helps to highlight that addressing the complexity of openness in computational models requires to take software into account in its many aspects. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FIGURE 1 .</head><label>1</label><figDesc>FIGURE 1. The 1993 thread structure. Each node represents a post (with the name of the author and the date). Each edge represents the citation of a previous post. Grayed-out posts are the ones quoted in the text.</figDesc><graphic coords="9,52.78,98.85,391.22,232.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIGURE 2 .</head><label>2</label><figDesc>FIGURE 2. The 2001 thread structure. Each node represents a post (with the name of the author and the date). Each edge represents the citation of a previous post. Grayed-out posts are the ones quoted in the text.</figDesc><graphic coords="11,51.00,97.00,488.88,281.45" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_0"><p>www.computer.org/annals</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_1"><p>www.computer.org/annals</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_2"><p>www.computer.org/annals</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="14" xml:id="foot_3"><p>www.computer.org/annals</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="18" xml:id="foot_4"><p>www.computer.org/annals</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_5"><p>Scientific Method, Oxford University Press, 2004.</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Frédéric Wieber is maître de conférences in History and Philosophy of Science at the Université de Lorraine (Nancy, France). He is a member of the Laboratoire d'Histoire des Sciences et de Philosophie, Archives Henri Poincaré, UMR 7117 CNRS, Université de Lorraine. He has a Ph.D. in History and Philosophy of Science from Université Paris Diderot. His works include papers on the history of computational protein chemistry in the 1970s and 1980s and on the calibration of scientific instruments. He is more generally interested in the tools used in theoretical and computational scientific practices. Contact him at frederic .wieber@univ-lorraine.fr.</p><p>Alexandre Hocquet is a former computational chemist academic and now a Professeur des Universités in History of Science at the Université de Lorraine and a member of the same laboratory as Frédéric Wieber. His focus is on STS, particularly the relationships between software and production of knowledge with works on computational chemistry, but also Wikipedia and Football Manager. Methodologicallly, his works rely on the analysis of threaded conversations in webforums or mailing lists. More information can be found at http://poincare.univ-lorraine.fr/fr/membre -titulaire/alexandre-hocquet. Contact him at alexandre.hocquet@univ-lorraine.fr Follow him at @osvaldopiazzoll. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">References and Notes</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">We limit ourselves in this paper to a restrictive meaning of &quot;computational chemistry&quot; (namely, the classical and quantum methods of molecular modeling), because the software packages, the actors, and the dynamics and tensions we describe belong to this subfield. Yet other uses of the computer exist in chemistry, such as planned synthesis or information retrieval and expert systems</title>
+		<imprint/>
+	</monogr>
+	<note>Sometimes the phrasing &quot;computational chemistry&quot; encompasses all domains</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">What Is Computational Chemistry?</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Counts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer-Aided Molecular Design</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="95" to="96" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">What Difference Did Computers Make?</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Agar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Studies of Science</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="869" to="907" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Bidirectional Shaping and Spaces of Convergence: Interactions Between Biology and Computing from the First DNA Sequencers to Global Genome Databases</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Chow-White</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>García-Sancho</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technology &amp; Human Values</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="124" to="164" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note>Science</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Early Biomedical Computing and the Roots of Evidence-Based Medicine</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>November</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Annals of the History of Computing</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="9" to="23" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Extending Ourselves: Computational Science</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Humphreys</surname></persName>
+		</author>
+		<imprint>
+			<pubPlace>Empiricism, and</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Computer Simulations and the Trading Zone</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Galison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Disunity of Science: Boundaries, Contexts, and Power</title>
+		<editor>
+			<persName><forename type="first">P</forename><surname>Galison</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Stump</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Stanford University Press</publisher>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="page">118</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The History of the History of Software</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Campbell-Kelly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Annals of the History of Computing</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="40" to="51" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Campbell-Kelly</surname></persName>
+		</author>
+		<title level="m">From Airline Reservations to Sonic the Hedgehog: A History of the Software Industry</title>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">The Computer Boys Take Over: Computers, Programmers, and the Politics of Technical Expertise</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">L</forename><surname>Ensmenger</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">What Makes the History of Software Hard</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Mahoney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Annals of the History of Computing</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="8" to="18" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<author>
+			<persName><forename type="first">M</forename><surname>Spencer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Brittleness and Bureaucracy: Software as a Material for Science</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="466" to="484" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">be it from classical or quantum methods, is to study the structure and/or reactivity of molecules, which includes making predictions about the physical properties and reactivity of molecules, designing materials and drugs, and modeling interactions in the various domains of chemistry, biochemistry, and materials science</title>
+		<imprint/>
+	</monogr>
+	<note>The common aim of &quot;molecular modeling</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Studying Mailing Lists: Text, Temporality, Interaction and Materiality at the Intersection of Email and the Web</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Beaulieu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">T</forename><surname>Høybye</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Handbook of Emergent Technologies in Social Research</title>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="257" to="273" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Creating the Market University: How Academic Science Became an Economic Engine</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">P</forename><surname>Berman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<publisher>Princeton University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">What Makes the History of Software Hard</title>
+		<author>
+			<persName><surname>Mahoney</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">From Chemical Philosophy to Theoretical Chemistry: Dynamics of Matter and Dynamics of Disciplines, 1800-1950</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Nye</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1993">1993</date>
+			<publisher>University of California Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">On the transformations in chemistry induced by the spreading of physical instrumentation, see P. Morris and A. Travis</title>
+		<editor>J. Krige and D. Pestre, eds., Taylor &amp; Francis</editor>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="page" from="715" to="740" />
+		</imprint>
+	</monogr>
+	<note>The Role of Physical Instrumentation in Structural Organic Chemistry. in Companion to Science in the Twentieth Century</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><surname>Gavroglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Simões</surname></persName>
+		</author>
+		<title level="m">Neither Physics nor Chemistry: A History of Quantum Chemistry</title>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Between Accuracy and Manageability: Computational Imperatives in Quantum Chemistry</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">S</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Historical Studies in the Natural Sciences</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="32" to="62" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">The Development of Computational Chemistry in the United States</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Bolcer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Hermann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Reviews in Computational Chemistry</title>
+		<editor>
+			<persName><forename type="first">B</forename><surname>Lipkowitz</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Boyd</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="1" to="63" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">The Hyperbola of Quantum Chemistry: The Changing Practice and Identity of a Scientific Discipline in the Early Years of Electronic Digital Computers, 1945-65</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">S</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Science</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="219" to="247" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Technological Innovation in Science: The Adoption of Infrared Spectroscopy by Chemists</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">M</forename><surname>Rabkin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Isis</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="31" to="54" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Multiple Means of Determination and Multiple Constraints of Construction: Robustness and Strategies for Modeling Macromolecular Objects,&quot; in Characterizing the Robustness of Science</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wieber</surname></persName>
+		</author>
+		<editor>L. Soler, E. Trizio, T. Nickles, and W. Wimsatt</editor>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="267" to="288" />
+			<pubPlace>Netherlands</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Modeling Molecules: Computational Nanotechnology as a Knowledge Community</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Johnson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Perspectives on Science</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="144" to="173" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The Computational Chemistry Literature</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Boyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Reviews in Computational Chemistry</title>
+		<editor>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Lipkowitz</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Boyd</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<date type="published" when="1991">1991</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="461" to="479" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">What Is Computational Chemistry?</title>
+		<author>
+			<persName><surname>Counts</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">The Development of Computational Chemistry in the United States</title>
+		<author>
+			<persName><forename type="first">Hermann</forename><surname>Bolcer</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Computer Science and the Computer Revolution</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Aspray</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Modern Physical and Mathematical Sciences</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Nye</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="598" to="614" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">The Development of Computational Chemistry in the United States</title>
+		<author>
+			<persName><forename type="first">Hermann</forename><surname>Bolcer</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">The Computer Boys Take Over: Computers, Programmers, and the Politics of Technical Expertise</title>
+		<author>
+			<persName><surname>Ensmenger</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Not Only Microsoft: The Maturing of the Personal Computer Software Industry, 1982-1995</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Campbell-Kelly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Business History Review</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="103" to="145" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">The Internet Imaginaire</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Flichy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Special Issue on Open Source Software Development</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Krogh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hippel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Research Policy</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="1149" to="1157" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Toward a New Economics of Science</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dasgupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>David</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Research Policy</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="487" to="521" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">The Effortless Economy of Science?</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mirowski</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<publisher>Duke University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The Emergence of a Competitiveness Research and Development Policy Coalition and the Commercialization of Academic Science and Technology</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Slaughter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Rhoades</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science, Technology, &amp; Human Values</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="303" to="339" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Creating the Market University: How Academic Science Became an Economic Engine</title>
+		<author>
+			<persName><surname>Berman</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Creating the Market University: How Academic Science Became an Economic Engine</title>
+		<author>
+			<persName><surname>Berman</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Mowery</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Sampat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Ziedonis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Learning to Patent: Institutional Experience, Learning, and the Characteristics of U. S. University Patents after the Bayh-Dole Act</title>
+		<imprint>
+			<date type="published" when="1981">1981-1992. 2002</date>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="73" to="89" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Current Status and Future Direction of the Molecular Modeling Industry</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Richon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Drug Discovery Today</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="665" to="669" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">On the Economics of Techno-Scientific Promises</title>
+		<author>
+			<persName><forename type="first">P.-B</forename><surname>Joly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Débordements: Mélanges offerts à Michel</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Callon</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Y</forename><surname>Akrich</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">F</forename><surname>Barthe</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">P</forename><surname>Muniesa</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Mustar</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="203" to="221" />
+		</imprint>
+	</monogr>
+	<note>Presses des Mines</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">How Computational Chemistry Became Important in the Pharmaceutical Industry</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Boyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Reviews in Computational Chemistry</title>
+		<editor>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Lipkowitz</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Cundari</surname></persName>
+		</editor>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="401" to="451" />
+			<date type="published" when="2007">2007</date>
+			<publisher>John Wiley &amp; Sons</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Entrepreneurial Science: The Rules of the Game</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Jones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Studies of Science</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="821" to="851" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Impediments to the scientific method</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">R</forename><surname>Marshall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Vinter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-D</forename><surname>Höltje</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer-Aided Molecular Design</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Quantum Chemistry Program Exchange, Facilitator of Theoretical and Computational Chemistry in Pre-Internet History</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Boyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Pioneers of Quantum Chemistry</title>
+		<imprint>
+			<publisher>American Chemical Society</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="volume">1122</biblScope>
+			<biblScope unit="page" from="221" to="273" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">The Computational Chemistry Literature</title>
+		<author>
+			<persName><surname>Boyd</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Interview with Jan Labanowski, administrator of the CCL</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Labanowski</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007-09">Sept. 2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Electronic Mailing Lists and Chemical Research: A Case Study</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pisanty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Labanowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trends in Analytical Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="53" to="56" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Marshall</surname></persName>
+		</author>
+		<title level="m">Living on Cybermind: Categories, Communication, and Control</title>
+		<meeting><address><addrLine>Peter Lang</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">A Social History of Bitnet and Listserv</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Grier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Campbell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Annals of the History of Computing</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="32" to="41" />
+			<date type="published" when="1985">1985-1991. 2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Email Flaming Behaviors and Organizational Conflict</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Turnage</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer-Mediated Communication</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="43" to="59" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<author>
+			<persName><forename type="first">G</forename><surname>Coleman ; Phreakers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Trolls</forename><surname>Hackers</surname></persName>
+		</author>
+		<title level="m">The Politics of Transgression and Spectacle</title>
+		<imprint>
+			<publisher>New York University Press</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="99" to="119" />
+		</imprint>
+	</monogr>
+	<note>The Social Media Reader, M. Mandiberg</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Holder</surname></persName>
+		</author>
+		<idno>Message: 1993.06.23-013</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="1993-06-23">23 June 1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hurst</surname></persName>
+		</author>
+		<idno>Message: 1993.06.24-000</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="1993-06-24">24 June 1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Adamo</surname></persName>
+		</author>
+		<idno>Message: 1993.06.28-005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="1993-06-28">28 June 1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Holder</surname></persName>
+		</author>
+		<idno>Message: 1993.06.25-004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="1993-06-25">25 June 1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Thompson</surname></persName>
+		</author>
+		<idno>Message: 1993.06.25-005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="1993-06-25">25 June 1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Message: 1993</title>
+		<author>
+			<persName><surname>Thompson</surname></persName>
+		</author>
+		<idno>.06.25-005</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Smith</surname></persName>
+		</author>
+		<idno>Message: 1993.06.26-003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="1993-06-26">26 June 1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<title level="m" type="main">Message: 1993</title>
+		<author>
+			<persName><surname>Thompson</surname></persName>
+		</author>
+		<idno>.06.25-005</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<monogr>
+		<title level="m" type="main">Message: 1993</title>
+		<author>
+			<persName><surname>Smith</surname></persName>
+		</author>
+		<idno>.06.26-003</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">Message: 1993</title>
+		<author>
+			<persName><surname>Smith</surname></persName>
+		</author>
+		<idno>.06.26-003</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<title level="m" type="main">Message: 1993</title>
+		<author>
+			<persName><surname>Smith</surname></persName>
+		</author>
+		<idno>.06.26-003</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J.-S</forename><surname>Yu</surname></persName>
+		</author>
+		<idno>Message: 2001.12.05-008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-05">5 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">A makefile is a file containing instructionswhich specify a set of compilations rules-to build an executable with a given compiler program</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J.-S</forename><surname>Yu</surname></persName>
+		</author>
+		<idno>Message: 2001.12.07-008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-08">8 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<monogr>
+		<title level="m" type="main">Message: 2001</title>
+		<author>
+			<persName><surname>Yu</surname></persName>
+		</author>
+		<idno>.12.07-008</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J.-S</forename><surname>Yu</surname></persName>
+		</author>
+		<idno>Message: 2001.12.08-004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-08">8 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Message</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Walsh</surname></persName>
+		</author>
+		<idno>12.10-002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-10">2001. 10 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Message</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Klein</surname></persName>
+		</author>
+		<idno>12.10-005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-10">2001. 10 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Message</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Patchkovskii</surname></persName>
+		</author>
+		<idno>12.10-006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-10">2001. 10 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Message</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Frisch</surname></persName>
+		</author>
+		<idno>12.10-007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-10">2001. 10 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<title level="m" type="main">Message</title>
+		<author>
+			<persName><surname>Frisch</surname></persName>
+		</author>
+		<idno>12.10-007</idno>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Valdez</surname></persName>
+		</author>
+		<idno>Message: 2001.12.11-015</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-11">11 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<title level="m" type="main">Message: 2001</title>
+		<author>
+			<persName><surname>Valdez</surname></persName>
+		</author>
+		<idno>.12.11-015</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hultin</surname></persName>
+		</author>
+		<idno>Message: 2001.12.11-022</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-11">11 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<monogr>
+		<title level="m" type="main">Message: 2001</title>
+		<author>
+			<persName><surname>Hultin</surname></persName>
+		</author>
+		<idno>.12.11-022</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Cheong</surname></persName>
+		</author>
+		<idno>Message: 2001.12.13-006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-13">13 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Van Der Spoel</surname></persName>
+		</author>
+		<idno>Message: 2001.12.13-018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Chemistry List</title>
+		<imprint>
+			<date type="published" when="2001-12-13">13 Dec. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">In a different context, the development of organizational software for large companies, the way the software was shaped so that an inner shell of lead-users could be differentiate from an outer shell of lay-users has been called &quot;software generification</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Pollock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>D'adderio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Studies of Science</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="254" to="280" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+	<note>Global Software and Its Provenance: Generification Work in the Production of Organizational Software Packages</note>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">What Makes the History of Software Hard</title>
+		<author>
+			<persName><surname>Mahoney</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

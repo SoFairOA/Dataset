@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Chemometric analysis for comparison of heparan sulphate oligosaccharides</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2009-01-20">20 January 2009</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Puvirajesinghe</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Biological Sciences</orgName>
+								<orgName type="institution">University of Liverpool</orgName>
+								<address>
+									<addrLine>Crown Street</addrLine>
+									<postCode>L69 7ZB</postCode>
+									<settlement>Liverpool</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Guimond</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Biological Sciences</orgName>
+								<orgName type="institution">University of Liverpool</orgName>
+								<address>
+									<addrLine>Crown Street</addrLine>
+									<postCode>L69 7ZB</postCode>
+									<settlement>Liverpool</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Turnbull</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Biological Sciences</orgName>
+								<orgName type="institution">University of Liverpool</orgName>
+								<address>
+									<addrLine>Crown Street</addrLine>
+									<postCode>L69 7ZB</postCode>
+									<settlement>Liverpool</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Sebastien</forename><surname>Guenneau</surname></persName>
+							<email>guenneau@liverpool.ac.uk</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Mathematical Sciences</orgName>
+								<orgName type="institution">University of Liverpool</orgName>
+								<address>
+									<addrLine>Peach Street</addrLine>
+									<postCode>L69 3BX</postCode>
+									<settlement>Liverpool</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Soc</surname></persName>
+						</author>
+						<author>
+							<persName><surname>Interface</surname></persName>
+						</author>
+						<title level="a" type="main">Chemometric analysis for comparison of heparan sulphate oligosaccharides</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2009-01-20">20 January 2009</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1098/rsif.2008.0483</idno>
+					<note type="submission">Submitted on 7 Feb 2017 Distributed under a Creative Commons Attribution 4.0 International License Received 12 November 2008 Accepted 8 December 2008 This journal is q 2009 The Royal Society</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-09T13:41+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>glycans</term>
+					<term>heparan sulphate</term>
+					<term>glycomics</term>
+					<term>effective shape</term>
+					<term>Lyapunov exponent</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>HAL is a multi-disciplinary open access archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from teaching and research institutions in France or abroad, or from public or private research centers. L'archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non, émanant des établissements d'enseignement et de recherche français ou étrangers, des laboratoires publics ou privés.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>Heparan sulphate (HS) is a ubiquituous linear glycosaminoglycan that is found attached to any of several families of core proteins to form complex glycoproteins. It is diverse in its cellular and extracellular distributions and is critical in a range of biological activities from development to signalling regulation <ref type="bibr" target="#b0">(Bernfield et al. 1999;</ref><ref type="bibr" target="#b20">Turnbull et al. 2001)</ref>. A highly sulphated version of HS, heparin, is used as a pharmaceutical drug for its anticoagulative properties. The structural diversity of HS within and between tissues is generated by the action of a complex family of biosynthetic enzymes. HS is synthesized in the Golgi on a Xyl-Gal-Gal-GlcNAc acceptor that forms a linker sequence attached to serine residues on the core protein. The sugars D-glucuronic acid and N-acetylglucosamine residue (GlcNAc) are added alternately to form a disaccharide repeat polymer (the nascent chain). The chain is then modified by the action of any or all of several families of enzymes. One of the first steps is the removal of the acetyl group from GlcNAc and its replacement with a sulphate group. The D-glucuronic acid can then undergo epimerization to D-iduronic acid, and either of the uronic acids can be O-sulphated on carbon 2. The glucosamine sugar can also be O-sulphated at carbon 6 or more rarely on carbon 3 (figure <ref type="figure" target="#fig_0">1</ref>, reviewed in <ref type="bibr" target="#b2">Esko &amp; Lindahl (2001)</ref> and <ref type="bibr" target="#b15">Powell et al. (2004)</ref>). Spatial and temporal regulations of the expression and bioactivity of the enzymes, as well as the fact that the reactions are not template driven and do not go to completion, account for the diversity in HS structure <ref type="bibr" target="#b20">(Turnbull et al. 2001)</ref>. These modifications occur in a regulated fashion with certain modifications occurring in discrete areas. Regions of modifications tend to cluster in highly sulphated areas (S domains) whereas stretches on unmodified disaccharides containing N-acetylated glucosamine residues form NA domains, as shown in figure <ref type="figure" target="#fig_0">1</ref> (see also <ref type="bibr" target="#b20">Turnbull et al. 2001;</ref><ref type="bibr" target="#b5">Gallagher 2006)</ref>.</p><p>Biosynthesis results in HS that can differ in structure within a cell as well as between cells and tissues. HS structures are also known to vary temporally <ref type="bibr" target="#b3">(Ford-Perriss et al. 2002)</ref>. All these contributors result in HS having a vast set of possible structures-the 'heparanome' <ref type="bibr" target="#b20">(Turnbull et al. 2001)</ref>. Along with the improvements in technologies that allow high-throughput analysis, this has resulted in the emergence of methods to study the analysis of large datasets-'glycomics' (as reviewed in <ref type="bibr" target="#b18">Turnbull &amp; Field 2007)</ref>. It has been shown that specific saccharide structures are required for activity, for example 6-O sulphation is essential in FGF-2 signalling using FGFR-1 <ref type="bibr" target="#b6">(Guimond et al. 1993;</ref><ref type="bibr" target="#b16">Pye et al. 1998)</ref>. A regulatory role of HS has also been highlighted in experimental work that has shown that selected structures are capable of activating and inhibiting FGF signalling by having specificity for different ligand and receptor isoforms <ref type="bibr" target="#b6">(Guimond et al. 1993;</ref><ref type="bibr" target="#b19">Turnbull et al. 1999)</ref>. In order to isolate and separate biologically active oligosaccharides, one can use commercially available enzymes that digest the HS polysaccharide in different and specific ways. This can be achieved using heparin lyases from Flavobacterium <ref type="bibr" target="#b14">(Payza &amp; Korn 1956;</ref><ref type="bibr" target="#b10">Lohse &amp; Linhardt 1992)</ref>, which endolytically cleave the glycosaminoglycans (GAGs). For example, in order to isolate S-domain regions of the polysaccharide, heparitinase I can be used, which cleaves polysaccharide chains containing one to four linkages between hexosamines and glucuronic acid residues, thus leaving S domains intact (as indicated in figure <ref type="figure" target="#fig_0">1</ref>).</p><p>Analysis of S domains is achieved with strong anion exchange chromatography over a linear chloride counter ion gradient of 0-2 M NaCl allowing separation of the different structures on the basis of charge, as shown in figure <ref type="figure">2</ref>. Once this is achieved for a series of samples, it is soon evident that comparisons become increasingly difficult owing to the complexity of the chromatographic data. Using the automatically integrated peak data obtained from chromatographic software, it is possible to get a list of all peaks with their corresponding peak heights and absorbance values for each sample, as shown in the scatter graph in figure <ref type="figure">3</ref>. Therefore, the application of the effective disc method, which amounts to evaluating the centre of mass (or centroid) and then computing its average distance from all points within a set of data (effective radius), is a facile tool to simplify comparative analysis between spectra of this type. These calculations can be achieved using a basic spreadsheet software package, which is advantageous as other chemometric methods such as principal component analysis (PCA) have recently been used for the differentiation of polysaccharide structures from the cell wall of the tomato fruit plant <ref type="bibr" target="#b17">(Quemener et al. 2007)</ref>. However, although this method has similar advantage of rapidity of analysis, it does require a MATLAB-based computing environment, whereas the method of effective shape requires only basic spreadsheet software packages. Our approach is an alternative to the statistical concept of median, which might become computationally demanding for large sets of data. The latter approach is commonly used in statistics and computational geometry, since it can be generalized to data in two or more dimensions.</p><p>Given a set of points, any hyperplane that goes through a centre point divides the points into two roughly equal parts: the smaller part should have at least a 1/(dC1) fraction of the points, where d is the space dimension. Unlike the median, a centre point needs not be one of the data points. It is usually taken to be the middle of the two middle-ordered elements of a set, call them A and B. The simplest formula for this midpoint is then just (ACB)/2, which is equivalent to the expression AC(BKA)/2. It is important to note that the former formula is more susceptible to overflow when A and B tend to be larger numbers with the same sign, which is typically the case in our study (nevertheless, there are underflow scenarios in both expressions when small signed numbers are allowed).</p><p>In this paper, we exemplify that, when there are three or more points, the midpoint can be easily and accurately evaluated through the barycentre (or centroid) and further implemented into an effective shape algorithm. Whereas such minimization problems might require in general advanced tools of calculus of variations (e.g. Lagrange multipliers for isoperimetric inequalities in Sobolev spaces; Dacorogna 2004), we describe here a very simple shape optimization method based on common sense. Effective discs and ellipses provide an alternative viewpoint on HS chromatograms, which might look fairly non-intuitive when displayed as raw data. The algorithm is easy to formulate in any space dimension and was previously applied to the analysis of wave localization <ref type="bibr" target="#b11">(Movchan et al. 2007)</ref>. Moreover, we propose a simple criterion for reproducibility of experiments when dealing with complex data produced in a chromatographic study, via the classical mathematical concept of average Lyapunov exponent for ergodic dynamical systems <ref type="bibr" target="#b8">(Kingman 1968;</ref><ref type="bibr" target="#b13">Oseledec 1968</ref>). This criterion is universal and could be applied to many other biological applications such as mass spectrometry analysis or microarray approaches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">MATERIAL AND METHODS</head><p>HS was extracted and purified from different murine organs as described previously <ref type="bibr" target="#b4">(Freeman et al. 2008)</ref>. Tissue was taken from older normal mice being used for standard breeding programmes; mice were humanely sacrificed and all procedures conformed to UK legal requirements and institutional guidelines. HS material was solubilized in water and half the original amount of material was digested with either heparitinase I or heparitinase III enzymes. The completion of the digestion process was monitored by measuring absorbance at 232 nm at the beginning of the digest, and after 4 and 16-20 hours of incubation, and also after an overnight incubation. Heparitinase enzymes were used at 2.5 mU in 10 ml heparitinase buffer (100 mM sodium acetate, 0.1 mM calcium acetate, pH 7.0). High performance liquid chromatography (HPLC) was performed on a Propac PA1 SAX column (4.6 mm! 250 mm). Samples were injected and oligosaccharides eluted with a linear gradient of sodium chloride (0-2.0 M over 90 min). Eluant was monitored in-line for UV absorbance for unlabelled disaccharides (A 232 nm for the detection of unsaturated non-reducing end uronate residues). Recombinant heparitinase Optimization of raw data into effective (unscaled) circular and (scaled) elliptical shapes. The area of discs provides quantitative data (see table <ref type="table">1</ref> for quantitative data for ellipses).</p><p>enzymes were purchased from IBEX technologies (Canada). Software used for the absorbance and fluorescence measurements was the SHIMADZU software: class VP chromatography data system, 4.2 S/N 971122-46 Ã 1-2 acquisition HPLC purchased from Shimadzu Deutschland Gmbl. Data analysis was achieved using MICROSOFT EXCEL 2007 software.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">MATHEMATICAL MODELS</head><p>In the fast-growing field of chemometric techniques used for the quantitative analysis of large datasets, linear algebra plays a crucial role with the so-called factor spaces and factor-based techniques with popular techniques such as the PCA (known as PCA or factor analysis) and partial least squares (PLS) in latent variables <ref type="bibr" target="#b9">(Kramer 1998)</ref>. When chemometrians operate in a factor space, rather than the native data space, they are simply mapping their data into a new coordinate system. They are not actually changing the data itself. The operation is no more difficult than converting from Cartesian to polar coordinates (used to map, for example, electron densities or seasonal population variations). Fourier series, which is commonly used in electrical engineering to map a signal between the time domain and the frequency domain, can also be seen as a transformation of a coordinate system. Indeed, the coordinates of the signal are changed from time and amplitude to frequency and amplitude. However, the signal itself is unchanged. This is also true for the Taylor series, which is used to approximate a curve (or a surface in two dimensions or a hypersurface in higher dimensions) over a bounded region, as a series of power terms yZ a 0 C a 1 x C a 2 x 2 C/C a n x n C/, whereby each power term x i , i2N, can be considered as a new coordinate axis and each coefficient a i is simply the new coordinate on its respective axis.</p><p>With this renewed approach, eigenvectors of a dataset in a factor space and the PCA technique (and its variation PLS) can be encompassed within the unifying concept of geometric transforms attached to the change of coordinate systems. This allows us in turn to bridge these chemometric techniques to the classical field of dynamical systems: eigenvalues computed in the principal eigenvectors (factors) for the datasets are simply the Lyapunov exponents of the associated cloud of points. The dynamics of these datasets can be therefore analysed using powerful mathematical tools developed during the past 40 years in chaos theory (see for instance the seminal papers by <ref type="bibr" target="#b8">Kingman (1968)</ref> and <ref type="bibr" target="#b13">Oseledec (1968)</ref>).</p><p>In this section, we adopt the former geometric viewpoint and the latter concept of average Lyapunov exponent to greatly simplify the analysis of large datasets, exemplifying our original method with a comparative analysis of HS oligosaccharides.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Effective discs</head><p>We consider a finite set of points in the real plane (a graph), fðx i ; y i Þ 2R 2 : iZ 1; N g. We define its centroid (or barycentre) (x c , y c ) as</p><formula xml:id="formula_0">x c Z 1 N X N iZ1 x i ; y c Z 1 N X N iZ1 y i : ð3:1Þ</formula><p>This graph can then be replaced by an effective disc centred on (x c , y c ) and with an effective radius given by</p><formula xml:id="formula_1">R d Z 1 N X N iZ1 ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi ðx i Kx c Þ 2 C ðy i Ky c Þ 2 Â Ã q : ð3:2Þ</formula><p>We note that, in a finite-dimensional vector space, all norms are equivalent. One might therefore have chosen for instance the following definition for the radius R s :</p><formula xml:id="formula_2">R s Z 1 N X N iZ1</formula><p>max½jx i Kx c j; jy i Ky c j; ð3:3Þ which provides us with an effective square region. And of course, other norms and thus other shapes are possible, but the effective disc naturally selects points that are equally distributed (see appendix A). Importantly, the concept of effective disc can be straightforwardly generalized to higher dimensions: the definition (3.1) for the centroid R d is generalized to compute the radius (3.2) of a sphere in three dimensions and a hypersphere otherwise, whereas (3.3) extends, respectively, to side length of cube and hypercube.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Effective ellipses</head><p>If we now want to analyse the anisotropic nature (preferential direction) of a set of N points, we need to look at an effective ellipse that makes an angle</p><formula xml:id="formula_3">q c Z 2 N X N iZ1 arctan y i x i C ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi x 2 i C y 2 i p ! ; ð3:<label>4Þ</label></formula><p>with the horizontal x-axis.</p><p>We can then consider a local frame with axes x 0 y 0 attached to the centroid (x c , y c ), which makes an angle q c with the original axes xy. In this local frame, we define the effective ellipse</p><formula xml:id="formula_4">ðx 0 Kx c Þ 2 a 2 C ðy 0 Ky c Þ 2 b 2 Z 1; ð3:5Þ by its semi-axes a Z ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi ffi 1 N X N iZ1 x 02 i v u u t ; b Z ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi ffi 1 N X N iZ1 y 02 i v u u t : ð3:<label>6Þ</label></formula><p>We note that an ellipse can be viewed as the image of the unit circle centred at point (x c , y c ), under a linear map associated with a symmetric matrix AZPDP T , D being a diagonal matrix with the eigenvalues of A, both of which are real positive, along the main diagonal, and P being a real unitary matrix having as columns the eigenvectors of A.</p><p>Then the axes of the effective ellipse will lie along the eigenvectors of A, and the inverse of the square root of the eigenvalues are the lengths of the semi-major and semi-minor axes a and b. In <ref type="bibr" target="#b12">Nicolet et al. (2008)</ref>, one can find a comprehensive derivation of the Jacobian matrices associated with maps from circles to ellipses (and to arbitrary shapes).</p><p>In our problem, the effective ellipses can be produced by multiplying the x-coordinates of all points on the effective circles by a constant, without changing the y-coordinates. This is equivalent to stretching the effective circles out in the x-direction. Note that one should multiply the resulting matrix on the left-and right-hand sides by the rotation matrix associated with the effective angle q c (see equation (3.4)), i.e. A 0 ZR(q c )AR T (q c ), with R T (q c )ZR(Kq c ). The eigenvalues of A 0 can be computed for different samples k and their mean (L 1 CL 2 )/2 (known as the average Lyapunov exponent in the dynamical systems literature, see Hilborn 1994) quantifies the reproducibility of the experiment. More precisely, the expression</p><formula xml:id="formula_5">L 1 C L 2 Z lim k/CN 1 k ln jdetðA 0 Þ k j ð 3:7Þ</formula><p>should be equal to 0 for the experiment to be reproducible, as shown in appendix B. The reproducibility criterion can be examined by measuring the centre-to-centre spacing (usually within 1%). The centre-to-centre spacing of the effective circles is very small compared with their typical size (radius). Moreover, their radii are similar (within 1% of discrepancy). Hence, we believe that there is enough evidence to claim that the experiments were indeed reproducible. We note that, if we would start the analysis from effective squares of side length 2R s instead of effective circles of diameter 2R d (opting for Cartesian instead of polar coordinates), we would end up with effective rectangles instead of effective ellipses through the same mapping as before. The interpretation of the eigenvalues of the associated matrix A would repeat mutatis mutandis.</p><p>Last, these approaches of effective discs/ellipses and effective squares/rectangles can be straightforwardly extended to higher dimensions. In three dimensions, we would shape optimize the cloud of points in effective spheres/ellipsoids or effective cubes/boxes depending upon whether we use the norm (3.2) or (3.3). In higher dimensions, visualization of datasets would require consideration of, for instance, various cross sections of hyperspheres or hypercubes, hence the simplicity of our spreadsheet approach would become less obvious (use of powerful commercial softwares such as MATLAB would be unavoidable).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">RESULTS AND DISCUSSION</head><p>Digestion of polysaccharide HS using heparitinase results in specific cleavage of HS in regions containing one to four linkages between hexosamines and glucuronic acid residues (i.e. NA domains). This results in the release of intact S domains that can then be separated and analysed using SAX-HPLC. Isolated S domains obtained from different tissues were separated using a linear 2 M salt gradient over 90 min. Standard chromatographic representation of the data is shown in figure <ref type="figure">2</ref>. Structures are separated on the basis of charge with more highly charged structure eluting with longer column retention times. Comparison of this type of data between tissues becomes very difficult once multiple samples are considered. In order to simplify analysis, one can use the dataset of the automatically integrated peaks in order to represent each sample as a cloud of points. At this stage, we can implement the effective disc algorithm described in the previous sections to gain a viewpoint on how diverse the peak elution times are (spreading of circles), indicating how diverse the charges of the HS structures are from its centre point, and its respective location compared with other datasets. Considering our example of three different types of murine organs (as shown in figure <ref type="figure">3</ref>), it is very simple to see at a glance that heart (blue circle) is most shifted to lower column retention times, indicating structures in the S domain are less charged than those of the lung (red circle) and kidney (black circle), which have higher column retention times, indicating more charged structures are present in the S domain. Indeed this is in keeping with the complete compositional data of murine tissues, where the kidney is known to have higher percentages of more highly charged disaccharide structures than that of the murine heart.</p><p>On consideration of the quantitative data presented in table 1 for the heart, lung and kidney, we are able to observe more detailed information. The barycentres of the x-and y-axes, x c and y c points, show that, although the area of the circle is similar in lung and kidney, there is a 2 per cent difference in total retention time in the x c barycentres where lung has a smaller x c value of 12 than kidney, which is 14. Note that, in the case of measuring the similarity between samples, the average difference was 0.4 per cent between the triplicate samples (0.5 min distinguishing peaks from each other, as shown in figure <ref type="figure">4</ref>). The distinction between lung and kidney samples is aided by using elliptical shapes as this gives the direction or anisotropy of the cloud of points from each dataset. This can be considered quantitatively using the angle of rotation. In the case of heart, the angle of rotation of the ellipse shows that the ellipse follows the plane (angle of rotation is 08). When considering kidney and lung, kidney has an 88 rotation angle whereas lung gives a rotation angle of 208. Therefore, the lung displays a Table <ref type="table">1</ref>. Quantitative data associated with figure <ref type="figure">3</ref> whereby the ellipses (with their exact orientation) have been scaled up in a (large eccentricity). Note that the x variable is a time scale (minutes) and the y variable is an absorbance rate for a UV wavelength of 232 nm. Since these two variables differ by few orders of magnitude, we adopted a log scale in figure <ref type="figure">3</ref> to treat them on an equal footing where we needed to scale the ellipses to avoid a vanishing eccentricity in the graph. 3.5!10 6 3.9!10 12 2.5!10 12 steeper gradient in the cloud of points, meaning that there is less of the population present at higher retention times than in kidney. This means that there is a smaller population of the cloud of points with more sulphated structure than in kidney. The analysis of the data shows that there is a 3 per cent difference in the angle of rotation between kidney and lung. This technique in principle can be applied to any system that has different sets of parameters. This is most easily achieved when two parameters x and y are available. Therefore, this can be achieved for mass spectrometry data or microarray analysis, which traditionally uses complex statistical data analysis. We have shown another application of this technique in the example of separation of S-domain structures of the three murine organs separated on the basis of size using gel filtration techniques. Raw data are shown in figure <ref type="figure">5</ref>. Data were selected by comparative elution positions with heparin standards of known size. Shape optimization of these data is shown in figure <ref type="figure" target="#fig_4">6</ref>. Each dataset from each organ, heart (blue), kidney (black) and lung (blue), is optimized into an effective circular disc and this aids the comparison of data. Again we have used a small number of samples to exemplify the method that used the shift in the rightmost x-axis direction giving us an indication of decreasing sizes. All organs now have similar distributions in size as shown in the similar circle areas. However, when the heart structures are separated on the basis of size, the distribution is most shifted to the high retention times. Therefore, indicating that in heart the sizes of the S domains are smaller than in kidney and lung. Although again pictorially similar, the kidney and lung have a 4 per cent difference in retention times in the x c barycentre value. Thus, the use of the effective circular discs allows simple patterns to be drawn out when using different experimental techniques for the same samples.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">CONCLUSION</head><p>On consideration of the area of the effective disc and the effective ellipse (see figure <ref type="figure">2</ref> and<ref type="figure" target="#fig_0">table 1</ref>), the heart has the smallest area whereas the lung and kidney have a TRIzol extraction procedure and consequently digested using heparitinase I enzyme, therefore leaving the S-domain structures intact. The partially digested fractions were purified by gel chromatography on a Superdex peptide PE 7.5/300, run at a flow rate of 0.5 ml min K1 in 0.5 M ammonium hydrogen carbonate, and the elution profile was monitored by absorption at 232 nm over time (min). Peaks were identified through alignment with known authentic standards. much greater area by several orders of magnitude. This can then give us information about the diversity of the structures occurring in the S domain. Therefore, the information indicates that, in the murine heart, the S-domain structures are somewhat similar in their charge density to those of the kidney and lung, which have a greater diversity in their S-domain structures. We note that the areas of effective circles and ellipses differ by several orders of magnitude for all three organs: whereas the area of the blue set of points (heart) is overestimated by the effective circle (see first column of table 1), the areas of the red (lung) and black (kidney) sets of points are underestimated by the effective circle. We attribute this paradoxical tendency to the fact that murine heart is less structurally diverse than murine kidney and lung. The effective circle provides a first estimate for the effective shape of the cloud of points, whereas the effective ellipse refines this estimate and should be used for any accurate quantitative analysis.</p><p>The approach we describe can now be confidently applied to large sample sets as well as extending the approach to certain areas of interest in a chromatographic spectrum, the so-called fingerprint regions. This strategy will also be applicable to other experimental spectra such as mass spectrometry data analysis that may require rapid differentiation of different samples.</p><p>All work carried out conformed to UK legal requirement and guidelines approved by the University of Liverpool Animal Welfare Committee.</p><p>T.M.P. was supported by a PhD studentship funded by the UK Medical Research Council. S.G. is thankful for insightful comments from A. B. Movchan on the mathematical part of the paper and to S. M. Rees for pointing out references <ref type="bibr" target="#b8">(Kingman 1968;</ref><ref type="bibr" target="#b13">Oseledec 1968</ref>). The authors acknowledge constructive comments from the anonymous referees, which improved the manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>APPENDIX A. EQUALLY DISTRIBUTED POINTS IN THE EFFECTIVE DISC</head><p>Let us show that the points located within the effective disc can be modelled through a normal distribution, and in this way can be considered as representative of the overall cloud of points. Let us consider the points (x i , y i ) within the effective disc, which are separated from the centre of mass (x c , y c ) by the distance</p><formula xml:id="formula_6">rZ ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi ffi ðx i Kx c Þ 2 C ðy i Ky c Þ 2 q .</formula><p>The probability that such points lie within the effective disc is</p><formula xml:id="formula_7">PðZ ! R d Þ Z 2p ð R d 0 f Z ðrÞr dr; ðA<label>1Þ</label></formula><p>where Z is the random radial variable and f z is the Rayleigh probability density function given by <ref type="bibr" target="#b21">(Williams 1991</ref>)</p><formula xml:id="formula_8">f Z ðrÞ Z r s 2 X expðKr 2 =2s 2 X Þ; ðA<label>2Þ</label></formula><p>with s X the standard deviation of the random variable X, which in our case is nothing but R d (the standard deviation of a random variable with a normal distribution is the root-mean-square deviation of its values from their mean). This shows that R d can be interpreted as a natural measure of the statistical dispersion of points within the cloud about the centroid.</p><p>Indeed, s X ðrÞZ ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi 1=ðN K1Þ P N iZ1 ðr i KrÞ 2 q admits a unique minimum at rZr c (using s 0 (r)Z0 at rZr c and noting that s 2 X is a quadratic polynomial). Hence, the standard deviation from the centroid is smaller than that from any other point within the cloud.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>APPENDIX B. REPRODUCIBILITY THROUGH AVERAGE LYAPUNOV EXPONENT</head><p>To evaluate the reproducibility of a series of experiments, let us study the change of a small area A n around a given point (x n , y n ) within a sequence of cloud of points. This can be done through the iterative map where JZv(f, g)/v(x, y) is the Jacobian of (B 1) evaluated at point (x n , y n ). From (B 2), it follows that if:</p><p>jdet Jj!1, the area A n contracts; -jdet JjZ1, the area A n is preserved (reproducible experiments); and jdet JjO1, the area A n expands.</p><p>Let us now introduce two small real positive parameters 3 x and 3 y . For a chaotic discrete dynamical system, since we expect the distance between the successive images of two neighbouring points (x 1 , y 1 ) and (x 1 C3 x , y 1 C3 y ) within the initial cloud of points to Therefore, the number of points of integrated peaks has been dramatically reduced. These data have then been optimized into effective circular shapes. Note that there are some overlay data points that are masked by certain spots.</p><p>grow exponentially with n, we write <ref type="bibr" target="#b7">(Hilborn 1994)</ref> jdx n j Z jf ðnÞ ðx 1 C3 x ; y 1 ÞKf ðnÞ ðx 1 ; y 1 Þjw3 x expðnLE 1 Þ; jdy n j Z jg ðnÞ ðx 1 ; y 1 C3 y ÞKg ðnÞ ðx 1 ; y 1 Þjw3 y expðnLE 2 Þ:</p><p>) ðB 3Þ</p><p>Note that dx n and dy n correspond to the semi-axes of the sequence of effective ellipses of area A n Zpdx n dy n . These two asymptotic expressions can be recast as </p><formula xml:id="formula_9">LE</formula></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Structural features of HS. Disaccharide repeat unit consists of uronic acid residue and glucosamine residue. Various biosynthetic modifications can occur on the R positions of the monosaccharide units, involving functional groups, H hydroxyl, COCH 3 acetyl groups and SO 3 sulphate groups. R 1 ZH or SO K 3 , R 2 ZH or SO K 3 , and R 3 ZH 2 COCH 3 or SO K 3 . Sulphated domains (S domains) contain N-sulphated disaccharides with IdoA-2-O sulphate as major uronate component. N-acetylated (NA) domains are non-sulphated and acetylated regions. By contrast, N-acetylated and N-sulphated (NA/NS) domains contain alternating N-acetylated and N-sulphated units. Red arrows show the cleavage sites of heparitinase I enzymes. Carbon positions are labelled with red as 2, 3 and 6 and N.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .Figure 3 .</head><label>23</label><figDesc>Figure 2. Strong anion exchange chromatography showing: (a) the separation of heparitinase I-derived HS oligosaccharides from S-domain structures of different murine organs, kidney (i), lung (ii) and heart (iii); and (b) the expansion of (a) showing detail of chromatograms from 20 to 80 min. Structures were separated on a ProPac PA1 column using a 0-2 M NaCl gradient over 90 min. Vertical axis shows the scale of (iii); other chromatograms are to the same scale.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 4 .Figure 5 .</head><label>45</label><figDesc>Figure4. Three different kidney samples (yellow, red and pink) prepared on different days and separated using different preparations of the same 2 M buffer (absorbance is in milliabsorbance units). Data for automatically integrated peaks were shape optimized into circles. Reproducibility and precision of the data are visually checked. They can be measured quantitatively using the effective disc technique (by numerical comparison of centre's locations and radii, e.g. discrepancy in x c values is 0.4% of the total 90 min and the areas of the circles are all of the same magnitude, 10 10 ). The average Lyapunov exponent describing the area preserving nature of the three corresponding effective ellipses vanishes within 1% of inaccuracy, cf. text in §3.2.absorbance (232nm) in arbitrary units</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>x nC1 Z f ðx n ; y n Þ; y nC1 Z gðx n ; y n Þ; ) ðB1Þsince the change of area can be expressed as ðA nC1 dx nC1 dy nC1 Z ð A n jdet J j dx n dy n ; ðB2Þ</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 6 .</head><label>6</label><figDesc>Figure6. Optimization of HS structures separated according to size. Gel filtration raw data (figure5) have been selected according to correspondence with heparin size standards for the murine tissues heart (blue), kidney (black) and lung (red). Therefore, the number of points of integrated peaks has been dramatically reduced. These data have then been optimized into effective circular shapes. Note that there are some overlay data points that are masked by certain spots.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head></head><label></label><figDesc>1 Z lim 1 and L 2 are the eigenvalues of the Jacobian J Z J ðx n ; y n ÞJ ðx nK1 ; y nK1 Þ.J ðx 2 ; y 2 ÞJ ðx 1 ; y 1 Þ: ðB 5Þ LE 1 and LE 2 are the so-called Lyapunov exponents. If either (or both) LE k O0, then there is a sensitive dependence on the initial condition (x 1 , y 1 ): in other words, if LE 1 O0 and LE 2 !0 (or the way around), then there is still sensitive dependence upon (x 1 , y 1 ). But, as it turns out, the reproducibility of experiments amounts to checking whether the average Lyapunov exponent (LE 1 CLE 2 )/2 vanishes or not.Indeed, the sum of the Lyapunov exponents satisfiesLE 1 C LE 2 Z lim</figDesc><table><row><cell>n/N</cell><cell>1 n</cell><cell>dx n 3 x</cell><cell cols="3">Z lim n/N</cell><cell>1 n</cell><cell>dx n dx 1</cell><cell cols="3">Z lim n/N</cell><cell>1 n</cell><cell>lnjL 1 j;</cell><cell>9 &gt; &gt; &gt; &gt; =</cell></row><row><cell>LE 2 Z lim n/N</cell><cell>1 n</cell><cell>dy n 3 y</cell><cell cols="3">Z lim n/N</cell><cell>1 n</cell><cell>dy n dy 1</cell><cell cols="3">Z lim n/N</cell><cell>1 n</cell><cell>lnjL 2 j;</cell><cell>&gt; &gt; &gt; &gt; ;</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>ðB 4Þ</cell></row><row><cell cols="3">where L n/N</cell><cell>1 n</cell><cell cols="6">ðlnjL 1 j C lnjL 2 jÞ</cell></row><row><cell></cell><cell cols="2">Z lim n/N</cell><cell>1 n</cell><cell cols="5">lnjL 1 L 2 j Z lim n/N</cell><cell>1 n</cell><cell>lnjdet Jj</cell></row><row><cell></cell><cell cols="2">Z lim n/N</cell><cell>1 n</cell><cell>iZ1 X n</cell><cell cols="3">lnjdet J ðx</cell><cell></cell><cell></cell></row></table><note><p>i ; y i Þj: ðB 6Þ</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>on January 3, 2011 rsif.royalsocietypublishing.org Downloaded from</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>J. R. Soc.Interface (2009)   </p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><p>We conclude that if jdet J(x i , y i )jZ1 for iZ1, ., n (area preserving dynamical system, i.e. reproducible experiments), then LE 1 CLE 2 Z0.</p></div>
+			</div>			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Functions of cell surface heparan sulfate proteoglycans</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bernfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Reizes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Fitzgerald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lincecum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zako</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.biochem.68.1.729</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annu. Rev. Biochem</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page" from="729" to="777" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Introduction to the calculus of variations</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Dacorogna</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<publisher>Imperial College Press</publisher>
+			<pubPlace>London, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Molecular diversity of heparan sulfate</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Esko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Lindahl</surname></persName>
+		</author>
+		<idno type="DOI">10.1172/JCI13530</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Clin. Invest</title>
+		<imprint>
+			<biblScope unit="volume">108</biblScope>
+			<biblScope unit="page" from="169" to="173" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Variant heparan sulfates synthesized in developing mouse brain differentially regulate FGF signaling</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ford-Perriss</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/glycob/cwf072</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Glycobiology</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="721" to="727" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Extracellular regulation of developmental cell signalling by XtSulf1</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">M</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">C</forename><surname>Guiral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Holme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Turnbull</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Pownall</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ydbio.2008.05.554</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Dev. Biol</title>
+		<imprint>
+			<biblScope unit="volume">320</biblScope>
+			<biblScope unit="page" from="436" to="445" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Multiprotein signalling complexes: regional assembly on heparan sulphate</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gallagher</surname></persName>
+		</author>
+		<idno type="DOI">10.1042/BST0340438</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biochem. Soc. Trans</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="438" to="441" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Activating and inhibitory heparin sequences for FGF-2 (basic FGF)</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Guimond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Maccarana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">B</forename><surname>Olwin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Lindahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rapraeger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Biol. Chem</title>
+		<imprint>
+			<biblScope unit="volume">268</biblScope>
+			<biblScope unit="page" from="906" to="923" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+	<note>Distinct requirements for FGF-1, FGF-2, and FGF-4</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Chaos and nonlinear dynamics</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Hilborn</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994">1994</date>
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The ergodic theory of subadditive stochastic processes</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F C</forename><surname>Kingman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. R. Stat. Soc. Ser. B</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="499" to="510" />
+			<date type="published" when="1968">1968</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Chemometric techniques for quantitative analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kramer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>Marcel Dekker, Inc</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Purification and characterization of heparin lyases from Flavobacterium heparinum</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Lohse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Linhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Biol. Chem</title>
+		<imprint>
+			<biblScope unit="volume">267</biblScope>
+			<biblScope unit="page">355</biblScope>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Asymptotic estimates for localized electromagnetic modes in doubly periodic structures with defects</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Guenneau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Mcphedran</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rspa.2006.1800</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. R. Soc. A</title>
+		<imprint>
+			<biblScope unit="volume">463</biblScope>
+			<biblScope unit="page" from="1045" to="1067" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Geometrical transformations and equivalent materials in computational electromagnetism</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nicolet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zolla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ould Agha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Guenneau</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/03321640810878216</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Comput. Math. Electr. Electron. Eng</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="806" to="819" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A multiplicative ergodic theorem: liapunov characteristic numbers for dynamical systems</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">I</forename><surname>Oseledec</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Mosc. Math. Soc</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="197" to="231" />
+			<date type="published" when="1968">1968</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Bacterial degradation of heparin</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename><surname>Payza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">D</forename><surname>Korn</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/177088a0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="page" from="88" to="89" />
+			<date type="published" when="1956">1956</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Interactions of heparin/heparan sulfate with proteins: appraisal of structural factors and experimental approaches</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Powell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Yates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Fernig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Turnbull</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/glycob/cwh051</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Glycobiology</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Heparan sulfate oligosaccharides require 6-O-sulfation for promotion of basic fibroblast growth factor mitogenic activity</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Pye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Vives</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Turnbull</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hyde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gallagher</surname></persName>
+		</author>
+		<idno type="DOI">10.1074/jbc.273.36.22936</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Biol. Chem</title>
+		<imprint>
+			<biblScope unit="volume">273</biblScope>
+			<biblScope unit="page" from="936" to="958" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Fast data preprocessing for chromatographic fingerprints of tomato cell wall polysaccharides using chemometric methods</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Quemener</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Bertrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Marty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Causse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lahaye</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.chroma.2006.11.069</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chromatogr. A</title>
+		<imprint>
+			<biblScope unit="volume">1141</biblScope>
+			<biblScope unit="page" from="41" to="49" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Emerging glycomics technologies</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Turnbull</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Field</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nchembio0207-74</idno>
+		<idno>doi:10.1038</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Chem. Biol</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="207" to="0274" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">A strategy for rapid sequencing of heparan sulfate and heparin saccharides</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Turnbull</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Hopwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Gallagher</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.96.6.2698</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Natl Acad. Sci. USA</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="page" from="2698" to="2703" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Heparan sulfate: decoding a dynamic multifunctional cell regulator</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Turnbull</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Powell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Guimond</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0962-8924(00)01897-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Trends Cell Biol</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="75" to="82" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Electrical engineering probability</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">H</forename><surname>Williams</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991">1991</date>
+			<publisher>West Publishing Company</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

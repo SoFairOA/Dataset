@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Insight Note: X-ray Photoelectron Spectroscopy (XPS) Peak Fitting of the Al 2p Peak from Electrically Isolated Aluminum Foil with Oxide Layer</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Alvaro</forename><forename type="middle">J</forename><surname>Lizarbe</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Chemistry and Biochemistry</orgName>
+								<orgName type="institution">Brigham Young University</orgName>
+								<address>
+									<postCode>C100 BNSN, 84602</postCode>
+									<settlement>Provo</settlement>
+									<country>Utah</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">George</forename><forename type="middle">H</forename><surname>Major</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Chemistry and Biochemistry</orgName>
+								<orgName type="institution">Brigham Young University</orgName>
+								<address>
+									<postCode>C100 BNSN, 84602</postCode>
+									<settlement>Provo</settlement>
+									<country>Utah</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Neal</forename><surname>Fairley</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Casa Software Ltd</orgName>
+								<address>
+									<settlement>Bay House, Teignmouth</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Vincent</forename><surname>Fernandez</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Institut des Matériaux</orgName>
+								<orgName type="institution" key="instit1">Université de Nantes</orgName>
+								<orgName type="institution" key="instit2">Nantes Jean Rouxel</orgName>
+								<orgName type="institution" key="instit3">CNRS</orgName>
+								<address>
+									<settlement>Nantes</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Matthew</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Chemistry and Biochemistry</orgName>
+								<orgName type="institution">Brigham Young University</orgName>
+								<address>
+									<postCode>C100 BNSN, 84602</postCode>
+									<settlement>Provo</settlement>
+									<country>Utah</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Insight Note: X-ray Photoelectron Spectroscopy (XPS) Peak Fitting of the Al 2p Peak from Electrically Isolated Aluminum Foil with Oxide Layer</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1002/sia.7238</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-09T13:41+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>X-ray photoelectron spectroscopy</term>
+					<term>XPS</term>
+					<term>peak fitting</term>
+					<term>aluminum</term>
+					<term>aluminum oxide</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>X-ray photoelectron spectroscopy (XPS) is the most widely used and important method for chemically analyzing and speciating surfaces. XPS is surface sensitivity (5 -10 nm), quantitative, and able to probe the oxidation states of the elements at surfaces (speciate). However, during the past few years, a great deal of incorrect XPS data analysis has entered the scientific literature. Accordingly, efforts, including this Insight Note, are being made to provide tutorial information to the scientific community. Aluminum is a scientifically and technologically important element. Here we discuss approaches for fitting the Al 2p peak envelope from a sample of aluminum foil with a thin layer of oxide on it. Signals from both the metal and oxide are present. We discuss methods for electrically isolating (or not isolating) the sample during data acquisition, the choice of the baseline, fitting the oxide peak with one or two synthetic peaks, and fitting the metal signal with two symmetric or two asymmetric peaks.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>X-ray photoelectron spectroscopy (XPS) is a widely used surface characterization technique that often provides significant insight into the chemistry of materials. <ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref> It can be both qualitative and quantitative. XPS is based on the photoelectric effect. It involves excitation from X-rays that can penetrate on the order of a micron into a material. In XPS, these X-rays have a known energy and eject both core and valence electrons from a sample. However, because of their limited mean free paths, the electrons generated in conventional XPS experiments can only escape in an unattenuated fashion from the upper 5 -10 nm of materials. The kinetic energies of these zero-loss electrons depend directly on their binding energies in the sample and the energies of the incident X-rays. Peak fitting is used to extract chemical information from XPS spectra. In peak fitting, a background is first chosen for an experimental spectrum. Synthetic (mathematical) peaks are then placed above this background, where the sum of these synthetic peaks should approximate the experimental data. Peaks with a significant amount of Gaussian and/or Lorentzian character, such as Gaussian-Lorentzian sum and product functions, and also Voigt functions, are typically used for XPS peak fitting. <ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref> Appropriate constraints must often be applied to fit components. <ref type="bibr" target="#b9">10</ref> In some cases, asymmetry must be added to these peaks.</p><p>The residuals of peak fits and a figure-of-merit like the residual standard deviation of the fit are often used to assess the quality of a peak fit. <ref type="bibr" target="#b10">11</ref> A consequence of the significant increase in the popularity and importance of XPS over the past twenty years has been that fewer experts have been involved in XPS data collection and analysis. As a result, less accurate XPS data and data analysis are being reported in the scientific literature. Aware of this situation, the community of XPS experts has been writing books, tutorials, and standards on the technique for years, including a recent set of guides on the topic. <ref type="bibr" target="#b0">1,</ref><ref type="bibr" target="#b1">2,</ref><ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref><ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref> The community has also published many reference spectra in both Surface Science Spectra and other data bases. <ref type="bibr" target="#b21">22,</ref><ref type="bibr" target="#b22">23</ref> Another recent effort along these lines is these Insight Notes in Surface and Interface Analysis, which provide readers with specific, relevant examples of XPS data analysis and data collection.</p><p>In this Insight Note, we peak fit an Al 2p narrow scan collected from a piece of aluminum foil. We first discuss the effects of sample mounting, including the importance of electrically isolating the sample to avoid differential charging. We then describe the selection of the background, fitting of the broad aluminum oxide peak, and fitting of the narrower aluminum metal peak. Finally, we revisit our treatment of the background. In our fitting, we account for spin-orbit splitting, the two different chemical states of aluminum, the mathematical forms of the synthetic peaks, and the type of background for the fit. Of course, the XPS of aluminum, including analyses of the Al 2p region, have been considered multiple times in the past by various researchers. <ref type="bibr" target="#b3">4,</ref><ref type="bibr" target="#b4">5,</ref><ref type="bibr" target="#b13">14,</ref><ref type="bibr" target="#b15">16,</ref><ref type="bibr" target="#b23">[24]</ref><ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref><ref type="bibr" target="#b26">[27]</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Experimental</head><p>A piece of aluminum foil with layers of oxide on its top/analyzed surface and underside was measured with a Kratos Axis NOVA (XPS) surface analysis spectrometer. It employed an Al monochromatic source (300 W) with a pass energy of 10 eV and energy steps of 0.1 eV. The sample was charge compensated using Kratos' proprietary neutralizer in the spectrometer. All data that was peak fitted was processed using CasaXPS version 2.3.25PR1.0. <ref type="bibr" target="#b27">28</ref> The relative sensitivity factors (RSF) of both the Al oxide and Al metal synthetic peaks were determined using the CasaXPS library. The RSF values were 0.5371 relative to the C1s peak, which was defined as unity. None of the peaks that were peak fitted were charge corrected by the software.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Sample preparation and mounting</head><p>The ejection of electrons from materials in XPS leaves positive holes that can lead to sample charging. This issue is generally of no consequence for metallic samples that are in good electrical contact with the instrument. However, it can be a problem for insulating and semiconducting samples if charge builds up in them. The resulting sample charging may occur over the course of an experiment and lead to distorted signals that drift towards higher binding energies. Charge compensation devices, including electron flood guns, are widely used to prevent (or at least mitigate) sample charging. Differential charging takes place when a sample charges differently at different locations, i.e., when different regions of it are at different potentials. Differential charging is a concern for heterogenous samples, such as those that have both insulating and conducting regions. Differential charging can take place gradually. For example, Figure <ref type="figure" target="#fig_0">1</ref> shows the Al 2p region of a piece of aluminum foil with an oxide layer on it that was attached directly to the sample stage. No charge compensation was applied during this analysis, and spectra were taken at different times while the sample was irradiated with X-rays. Figure <ref type="figure" target="#fig_0">1</ref> shows that while the lower energy signal from the metal remains constant, the oxide peak gradually shifts to higher binding energy, indicating differential charging. Differential charging can take place either laterally or vertically in materials. Effective sample mounting is important for limiting or preventing differentially charging. <ref type="bibr" target="#b26">27</ref> Samples containing both metallic and oxide components are often best analyzed by electrically isolating them with a piece of double-sided adhesive tape (see Figure <ref type="figure" target="#fig_1">2</ref>) or a glass slide and then charge compensating them. <ref type="bibr" target="#b28">29</ref> The former approach was taken for the sample analyzed in this work. It yielded the stable spectrum shown in Figure <ref type="figure" target="#fig_2">3</ref>, which was analyzed/fit in this work.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Background</head><p>Backgrounds are used to separate the zero-loss signal (the peaks of interest) in an XPS data envelope from the signal from inelastically scattered electrons. The three most commonly used backgrounds are the linear, Shirley, and Tougaard backgrounds. <ref type="bibr" target="#b15">16,</ref><ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b30">31</ref> In Figure <ref type="figure" target="#fig_2">3</ref>, the lack of a significant rise in the baseline across the spectrum, i.e., the fact that there is a considerable amount of continuity from one side of the peak envelope to the other, suggests that any of the three major backgrounds might be reasonable choices for it. Figures <ref type="figure">4a -c</ref> show linear, Shirley, and Tougaard backgrounds, respectively, applied to this narrow scan, and Figure <ref type="figure">4d</ref> shows all three backgrounds overlayed. As predicted, all three backgrounds are quite similar for this narrow scan. Indeed, the Shirley background follows the linear background closely, while the Tougaard background shows a small dip compared to the other two, which is typical of it. However, just because the backgrounds for this fit are quite similar, i.e., they should not affect the final results (peak areas) significantly, does not mean that background selection in XPS is always easy or that backgrounds are interchangeable. In some cases, there is a considerable amount of uncertainty associated with background selection and certain backgrounds are inappropriate.</p><p>In general, the background for a fit should cut through the middle of the noise/baseline on either side of the peak envelope or run just below it. However, it can be difficult to know where the chosen background should merge with the inelastic signal on the sides of the peak envelope. For example, s-orbital photoemission peaks are often broad and show strong Lorentzian character, which is Binding Energy (eV)</p><p>a result of their short core-hole lifetime and the uncertainty principle. <ref type="bibr" target="#b31">32,</ref><ref type="bibr" target="#b32">33</ref> That is, because these peaks are inherently broad, they are less affected by other broadening mechanisms through convolution and they often retain a significant amount of Lorentzian character. Thus, it is not always clear when the long tails from these peaks have merged with the inelastic background. Because it is the simplest choice, the peaks in Figure <ref type="figure" target="#fig_2">3</ref> are reasonably localized in space, there is not a significant rise in the baseline across the peak envelope, and there is reasonable continuity across the baseline, we start our fit with the linear background shown in Figure <ref type="figure">4a</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Aluminum Oxide Peak</head><p>Aluminum oxidizes quickly when it is exposed to oxygen. As expected, a thin layer of oxide was present on the aluminum sample that generated the spectrum in Figure <ref type="figure" target="#fig_2">3</ref>. The signal from this oxide corresponds to the broader, symmetric peak at higher binding energy in this spectrum. The irregularly shaped signal at lower binding energy is due to the metal. <ref type="bibr" target="#b25">26</ref> The oxide peak is at higher binding energy because oxygen is more electronegative than aluminum. Oxygen withdraws electron density from aluminum and deshields it, so its electrons 'feel' the nuclear charge to a greater extent, i.e., initial state effects dominate this signal. The oxide peak is broader than the metal peak. This has been attributed to phonon broadening. <ref type="bibr" target="#b15">16,</ref><ref type="bibr" target="#b33">34</ref> In addition, the oxide is expected to be less ordered than the metal, which should also contribute to peak broadening.</p><p>We now describe two ways to fit this oxide peak. The first is to fit it with a single, broad, symmetric peak. Of course, this approach ignores the spin-orbit splitting that is always present for p, d, and f signals in XPS. However, the broad, higher binding energy oxide signal from Al in Figure <ref type="figure" target="#fig_2">3</ref> is often well approximated with a single, broad fit component (see Figure <ref type="figure">5a</ref>). The second way to fit this broad signal accounts for spin-orbit splitting. We prefer this second approach because it explicitly accounts for the theory underlying the signal. In Figure <ref type="figure">5b</ref>, the oxide peak is well fit with two spin-orbit peaks/components that have a 2:1 area ratio, a fixed energy spacing that was obtained from the literature (0.44 eV), and equal widths. <ref type="bibr" target="#b24">25</ref> However, this 0.44 eV spacing is quite small, so it is, again, generally only observed in high-resolution measurements of narrow signals. We only see evidence for spin-orbit splitting in the metal signals in our spectrum. The breadth of the oxide spin-orbit signals and the small spacing between the Al 2p 3/2 and 2p 1/2 peaks ultimately create a broad signal that appears as a single peak. Furthermore, unless this spectrum is obtained at high resolution, the metallic spin-orbit signals will also appear as a single peak. Thus, for low-resolution Al 2p spectra, both the oxide and metallic peaks can be modeled as single symmetric signals, although, again, we recommend accounting for spin-orbit splitting. An additional, chemical complication of fitting aluminum oxide peaks is that the signals from aluminum oxide and aluminum hydroxides overlap, and both are expected to be present in the type of oxide analyzed in this work. <ref type="bibr" target="#b25">26</ref> We emphasize that the successful use of two synthetic peaks to model the aluminum oxide and aluminum signals depends on appropriately constraining them, e.g., the two synthetic peaks in each case have the same widths. <ref type="bibr" target="#b9">10</ref> Finally, while we are trying to account for the underlying physics of spin-orbit splitting in our fitting of the oxide signal, the existence of one or more doublets (at least not in the oxide peak) is not implied by our analysis. The synthetic peaks used here were symmetric Voigt functions, as embodied in the Asymmetric Lorentzian (LA) function. <ref type="bibr" target="#b34">35</ref> The '(50)' in 'LA(50)' indicates that this peak shape has (roughly) 50% Gaussian character -its Gaussian character is between the minimum (0) and maximum (100) levels possible for this peak shape.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Aluminum Metal Peak</head><p>In addition to being narrower than their corresponding oxide peaks, peaks from metals are often asymmetric. This asymmetry is due to promotion of electrons into the conduction band during photoemission, which is a final state effect. <ref type="bibr" target="#b0">1,</ref><ref type="bibr" target="#b15">16</ref> Accordingly, the degree of asymmetry in metal peaks depends on the number of states at the Fermi level. The high shoulder on the high binding energy side of the metallic signal at ca. 68.6 eV is consistent with asymmetry in these signals. We fitted the metallic (low binding energy) peaks in our Al 2p spectrum with both symmetric (Figure <ref type="figure">6a</ref>) and asymmetric (Figure <ref type="figure">6b</ref>) synthetic peaks. The fit in Figure <ref type="figure">6b</ref> with the asymmetric peaks produces a better residual standard deviation for the fit. A better fit is generally obtained in XPS peak fitting when the model better reflects the underlying physics of the problem. More specifically, to fit the Al metallic peaks, we used a generalized asymmetric Lorentzian line shape with an added ST modifier. This modification allowed us to introduce asymmetry to the left side of the peak, better representing the underlying physics. The ST(µ) modifier combines a Shirley-like step with a bell-shaped component in which the parameter determines the relative contributions of the step. <ref type="bibr" target="#b35">36</ref> As the value of µ increases a subtle rise appears on the tail end of the peak towards higher binding energy, while a gradual dip emerges on the tail end towards lower binding energy.   While, as noted above, a linear background works reasonably well for our Al 2p spectrum, we ultimately decided to replace it with a Shirley-type background because it better approximates/follows the shape of the background on the sides of the peak envelope (see Figure <ref type="figure">7</ref>). We optimized the ST(µ) parameter in this fit by varying it as shown in Figure <ref type="figure" target="#fig_8">8</ref>. While allowing the asymmetry produced by this parameter to vary, the constraints on the other parameters remained the same. The optimal value for µ that we obtained lowered the residual standard deviation for the fit to a value that is closer to unity. Overall, we believe that this fit well approximates the underlying physics of this problem.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">Revisiting the background</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Quantification of Oxide Layer</head><p>The Al 2p peak areas from the metal and oxide can be used to estimate the thickness of the oxide layer (see Equation <ref type="formula">1</ref>). Equation <ref type="formula">1</ref>is based on the Beer-Lambert Law. <ref type="bibr" target="#b36">37</ref> It assumes a uniform surface layer of oxide, , with a thickness that is calculated in ngstroms as follows:</p><p>, where the inelastic mean free paths (IMFP) of the aluminum oxide ( ) and aluminum metal ( ) are about 28 and 26 respectively, the ratio of the densities of aluminum and aluminum oxide was 1.5, and the intensities for the oxide ( ) and metal ( ) are obtained from a peak fit model. These IMFP and density values were obtained from Strohmeier. <ref type="bibr" target="#b25">26,</ref><ref type="bibr" target="#b36">37</ref> These values match the IMFPs reported by the NIST database. <ref type="bibr" target="#b25">26,</ref><ref type="bibr" target="#b37">38</ref> Using the equation above with an electron take off angle of 90 degrees, the values just mentioned, and peak areas obtained from the fit in Figure <ref type="figure" target="#fig_8">8</ref>, an oxide layer thickness of 33 is obtained. This value is in reasonable agreement with the thicknesses of aluminum oxide observed by Strohmeir on his sample (40 ± 4 ). <ref type="bibr" target="#b25">26,</ref><ref type="bibr" target="#b36">37</ref> These values agree with others in the literature (2 -4 nm). <ref type="bibr" target="#b38">[39]</ref><ref type="bibr" target="#b39">[40]</ref><ref type="bibr" target="#b40">[41]</ref> The maximum oxide thickness that can be reasonably determined by this equation/method is 75-85 . <ref type="bibr" target="#b25">26</ref> Spectroscopic ellipsometry can be used to measure much thicker aluminum oxide layers. <ref type="bibr" target="#b41">42,</ref><ref type="bibr" target="#b42">43</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusion</head><p>This Insight Note describes an approach to fitting an Al 2p spectrum with both oxide and metallic signals.</p><p>Our preferred fit uses two broad, symmetric peaks with a 2:1 area ratio, the same widths, and an energy difference of 0.44 eV to fit the oxide signal and two narrower asymmetric peaks with the same area ratio, same widths, and an energy difference of 0.44 eV to describe the metal. These fit components sat on a Shirley background, although a linear background was a decent approximation to the background and a Tougaard background should have also been adequate (the final peak areas would not have been strongly affected). We believe the fit in Figure <ref type="figure" target="#fig_8">8</ref> reasonably captures the physics and chemistry of this problem.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. XPS Al 2p spectrum of aluminum foil with oxide layer in direct contact with the sample holder with no charge compensation applied. The three spectra here were taken at different times: red spectrum: early time, green spectrum: intermediate time, blue spectrum: latest time. The oxide peak shifts to higher binding energy as the analysis time increases. The signal from the metal does not shift.</figDesc><graphic coords="5,121.13,384.00,370.20,254.43" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Mounting of a piece of aluminum foil with oxide on electrically isolating tape. This figure was recreated; it is based on an image in a YouTube video on the subject of this paper.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Al 2p spectrum of aluminum foil with a thin layer of oxide on it. The sample was mounted by electrically isolating it as shown in Figure 2.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Al 2p narrow scan with (a) linear, (b) Shirley, and (c) Tougaard backgrounds applied to it. (d) All three backgrounds overlayed: Shirley (green, top), linear (black, middle), and Tougaard (blue, bottom).</figDesc><graphic coords="7,72.00,195.54,468.00,327.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Peak fits of the oxide signal/peak in an Al 2p narrow scan with (a) a single, broad, symmetric signal, and (b) two symmetric peaks with a 2:1 area ratio and equal widths. The synthetic peaks used here were symmetric Voigt functions, as embodied in the Asymmetric Lorentzian (LA) function.<ref type="bibr" target="#b34">35</ref> The '(50)' in 'LA(50)' indicates that this peak shape has (roughly) 50% Gaussian character -its Gaussian character is between the minimum (0) and maximum (100) levels possible for this peak shape.</figDesc><graphic coords="9,164.25,264.73,285.83,161.82" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 63 .Figure 7 .</head><label>637</label><figDesc>Figure 63. Peak fitting of the metallic signal in the Al 2p peak envelope with (a) symmetric LA line shapes (Voigt functions) and (b) asymmetric LA line shapes with a parameter (ST) that controls the exponential tail. Both the ST parameter and the second LA parameter/peak shape with a value of 1.63 in the LA function control the exponential tail (asymmetry).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 8 .</head><label>8</label><figDesc>Figure 8. Optimization plot for the ST(µ) parameter line shape. The sharp drop in the graph is indicative of the best parameter for the line shape at the minimum in the curve.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>1,11])LA(1,1.63,143)</head><label></label><figDesc></figDesc><table><row><cell></cell><cell>25</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>CPS x 10 -2</cell><cell>15 20</cell><cell cols="4">Residual STD = 1.059 Residual STD = 1.059 Name Al 2p 3/2 Al 2p 1/2 Al 2p 3/2 L.Sh. ST(1.3)LA(1,1.63,143) LA(50) LA(50)</cell><cell>%Area 25.44 15.79 50.87</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>10</cell><cell>Al 2p 1/2</cell><cell cols="3">ST(1.3)LA(1,1.63,143)</cell><cell>7.90</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>5</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>0</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>75</cell><cell>74</cell><cell></cell><cell>73</cell><cell>72</cell><cell></cell><cell>71</cell><cell>70</cell><cell>69</cell><cell>68</cell><cell>67</cell><cell>66</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="3">Binding Energy (eV)</cell></row><row><cell></cell><cell></cell><cell>127</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">126.5</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">CPS</cell><cell>126</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">125.5</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>125</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>9 10 11</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>ST([</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Van Der Heide</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Photoelectron</forename><surname>X-Ray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Spectroscopy</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Wiley</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/9781118162897</idno>
+		<ptr target="https://doi.org/10.1002/9781118162897" />
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Introduction to X-Ray Photoelectron Spectroscopy</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">A</forename><surname>Stevie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Donley</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000412</idno>
+		<ptr target="https://doi.org/10.1116/6.0000412" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">63204</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A Step-by-Step Guide to Perform x-Ray Photoelectron Spectroscopy</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Greczynski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hultman</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/5.0086359</idno>
+		<ptr target="https://doi.org/10.1063/5.0086359" />
+	</analytic>
+	<monogr>
+		<title level="j">J Appl Phys</title>
+		<imprint>
+			<biblScope unit="volume">2022</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">11101</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Practical Guide for Curve Fitting in X-Ray Photoelectron Spectroscopy</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Major</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M A</forename><surname>Sherwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Terry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Artyushkova</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000377</idno>
+		<ptr target="https://doi.org/10.1116/6.0000377" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">61203</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Practical Guide for Curve Fitting in x-Ray Photoelectron Spectroscopy</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Major</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M A</forename><surname>Sherwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Terry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Artyushkova</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Erratum</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0002004</idno>
+		<ptr target="https://doi.org/10.1116/6.0002004" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">57001</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note>J. Vac. Sci. Technol. A</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">A Detailed View of the Gaussian-Lorentzian Sum and Product Functions and Their Comparison with the Voigt Function</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Major</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/SIA.7050</idno>
+		<ptr target="https://doi.org/10.1002/SIA.7050" />
+	</analytic>
+	<monogr>
+		<title level="j">Surface and Interface Analysis</title>
+		<imprint>
+			<biblScope unit="volume">2022</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="262" to="269" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Rapid Evaluation of the Voigt Function and Its Use for Interpreting X-Ray Photoelectron Spectroscopic Data</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sherwood</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/SIA.6577</idno>
+		<ptr target="https://doi.org/10.1002/SIA.6577" />
+	</analytic>
+	<monogr>
+		<title level="j">Surface and Interface Analysis</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="254" to="274" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The Gaussian-Lorentzian Sum, Product, and Convolution (Voigt) Functions in the Context of Peak Fitting X-Ray Photoelectron Spectroscopy (XPS) Narrow Scans</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Biesinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/J.APSUSC.2018.03.190</idno>
+		<ptr target="https://doi.org/10.1016/J.APSUSC.2018.03.190" />
+	</analytic>
+	<monogr>
+		<title level="j">Appl Surf Sci</title>
+		<imprint>
+			<biblScope unit="volume">447</biblScope>
+			<biblScope unit="page" from="548" to="553" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Surface Analysis Insight Note: Synthetic Line Shapes, Integration Regions and Relative Sensitivity Factors</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Baltrusaitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/SIA.7155</idno>
+		<ptr target="https://doi.org/10.1002/SIA.7155" />
+	</analytic>
+	<monogr>
+		<title level="j">Surface and Interface Analysis</title>
+		<imprint>
+			<biblScope unit="volume">2023</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="9" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Guide to XPS Data Analysis: Applying Appropriate Constraints to Synthetic Peaks in XPS Peak Fitting</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Major</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">F</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0001975</idno>
+		<ptr target="https://doi.org/10.1116/6.0001975" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">2022</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">63201</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Practical Guide to Understanding Goodness-of-Fit Metrics Used in Chemical State Modeling of x-Ray Photoelectron Spectroscopy Data by Synthetic Line Shapes Using Nylon as an Example</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bargiela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Baltrusaitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0002196</idno>
+		<ptr target="https://doi.org/10.1116/6.0002196" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">2022</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">13203</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Preparation and Mounting for XPS and Other Surface Analytical Techniques</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">A</forename><surname>Stevie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shallenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Newman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Donley</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Sample</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Handling</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000421</idno>
+		<ptr target="https://doi.org/10.1116/6.0000421" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">63202</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Procedure Which Allows the Performance and Calibration of an XPS Instrument to Be Checked Rapidly and Frequently</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wolstenholme</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000224</idno>
+		<ptr target="https://doi.org/10.1116/6.0000224" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">43206</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Tutorial on Interpreting X-Ray Photoelectron Spectroscopy Survey Spectra: Questions and Answers on Spectra from the Atomic Layer Deposition of Al2O3 on Silicon</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">I</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Roychowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">B</forename><surname>Rayner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>O'toole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Baer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/1.5043297</idno>
+		<ptr target="https://doi.org/10.1116/1.5043297" />
+	</analytic>
+	<monogr>
+		<title level="j">Nanotechnology and Microelectronics: Materials, Processing, Measurement, and Phenomena</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">62902</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>Journal of Vacuum Science &amp; Technology B</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Practical Guides for X-Ray Photoelectron Spectroscopy: Quantitative XPS</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Shard</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/1.5141395</idno>
+		<ptr target="https://doi.org/10.1116/1.5141395" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">41201</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Practical Guide for Curve Fitting in X-Ray Photoelectron Spectroscopy</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Major</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M A</forename><surname>Sherwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Terry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Artyushkova</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000377</idno>
+		<ptr target="https://doi.org/10.1116/6.0000377" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">61203</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Practical Guides for X-Ray Photoelectron Spectroscopy (XPS): Interpreting the Carbon 1s Spectrum</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Gengenbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Major</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Easton</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000682</idno>
+		<ptr target="https://doi.org/10.1116/6.0000682" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">2021</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">13204</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Practical Guide to the Use of Backgrounds in Quantitative XPS</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tougaard</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000661</idno>
+		<ptr target="https://doi.org/10.1116/6.0000661" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">11201</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Guide to Making XPS Measurements on Nanoparticles</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Baer</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/1.5141419</idno>
+		<ptr target="https://doi.org/10.1116/1.5141419" />
+	</analytic>
+	<monogr>
+		<title level="m">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page">31201</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Practical Guides for X-Ray Photoelectron Spectroscopy: First Steps in Planning, Conducting, and Reporting XPS Measurements</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Baer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Artyushkova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Brundle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Castle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Engelhard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Gaskell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Grant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Haasch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Powell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Shard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M A</forename><surname>Sherwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">S</forename><surname>Smentkowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/1.5065501</idno>
+		<ptr target="https://doi.org/10.1116/1.5065501" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">31401</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Baer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Artyushkova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Brundle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Castle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Engelhard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Gaskell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Grant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Haasch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Powell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Shard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M A</forename><surname>Sherwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">S</forename><surname>Smentkowski</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Erratum</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000822</idno>
+		<ptr target="https://doi.org/10.1116/6.0000822" />
+	</analytic>
+	<monogr>
+		<title level="m">Practical Guides for x-Ray Photoelectron Spectroscopy: First Steps in Planning, Conducting, and Reporting XPS Measurements</title>
+		<imprint>
+			<date type="published" when="2019">2019. 2020</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page">17003</biblScope>
+		</imprint>
+	</monogr>
+	<note>J. Vac. Sci. Technol. A</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">An Open Collaborative XPS Data Repository Using the CMSShub Platform</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Barlow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Mcdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Pigram</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Xpssurfa</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/SIA.6417</idno>
+		<ptr target="https://doi.org/10.1002/SIA.6417" />
+	</analytic>
+	<monogr>
+		<title level="j">Surface and Interface Analysis</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="527" to="540" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Introduction to Near-Ambient Pressure x-Ray Photoelectron Spectroscopy Characterization of Various Materials</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">I</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Roychowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">G</forename><surname>Avval</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bahr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dietrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Thißen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/1.5109118</idno>
+		<ptr target="https://doi.org/10.1116/1.5109118" />
+	</analytic>
+	<monogr>
+		<title level="j">Surface Science Spectra</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">16801</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<author>
+			<persName><forename type="first">|</forename><surname>Aluminum</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Xps</surname></persName>
+		</author>
+		<ptr target="https://www.thermofisher.com/us/en/home/materials-science/learning-center/periodic-table/other-metal/aluminium.html" />
+		<title level="m">Periodic Table | Thermo Fisher Scientific -US</title>
+		<imprint>
+			<date type="published" when="2023-02-06">2023-02-06</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<author>
+			<persName><forename type="first">X-Ray</forename></persName>
+		</author>
+		<ptr target="http://www.xpsfitting.com/2008/09/aluminum.html" />
+		<title level="m">Photoelectron Spectroscopy (XPS) Reference Pages: Aluminum</title>
+		<imprint>
+			<date type="published" when="2023-02-06">2023-02-06</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">An ESCA Method for Determining the Oxide Thickness on Aluminum Alloys</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>Strohmeier</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/SIA.740150109</idno>
+		<ptr target="https://doi.org/10.1002/SIA.740150109" />
+	</analytic>
+	<monogr>
+		<title level="j">Surface and Interface Analysis</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="51" to="56" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">XPS Guide: Charge Neutralization and Binding Energy Referencing for Insulating Samples</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Baer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Artyushkova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Easton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Engelhard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Gengenbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Greczynski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mack</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Morgan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Roberts</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000057</idno>
+		<ptr target="https://doi.org/10.1116/6.0000057" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">31204</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Systematic and Collaborative Approach to Problem Solving Using X-Ray Photoelectron Spectroscopy</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Richard-Plouet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Guillot-Deudon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Walton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Flahaut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Greiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Biesinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tougaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Morgan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Baltrusaitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/J.APSADV.2021.100112</idno>
+		<ptr target="https://doi.org/10.1016/J.APSADV.2021.100112" />
+	</analytic>
+	<monogr>
+		<title level="j">Applied Surface Science Advances</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">100112</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Preparation and Mounting for XPS and Other Surface Analytical Techniques</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">A</forename><surname>Stevie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shallenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Newman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Donley</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Sample</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Handling</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000421</idno>
+		<ptr target="https://doi.org/10.1116/6.0000421" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">63202</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Sample Preparation and Spectra in CasaXPS</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<ptr target="https://www.youtube.com/watch?v=e8m_NLZ0A5" />
+		<imprint>
+			<date type="published" when="2023-02-06">2023-02-06</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Introductory Guide to Backgrounds in XPS Spectra and Their Impact on Determining Peak Intensities</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Engelhard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Baer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Herrera-Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M A</forename><surname>Sherwood</surname></persName>
+		</author>
+		<idno type="DOI">10.1116/6.0000359</idno>
+		<ptr target="https://doi.org/10.1116/6.0000359" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vacuum Science &amp; Technology A: Vacuum, Surfaces, and Films</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">63203</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title/>
+		<ptr target="https://xpslibrary.com/core-hole-lifetimes-fwhm/" />
+	</analytic>
+	<monogr>
+		<title level="j">The XPS Library Library of Monochromatic XPS Spectra. Core-Hole Lifetimes</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Lifetime Broadening of Core-Excited and -Ionized States</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Nicolas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Miron</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/J.ELSPEC.2012.05.008</idno>
+		<ptr target="https://doi.org/10.1016/J.ELSPEC.2012.05.008" />
+	</analytic>
+	<monogr>
+		<title level="j">J Electron Spectros Relat Phenomena</title>
+		<imprint>
+			<biblScope unit="volume">185</biblScope>
+			<biblScope unit="issue">8-9</biblScope>
+			<biblScope unit="page" from="267" to="272" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Phonon Broadening of X-Ray Photoemission Linewidths</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">H</forename><surname>Citrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Eisenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Hamann</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PHYSREVLETT.33.965</idno>
+		<ptr target="https://doi.org/10.1103/PHYSREVLETT.33.965" />
+	</analytic>
+	<monogr>
+		<title level="j">Phys Rev Lett</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="965" to="969" />
+			<date type="published" when="1974">1974</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Advanced Line Shapes in X-Ray Photoelectron Spectroscopy I. The Asymmetric Lorentzian (LA) Line Shape. Vacuum Technology &amp; Coating</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Major</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Linford</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020-03">March 2020</date>
+			<biblScope unit="page" from="43" to="46" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Cookbook XPS Data Analysis: A Companion Text To Videos and Data</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Roscoff</surname></persName>
+		</author>
+		<ptr target="http://www.casaxps.com/casaxps-training/bgn_course/Manual-Compilation-Roscoff2019-rev4.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Casa Software Ltd</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Quantification of Oxide Film Thickness at the Surface of Aluminium Using XPS</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Alexander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Beamson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairley</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/SIA.1344</idno>
+		<ptr target="https://doi.org/10.1002/SIA.1344" />
+	</analytic>
+	<monogr>
+		<title level="j">Surface and Interface Analysis</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="485" to="489" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">NIST Electron Inelastic-Mean-Free-Path Database</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Powell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jablonski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SRD</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<date type="published" when="2010">2010</date>
+			<pubPlace>Gaithersburg, MD</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>National Institute of Standards and Technology</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Intercomparison of Surface Analysis of Thin Aluminium Oxide Films</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Olefjord</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Mathieu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Marcus</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/SIA.740151108</idno>
+		<ptr target="https://doi.org/10.1002/SIA.740151108" />
+	</analytic>
+	<monogr>
+		<title level="j">Surface and Interface Analysis</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="681" to="692" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The Native Oxide Film on a Model Aluminium-Copper Alloy Studied by XPS and ToF-SIMS</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cornette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seyeux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Costa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Marcus</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/J.CORSCI.2020.108837</idno>
+		<ptr target="https://doi.org/10.1016/J.CORSCI.2020.108837" />
+	</analytic>
+	<monogr>
+		<title level="j">Corros Sci</title>
+		<imprint>
+			<biblScope unit="volume">174</biblScope>
+			<biblScope unit="page">108837</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Growth and Characterization of Anodic Films on Aluminum Alloys in 5-Sulfosalicylic Acid Solution</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Morks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Salam Hamdy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">F</forename><surname>Fahim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Shoeib</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/J.SURFCOAT.2005.05.022</idno>
+		<ptr target="https://doi.org/10.1016/J.SURFCOAT.2005.05.022" />
+	</analytic>
+	<monogr>
+		<title level="j">Surf Coat Technol</title>
+		<imprint>
+			<biblScope unit="volume">200</biblScope>
+			<biblScope unit="issue">16-17</biblScope>
+			<biblScope unit="page" from="5071" to="5076" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Spectroscopic Ellipsometry: Principles and Applications. Spectroscopic Ellipsometry: Principles and Applications</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fujiwara</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/9780470060193</idno>
+		<ptr target="https://doi.org/10.1002/9780470060193" />
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="1" to="369" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Spectroscopic Ellipsometry: Practical Application to Thin Film Characterization</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tompkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hilfiker</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<publisher>Momentum Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

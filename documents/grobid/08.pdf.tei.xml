@@ -1,0 +1,1925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">SPIX: a new software package to reveal chemical reactions at trace amounts in very complex mixtures from high-resolution mass spectra data sets</title>
+				<funder ref="#_2UhXwEC">
+					<orgName type="full">National FT-ICR network</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Inria (Institut national de recherche en informatique et en automatique</orgName>
+				</funder>
+				<funder ref="#_MD8ARST">
+					<orgName type="full">European Union</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Edith</forename><surname>Nicol</surname></persName>
+							<email>edith.nicol@polytechnique.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Route de Saclay</orgName>
+								<orgName type="laboratory">Laboratoire de Chimie Moléculaire</orgName>
+								<orgName type="institution">CNRS -IP Paris</orgName>
+								<address>
+									<addrLine>Ecole polytechnique</addrLine>
+									<postCode>91128</postCode>
+									<settlement>Palaiseau</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yao</forename><surname>Xu</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Route de Saclay</orgName>
+								<orgName type="laboratory">Centre de Mathématiques Appliquées</orgName>
+								<orgName type="institution">CNRS -IP Paris</orgName>
+								<address>
+									<addrLine>Ecole polytechnique</addrLine>
+									<postCode>91128</postCode>
+									<settlement>Palaiseau</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<address>
+									<addrLine>École polytechnique, 1 Rue Honoré d&apos;Estienne d&apos;Orves</addrLine>
+									<postCode>91120</postCode>
+									<settlement>Inria, Palaiseau</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zsuzsanna</forename><surname>Varga</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Route de Saclay</orgName>
+								<orgName type="laboratory">Laboratoire de Chimie Moléculaire</orgName>
+								<orgName type="institution">CNRS -IP Paris</orgName>
+								<address>
+									<addrLine>Ecole polytechnique</addrLine>
+									<postCode>91128</postCode>
+									<settlement>Palaiseau</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Said</forename><surname>Kinani</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Division Recherche et Développement</orgName>
+								<orgName type="laboratory">Laboratoire National d&apos;Hydraulique et Environnement (LNHE)</orgName>
+								<orgName type="institution">Electricité de France (EDF)</orgName>
+								<address>
+									<addrLine>6 Quai de Watier</addrLine>
+									<postCode>78401</postCode>
+									<settlement>Chatou Cedex 01</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Stéphane</forename><surname>Bouchonnet</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Route de Saclay</orgName>
+								<orgName type="laboratory">Laboratoire de Chimie Moléculaire</orgName>
+								<orgName type="institution">CNRS -IP Paris</orgName>
+								<address>
+									<addrLine>Ecole polytechnique</addrLine>
+									<postCode>91128</postCode>
+									<settlement>Palaiseau</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Marc</forename><surname>Lavielle</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Route de Saclay</orgName>
+								<orgName type="laboratory">Centre de Mathématiques Appliquées</orgName>
+								<orgName type="institution">CNRS -IP Paris</orgName>
+								<address>
+									<addrLine>Ecole polytechnique</addrLine>
+									<postCode>91128</postCode>
+									<settlement>Palaiseau</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<address>
+									<addrLine>École polytechnique, 1 Rue Honoré d&apos;Estienne d&apos;Orves</addrLine>
+									<postCode>91120</postCode>
+									<settlement>Inria, Palaiseau</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<address>
+									<addrLine>C10H12ClN4 + Yes 225.07161 24820606 1.08E-05 C10H12N4 ^37 Cl + Yes 246.05988 10966361 1.30E-05 C9H11ClN4Na ^13 C + Yes 247.05358 30754403 2.86E-05 C10H11N4Na ^37 Cl + Yes 245.05653 107329585 4.50E-05 C10H11ClN4Na + Yes 201.03705 -3542730 1.84E-02 C6H10NaO6 + No 205.10847 -28497851</addrLine>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<address>
+									<addrLine>11E-02 C10H13N4O + Yes 251</addrLine>
+									<postCode>05269 -7062764</postCode>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff6">
+								<address>
+									<addrLine>71E-02 C12H11O6 + No 297</addrLine>
+									<postCode>05819 -5696496</postCode>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff7">
+								<address>
+									<addrLine>72E-02 C11H14NaO8 + No 267</addrLine>
+									<postCode>04760 -5586613</postCode>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff8">
+								<address>
+									<addrLine>99E-02 C10H12NaO7 + No 283.04253 -4479881 3.20E-02 C10H12NaO8 + No 237.03704 -4871105 3.25E-02 C9H10NaO6 + No 253.03194 -4495727 3.33E-02 C9H10NaO7 + No 245.10095 -14590229 3.65E-02 C10H14N4NaO2 + Yes 211.02138 -5849796 3.65E-02 C7H8NaO6 + No 227.09036 -38558966 3.70E-02 C10H12N4NaO + Yes 239</addrLine>
+									<postCode>05270 -7601354</postCode>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff9">
+								<address>
+									<addrLine>77E-02 C9H12NaO6 + No 213.03705 -8698910 4.00E-02 C7H10NaO6 + No 275.05267 -3822758 4.02E-02 C12H12NaO6 + No 284.12725 12781460 4.41E-02 C12H19ClN5O + Yes 253.06834 -7132886 4.57E-02 C10H14NaO6 + No 255.08400 -3840684 4.60E-02 C10H16NaO6 + No 325.05308 -3163824 4.66E-02 C12H14NaO9 + No 241.03195 -4410055 4</addrLine>
+									<postCode>98E-02</postCode>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">SPIX: a new software package to reveal chemical reactions at trace amounts in very complex mixtures from high-resolution mass spectra data sets</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<note type="submission">Submitted on 29 Nov 2020</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-09T13:41+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>High-resolution mass spectrometry</term>
+					<term>non-targeted approach</term>
+					<term>spectral big data management</term>
+					<term>software development</term>
+					<term>chemical reactions</term>
+					<term>complex mixtures</term>
+					<term>kinetics</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>HAL is a multi-disciplinary open access archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from teaching and research institutions in France or abroad, or from public or private research centers. L'archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non, émanant des établissements d'enseignement et de recherche français ou étrangers, des laboratoires publics ou privés.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>High-resolution mass spectrometry (HRMS) is now experiencing unprecedented growth. It appeared in the early 1970s with dual-focus devices combining magnetic and electrostatic fields, and continued its development with the introduction of time-of-flight, Orbitraps, and Fourier Transform-Ion Cyclotron Resonance (FT-ICR) analyzers. If FT-ICR mass spectrometers remain the most accurate today, high end QTOFs and QEx Orbitraps provide accuracies below 3 ppm. The resolution of an analyzer reflects its ability to separate ions with close m/z ratios. High-resolution analyzers can thus differentiate isobaric ions: i.e., ions with the same nominal mass but different exact masses, and therefore different chemical formulas, such as N2 +. (m/z 28.0056) and CO +. (m/z 27.9944). High resolution is a very valuable asset: it not only greatly improves the selectivity and specificity of "traditional" detection and quantification methods (in comparison with low-resolution analyzers), but also greatly facilitates structural elucidation by assigning raw formulae to the detected ions. <ref type="bibr" target="#b0">1</ref> More recent use of high resolution takes advantage of its ability to separate isobaric ions, in an attempt to break free from separation methods -mainly gas or liquid chromatography, or more rarely capillary electrophoresis or ion mobilityso as to expand the range of molecules detectable in a single analysis. This is particularly interesting in the context of non-targeted analysesin which the operator does not know which molecules are likely to be present in the samplebecause the choice of a chromatographic system focuses the analysis on certain classes of compounds based on their properties (volatile or not, polar or apolar, large or small, etc.) and thereby introduces a bias attributable to the subjectivity of the analyst. Direct introduction (DI) into the ion source without prior pretreatment or chromatographic separation was shown to be a useful alternative for rapid and comprehensive diagnosis of environmental samples, but this approach remains very challenging due to the extreme complexity of environmental matrices and the large number of contaminants likely to be present. <ref type="bibr" target="#b1">2</ref> On direct introduction of a mixture, different molecules are simultaneously ionized, resulting in mass spectra yielded by the overlapping of spectra of the detectable species. Thus, complex mixture analyses provide mass spectra that can contain tens or hundreds of thousands of ions, even with soft ionization techniques such as electrospray ionization, atmospheric pressure ionization or atmospheric pressure photoionization; these spectra are of no possible use to the operator without the help of adapted software. Finding a molecule showing significant change between two conditions (upstream/downstream or after treatment, for instance) in its trace amounts in an environmental sample is like looking for a needle in a haystack. Being able to quickly evaluate all of the chemical consequences of an industrial accident on the biotope can be crucial to decisionmaking. In these situations, non-targeted HRMS-based screening is one of the last resorts for identifying unexpected or unknown contaminants. <ref type="bibr">3,</ref><ref type="bibr">4,</ref><ref type="bibr">5,</ref><ref type="bibr">6,</ref><ref type="bibr">7,</ref><ref type="bibr">8</ref> This approach has recently been evaluated in a comprehensive collaborative study organized by the NORMAN association, in which a total of 18 institutes from 12 European countries analyzed an extract of the same water sample collected from the Danube River. The results revealed that non-targeted analytical techniques were already widespread and that practices were substantially harmonized between the participants, but that data processing remained complicated and time-consuming. <ref type="bibr" target="#b36">9</ref> Among the main recommendations formulated to improve the non-targeted approach is the development of robust user-friendly processing software. Likewise, AQUAREFthe French national reference laboratory for aquatic environment monitoring, which works in close concertation with other European reference laboratoriespublished guidelines for HRMS untargeted analysis, for which SPIX could be a powerful tool. <ref type="bibr" target="#b37">10</ref> The first part of this article discusses the notions of uncertainty and subjectivity related to untargeted analysis. The second part presents the general working principle of SPIX software. The third part is dedicated to the presentation of results obtained on real samples. It discusses the strengths and limitations of the software and its specificities compared to the few programs currently commercially available. A brief overview of current computational and statistical approaches to extract relevant information from the big data of mass spectrometry analyses is provided in Supplementary information SI-1; it describes <ref type="bibr">Kendrick 11,</ref><ref type="bibr">12</ref> and Van Krevelen <ref type="bibr" target="#b12">13,</ref><ref type="bibr" target="#b13">14,</ref><ref type="bibr" target="#b14">15</ref> approaches, as well as Multivariate statistical analysis. <ref type="bibr" target="#b15">16,</ref><ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b18">19,</ref><ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b20">21,</ref><ref type="bibr" target="#b21">22</ref> Multivariate analysis tools enable global understanding of many concomitant variables and of their inter-correlations. Metabolomics processing pipelines often include univariate and multivariate statistical approaches. Univariate analysis is usually used as a pre-processing step, while multivariate analysis is used for classification of samples or features. For example, PCA is used to characterize differences of two groups of metabolomics GC-MS data for the diagnosis of gastric cancer. Wilcoxon rank sum test showed the marker metabolites specific to the tumor group. Multivariate analysis, specifically PCA successfully divided the two groups of samples of normal and malignant gastric tissue. <ref type="bibr" target="#b22">23</ref> Comprehensive workflow for univariate analysis of LC-HRMS was developed to follow human adult urinary metabolome variations. Univariate analysis was used as a preprocessing step: nonparametric hypothesis testing was used to assess correlations with covariables and Wilcoxon test was used to calculate the median differences between genders. The univariate p-values results together with multivariate importance in projection evidenced that 108 urine metabolites whose concentrations varied with either age, body mass index, or gender. <ref type="bibr" target="#b23">24</ref> Concerning direct infusion mass spectrometry a comprehensive workflow for data processing and quality control was developed for metabolomics analysis of cardiac tissue extract. It can be used for different metabolomics analyses as it focuses on the correction of intra-and inter-batch variations and offers best-practice workflows and rigorous quality assessment. The data processing steps include Wilcoxon-test and multivariate analysis. <ref type="bibr" target="#b24">25</ref> These applications could be extended for environmental samples; however no approach has been reported using univariate or multivariate analysis which focuses on the kinetics of compounds in HRMS datasets. The concept behind multivariate analysis is different from that of the SPIX software: the latter aims at observing all statistically relevant variables individually. Examples of SPIX applications are given in the following article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Notions of uncertainty and subjectivity in modern untargeted analytical approaches, and introduction to SPIX</head><p>To illustrate the functionality of the SPIX software, it is necessary to address the notions of uncertainty and subjectivity that are fundamental in analytical chemistry. We propose to take an example in environmental chemistry. Consider a plant located on the bank of a river; it may be a treatment plant or, on the contrary, a source of pollution; the question is whether its presence significantly alters the composition of the water. The question seems simple enough, but providing a relevant answer is much less so. The conventional approach is to take water samples upstream and downstream of the plant, analyze them chemically and compare the results. This approach, while scientifically reasonable, nevertheless raises many questions at each step of the process. How many samples are needed to take account of the spatial and temporal variability of upstream and downstream water composition? Where, when and how to sample? What sample preparation to adopt, given that each choice of solvent, filter, SPE (Solid Phase Extraction) column, chromatographic protocol and mass spectrometry ionization mode conditions the results of the analysis by favoring detection of certain molecules based on their size or polarity. Every single step in the analytical process introduces metrological uncertainties related to the measuring instruments used (balances, pipettes, etc.), but also to the so-called "matrix effect": i.e., the matrix of the reference used to validate the method is generally not rigorously identical to the matrix being analyzed. Stochastic biases and uncertainties are also caused by adsorption, evaporation, etc. The proliferation of sources of error obliges analysts to use internal standards to reduce the overall uncertainty of the results and try to conform to industry-specific standards. Limiting the subjectivity in a method needs to make no assumptions at all, which is in contradiction with the use of an internal standard; thus, the analytical scientist is left with choosing between limiting subjectivity or limiting uncertainties. To the problem of uncertainties must be added that of operator subjectivity, at two main levels. As mentioned above, this subjectivity comes into play before measurement: when the operator establishes the analytical protocol, choices are made, conditioned by assumptionsthe operator's own or those of third parties -as to what might have contaminated the water of the river.</p><p>Even if the method is not "targeted" (i.e., specifically designed for the selective detection of given analytes), it cannot be considered totally "non-targeted" as there is no effective protocol capable of extracting and detecting everything simultaneously (e.g., both polar and apolar molecules) and any selected protocol effectively excludes some potential analytes. This will lead the analyst to try to minimize sample preparation, with the dual objective of limiting uncertainties and of reducing operator-induced subjectivity; an immediate consequence of this simplification is to increase the complexity of the data. For example, mass spectra recorded from environmental samples will be much more complex if the sample is introduced directly into the mass spectrometer without prior purification and separation. A point that is generally much less considered is operator subjectivity in interpreting results, especially when the data are complex and voluminous, when it comes to manually integrating a peak or comparing two chromatograms or two mass spectra, for example.</p><p>In 2019, a visual trial devoted to subjectivity evaluation was carried out during a European winter school on mass spectrometry, on a panel of 37 people with a strong scientific background in analytical chemistry. It consisted of a series of one-minute projections of two images differing by 5 to 22 differences; panelists were asked to note the number of differences they were able to spot. Some images were quite simple (pictures with modified areas) while others were very complex (fractals containing very small differences within complex areas). A set of simulated mass spectra containing 15 differences (variations in peak intensity, addition and removal of peaks) was presented to the panelin triplicate and not consecutivelywithout prior notice. The variability between the results of these triplicates gave an average standard deviation of 2.3 observed differences per individual, with mean and median values of 9.6 and 9.7, respectively and a range of 0-19.</p><p>Considering the variability between panelists, a standard deviation of 20.6 differences was determined over the whole dataset, with mean and median values of 85.6 and 90, respectively, for a total 148 differences to be identified. The number of observed differences ranged from 31 to 122.</p><p>The number of differences identified varied to the point that one operator would conclude that two spectra were almost identical while another would consider them significantly different! <ref type="bibr">26</ref> The problem is substantially more complicated when comparing not only spectra but series of spectra corresponding, for example, to samples taken upstream and downstream of a treatment plant.</p><p>A big variation in an ion count between upstream and downstream spectra may not be significant if the magnitude of variation is equal within and between the downstream and upstream populations; changes in the abundance of this ion reflects only the intrinsic chemical variability of the environment and is not a relevant marker of the impact of the plant. On the other hand, a slight change in the abundance of an ion between "upstream and downstream spectra" may be significant if abundance is almost constant within each population; it then reflects a real effect of the plant on water quality. The SPIX software was created to remedy the observed fact that it is impossible for an operator to determine what makes sense based on simple observation of complex datasets, especially since the data are subject to intrinsic variability. The aim is to extract relevant information from numerous complex data. As explained below, the software can identify significant differences between mass spectra series and track the kinetic evolution of reagents, unknown reaction intermediates, and reaction products at low concentrations in complex mixtures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">The SPIX software</head><p>SPIX was developed in MATLAB 2018a. A stand-alone version is freely available on the website (http://spix.webpopix.org). The source code can be made available on request. Prior to performing any statistical analysis of the data, pre-processing is required to identify and align significant peaks in the data. The method used for detection and alignment actually depends on the type of data available:</p><p>• When the device provides data in xml format, this data has already been filtered and contains only the most significant peaks. These peaks are then aligned by using the mspalign function of the Bioinformatics Toolbox (MATLAB) with the "shortest-path" option.</p><p>• When the data obtained are raw data (e.g. xy Bruker format in the present study), i.e. intensities measured on a fine and regular grid, the following algorithm is used: considering K series to analyze, the approximate positions of the significant peaks are first roughly determined by building a single series, consisting of the maximum intensities of the K series at all data points, and by thresholding this series. This procedure is used to determine disjoint segments in which the peaks of each of the K series are located.</p><p>The position and intensity of each of these peaks are then estimated for each spectrum by fitting a model of the form 𝐴 exp(-𝛼(𝑥 -𝑚)) for which the maximum value A is reached for x=m.</p><p>SPIX can be used in essentially two situations. The first one allows evidencing some modifications in the composition of a complex mixture over time. The focus here is on how the abundance of certain species varies as a function of a given parameter (time, pH, reagent, etc.). The objective is twofold: to detect ions with significantly varying abundance (in terms of statistical relevance), and to describe how the abundance varies by kinetic modeling. After aligning the peaks as previously described, different kinetic models, including various patterns associated with compound degradation and formation and reaction intermediates, are fitted to the data. A library including seven typical kinetics profiles is currently available; examples of graphical representations are provided in supplementary information SI-2. The selected model minimizes the Bayesian Information Criterion (BIC). The coefficient of determination r 2 is calculated to quantify the part of the variability of the data explained by the model and an ANOVA assesses whether this part of explained variability is statistically significant. The p-value of the F-test and the r 2 value are represented graphically so as to easily visualize ions with abundance accurately fitting a kinetic model.</p><p>SPIX also permits to compare 2 series of samples collected under 2 experimental conditions. The objective is to identify the ions with significant differences in intensity and to quantify these differences. The algorithm first consists in identifying the peaks considered significant: i.e., present and above a given threshold in at least 1 of the 2 conditions. For an ion detected in this way, the procedure is as follows: first, the series are locally shifted so that all the peaks are aligned. The maximum intensity at the peak is estimated for each spectrum by fitting a model of the form 𝐴 exp(-𝛼(𝑥 -𝑚)) for which the maximum value A is reached when x=m. This provides 2 series of values that can be compared on statistical tests. A t-test detects differences in the mean while a non-parametric Wilcoxon test more generally detects whether the peak intensity tends to be higher in one condition than in the other. A graphical representation of the p-values obtained for all the peaks detected, as well as of the size effects (i.e., differences in mean values between the 2 conditions) provides quick visualization of the chemically significant differences and the statistical relevance of the differences.</p><p>Blank correction can be done as follows: The user chooses as a threshold, a ratio and a percentile.</p><p>By default, the median of intensities is used for the calculations (p = 0.5). For the given percentile, the ratio is defined as: </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Chemicals, reagents, irradiation processes and analysis</head><p>The ability of SPIX to extract relevant information from sets of complex high-resolution mass spectra is illustrated in two experiments. The first concerned peroxide photocatalyzed degradation of Maprotiline (an antidepressant drug) in a wastewater treatment pilot plant. In this case, the comparison aimed at revealing reagents, intermediates and products using kinetic models, from mass spectra recorded at different irradiation times. The second experiment concerned UV irradiation of Acetamiprid (a neonicotinoid insecticide) in a complex mixture of aqueous fulvic acid to simulate river water; it aimed at revealing Acetamiprid photoproducts at trace levels and evaluating the impact of UV treatment on dissolved organic matter. The comparison covers 2 data sets, for spectra recorded before and after irradiation. Maprotiline and Acetamiprid chemical structures are depicted Figure <ref type="figure" target="#fig_3">1</ref>. Supplementary information file SI-3 describes the chemicals, sampling and irradiation processes used for the two experiments.</p><note type="other">Figure 1</note></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">High-resolution mass spectrometry analysis</head><p>An ultra-high-resolution mass spectrometer, FT-ICR SolarixXR 9.4T (Bruker Daltonics, Bremen, Germany), was used for direct infusion mass spectrometry analysis. The electrospray ion source was set in positive mode and solutions were injected using an automated Acquity HPLC system (Waters, Saint Quentin en Yvelines, France). The injection volume was 10 µL. Elution was carried out using a 0.002 mL/min flow of H2O/ACN/FA (50/50/0.1). Nitrogen was used as nebulizer and as drying gas, set at 1 bar and 4 L/min, respectively. The drying gas temperature was set at 180°C.</p><p>The capillary voltage and endplate offset potential were set at -4500 V and -500 V, respectively.</p><p>Ions were accumulated for 0.2 sec in the collision cell, and 50 scans were summed. Resolution was set at 4 Mpt on a scan range from m/z 57 to m/z 1,000 in order to obtain resolution &gt; 400,000 at m/z 200. A tune mix (Agilent Technologies, Les Ulis, France) was used for mass calibration. Exact formulae were assigned with error &lt; 1 ppm.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Results and discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Highlighting chemical reactions in complex mixtures</head><p>Degradation of Maprotiline in wastewater under an advanced oxidation process (peroxide/UV) was carried out in a pilot plant, with the aim of testing the ability of SPIX to follow the degradation of contaminants and the evolution of their transformation products. This pilot plan was set up by FACSA, a Spanish company operating water treatment plants, to design, optimize and compare novel water treatment processes; the operational parameters and analytical conditions are given in the Supplementary information SI-3. Considering that the abundances of reagents, intermediates and products of a chemical reaction are not expected to evolve stochastically, an original way to extract relevant information from untargeted analysis consists in filtering the results based on ion abundance trends. Briefly, A-type models are selected to detect molecules with decreasing abundance during the reaction while B-type and C-type models detect the products and intermediates, respectively. The software detects all significant changes over time and provides a kinetic model; statistical data can be exported for further analysis in the  A first attempt to extract transformation products from the background noise, conducted on the basis of 1 set of measurements, gave a few Maprotiline-related peaks, but a thorough study of the raw data showed that using data from duplicate measurements yielded a kinetic model better fitting ion intensity evolution. The aim was to maximize the relevant data obtained while minimizing the number of parallel measurements, to gain valuable analysis time. Using 2 parallel measurements for each irradiation time, 88 ions fitting one of the SPIX kinetic models were extracted with default threshold intensity 1.2E+08; this list was reduced to 12 ions keeping m/z ratios fitting a kinetic model with r 2 &gt; 0.9 (Table <ref type="table" target="#tab_2">1</ref>), these fittings being also those corresponding to the lowest p-values.</p><p>The formulas were assigned using the Bruker software based on accurate mass measurements (subppm accuracy) and isotopic pattern-matching. All the extracted m/z values were related to Maprotiline or its photoproducts (oxidized compounds); they corresponded to singly charged ions with <ref type="bibr">12</ref> C and 13 C isotopic contributions. One signal (m/z 92.73055) corresponded to an artifact related to the harmonics of the m/z 278.19054 signal, resulting from signal digitization and Fourier transformation, a phenomenon previously described and explained by Mathur and O'Connor. <ref type="bibr">27</ref> To study the threshold effect and determine whether additional photoproducts would be found if more peaks were considered, the threshold was halved (6E07) and the same methodology was applied.</p><p>197 peaks were thus selected by SPIX and the data were ordered according to statistical relevance.</p><p>23 peaks were then selected on the criterion r 2 &gt; 0.9 (see Table <ref type="table" target="#tab_2">1</ref>). Here again, m/z values were all 1related to Maprotiline and its photoproducts; a second artifact (m/z 93.06499) was found and attributed to the harmonics of m/z 279.19386.  <ref type="bibr">27</ref> Using the selection parameters referred to above, one protonated species was detected at m/z 336.14927. Considering Kind &amp; Fiehn's "7 golden rules" and selecting atoms C, H, N, O, P, S, F, Cl, Br, Si, Na and K, the only matching formula was C23H18N3 + . <ref type="bibr">28</ref> This species is logically assumed not to be related to Maprotiline; it could correspond to a contaminant in high concentration in waste water, degrading under UV radiation. According to the kinetics revealed by SPIX, some photoproducts were present in detectable abundance after 2.5 minutes' irradiation. To estimate the relevance of the results provided by SPIX, 1 of the spectra recorded at this reaction time was selected. After blank subtraction (the blank consisting of wastewater matrix without Maprotiline), the spectrum was exported in .csv format (Bruker's FTICR-MS file format). The spectra were recorded using 8 Mpts, and as the experiments were carried out using secondary treated wastewater,  <ref type="figure">3</ref> for the former. One of the Maprotiline-related peaks that was not in the list of the highest intensities was not found in the spectrum recorded at 2.5 min of irradiation: it was removed by the blank subtraction process, since the wastewater matrix was very complex. It is thus noteworthy that SPIX does not require blank subtraction to provide valuable information, allowing relevant peaks that coincidentally overlap with some of the matrix peaks not to be removed. The experiment conducted on photodegradation of Maprotiline showed that the SPIX software efficiently revealed the most relevant changes in the composition of the irradiated mixture on the basis of only 12 mass spectra. It was able to automatically detect reagents, intermediates and products at trace levels. Most extracted ions were related either to Maprotiline or to its photoproducts. Only 1 compound was found which was assumed not to be related to Maprotiline on the basis of its molecular formula (C23H17N3); no significant change in the composition of the dissolved organic matter was found, although of course only ESI-ionized species were considered. The photodegradation pathways of Maprotiline have been reported in a study more oriented toward structural elucidation. <ref type="bibr">29</ref> Figure 3</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Comparison of two conditions: the example of photodegradation of Acetamiprid in an aqueous solution of fulvic acid</head><p>This example demonstrates the ability of the SPIX software to point out relevant changes between two conditions from changes in low-abundance ions within a complex matrix. We studied the effect of UV radiation on Acetamiprid in a complex mixture, simulating river water. A prior photolysis study of Acetamiprid in ultrapure water identified Acetamiprid degradation products in ultrapure water and demonstrated that the presence of other substances in the matrix leads to the formation of different degradation products. <ref type="bibr">30</ref> These results led us to study the effect of dissolved organic matter on the photodegradation of Acetamiprid as it may happen under real environmental conditions. The peak intensity of Acetamiprid represented 9.2% of the base peak of the mass spectrum before photolysis and only 1.9% after 30 minutes' irradiation. A sodium adduct, originating from the use of glassware during sample preparation, impurity in solvents or ESI needle for instance, was detected with a relative intensity of 10.4% in the spectrum recorded before and 2.4% after photolysis. These differences, not detectable looking at the whole spectrum, are obvious when zooming on the region from m/z 223.00 to 223.20 (Figure <ref type="figure">4</ref>).</p><note type="other">Figure 4</note><p>Sets of spectra recorded before and after photolysis were compared using the SPIX software. Given the intensity of Acetamiprid within the mixture, a peak detection limit was set at only three times the average intensity of spectral noise (average noise at 1E6, detection threshold set at 3E6). This threshold was set as low as possible so as to identify Acetamiprid degradation products in small amounts. Blank spectra were subtracted to eliminate any interference from solvents or instruments.</p><p>Exported from SPIX, Table <ref type="table" target="#tab_4">2</ref> lists the ions the abundance of which underwent significant change after irradiation. Here, only ions with a probability of ≥ 95% (p-value ≤ 0.05) were retained: i.e., with significant difference in intensity between the two conditions. In this example, results are organized by increasing p-value, but any parameter can be chosen for presentation of the results. A negative value in the "Difference" column indicates that ion abundance increased after photolysis.</p><p>Visual comparison (Figure <ref type="figure" target="#fig_1">5</ref>) confirms the results displayed in Table <ref type="table" target="#tab_4">2</ref>: the greatest change in intensity -and with the highest significancewas the concomitant decrease of the m/z 223 (MH + ) and m/z 245 (MNa + ) ions. Many other peaks decreased or increased after photolysis, but with lower p-values for the difference in intensity; some were related to Acetamiprid photodegradation, others to changes in dissolved organic matter. The ions at m/z 205.10847 (C10H13N4O + ) and m/z 227.09036 (C10H12N4NaO + ) shown here correspond to the protonated and cationized forms of a photoproduct previously described, the structure of which was elucidated in a study on UV irradiation of Acetamiprid in pure water. <ref type="bibr">30</ref> This photoproduct was the major one, so it is not possible to say whether others which were previously described were not detected here due to too high detection thresholds or because they are not formed in the presence of fulvic acid. It is interesting to note that SPIX revealed two ions, 284.12725 (C12H19ClN5O + ) and m/z 245.10095 (C10H14N4NaO2 + )resulting from ionization of Acetamiprid photoproducts based on their formula -that were not detected by LC-MS in pure water. With a relative intensity below 1% in infusion mode, these two molecules could not have been revealed without SPIX. Fifteen ions with abundance significantly varying before and after UV irradiation were indicated. Based on their chemical formulae, they were assumed not to be related to Acetamiprid or to its photoproducts; they all included a large number of oxygen atoms (≥ 6) and likely resulted from oxidation of dissolved organic matter. This is of great interest because it opens a way to investigate the global consequences of a depollution treatment, evaluating the treatment -apart from its ability to efficiently degrade pollutants -in terms of biotope preservation.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusion</head><p>The SPIX software aims at extracting relevant data from mass spectra data sets. User-friendly and totally free, it is available for all at: http://spix.webpopix.org. Two features of SPIX are presented in this article, based on examples taken from the field of environmental analysis. The first example showed how SPIX revealed photodegradation reactions by correlating significant changes in ion abundance over time with kinetic models. Thus, the software revealed the reagents, products and intermediate species in a very complex mixture (wastewater). This functionality can be extended to monitor any kind of reaction -even unknown -in all types of mixture. Some features of the SPIX software are still under development. One aims at extending compatibility with many more file formats (wiff, .d, .pkl, .qgd, etc.), in order to be used with most of the marketed mass spectrometers.</p><p>Another focus of developmentalready running but requiring some improvementsconcerns the extension of SPIX to three-dimensional datasets from hyphenated techniques such as GC-MS, LC-MS or IM-MS. Some commercial software applications allow comparison of chromatograms but, to our knowledge, an approach consisting in extracting relevant data from hyphenated techniques based on fitting with kinetic models has never been reported. The second example showed the ability of SPIX to detect photoproducts at trace amounts in an aqueous solution containing dissolved organic matter, through comparison of datasets for 2 conditions (before/after photolysis in the present case). Regarding this example, the ability of SPIX to deal with intrinsic variability and reduce operator subjectivity opens up promising prospects in all areas of analytical chemistry. It could, in particular, be a very useful tool to assess fragrance and flavor counterfeits, where expertise is very challenging due to the normal variations in abundance of natural substances featuring at low levels in their composition. This feature can also be used to estimate the global consequences of a given treatment on the treated medium, for example to monitor the oxidation of dissolved organic matter and its consequences on biotope preservation. </p><note type="other">Figure captions</note></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Kendrick diagrams</head><p>The Kendrick diagram allows easy identification, from a mass spectrum, of series of compounds that include the same number of heteroatoms and unsaturations but differ from each other by the number of -CH2-groups. <ref type="bibr" target="#b0">1</ref> The diagram is built by plotting the Kendrick mass defect (KMD) for each ion (eq. ) (eq. 2)</p><p>Compounds in the same series (i.e., with the same number of heteroatoms and degrees of unsaturation) will have the same KMD. In the diagram, each series is aligned horizontally with a deviation of 14 that reflects a difference of one -CH2-pattern. A shift of 0.01340 on the vertical axis corresponds to implementation of 1 unsaturation. Originally reported for the investigation of mass of 200 Da is assigned only 1 raw formula, while a mass of 500 Da is assigned 21. <ref type="bibr" target="#b12">13</ref> Regarding this issue, the Kendrick diagram can significantly increase the number of single raw formulae that can be assigned from m/z values in a mass spectrum. From the raw formula of the first compound, the identification of homologous series aids in assigning the raw formula of other compounds in the series regardless of their mass. This allows a complex spectrum to be recalibrated, to obtain the best possible accuracy and thus assign as many raw formulae as possible (e.g., prior to a principal component analysis). <ref type="bibr" target="#b13">14,</ref><ref type="bibr" target="#b14">15</ref> Van Krevelen diagrams</p><p>The van Krevelen diagram, originally used in petroleomics to control oil and kerosene quality, represents the H/C ratio as a function of the O/C or N/C ratio for each ion of a complex mixture. <ref type="bibr" target="#b15">16</ref> This allows the composition of a sample to be quickly estimated based on constituent molecular families (lipids, proteins, sugars, carbohydrates, lignin, tannins, etc.). <ref type="bibr" target="#b16">17</ref> Today, this representation is commonly used for environmental samples to track their evolution following an event such as <ref type="bibr" target="#b12">13</ref>  treatment or pollution. <ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b18">19,</ref><ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b20">21,</ref><ref type="bibr" target="#b21">22</ref> Some studies have extended the van Krevelen diagram over 3 dimensions to achieve better classification of compounds and better differentiation between complex mixtures. In some cases, this approach is associated with other t-test type statistical tests. <ref type="bibr" target="#b22">23,</ref><ref type="bibr" target="#b23">24</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Multivariate statistical analysis</head><p>Multivariate statistical analysis is a versatile tool for dealing with high-dimensional datasets, and many methods can be used to extract valuable information, perform data compression, assess subclasses and compare groups of samples assessing relationships between variables. For quantitative datasets, two categories of model can be distinguished in terms of the relationship between variables and response, according to the parameters: linear and non-linear. An example is UV-Vis absorbance analysis of a complex mixture, where absorbance depends on the concentrations of all the compounds present in the mixture, based on a linear relationship; in this case, multivariate linear regression can times: t0 (3 samples), 1 min, 2.5 min, 5 min, 7.5 min and 10 min. The only sample preparation before direct infusion mass spectrometry analysis was the addition of 0.1 mL of acetonitrile and 0.1% of formic acid to the 1 mL samples, to achieve better ionization and solubility. Using direct infusion HRMS aimed at suppressing many sample preparation steps, to gain a considerable amount of time and avoid too much variability and operator subjectivity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">UV irradiation of acetamiprid in an aqueous solution of humic acid</head><p>Acetamiprid has been detected in agriculture water samples at concentrations of up to 44 µg/L. <ref type="bibr">47</ref> Therefore, a 40 µg/L acetamiprid solution was prepared using an aqueous solution of fulvic acid at 20 mg/L, a mean value regarding the amount usually found in natural waters. <ref type="bibr">48</ref> Six glass tubes of the solution were simultaneously irradiated for 30 minutes in a laboratory-made reactor equipped with a UV-Vis high-pressure mercury lamp HPL-N125W/542 E27 SC (Philips, Ivry-sur-Seine, France) emitting light on wavelengths ranging from 200 nm to 650 nm, with a maximum irradiation wavelength at 254 nm and a radiation flux of 6200 lm. Each tube contained 50 mL of solution to ensure good surface irradiation. 1 mL of solution was taken twice from each tube before and after irradiation. Samples were analyzed in ESI-MS using automated direct infusion with a solvent made of 50% H2O/AF (0.1%) and 50% ACN/AF (0.1%) at a flow of 0.002 mL/min. The six replicates and blanks (H2O/ACN 50/50 v/v) were randomly analyzed and data were extracted in a «.xy » text format so that they can be treated with the SPIX software. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 2</head><label>2</label><figDesc>Figure 2</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 5</head><label>5</label><figDesc>Figure 5</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 1 .Figure 2 .Figure 3 .Figure 4 .Figure 5 .SI- 1 .</head><label>123451</label><figDesc>Figure 1. Chemical structures of Maprotiline (left hand) and Acetamiprid (right hand)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>1 )</head><label>1</label><figDesc>as a function of the Kendrick mass (KM) (eq. 2). 𝐾𝑀𝐷 = (𝑁𝑜𝑚𝑖𝑛𝑎𝑙 𝐾𝑒𝑛𝑑𝑟𝑖𝑐𝑘 𝑀𝑎𝑠𝑠 -𝐸𝑥𝑎𝑐𝑡 𝐾𝑒𝑛𝑑𝑟𝑖𝑐𝑘 𝑀𝑎𝑠𝑠) (eq. 1)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="23,86.55,70.85,422.15,304.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="25,50.08,36.00,495.15,281.99" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="26,70.85,70.85,453.60,268.35" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="35,56.70,94.85,391.60,371.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>With .mat or .xml files, SPIX occupies about 500 MB (it's the MATLAB runtime that takes up all the space). With .xy, formats the .mat conversion stage has to be added (sequentially): if a sub-repertory (time_0 for example) is 250 MB, then SPIX occupies about 750 MB of memory. It does not represent the total volume of all sub-repertories because SPIX loads them and converts them one by one. In all cases, it works very well on a standard PC.</figDesc><table><row><cell>𝑟 𝑝 (𝑚 𝑧 ⁄ ) =</cell><cell>𝐵 𝑝 (𝑚 𝑧 ⁄ ) 𝑆 𝑝 (𝑚 𝑧 ⁄ )</cell></row><row><cell cols="2">with 𝐵 𝑝 (𝑚 𝑧 ⁄ ) : percentile of order p of the blank intensities' maximum and 𝑆 𝑝 (𝑚 𝑧 ⁄ ) : percentile</cell></row><row><cell cols="2">of order p of the experimental data intensities' maximum. If the peak intensity is higher than</cell></row><row><cell cols="2">𝑆 𝑝 (𝑚 𝑧 ⁄ ) (as a threshold value) in at least one of the experiment spectra, it will be kept as a peak,</cell></row><row><cell>if not it will be ignored.</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table format</head><label>format</label><figDesc></figDesc><table><row><cell>described in</cell></row><row><cell>Supplementary information SI-4. As a first example, from one set of samples using the software</cell></row><row><cell>default threshold (1.2E+08), SPIX automatically extracted the m/z 278.19056 signal (protonated</cell></row></table><note><p><p><p>Maprotiline) for each irradiation time, and associated the fitting model referred to as A1 in SPIX with r 2 &gt; 0.99 (Figure</p>2</p>).</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 1 .</head><label>1</label><figDesc>Ions extracted and associated kinetic models related to the photodegradation of Maprotiline in wastewater with r 2 &gt; 0.9 (data ordered by decreasing intensity)</figDesc><table><row><cell>m/z</cell><cell>r 2</cell><cell>p-value</cell><cell cols="2">Model a Maprotiline-related</cell><cell>Ion formula</cell><cell>Intensity</cell><cell>Relative Intensity (%)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">With intensity &gt; 1.2E08</cell><cell></cell></row><row><cell cols="3">278.19054 0.93 5.25E-06</cell><cell>A1</cell><cell>Yes</cell><cell>C20H24N +</cell><cell>8350669911</cell><cell>100.0</cell></row><row><cell cols="3">279.19386 0.94 3.82E-06</cell><cell>A1</cell><cell>Yes</cell><cell>C19H24N^1 3 C +</cell><cell>1643233281</cell><cell>19.7</cell></row><row><cell cols="3">294.18552 0.98 3.91E-07</cell><cell>C1</cell><cell>Yes</cell><cell>C20H24NO +</cell><cell>1126960171</cell><cell>13.5</cell></row><row><cell cols="3">276.17486 0.92 7.58E-05</cell><cell>C1</cell><cell>Yes</cell><cell>C20H22N +</cell><cell>451170002</cell><cell>5.4</cell></row></table><note><p>a Currently available SPIX kinetic models are given in Supplementary information SI-2. b m/z 93.06499 and m/z 92.73055 signals correspond to artifact peaks related to the harmonics of m/z 278.19054 and m/z 279.19386 ions, respectively; they resulted from signal digitization.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>Out of these 4,479 peaks, the 11 most abundant ions in the selected spectrum corresponded to the 11 most statistically relevantly changing m/z values extracted by SPIX. The two m/z signals corresponding to harmonics of major ion signals were also extracted with good fit, and ranked 18 th and 115 th in the original file (overall blank subtracted-spectrum). The photoproducts showing the</figDesc><table><row><cell>highest significance (lowest p-values) were those corresponding to m/z 294.18552 and m/z</cell></row><row><cell>302.17530 (protonated molecules), fitting is presented in Figure</cell></row></table><note><p>4,479 peaks were exported by Bruker software which were above the S/N ratio threshold of 4.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 2 .</head><label>2</label><figDesc>m/z for which intensity significantly varied between series of spectra recorded before and after 30 minutes of irradiation (n = 6). Ions are listed by increasing p-value.</figDesc><table><row><cell>m/z</cell><cell>Difference in intensity</cell><cell>p-value</cell><cell>Ion formula</cell><cell>Related to Acetamiprid a</cell></row><row><cell>224.07792</cell><cell cols="2">10523197 1.47E-06</cell><cell>C9H12ClN4 ^13 C +</cell><cell>Yes</cell></row><row><cell>223.07459</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Current kinetic models in SPIX</head><label></label><figDesc>Usually, variable selection44  or sparse methods 45 must be applied, which are able to remove or suppress variables that are irrelevant to response prediction or classification.46  These methods proved their efficiency but have to be used with caution to avoid losing valuable information, to prevent overfitting, and to handle chance correlations correctly. In summary, multivariate analysis tools enable global understanding of many concomitant variables and of their inter-correlations. The concept behind multivariate analysis is different from that of the SPIX software: the latter aims at observing all statistically relevant variables individually. Multivariate statistical differentiation of renal cell carcinomas based on lipidomic analysis by ambient ionization imaging mass spectrometry. Anal. Bioanal. Chem. 2010, 398, 2969-2978 43 Alexandrov, T. MALDI imaging mass spectrometry: statistical data analysis and current computational challenges. BMC Bioinform. 2012, 13, S16-S11 44 Peres, F.A.P.; Fogliatto, F.S. Variable selection methods in multivariate statistical process control: A systematic literature review. Comput. Ind. Eng. 2018, 115, 603-619 45 Zou, H.; Hastie, T.; Tibshirani, R. Sparse principal component analysis. J. Comput. Graph. Stat. 2006, 15,</figDesc><table><row><cell>Model</cell><cell>Theoretical equation</cell><cell>Experimental equations for the examples shown</cell></row><row><cell>A1</cell><cell>f=f0+A*exp(-k*t) k&gt;0</cell><cell></cell></row><row><cell cols="2">Cosmochim. Acta 2006, 70, 2990-3010</cell><cell>6.93E-02 * t)</cell></row><row><cell cols="3">22 Kim, S.; Kramer, R.W.; Hatcher, P.G. Graphical method for analysis of ultrahigh-resolution broadband mass B1 f=f0+B*(1-exp(-k*t)) k&gt;0 4.69E+06 -3.91E+06 * exp(-3.17E-02 * t)</cell></row><row><cell cols="3">spectra of natural organic matter, the van Krevelen diagram. Anal. Chem. 2003, 75, 5336-5344 23 Martins, N.; Jiménez-Morillo, N.T.; Freitas, F.; Garcia, R.; Gomez da Silva, M.; Cabrita, M.J. Revisiting 3D B2 f=A+B/(1+C*exp(-k*t)) k&gt;0 1.21E-12 + 1.47E+07 / (1 + exp(-4.83E-02 * (t -65.23)))</cell></row><row><cell cols="3">van Krevelen diagrams as a tool for the visualization of volatile profile of varietal olive oils from Alentejo C1 f=f0+A*(exp(-k1*t)-exp(-k2*t)) k2 &gt; k1 &gt; 0 1.90E+07 + 3.25E+08 * (exp(-1.00E-01 * t) -exp(-1.06E-01 * t))</cell></row><row><cell cols="3">region, Portugal. Talanta 2020, 207, 120276-120285 24 Wu, Z.; Rodgers, R.P.; Marshall, A.G. Two-and three-dimensional van Krevelen Diagrams: A graphical f=f0+A1*exp(-k1*t)-A2*exp(-k2*t) 3.64E+07 + 3.70E+08 * exp(-3.96E-02 * t) -3.52E+08 * exp(-4.29E-C2 k2 &gt; k1 &gt; 0 ; A1 &gt; A2 02 * t)</cell></row><row><cell>265-286 D1</cell><cell>f=f0+A1*exp(-k1*t)-A2*exp(-k2*t) k1 &gt; k2 &gt; 0 ; A2 &gt; A1</cell><cell></cell></row></table><note><p><p><ref type="bibr" target="#b17">18</ref> </p>Minor, E.C.; Swenson, M.M.; Mattson, B.M.; Oyler, A.R. Structural characterization of dissolved organic matter: a review of current techniques for isolation and analysis. Environ. Sci.-Proc. Imp. 2014, 16, 2064-2079 19 D'Andrilli, J.; Foreman, C.M.; Marshall, A.G.; McKnight, D.M. Characterization of IHSS Pony Lake fulvic acid dissolved organic matter by electrospray ionization Fourier transform ion cyclotron resonance mass spectrometry and fluorescence spectroscopy. Org. Geochem. 2013, 65, 19-28 20 Wozniak, A.S.; Bauer, J.E.; Sleighter, R.L.; Dickhut, R.M.; Hatcher, P.G. Technical Note: Molecular characterization of aerosol-derived water-soluble organic carbon using ultrahigh resolution electrospray ionization Fourier transform ion cyclotron resonance mass spectrometry. Atmos. Chem. Phys. 2008, 8, 5099-5111 21 Hertkorn, N.; Benner, R.; Frommberger, M.; Schmitt-Kopplin, P.; Witt, M.; Kaiser, K.; Kettrup, A.; Hedges, J.I. Characterization of a major refractory component of marine dissolved organic matter. Geochim. analysis complementary to the Kendrick mass plot for sorting elemental compositions of complex organic mixtures based on ultrahigh-resolution broadband Fourier Transform ion cyclotron resonance mass measurements. Anal. Chem. 2004, 76, 2511-2516 differences. 42 Dill, A.L.; Eberlin, L.S.; Zheng, C.; Costa, A.B.; Ifa, D.R.; Cheng, L.; Masterson, T.A.; Koch, M.O.; Vitek, O.; Cooks, R.G. 46 Filzmoser, P.; Gschwandtner, M.; Todorov, V. Review of sparse methods in regression and classification with application to chemometrics. J. Chemom. 2012, 26, 42-51 SI-2. 1.18E+06 + 1.70E+08 * exp(-5.50E-02 * t) A2 f=f0+A1*exp(-k1*t)+A2*exp(-k2*t) k1&gt;0 ; k2&gt;0 8.22E+05 + 1.89E+06 * exp(-9.61E-01 * t) + 1.25E+06 * exp(-1.01E+09 + 6.22E+05 * exp(-2.14E-01 * t) -1.01E+09 * exp(-5.12E-05 * t)</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Exported data from the SPIX software after assignation of a kinetic model to a m/z ratio</head><label></label><figDesc></figDesc><table><row><cell>Segment</cell><cell>m/z</cell><cell>Intensity</cell><cell>Time</cell><cell>File</cell></row><row><cell>65</cell><cell>278.19055</cell><cell>3.53E+10</cell><cell cols="2">0.0 Maprotiline WW H2O2 0min B.xy</cell></row><row><cell>65</cell><cell>278.19057</cell><cell>3.39E+10</cell><cell cols="2">1.0 Maprotiline WW H2O2 1min B.xy</cell></row><row><cell>65</cell><cell>278.19050</cell><cell>8,34E+09</cell><cell cols="2">2.5 Maprotiline WW H2O2 2min B.xy</cell></row><row><cell>65</cell><cell>278.19052</cell><cell>3,74E+09</cell><cell cols="2">5.0 Maprotiline WW H2O2 5min B.xy</cell></row><row><cell>65</cell><cell>278.19057</cell><cell>1,95E+09</cell><cell cols="2">7.5 Maprotiline WW H2O2 7min B.xy</cell></row><row><cell>65</cell><cell>278.19053</cell><cell>8,84E+08</cell><cell cols="2">10.0 Maprotiline WW H2O2 10min B.xy</cell></row><row><cell>m/z</cell><cell>r 2</cell><cell>p-value</cell><cell>model</cell><cell></cell></row><row><cell>278.19053</cell><cell>0.99</cell><cell>0.000776</cell><cell>A1</cell><cell></cell></row></table><note><p>47 Anderson, T.A.; Salice, C.J.; Erickson, R.A.; McMurry, S.T.; Cox, S.B.; Smith, L.M. Effects of landuse and precipitation on pesticides and water quality in playa lakes of the southern high plains. Chemosphere, 2013, 92, issue 1, 84-90 48 Thurman, E.M. Amount of organic carbon in natural waters. In: Organic geochemistry of natural waters, Springer, Dordrecht, 1985, 2, 7-65 SI-4.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Kendrick, E. A mass scale based on CH2 = 14.0000 for high resolution mass spectrometry of organic compounds. Anal. Chem. 1963,35(13),</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>[2146][2147][2148][2149][2150][2151][2152][2153][2154] </p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>Financial support from the <rs type="funder">National FT-ICR network</rs> (<rs type="grantNumber">FR 3624 CNRS</rs>) and from <rs type="funder">Inria (Institut national de recherche en informatique et en automatique</rs>) for conducting the research is gratefully acknowledged. This work is part of a project that has received funding from the <rs type="funder">European Union</rs>'s <rs type="programName">Horizon 2020 research and innovation program</rs> under the <rs type="grantName">Marie Skłodowska-Curie Grant</rs> Agreement No <rs type="grantNumber">765860</rs> (<rs type="projectName">AQUAlity</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_2UhXwEC">
+					<idno type="grant-number">FR 3624 CNRS</idno>
+				</org>
+				<org type="funded-project" xml:id="_MD8ARST">
+					<idno type="grant-number">765860</idno>
+					<orgName type="grant-name">Marie Skłodowska-Curie Grant</orgName>
+					<orgName type="project" subtype="full">AQUAlity</orgName>
+					<orgName type="program" subtype="full">Horizon 2020 research and innovation program</orgName>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary information</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sample preparation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Peroxide/UV photodegradation of maprotiline in wastewater</head><p>The UV photocatalyzed degradation of maprotiline was carried out in a 45-liter pilot plant with continuous flow at a wastewater treatment plant operated by the FACSA company in Alhama de Murcia (Spain). The molecule was submitted to peroxide/UV advanced oxidation process. The pilot plant included a tank for mixing with a stirrer, a reactor with UV lamp (model UVLA-325-4, controlled by Synergy 3 control panel -ATG UV Technology), a pump for water circulation, a rotameter to assess the water flow, and a compressor (Metabo Basic 250-50 W) to provide airflow in the rotameter equipped-reactor. The wastewater, secondary treated water originating from municipal and industrial sources, was transferred into the pilot plant after undergoing preliminary treatment (screening, sand and grease removal): decantation, biological treatment and sand filtration, before the chlorination step. At this point there were still bacteria in the mixture as well as micropollutants, which the traditional wastewater treatment methods are not able to remove. The wastewater was spiked with Maprotiline hydrochloride at 5 ppm, the total organic carbon content of the mixture was measured as 37.2 mg/L. 4 mL of hydrogen peroxide of technical grade (33 v/w%, VWR chemicals, Llinars del Vallès, Spain) were added to the pilot plant; it corresponds to the stoichiometric amount needed for Maprotiline mineralization. Since the reaction with peroxide radical is usually fast, the reaction time was 10 minutes and the sampling for HRMS (2 x 1 mL) was done at the following</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">High resolution mass spectrometry-based non-target screening can support regulatory environmental monitoring and chemicals management</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hollender</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Van Bavel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Dulio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Farmen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Furtmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Koschorreck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Kunkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krauss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Munthe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schlabach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Slobodnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Stroomberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ternes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">S</forename><surname>Thomaidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Togola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Tornero</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ Sci Eur</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="62" to="67" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Direct target and non-target analysis of urban aerosol sample extracts using atmospheric pressure photoionisation high-resolution mass spectrometry</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Giorio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bortolini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kourtchev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tapparo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bogialli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kalberer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chemosphere</title>
+		<imprint>
+			<biblScope unit="volume">224</biblScope>
+			<biblScope unit="page" from="786" to="795" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Nontargeted comprehensive twodimensional gas chromatography/time-of-flight mass spectrometry method and software for inventorying persistent and bioaccumulative contaminants in marine environments</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hoh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">G</forename><surname>Dodder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Lehotay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Pangallo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Maruya</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ Sci Technol</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="8001" to="8008" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Polyhalogenated carbazoles in sediments of Lake Michigan: A new discovery</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Potter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Rockne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">C</forename><surname>Sturchio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Giesy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ Sci Technol</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="12807" to="12815" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Strategies to characterize polar organic contamination in wastewater: Exploring the capability of highresolution mass spectrometry</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Schymanski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">P</forename><surname>Singer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Longrée</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Loos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ruff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Stravs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ripollés</forename><surname>Vidal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hollender</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ Sci Technol</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="1811" to="1818" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Extended suspect and non-target strategies to characterize emerging polar organic contaminants in raw wastewater with LC-HRMS/MS</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Gago-Ferrero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Schymanski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Bletsou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Aalizadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hollender</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">S</forename><surname>Thomaidis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ Sci Technol</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="12333" to="12341" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Formation and determination of organohalogen by-products in water</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kinani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kinani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bouchonnet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Characterization and quantitative approaches</title>
+		<author>
+			<persName><forename type="first">Iii</forename><surname>Part</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TRAC-Trend Anal Chem</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="295" to="305" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">High resolution mass spectrometry-based non-target screening can support regulatory environmental monitoring and chemicals management</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hollender</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Van Bavel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Dulio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Farmen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Furtmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Koschorreck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Kunkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krauss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Munthe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schlabach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Slobodnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Stroomberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ternes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">S</forename><surname>Thomaidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Togola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Tornero</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ Sci Eur</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="2" to="52" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Non-Target Screening with High-Resolution Mass Spectrometry: Critical Review Using a Collaborative Trial on Water Analysis</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Schymanski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">P</forename><surname>Singer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Slobodnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">M</forename><surname>Ipolyi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Oswald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krauss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schulze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Haglund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Letzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Grosse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">S</forename><surname>Thomaidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bletsou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zwiener</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ibáñez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Portolés</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">De</forename><surname>Boer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Reid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Onghena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kunkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Schulz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Guillon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Noyon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Leroy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Bados</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bogialli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Stipanicev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rostkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hollender</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal Bioanal Chem</title>
+		<imprint>
+			<biblScope unit="volume">407</biblScope>
+			<biblScope unit="page" from="6237" to="6255" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A mass scale based on CH2 = 14.0000 for high resolution mass spectrometry of organic compounds</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kendrick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal Chem</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="2146" to="2154" />
+			<date type="published" when="1963">1963</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The use of mass defect in modern mass spectrometry</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sleno</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Mass. Spectrom</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="226" to="236" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Graphical-statistical method for the study of structure and reaction processes of coal</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Van Krevelen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Fuel</title>
+		<imprint>
+			<biblScope unit="page" from="29" to="269" />
+			<date type="published" when="1950">1950</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Inter-active van Krevelen diagrams-advanced visualisation of mass spectrometry data of complex mixtures</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kew</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jwt</forename><surname>Blackburn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Uhrín</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rapid Commun Mass Spectrom</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="658" to="662" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Two-and three-dimensional van Krevelen Diagrams: A graphical analysis complementary to the Kendrick mass plot for sorting elemental compositions of complex organic mixtures based on ultrahigh-resolution broadband Fourier Transform ion cyclotron resonance mass measurements</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Rodgers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Marshall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal Chem</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="page" from="2511" to="2516" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Regression Methods in Chemometrics: a textbook</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Massart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bgm</forename><surname>Vandeginste</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Deming</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Michotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kaufman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+			<biblScope unit="page" from="165" to="182" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Pattern recognition used to investigate multivariate data in analytical chemistry</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">C</forename><surname>Jurs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">232</biblScope>
+			<biblScope unit="page" from="1219" to="1224" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Principal component analysis</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Abdi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">WIREs Comput Stat</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="433" to="459" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">OPLS discriminant analysis: combining the strengths of PLS-DA and SIMCA classification</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rantalainen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Cloarec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Nicholson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Trygg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Chemom</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="341" to="351" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Variable selection methods in multivariate statistical process control: A systematic literature review</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Araujo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Peres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">S</forename><surname>Fogliatto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput Ind Eng</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="603" to="619" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Sparse principal component analysis</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hastie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tibshirani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">Z</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Astie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Ibshirani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Comput Graph Stat</title>
+		<imprint>
+			<biblScope unit="volume">8600</biblScope>
+			<biblScope unit="page" from="265" to="286" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Review of sparse methods in regression and classification with application to chemometrics</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Filzmoser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gschwandtner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Todorov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Chemom</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="42" to="51" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Metabolomic investigation of gastric cancer tissue using gas chromatography/mass spectrometry</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Shen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal Bioanal Chem</title>
+		<imprint>
+			<biblScope unit="volume">396</biblScope>
+			<biblScope unit="page" from="1385" to="1395" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Analysis of the human adult urinary metabolome variations with age, body mass index, and gender by implementing a comprehensive workflow for univariate and OPLS statistical analyses</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Thevenot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ezan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Junot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Proteome Res</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="3322" to="3335" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Direct infusion mass spectrometry metabolomics dataset: a benchmark for data processing and quality control</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Kirwan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rjm</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">I</forename><surname>Broadhurst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Viant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci data</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">140012</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Variability and subjectivity in analytical chemistry. Results presented at the International Winter School on Mass Spectrometry</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Nicol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Varga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Grosshans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lavielle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bouchonnet</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019-03">March 2019</date>
+			<pubPlace>Palaiseau, France</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Artifacts in Fourier transform mass spectrometry</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mathur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O'</forename><surname>Connor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rapid Commun Mass Spectrom</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="523" to="529" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Seven golden rules for heuristic filtering of molecular formulas obtained by accurate mass spectrometry</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kind</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Fiehn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Bioinform</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">105</biblScope>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Study of the photoinduced transformations of maprotiline in river water using liquid chromatography highresolution mass spectrometry</title>
+		<author>
+			<persName><forename type="first">Npf</forename><surname>Gonçalves</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Varga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bouchonnet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Dulio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Alygizakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dal</forename><surname>Bello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Medana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Calza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Total Environ</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">143556</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">3 the use of the Kendrick diagram has been extended and adapted over the years for complex environmental samples, 4,5,6 metabolomic studies, 7,8 and proteomics on phosphopeptides. 9 As needs differ between environmental chemistry and petroleomics, many studies have focused on modification of the mass defect 10 in order to characterize reaction products such as oxidation or chlorination. 11,12 Even with a mass measurement accuracy of 1 ppm, a 2 Marshal</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Nicol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Varga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Vujovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S ;</forename><surname>Bouchonnet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Rodgers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">126040. petroleomics-type samples in the early 2000s</title>
+		<imprint>
+			<date type="published" when="2004">2020. 2004</date>
+			<biblScope unit="volume">248</biblScope>
+			<biblScope unit="page" from="53" to="59" />
+		</imprint>
+	</monogr>
+	<note>Chemosphere</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Kendrick mass defect spectrum: a compact visual analysis for ultrahigh-resolution broadband mass spectra</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Hughey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Hendrickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Rodgers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Marshall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal. Chem</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="4676" to="4681" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Carotenogenesis up-regulation in Scenedesmus sp. using a targeted metabolomics approach by liquid chromatographyhigh-resolution mass spectrometry</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">L</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Pirastru</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Popovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sleno</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Agric. Food Chem</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="3004" to="3013" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">The application of electrospray ionization coupled to ultrahigh resolution mass spectrometry for the molecular characterization of natural organic matter</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Sleighter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Hatcher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mass Spectrom</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="559" to="574" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Identification of black carbon derived structures in a volcanic ash soil humic acid by Fourier transform ion cyclotron resonance mass spectrometry</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Kramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">B</forename><surname>Kujawinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Hatcher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ. Sci. Technol</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="3387" to="3395" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">UPLC-QTOF/MS-based screening and identification of the constituents and their metabolites in rat plasma and urine after oral administration of Glechoma longituba extract</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Shang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chromatogr. B</title>
+		<imprint>
+			<biblScope unit="volume">878</biblScope>
+			<biblScope unit="page" from="2741" to="2750" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Mass defect filter technique and its applications to drug metabolite identification by high-resolution mass spectrometry</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mass Spectrom</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="999" to="1016" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Probabilistic enrichment of phosphopeptides by their mass defect</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bruce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Shifman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Gulcicek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal. Chem</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page" from="4374" to="4382" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The use of mass defect in modern mass spectrometry</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sleno</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mass. Spectrom</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="226" to="236" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The use of mass defect plots for the identification of (novel)halogenated contaminants in the environment</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Jobst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Reiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">Y</forename><surname>Taguchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Helm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mccrindle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Backus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal. Bioanal. Chem</title>
+		<imprint>
+			<biblScope unit="volume">405</biblScope>
+			<biblScope unit="page" from="3289" to="3297" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">29 Supervised methods require a priori information, meaning that classes, determined by specific qualitative properties, are known in advance, and this information is used to sharpen the distinction between the given classes. A subclass of these methods, discriminant analysis, studies why the classes are different and which variables drive their separation, bearing the largest discriminatory power (e.g., Partial Least Squares Discriminant Analysis). 30 The main areas of application in mass spectrometry data interpretation include food analysis and 25</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">Y</forename><surname>Taguchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Nieckarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Clement</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Krolik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Massart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">G M</forename><surname>Vandeginste</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Deming</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Michotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kaufman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Am. Soc. Mass Spectrom</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="165" to="182" />
+			<date type="published" when="1988">2010. 1988</date>
+		</imprint>
+	</monogr>
+	<note>Chemometrics: a textbook</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Pattern recognition used to investigate multivariate data in analytical chemistry</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">C</forename><surname>Jurs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">232</biblScope>
+			<biblScope unit="page" from="1219" to="1224" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Discriminant analysis of high-dimensional data: a comparison of principal components analysis and partial least squares data reduction methods</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Kemsley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chemom. Intell. Lab. Syst</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="47" to="61" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Principal component analysis</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Abdi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">WIREs Comput. Stat</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="433" to="459" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">What is principal component analysis?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ringnér</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="303" to="304" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">OPLS discriminant analysis: combining the strengths of PLS-DA and SIMCA classification</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bylesjö</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rantalainen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Cloarec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Nicholson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Trygg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">38 metabolomics in diagnostics and biology, 39,40,41 and imaging</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page">31</biblScope>
+		</imprint>
+	</monogr>
+	<note>43 However, when dealing with high-dimensionality data. it is difficult to assess and visualize which variables account for the</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">An overview of multivariate qualitative methods for food fraud detection</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Callao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ruisanchez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Food Control</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="283" to="293" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Application of a headspace mass spectrometry system to the differentiation and classification of wines according to their origin, variety and ageing</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Marti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Busto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Guasch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chromatogr. A</title>
+		<imprint>
+			<biblScope unit="page" from="211" to="217" />
+			<date type="published" when="1057">2004. 1057</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Electron impact-mass spectrometry fingerprinting and chemometrics for rapid assessment of authenticity of edible oils based on fatty acid profiling</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kenar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Çiçek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">N</forename><surname>Arslan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Akin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">N</forename><surname>Karuk Elmas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Yilmaz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Food Anal. Methods</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1369" to="1381" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Saffron authentication based on liquid chromatography high resolution tandem mass spectrometry and multivariate data analysis</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rubert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Lacina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zachariasova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hajslova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Food Chem</title>
+		<imprint>
+			<biblScope unit="volume">204</biblScope>
+			<biblScope unit="page" from="201" to="209" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Identifying sources of emerging organic principal components analysis</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Karpuzcu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Fairbairn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">A</forename><surname>Arnold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Barber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kaufenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Koskinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">P</forename><surname>Novak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Rice</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Swackhamera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ. Sci. Process. Impacts</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="2390" to="2399" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Oil spill source identification by principal component analysis of electrospray ionization fourier transform ion cyclotron resonance mass spectra</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">E</forename><surname>Corilo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Podgorski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Mckenna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Lemkau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Marshall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Rodgers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal. Chem</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="9064" to="9069" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Integration of two-dimensional lc-ms with multivariate statistics for comparative analysis of proteomic samples</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gaspari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C M</forename><surname>Verhoeckx</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">R</forename><surname>Verheij</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Van Der Greef</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal. Chem</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page" from="2286" to="2296" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">QC metrics from CPTAC Raw LC-MS/MS data interpreted through multivariate statistics</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Chambers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vega-Montoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Bunk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Tabb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal. Chem</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="2497" to="2509" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Plasma phospholipid metabolic profiling and biomarkers of type 2 diabetes mellitus based on high-performance liquid chromatography/electrospray mass spectrometry and multivariate statistical analysis</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal. Chem</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page" from="4108" to="4116" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Doping control using high and ultra-high resolution mass spectrometry based non-targeted metabolomics -a case study of salbutamol and budesonide abuse</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lucio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fildier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Buisson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Schmitt-Kopplin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cren-Olivé</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS One</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">GC/MS based metabolomics: development of a data mining system for metabolite identification by using soft independent modeling of class analogy (SIMCA)</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tsugawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tsujimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Arita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Bamba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fukusaki</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>BMC Bioinform</publisher>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="131" to="144" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

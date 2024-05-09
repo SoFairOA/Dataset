@@ -1,0 +1,1625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Gabriel package: software for education and research</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Gilles</forename><surname>Olive</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Société Royale des Sciences de Liège</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">École Industrielle et Commerciale de la Ville de Namur</orgName>
+								<address>
+									<addrLine>Rue Pépin, 2B</addrLine>
+									<postCode>5000</postCode>
+									<settlement>Namur</settlement>
+									<country>Belgium Résumé</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Gabriel package: software for education and research</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<note type="submission">Manuscrit reçu le 23 juillet 2012 et approuvé le 24 mai 2016</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-09T13:41+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>algorithme</term>
+					<term>équation</term>
+					<term>logiciel</term>
+					<term>analyse de données</term>
+					<term>savon</term>
+					<term>pKa</term>
+					<term>RMN 31 P algorithm</term>
+					<term>equation</term>
+					<term>software</term>
+					<term>data analysis</term>
+					<term>soap</term>
+					<term>pKa</term>
+					<term>31 P NMR</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>De nos jours, les ordinateurs personnels font partie de notre vie, à la maison, au travail ou bien à l'école. Même si la puissance des ordinateurs augmente, les logiciels sont de plus en plus compliqués, demandant de plus en plus de temps d'apprentissage ou bien pour obtenir un résultat. Il est devenu important d'avoir dans les laboratoires ou à l'école de petits logiciels rapides utilisant des équations empiriques. Nous rapportons ici l'utilisation mais surtout les algorithmes et les équations ainsi que les jeux de paramètres de trois logiciels appartenant à la suite logicielle Gabriel. Le premier, Gabriel Nathalie II, est un calculateur qui a de nombreuses fonctionnalités. Il est possible de calculer tant un pKa que de simuler le déplacement chimique en 31 P RMN de molécules du type amino-phosphonate. Par ailleurs, il est également capable de déterminer des valeurs thermodynamiques de fixation de bisphosphonates sur les os humains. Le deuxième, Gabriel Calculatrice Savon, est utilisé pour calculer la quantité d'alcali nécessaire pour faire du savon en fonction de la quantité et de la nature de la matière grasse. Il peut aussi calculer la viscosité de quelques huiles à une température donnée. Enfin, Gabriel Data Analysis est un logiciel dédié à l'analyse de données. Aujourd'hui, un logiciel pour la recherche peut être utilisé à l'école et un logiciel éducatif peut être utile en recherche.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>1. Introduction <ref type="bibr" target="#b1">1</ref> Adresse pour le courrier électronique : gilles.olive@eicvn.be It is well established that today, personal computers are part of our life either at home, at work or at school. As the computer power increases, the software becomes harder and harder, requiring more time for learning or for obtaining a result. For example, the use of Gaussian <ref type="bibr" target="#b1">[1]</ref> , a quantum calculation package, the input creation and more, the calculation requires a long time. Moreover, Gaussian is expensive. Some other software like Tinker <ref type="bibr" target="#b5">[2]</ref> , Firefly <ref type="bibr" target="#b6">[3]</ref> or Facio <ref type="bibr" target="#b7">[4]</ref> are free of charge but are more difficult to use even if their authors take the users' wishes into account.</p><p>The need of small software using empirical but fast equations becomes urgent in labs as well as at school.</p><p>Most of this software uses databases patiently collected by the authors.</p><p>In this paper we report about the use of three software belonging to the Gabriel package. This software is entirely developed in Visual Basic 6 and can be obtained free of charge upon request. Due to some incompatibilities with Visual Basic 6, some software does not work under Microsoft operating systems higher than Windows XP <ref type="bibr" target="#b5">2</ref> . First, the user has to download and install the software he wants. When first launched, a window containing the license and the history of the software opens. When a new version is out, the user can download the install package or only the executable and then overwrite the old version.</p><p>As to the license, this software is not a "freeware" but is "free of charge". They can be used freely but they come with restrictive license agreements. First, the authors are pleased to cite this software (in the About form, it is written how to cite the corresponding one) and to send a copy as pdf file of the publication. Secondly, they are "Scienceware" and are based on the Shareware. Instead of sending money, the users are pleased to send any missing information (like pairing, coefficients for equations, etc ...). For the exact license and to find more information, the users are pleased to click the button View License &amp; History in the About form to read the License &amp; History.txt file.</p><p>In this publication, we will also describe the equations, the data sets and the algorithms that are in use in the different software.</p><p>As we will see, today, software for research can be used for educational and educational software can be useful for research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Gabriel Nathalie II (GN2)</head><p>Pietri et al. carried out a very nice work to find the empirical equations for calculating the pKa or the chemical shift in <ref type="bibr" target="#b37">31</ref> P NMR of amino phosphonate. <ref type="bibr" target="#b8">[5]</ref><ref type="bibr" target="#b9">[6]</ref><ref type="bibr">[7]</ref><ref type="bibr">[8]</ref><ref type="bibr" target="#b13">[9]</ref><ref type="bibr" target="#b14">[10]</ref><ref type="bibr" target="#b15">[11]</ref> Collecting the data (more than 50 points) was very long and needed a great patience. The equations were recalculated several times and improved as new compounds were available. The equations were determined by linear regression from experimental data by using the Program Courbe developed by Blaive. <ref type="bibr" target="#b16">[12]</ref> The equation for pKa is (Equation <ref type="formula">1</ref>) pKa = a0 + (∑ai.ni) + agem.ngem Eq. 1</p><p>where ni represents the number of each substituent of type i, a0 is a constant value, and agem.ngem corresponds to the nonlinear steric of a bulky substituent linked in gem position. ai is a constant increment depending on the substituent. The cyclic alkyl substituent was chosen as a reference and its coefficient ai was set to 0.</p><p>The equations, for calculating the chemical shifts (in acidic and in basic medium) or the difference between the two, are similar to the equation for calculating the pKa (Equation <ref type="formula">2</ref>):</p><p>δa or b = b0a or b + ∑bja or b.nj Eq. 2 in which the suffixes a and b mean respectively acid and basic and nj has the same meaning as above.</p><p>Alkyl substituents were chosen as reference and their coefficients bja and bjb were set to 0.</p><p>The screen is divided into two unequal parts (Figure <ref type="figure">1</ref>), the top is used to choose the calculation to be performed. The About button will give the version (3.05 yet) and how to cite this software. Figure <ref type="figure">1</ref> shows the screen for pKa calculations. The left part (the biggest one) is used for the introduction of the groups. Seven or nine groups are available according to references <ref type="bibr" target="#b9">[6]</ref> and <ref type="bibr">[8]</ref> . In the first reference two groups (CH2OH and COOMe) were not present: choosing one of them will prevent the calculation of the first set of data coefficient. An important point is that the two sets of data were kept because the second one (on 39 compounds <ref type="bibr">[8]</ref> ) is not always better than the first one (on 20 compounds <ref type="bibr" target="#b9">[6]</ref> ). In reference <ref type="bibr">[8]</ref> ,</p><p>equations for calculating the pKa as a function of the temperature have been introduced but also the possibility to use a tertiary amine (only with a methyl group) instead of a secondary. The attention of the user is drawn to the case of cyclic compound, if R1, R2 or R3 is chosen, then respectively R4, R5 or R6 must be selected as cyclic alkyl. In case of a problem, a message will be sent to the user by the message box (Figure <ref type="figure">1</ref>). With version above 3.00 of Gabriel Nathalie II, it is possible to calculate the spin lattice relaxation time T1 in <ref type="bibr" target="#b37">31</ref> P NMR according to two equations <ref type="bibr" target="#b14">[10]</ref> , both related to the pKa and the molecular mass (Figure <ref type="figure">1</ref>).</p><p>Fig. <ref type="figure">1</ref> : Screen of GN2 for calculating pKa's values of amines. <ref type="bibr" target="#b6">3</ref> The 31 P NMR calculator is based on the same system (Figure <ref type="figure" target="#fig_0">2</ref>). The substituent groups are selected with the mouse and the results appear immediately in the right part. Here also, two sets of data, with the reference <ref type="bibr" target="#b9">[6]</ref> (on 24 compounds) and <ref type="bibr">[8]</ref> (on 44 compounds), are used for each calculation ; none is better than the other when correlated to the experimental values.</p><p>The difference of acidic and basic chemical shift (δb -δa) is not the difference between the calculated values but is calculated using another data set <ref type="bibr" target="#b9">[6,</ref><ref type="bibr">8]</ref> of the same type as the acidic or the basic chemical shift.</p><p>The value of the chemical shift in the deutareted chloroform was determined statically by the author and was found to be the chemical shift value in the basic medium multiplied by 1.02 if the basic chemical shift is positive or divided by the same value if it is negative (Figure <ref type="figure" target="#fig_0">2</ref>). In 2009, the group of Eric Oldfield, in a nice work, found a correlation between the structure and the thermodynamics data of bisphosphonate binding to human bone. <ref type="bibr" target="#b17">[13]</ref> The thermodynamics data calculated are the free energy, the enthalpy and the entropy. The equation used is similar to that of calculating the pKa and is a linear combination of variables (on 12 compounds but 18 vectors) (Equation <ref type="formula">3</ref>): </p><formula xml:id="formula_0">+ + + = + + Eq. 4</formula><p>the total free energy of binding is a linear combination of the free energy values for ammonium, phosphonate group number 1, phosphonate group number 2 with an 1-hydroxy group and a general hydrophobic side-chain (hydrogen or phenyl group). As the second phosphonate group that binds to human site B has always an 1-OH group, their contribution was grouped to one only. The equations for enthalpies and for temperature multiplied by entropy are similar to the free energy one. The figure <ref type="figure">3</ref> shows how to input the data: just put the number of each group present and the calculations are performed instantly. For the ammonium group, the protonation at pH 7 must be taken and a value of 0.33 and 0.03 respectively for imidazoliums and pyridiniums group has to be mentioned. Fig. <ref type="figure">3</ref> : Screen of GN2 for calculating thermodynamics values of bisphosphonic acid.</p><p>It seems that the authors used another data set because small differences were found between their and our calculations (example on compound 3, site A, -T∆S: -3.9894 kcal by reference <ref type="bibr" target="#b17">[13]</ref> ; -3.9883 kcal by our software).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Gabriel Calculatrice Savon (GCS) (Gabriel Soap Calculator)</head><p>At present, this software is for education only ; at the beginning it was only in French and only six oils are included in the viscosity module. GCS was in French because one of the most cited remarks on Internet forums was that no soap calculator exists in French but most of time in English. The second remark was that the existing soap calculator needed always an Internet access. GCS will soon be usable for research, too. First, we translated it and it is now multi-language as can be seen in figure <ref type="figure" target="#fig_1">4</ref>: the proposed languages for all modules are now French, English, Spanish and Dutch (other languages are welcome) <ref type="bibr" target="#b8">5</ref> . Secondarily we found publications with data set for new oils and new equations for viscosity <ref type="bibr" target="#b18">[14,</ref><ref type="bibr" target="#b20">15]</ref> and an HLB calculator using the Davie's group number will be included <ref type="bibr" target="#b21">[16]</ref><ref type="bibr" target="#b22">[17]</ref><ref type="bibr" target="#b23">[18]</ref><ref type="bibr" target="#b24">[19]</ref><ref type="bibr" target="#b26">[20]</ref> . Today, this is the 2.08 version of GCS.</p><p>Soaps are salts of fatty acids. Making soap is easy. It consists in putting together a fat and an alkali and to boil the mixture for a few hours. Chemically the oils are triglyceride, exactly they are triesters. The action of the alkali is an hydrolysis of the esters to give glycerol (propan-1,2,3-triol) and the salt of fatty acids. It is well known that the quantity of alkali needed for the reaction can be calculated by the Saponification Index (IS in French) or the Saponification Value that is defined as the number of mg of potassium hydroxide needed to neutralize free fatty acids and to hydrolyze the fatty esters in one gram of fat. So this is the total of potassium hydroxide that must be used to make soap with no fatty excess ; it is simple, thanks to the ratio of molecular weight, to know the amount of soda or sodium carbonate. What is very important in such software is the size of the database of saponification index. Thanks to Internet we have found a database with 89 fats. <ref type="bibr" target="#b27">[21]</ref> Of course, verifications with some publications were carried out to avoid any mistakes.</p><p>Figure <ref type="figure" target="#fig_1">4</ref> shows the Input Module. At the bottom of the screen, the user can choose the calculation to be performed: load or save a file (in the GCS format), calculate the quantity of base needed, go to the viscosity module, change the language, etc ... The top of the screen is used to introduce the title of the experimentation, the author (for copyright for example), a code (for retrieving a manipulation) and the date.</p><p>According to the base (alkali) used, it is possible to carry out different soaps: potassium salts (from potassium hydroxide) give soft soap while sodium salts (from soda or sodium carbonate) give hard soap.</p><p>In the second line the user can choose which base to use as solid or in solution. In the latter case the solution concentration must be entered in the appropriate textbox (not available if the checkbox is not checked).  <ref type="bibr" target="#b9">6,</ref><ref type="bibr">7</ref> and some properties of soap made with the oil when they were found. An asterisk following the name of an oil indicates that this oil is present in the Viscosity Module.</p><p>And at last, a text box is present to enter some notes and the experimental part.</p><p>By pressing the button Calculate, the screen presented in figure <ref type="figure" target="#fig_2">5</ref> will be show. At the top, the additional information about the name of the soap, the author, the date, etc ... are recovered from the first form.</p><p>Follows the quantity of water as an interval calculated by Equation <ref type="formula">5</ref>quantity of water (ml) = total amount of fat (g) * 0.25 + 0.5 Eq. 5</p><p>for the lower boundary and by Equation <ref type="formula">6</ref>for the upper quantity quantity of water (ml) = total amount of fat (g) * 0.375 + 0.5 Eq. 6</p><p>In the right part, the most important one, the quantity of base as a function of the fat excess (up to 10 %) is included while in the left part the user will find a summary of the selected oils. From this point you can print the results, exit GCS or go back to the main form for introducing new data. In fact, the user can print only on the default printer ; soon the printer can be chosen. When from the main form the Viscosity button is pressed, the Viscosity Module is activated. In 1998, Abramovic et al. published a paper dealing with the temperature dependence of dynamic viscosity for six oils (unrefined sunflower oil, refined sunflower oil, refined corn oil, olive oil, unrefined pumpkin oil, salad oil). <ref type="bibr" target="#b28">[22]</ref> In this publication, the authors try to find the best correlation between viscosity and temperature for which they test six different equations, some are modified versions of the Andrade equation. Contrary to what Abramovic <ref type="bibr" target="#b28">[22]</ref> wrote, the best fit is not given by their equations 3 or 4 but by equation 5 of the publication. The best equation is given by Equation <ref type="formula">7</ref>B -T A η log = Eq. 7</p><p>where T is the absolute temperature in Kelvin, A and B are correlation constants.</p><p>The Viscosity Module is easy to use (Figure <ref type="figure" target="#fig_3">6</ref>). In the textbox the temperature in degree Celsius is given and in the combobox the oil is chosen between six: unrefined sunflower oil, refined sunflower oil, refined corn oil, olive oil, unrefined pumpkin oil and salad oil. The viscosity value is calculated in centiPoise or mPa.s. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Gabriel Data Analysis (GDA)</head><p>Currently GDA is the most important software of this package. The screen is divided in three parts (Figure <ref type="figure" target="#fig_4">7</ref>): the top is the menu, the middle is the module itself and the bottom can be considered as a (tool) bar to choose which module to use. Each module has its own About form and GDA About form also summarizes all information. The desired module is obtained either by pressing the corresponding button, selecting it in the menu (called Module and always present) or using a key combination (see in the Module menu). As the number of modules increases, since the build 4.6 of the version 1.16, some less useful modules are accessible by selecting them in the combo box and pressing the "&lt;-Go to module" button. An °at the end of the name's module indicates that it needs a special file ; a flag will be up to avoid any problem. Most of time, in a graphical area, a click with the mouse left button will give the coordinates of the plot, according to the units in use.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Input Module (actual version: 1.54)</head><p>This is the first one and the more important module of GDA (Figure <ref type="figure" target="#fig_4">7</ref>). With this one, the user can either enter the data, either load data directly from apparatus file. The authors are attentive to the user wishes and are ready to introduce new files format to help users. Several parts are in the screen and the latter revolves around two Grids called respectively Grid 1 (or Major Grid) for the left one and Grid 2 (or Calculation Results Grid) for the right one. From the menu, it is possible to load or save files in several formats: GDA format (that is in fact Gabriel Statistique (.GAS)), ASCII Text file with a complete import module that can import almost all text files <ref type="bibr">8</ref> , STA files which are an old format from the I.E.E.E Module of the homemade Mathematic Solver V 0.16 (on Atari ® 520 ST) software, TVT files from Lauda TVT 1</p><p>Tensiometer, LFW files from Lauda FW 2 Langmuir-Balance and DVW files from Bohlin CVO120. Some loads can be accessed directly with the right mouse button. CSV (Coma Separate Value) files can be saved and the file can be loaded in Microsoft Excel ® . The Edition menu contains normal editing tools like inversion of columns, filling with or without increment a column, deleting or adding a cell, row <ref type="bibr" target="#b13">9</ref> or column, sorting ascending or descending a column, searching maximum and minimum in each column, imposing a flag and removing some # into the data. The two last deserve more description. To avoid errors in the calculation that could crash the program, when files from apparatus are loaded (or for pH calculations), a flag is set and before launching the corresponding module, a test is carried out to prevent the user's mistake. Grid 2 is used to receive the result of some basic calculations: when a calculation is impossible (the inverse of zero or a logarithm of a negative value for example) to indicate this impossibilities to the user, four # are written in the corresponding cell. Those four # will prevent results of some modules and an option to remove them is implemented in the Edition menu. Between the two grids, the Transform panel ; at the top, the variable that will be changed is selected.</p><p>Below, the calculations performed: only the last two ones will be detailed, the others do not require special comments. In the X,Y Statistic Module, the same calculations are performed but with different algorithms and they will be explained later. The calculation of the first derivative is depending on the neighborhood of the cell. But before seeing the algorithms as tree, let us present the different equations in which the index 0 represents the line currently being processed, m1 the line just before, m2 the index of the current line less 2, p1 the line just after the current one and p2 the index of the current line plus 2. All calculations are based on finite differences, in particular the forward differences (Equations 8-9), the backward differences (Equations 10-11) and centered differences (Equations 12-13). <ref type="bibr" target="#b29">[23]</ref> 0 p1</p><formula xml:id="formula_1">0 p1 x ' x - x y - y f 0 = + Eq. 8 ) x - )(x x - (x y 2y - y f 0 p1 p1 p2 p2 p1 0 x ' ' 0 + = + Eq. 9 m1 0 m1 0 x ' x - x y - y f 0 = - Eq. 10 ) x - )(x x - (x y 2y - y f m2 m1 m1 0 m2 m1 0 x ' ' 0 + = - Eq. 11 ) x - (x ) x - (x y - y f m1 0 0 p1 m1 p1 x ' 0 + = Eq. 12 ) x - )(x x - (x y 2y - y f m1 0 0 p1 p1 0 m1 x ' ' 0 + = Eq. 13</formula><p>Five types of cells exist: the first, the second, the "middles", the penultimate and the last lines. The algorithms as tree of the five cases are presented in figure <ref type="figure" target="#fig_5">8</ref> to figure 12. In the figures the symbol = means that one of the corresponding cells is empty and the symbol ≠ means that no cell is empty, a # followed by letter(s) means that forth # will be written to the corresponding cell(s). In each case, GDA attempts to calculate the best derivative point.   Fig. <ref type="figure" target="#fig_0">12</ref> : Algorithm (as tree) for calculating the best derivative of the Last line.</p><p>The second algorithm that will be described here is the algorithm of smoothing. Smoothing the data is used to eliminate noise for example. In the text box, the degree of smoothing is indicated. GDA makes the average of the number of the data before the actual cell corresponding to the degree of smoothing.</p><p>The next part between the two grids is devoted to the average. In many cases, the data is discontinuous and it may be interesting to have the value of Y or Z for a particular value of X. To do this, simply complete the fields within the framework "Average weight", without forgetting to clarify the desired variable within the framework above. The principle is to use a simple rule of three of the difference of the values and add it to the first.</p><p>Normally, up to 999 points can be entered ; other capacities of data can be asked to the authors if needed.</p><p>When pressing a button in the bottom of the screen, the transfer of the data points to the selected module will stop when the first empty cell is found.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">One Variable Statistic Module (actual version: 1.05)</head><p>The module can either work on the first column of Grid 1 (X) or Grid 2 (X'). As can be seen in figure <ref type="figure" target="#fig_8">13</ref>, this module is an inheritance of Gabriel Statistique: the labels are in English and in French. Only the unusual calculations will be explained here. Figure <ref type="figure" target="#fig_8">13</ref> shows a typical screen results, which is divided in four parts: sums of data, averages, dispersion, Student Fisher analysis. The first part of the screen is easy to understand and will not be discussed here. The second part concerns several averages. The first one, the mean, is well known like the median. The geometric mean G, the harmonic mean H and the quadratic mean Q are respectively defined (and programmed) as (Equations 14-16), in which n is the total number of data <ref type="bibr" target="#b30">[24]</ref> n n</p><formula xml:id="formula_2">1 i i x G ∏ = =</formula><p>Eq. 14</p><formula xml:id="formula_3">∑ = = n 1 i i x 1 n H Eq. 15 n x Q n 1 i 2 i ∑ = =</formula><p>Eq. 16</p><p>with no negative product of data for G and with no data equal to zero for H as restrictions.</p><p>The logarithmic mean is defined as (only if all data is positive and non equal to zero) (Equation <ref type="formula">17</ref>)</p><formula xml:id="formula_4">n ln x L n 1 i i ∑ = =</formula><p>Eq. 17</p><p>The next part of the screen concerns the standard deviations and the variance of the data. This part is divided by two other parts which have the same information, but the upper part concerns a population and n, the number of data, is used in the equations while the lower part concerns a sample and n-1 is used instead.</p><p>The equations in use in GDA are for the standard deviation of a population 10 (Equation <ref type="formula">18</ref>) and for a sample <ref type="bibr" target="#b15">11</ref> (Equation <ref type="formula">19</ref>) respectively (in parenthesis how they are defined in reference <ref type="bibr" target="#b30">[24]</ref> )</p><formula xml:id="formula_5">( )               =       -       = ∑ ∑ ∑ = = = n x - x n x x n Sd n 1 i 2 i 2 2 n 1 i i n 1 i 2 i n Eq. 18 and ( )               =       -       = ∑ ∑ ∑ = = = 1 - n x - x 1) - (n n x x n Sd n 1 i 2 i 2 n 1 i i n 1 i 2 i 1 - n Eq. 19</formula><p>and the variance is in the two cases calculated by the Equation <ref type="formula">20</ref>(</p><formula xml:id="formula_6">2 1 - n or n Sd V =</formula><p>Eq. 20).</p><p>In case of logarithmic data, if all data is superior to zero, the above equations are the same but the sum of data is replaced by the sum of the logarithms of the data. One of the first equations used to have a idea of the dispersion of the data is the average absolute deviation <ref type="bibr" target="#b30">[24]</ref> which is (Equation <ref type="formula">21</ref>)</p><formula xml:id="formula_7">1 - n or n x - x Aad n 1 i i 1 - n or n ∑ = =</formula><p>Eq. 21</p><p>The variation coefficients are programmed in GDA by the Equation <ref type="formula">22</ref>x Sd 100 VC </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>=</head><p>Eq. 22 in which x is the arithmetic mean as above and below.</p><p>The standard deviation of the distribution of means, also called standard error of mean, is (Equation <ref type="formula">23</ref>) <ref type="bibr" target="#b14">10</ref> which is abbreviated sometime by σ. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>=</head><p>Eq. 23</p><p>The last part of the screen is devoted to the Student-Fisher test. The Student test is used for small populations (n &lt; 30). First the corresponding t coefficient for confidence level at 95 % is shown, that can be found at page 344 in reference <ref type="bibr" target="#b30">[24]</ref> . The H0 hypothesis will be discussed later. After, the relative error follows (Equation <ref type="formula">24</ref>)</p><formula xml:id="formula_8">x t Sd 100 RE 1 - n or n 1 - n or n × × =</formula><p>Eq. 24</p><p>Four confidence levels are then given, respectively for one value and for the mean for n and n-1 values in the two cases. GDA gives respectively for each line the value that allows the calculations of the limits of the confidence, the lower and the upper boundaries of the limits of the confidence and the number of data and which data is outside those limits. The limits of the confidence is described by Equation <ref type="formula">25</ref>1</p><formula xml:id="formula_9">- n or n t Sd x 1 - n or n × ±</formula><p>Eq. 25</p><p>The last part of the equation above is the value given by GDA for calculating the two limits. The results are then given by the mean followed by the "Student error", GDA will give the study of the data to this format: the good number of digit according to the majored value of the error.</p><p>A null hypothesis H0 can be tested. First the user enters in the text box the value he wants to test and after pressing on the "Test hypothesis" button the result, accepted or rejected, is given, followed in parenthesis, the value of the Hypothesis Calculated t. As a reminder, the hypothesis is accepted if the Hypothesis Calculated t is greater than t. <ref type="bibr" target="#b30">[24]</ref> The Hypothesis Calculated t is calculated according to reference <ref type="bibr" target="#b30">[24]</ref> and Equation 26 This module is the biggest part of GDA and one of the reasons <ref type="bibr" target="#b16">12</ref> of GDA, the use of Microsoft Excel ® is not easy for finding the best correlation of data. This module, like the last described module, can either work from the first (X,Y) or from the second (X',Y') grid. When this module is called, two screens appear. The first is the graphical window (Figure <ref type="figure" target="#fig_9">14</ref>) and the second is the equation panel (Figure <ref type="figure" target="#fig_10">15</ref>). A second window is needed, due to the number of equations (more than 20), because we want to have the biggest graphical area to see and be able to choose the best correlation. Figure <ref type="figure" target="#fig_9">14</ref> shows a typical screen: on top, the title (which is the text in the comment text box of the Input Module), in the right part the information (from the Input Module) on the variables X and Y, three buttons to save or copy the graphic and the about of this module, and in the center part the plot itself. In this plot, as a cross, the data are drawn as well as the curves that are chosen in the equation panel (Figure <ref type="figure" target="#fig_10">15</ref>). In Figure <ref type="figure" target="#fig_10">15</ref> it is easy to choose what the user wants to draw by selecting the corresponding checkboxes and we will discuss now all calculations. "Line between points" and "Line at Y =" will not be discussed here as they are easy to understand, like the Lagrange interpolation that is well known and often described <ref type="bibr" target="#b29">[23]</ref> and is schematically calculated, first searching the Lagrange's polynomial Lj(x) (Equation <ref type="formula">27</ref>) and, secondly the polynomial Pn(x), which is the interpolation's polynomial, calculated using Equation 28</p><formula xml:id="formula_10">∏ ≠ = = n j k 1 k k j k j x - x x - x (x) L</formula><p>Eq. 27</p><formula xml:id="formula_11">∑ = = n 1 j j j n (x) L y (x) P Eq. 28</formula><p>in which x is the value for x to be interpoled.</p><p>Smoothing the data according to the value of the degree of smoothing in the textbox uses the same algorithm as the one described in the Input Module for the y's values only. Until version 1.23 of this module, the smoothed data were accessible by pressing the button "Smooth": all equations were erased and the graphic plot showed only the smoothed data. Now the button is replaced by a checkbox and the smoothed data are added as red circles to the plot of the data and the desired functions. Because there are no recalculations of equations, they are given in the panel for raw data ; in case the user wants the equations for smoothed data, he must use the Input Module for such calculations.</p><p>Pressing the button "Area=" at the bottom of the panel, the area will be calculated, using the trapezes method (Equation <ref type="formula">29</ref>) between the two indicated boundaries a and b (textboxes) with n intervals. <ref type="bibr" target="#b29">[23]</ref> In fact GDA makes the sum of the absolute values and the result appears in the textbox on the right side.</p><formula xml:id="formula_12">1 - i i i n 1 i i i 1 - i b a x - x Δx h wit Δx 2 ) f (f dx f(x) = + = ∑ ∫ = Eq. 29</formula><p>Below, there are three buttons. The first on the left side is to go back to the Input Module, "File equations values" button will create a CSV file containing for all values of x (on the screen) all y values according to the selected functions in this panel (see Figure <ref type="figure" target="#fig_10">15</ref>), while "Copy to Clipboard" will copy all equations and correlation coefficients to clipboard which can be pasted to any word processing software.</p><p>A checkbox is present before the equations and when one is selected, the corresponding function is plotted to the graphical window as shown in Figure <ref type="figure" target="#fig_9">14</ref>. Now all algorithms used to obtain the equations will be discussed here.</p><p>The first one is the first derivative. As already explained in the Input Module section and as the data are continuous in this module, the algorithm used here is a simpler algorithm than the one used in the Input Module. The first point is always calculated using the forward differences (Equation <ref type="formula">8</ref>), the last point using the backward differences (Equation <ref type="formula">10</ref>) and between by the centered differences (Equation <ref type="formula">12</ref>) with a small difference at the denominator where xp1 -xm1 is directly calculated instead of (xp1 -x0) + (x0 -xm1). The scale in the graphical window is recalculated and lines between the first derivative points can be plotted in light blue.</p><p>The classical least square (CLS) method for finding the best linear (y = a + b x) fit is well documented <ref type="bibr">[24- 26]</ref> and is programmed in GDA as follows (Equations 30-32) including r, the correlation coefficient, that gives one of the information of the quality of the fit.</p><formula xml:id="formula_13">n x b - y a n 1 i i n 1 i i ∑ ∑ = = =</formula><p>Eq. 30 with</p><p>2 n</p><formula xml:id="formula_14">1 i i n 1 i 2 i n 1 i n 1 i i i n 1 i i i x - x n y x - y x n b       = ∑ ∑ ∑ ∑ ∑ = = = = = Eq. 31                             = ∑ ∑ ∑ ∑ ∑ ∑ ∑ = = = = = = = 2 n 1 i i n 1 i 2 i 2 n 1 i i n 1 i 2 i n 1 i i n 1 i i n 1 i i i y - y n x - x n y x - y x n r</formula><p>Eq. 32</p><p>Unfortunately, the classical least square regression suffers several drawbacks that will be discussed now. <ref type="bibr" target="#b32">[26]</ref><ref type="bibr" target="#b33">[27]</ref><ref type="bibr" target="#b34">[28]</ref> One of these drawbacks is that the classical least square technique "minimizes only the squared distance parallel to the y axis between the experimental points and the fitting line". <ref type="bibr" target="#b32">[26]</ref> Moreover the x's values are not always free of errors or uncertainty. <ref type="bibr" target="#b32">[26]</ref> Furthermore, in the CLS regression there is no symmetric treatment of the data x and y series preventing the transformation of a fit y over x in x over y. The best method to avoid these two drawbacks is the use of the orthogonal least square (OLS) technique which minimizes the sum of quadratic distances to the equation line. <ref type="bibr" target="#b32">[26]</ref> This has been introduced in GDA according to equations 33 to 35 using a temporary variable as described in reference <ref type="bibr" target="#b32">[26]</ref> .</p><p>( ) ( )</p><formula xml:id="formula_15">( )( ) ( ) ∑ ∑ ∑ = = = = n 1 i i i n 1 i n 1 i 2 i 2 i y - y x - x 2 y - y - x - x B Eq. 33 x b - y a ± ± = Eq. 34 with 1 B B - b 2 + ± = ± Eq. 35</formula><p>As the reader can see, the OLS regression gives two equations: the one wanted and the orthogonal one to it. The two fits are plotted if requested.</p><p>One of the actual problems is to find an efficient coefficient r that gives the quality of the fit. After finding some in page 244 of reference <ref type="bibr" target="#b30">[24]</ref> , the Equation 36, calculating correlation coefficient r, has been chosen for OLS, Thiel, Theil-Siegel, assuming a constant percent error and X as explained variable linear regressions. In extreme cases, results are strange (r can be greater than one). TAKE CARE WITH THESE RESULTS. For those of which the correlation coefficient is not efficient, r will be written between parentheses in the equation panel.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>( )</head><formula xml:id="formula_16">2 n 1 i i n 1 i n 1 i i i i n 1 i 2 i y - y y x b - y a - y - 1 sign(b) r ∑ ∑ ∑ ∑ = = = = × =</formula><p>Eq. 36</p><p>Another drawback that the CLS suffers, is that this latter is sensible to outliers. <ref type="bibr" target="#b34">[28]</ref> When a data point is out of range of the general trend of the data set, this will badly influence the results of CLS. <ref type="bibr" target="#b34">[28]</ref> The example given in reference <ref type="bibr" target="#b34">[28]</ref> using the following couples of data ((0, 0.0); (1, 1.1); (2, 2.0); (3, 3.1); (4, 3.8); (5, 10.0)) will give an idea of the problem (Figure <ref type="figure" target="#fig_11">16</ref>). The resistance (or breakdown bound) is zero for CLS. The use of the median (which is the central value of an ordered data set) is exceptionally resistant to outliers. <ref type="bibr" target="#b34">[28]</ref> In 1950, Theil proposed a resistant and easily implementable method which consists of collecting the slopes between all possible pairs (Equation <ref type="formula">37</ref>) and find the median of these slopes. <ref type="bibr" target="#b34">[28]</ref> i j</p><formula xml:id="formula_17">i j ij x - x y - y b = with xi ≠ xj, 1 ≤ i &lt; j ≤ n Eq. 37</formula><p>This gives n(n-1)/2 slope values. The slope b is given by finding the median of all the above slopes and the intercept a by finding the median of all {yi -b xi}. The breakdown bound is 29 %. <ref type="bibr" target="#b34">[28]</ref> An improvement of this resistance to 50 % is due to Siegel in 1982. He proposed to calculate the slope b in two steps, first the median of all the slopes calculated from a given data point and then the median of all the medians collected as explained in Equation <ref type="formula">38</ref>. The intercept a is calculated with the same equation as above. This method received Theil-Siegel's name.</p><formula xml:id="formula_18">}} {b med { med b ij i j i ≠ = Eq. 38</formula><p>The results with the above example are for CLS y = -0.895 + 1.691 x (r = 0.894), y = 1.033 x for the Theil method and y = 0.025 + 1.017 x for the Thiel-Siegel method and are shown in Figure <ref type="figure" target="#fig_11">16</ref>. Practically the Theil and the Theil-Siegel are programmed in GDA as follows. First, all data is ordered by</p><p>x ascending. Then GDA will search duplicate values of x: if some are found, the calculations will not be performed to prevent a crash with a division by zero. As stated above, the number of slopes is equal to n(n-1)/2 and to avoid an increase of the memory used and a risk of a crash due to missing memory, the number of data in the Theil method is limited to 256 ; if more than 256 points are present, the Theil method is not performed which is not the case of the Theil-Siegel method. The rest of the method is conform of the theoretical method described above.</p><p>Another method that has been implemented in GDA is a linear least square regression assuming a constant percent error. <ref type="bibr" target="#b33">[27]</ref> In the CLS, it is assumed that the absolute error is constant, which means that the larger values of y influence too much the linear regression. The constant percent error method assumes that the percentage error is constant by minimizing the weighted squares of the deviation from the least squares lines. <ref type="bibr" target="#b33">[27]</ref> With this method of analyze, the results between CLS and the constant percent error method are very close but the latter gives a closer fit to the theoretical linear regression. According to reference <ref type="bibr" target="#b33">[27]</ref> , equations 39 and 40 are implemented in GDA but the calculation is only performed if no y's value is equal to zero.</p><formula xml:id="formula_19">2 n 1 i 2 i i n 1 i 2 i 2 i n 1 i 2 i n 1 i i i n 1 i 2 i i n 1 i 2 i 2 i n 1 i i y x - y x y 1 y x y x - y x y 1 a                                                         = ∑ ∑ ∑ ∑ ∑ ∑ ∑ = = = = = = = Eq. 39 2 n 1 i 2 i i n 1 i 2 i n 1 i 2 i 2 i n 1 i i n 1 i 2 i i n 1 i 2 i n 1 i i i y x - y 1 y x y 1 y x - y 1 y x b                                                         = ∑ ∑ ∑ ∑ ∑ ∑ ∑ = = = = = = = Eq. 40</formula><p>An explained variable is a variable on which the distance parallel to its axis is minimized. <ref type="bibr" target="#b30">[24]</ref> As stated above for the OLS paragraph, CLS minimizes only the squared distance parallel to the y axis. When x is the explained variable, it is equivalent to a change of the axis x and y and the horizontal distances are used instead of the vertical ones. So the definition of x and y are inverted and equations 41 to 44 are those in use in GDA. <ref type="bibr" target="#b30">[24]</ref> GDA gives y = a + b x and x = b0 + b1 y equations 2 n</p><formula xml:id="formula_20">1 i i n 1 i 2 i n 1 i n 1 i i i i n 1 i 2 i n 1 i i 0 y - y n y x y - y x b       = ∑ ∑ ∑ ∑ ∑ ∑ = = = = = =</formula><p>Eq. 41 and 2 n</p><formula xml:id="formula_21">1 i i n 1 i 2 i n 1 i i n 1 i i n 1 i i i 1 y - y n y x - y x n b       = ∑ ∑ ∑ ∑ ∑ = = = = =</formula><p>Eq. 42 and if b1 is different from zero, then Eq. 44</p><p>Now the non linear regressions will be discussed here. At page 15 of reference <ref type="bibr" target="#b31">[25]</ref> it is explained how to linearize an equation and after, the linearized form is fitted with a least squares method. Table <ref type="table" target="#tab_5">1</ref> gives the names, the equations, which variable has been linearized and how. The last column needs more explanation. The CLS is used several times in GDA and has been implemented as a subroutine.</p><p>Sometimes the calculations are performed by the internal CLS subroutine (after linearization) and sometimes the coefficients' equations are programmed directly (coming from historical programming of GDA). Naturally if a data point is not mathematically allowed (example the logarithm of a negative value) the corresponding equation is not calculated. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Yes</head><p>The Herschel-Bulkley model is a rheological model using a three-parameter power law equation y = a + b x n (Equation <ref type="formula">52</ref>). The determination of the three parameters is not easy and most of the time a is first graphically estimated and next, the other parameters, b and n, are determined linearly by using ln(y -a) instead of y. b and n are very sensitive to the estimation of a. <ref type="bibr" target="#b35">[29]</ref> In 2008, Mullineux <ref type="bibr" target="#b35">[29]</ref> proposed a particular method for resolving the equation 52. Contrary to what is usually carried out, n is found first and then the coefficients a and b by CLS, using</p><p>x n instead of x. n is determined when the determinant of the matrix <ref type="bibr" target="#b21">16</ref> presented above is equal to zero (Equation <ref type="formula">53</ref>). <ref type="bibr" target="#b35">[29]</ref> 0 ln x y x y x y ln</p><formula xml:id="formula_22">x x x x ln x x x m F(n) n n 2n 2n n n n = = ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑</formula><p>Eq. 53 <ref type="bibr" target="#b22">17</ref> 13 a and b are calculated by taking the exponential of the intercept and the slope values obtained by the classical equations. <ref type="bibr" target="#b18">14</ref> a is calculated by taking the exponential of the intercept value sent by the internal CLS routine. <ref type="bibr" target="#b20">15</ref> a and b are calculated by taking the square of the intercept and the slope values returned by the internal CLS routine. <ref type="bibr" target="#b21">16</ref> ∑ means ∑ = m 1 i <ref type="bibr" target="#b22">17</ref> Exceptionally m means the total number of data instead of the usually n.</p><p>In GDA, n is searched by dichotomy for an n positive value and for an n negative value and then, the value which gives the best correlation coefficient (in the internal CLS subroutine with x n ) is used for calculated the a and b coefficients.</p><p>The next part of this module is dedicated to polynomials and the first, called Linear polynomial 2 (y = a + b x 2 (Equation <ref type="formula">54</ref>)), is simply programmed by using the internal CLS subroutine after changing the variable x in x power two. Now the part of this module is devoted to polynomials of the form y = a0 + a1 x + a2 x 2 + a3 x 3 + .... + an</p><p>x n (Equation <ref type="formula">55</ref>). <ref type="bibr" target="#b36">[30]</ref> GDA searches n th degree polynomial equations with n from 2 up to 6. <ref type="bibr" target="#b36">[30]</ref> It seems to us that higher degrees are not necessary as most of the time, the coefficients for the highest degrees are very little and correspond to little corrections (see Figure <ref type="figure" target="#fig_10">15</ref>). The determination of the equations for these n th degree polynomials uses classical resolution. <ref type="bibr" target="#b29">[23,</ref><ref type="bibr" target="#b30">24]</ref> First GDA will construct some matrices. The first one corresponds to the theoretical matrix presented as equation 56 (Id is the order of the polynomial wanted, n the total number of points and Eq. 56</p><formula xml:id="formula_23">∑ means ∑ = n 1 i ).                 =                                 ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ + + + + Id i i 2 i i i i i Id</formula><p>In fact GDA uses a slightly modified matrix called r (equation 57). Eq. 57</p><formula xml:id="formula_24">                = ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ + + + + Id i i 2 i i i i i Id 2 i 2 Id i 1 Id i Id i 2 Id i 4 i 3 i 2 i 1 Id i 3 i 2 i i Id i 2 i i</formula><p>Then, the different coefficients ax are determined by the resolution of the system by the method of Gauss-Jordan. <ref type="bibr" target="#b29">[23]</ref> The different coefficients are read in the last column of the matrix. As the matrix r is modified during the resolution by the method of Gauss-Jordan, two other matrices are constructed, called a' and t which are presented in equations 58 and 59. Eq. 59</p><p>The correlation coefficient is calculated according to equations 60 to 62 using two intermediate variables</p><formula xml:id="formula_25">P and q. ∑ ∑ ∑ ∑ = = = =             = Id 1 j n 1 i i n 1 i j i n 1 i j i i j n y x - x y a P Eq. 60 with n y - y q 2 n 1 i i n 1 i 2 i       = ∑ ∑ = = Eq. 61 q P r =</formula><p>Eq. 62</p><p>The last piece of information that the user can find is just below the correlation coefficient and is the standard error of the estimation (SEE) (Equation <ref type="formula">63</ref>).</p><formula xml:id="formula_26">1 - Id - n P - q SEE =</formula><p>Eq. 63</p><p>The last equation is a three parameter equation and is the hyperbolic function (Equation <ref type="formula">64</ref>). <ref type="bibr" target="#b31">[25]</ref> It is resolved by solving, by the method of Gauss-Jordan <ref type="bibr" target="#b29">[23]</ref> , the equation's system constituted by equations 65 to 67 (n is the total number of points and ∑ means ∑ = n 1 i</p><p>). <ref type="bibr" target="#b31">[25]</ref> ( ) ( )</p><formula xml:id="formula_27">x c 1 x b a y + + =</formula><p>Eq. 64</p><formula xml:id="formula_28">∑ ∑ ∑ + = i i i i y x c - x b n a y</formula><p>Eq. 65</p><formula xml:id="formula_29">∑ ∑ ∑ ∑ + = i 2 i 2 i i i i y x c - x b x a y x</formula><p>Eq. 66</p><formula xml:id="formula_30">∑ ∑ ∑ ∑ + = 2 i 2 i i 2 i i i 2 i i y x c - y x b y x a y x</formula><p>Eq. 67</p><p>In fact GDA uses a matrix that looks like the matrix r of equation 57. To have a idea of the quality of the fit, the standard deviation S is given and follows the equation 68, in which yi is the experimental value and yc is the calculated value for the same xi. <ref type="bibr" target="#b31">[25]</ref> ( )</p><formula xml:id="formula_31">3 - n y - y S 2 c i ∑ =</formula><p>Eq. 68</p><p>Naturally, if new equations are found, then they will be introduced in this module, one of the big reasons of GDA. This module, thanks to the panel where all equations are written in one time, is easier to use then Microsoft Excel.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Z = f(X, Y) Module (actual version: 1.02)</head><p>This module is the beginning of experimental design. In this way, this module uses a subroutine that was implemented in prevision of a bigger module devoted to experimental design. In this module four calculations are carried out. The first, the third and the fourth use the internal CLS subroutine and will not be discussed here, only the first uses a change of variable, sending to the routine the product of X and Y instead of one variable (Figure <ref type="figure" target="#fig_4">17</ref>). The second gives the regression plane's equation z = a + b x + c y (Equation <ref type="formula">69</ref>).</p><p>Fig. <ref type="figure" target="#fig_4">17</ref> : The Z = f(X,Y) Module screen result.</p><p>As already mentioned, this module uses the same subroutine as the next module (Experimental Design)</p><p>and the algorithm will be discussed here. This one uses a matrix, called RetourPlanExp (Equation <ref type="formula">70</ref>) <ref type="bibr" target="#b30">[24]</ref> , similar to the matrix r to find polynomials' equations (Equation <ref type="formula">57</ref>). In Equation <ref type="formula">70</ref>, Id is the number of variables, n the total number of points,</p><formula xml:id="formula_32">A X ∑ means i A n 1 i x ∑ =</formula><p>and in the case of this module Z = f(X,Y), X1 is the value in column X, X2 is the value in column Y, and Y is the value in column Z in Grid1 from the Input Module.</p><formula xml:id="formula_33">                = ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ ∑ Id i 2 i 1 i i 2 Id Id 2 Id 1 Id 2 Id 2 2 2 1 2 1 Id 1 2 2 1 1 Id 2 1 X y X y X y y X ......... .......... X X X X X X X ......... .......... X X X X X X ......... .......... X X X X X ......... .......... X X n Exp RetourPlan</formula><p>Eq. 70</p><p>The different coefficients ax <ref type="bibr" target="#b23">18</ref> are found by the resolution of the matrix RetourPlanExp by the method of Gauss-Jordan <ref type="bibr" target="#b29">[23]</ref> and then are read in the last column of the matrix. To have an idea of the accuracy of the fit, three parameters are calculated. <ref type="bibr" target="#b30">[24]</ref> The first one is the standard deviation of the z values alone and is classically defined as equation 71 and depends only of the experimental data.</p><p>2 n</p><formula xml:id="formula_34">1 i i n 1 i 2 i Z n z - n z s             = ∑ ∑ = =</formula><p>Eq. 71</p><p>The tied up standard deviation sZ.XY of the estimator of z obtained from x and y is depending on the experimental data and on the estimated values of z (Equation <ref type="formula">72</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>(</head><p>)</p><formula xml:id="formula_35">n z - z s n 1 i 2 i i Z.XY estimated ∑ = =</formula><p>Eq. 72</p><p>At least the multiple correlation coefficient looks like Equation 36 for the linear correlation coefficient and is given in equation 73. This editor comes with the same functions as the Input Module and with a TXT Import Module (actual version: 1.00). Figure <ref type="figure" target="#fig_23">18</ref> shows a typical screen. Up to ten independent variables can be entered <ref type="bibr" target="#b24">19</ref> . The results can be selected and pasted into any word processing. The matrix before and after the inversion can be seen in a supplementary window (Figure <ref type="figure" target="#fig_6">19</ref>). Two types of calculations are possible.</p><p>The first one is resolution of y = f(xi). This section will be short as the algorithm is the same as in the section 4.4 above (Z = f(X, Y) Module) and the reader can refer to equations 70 to 73. Unfortunately the trivial cases are not always found: this comes from the method of Gauss-Jordan which is very sensitive to the number of digits for the calculations.</p><p>Fig. <ref type="figure" target="#fig_23">18</ref> : Experimental Design Module screen. <ref type="bibr" target="#b23">18</ref> for the hyperplane y = a0 + a1 x1 + a2 x2 + a3 x3 + .... + an xn. <ref type="bibr" target="#b24">19</ref> It is possible to have more than ten variables if a user asks for it.</p><p>The second type of calculation is the resolution of n equations with n unknowns. <ref type="bibr" target="#b29">[23]</ref> In this case the grid is read and the matrix corresponds to the grid itself and those matrices will be resolved again by the method of Gauss-Jordan. <ref type="bibr" target="#b29">[23]</ref> Fig. <ref type="figure" target="#fig_6">19</ref> : Matrix shower window during resolution by the method of Gauss-Jordan.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.6.">Equation Resolver Module (actual version: 1.04)</head><p>This module is not a big one and must be seen as a tool. GDA is able to solve quadratic equations by pressing the Resolution x² button (Figure <ref type="figure" target="#fig_18">20</ref>) and cubic equation by pressing Resolution x³ (Figure <ref type="figure" target="#fig_21">21</ref>).  Eq. 77</p><p>The two first solutions are trivial and well-known. The last case is the one where ∆ is negative. At this point the treatment is the same if the user has introduced imaginary coefficients, also if they are all equal to zero, and in case of a negative ∆, the imaginary parts of the coefficients are set to zero. The real part and the imaginary part must be calculated separately. So the discriminant ∆ become (equation 78)</p><formula xml:id="formula_36">i i r r 2 i 2 r r c a 4 c a 4 - b - b Δ + = and r i i r i r i a c 4 a c 4 - b b 2 Δ - = then i Δ Δ Δ i r + =</formula><p>Eq. 78</p><p>The two solutions, called Z1 and Z2, are found by equation 84 but before equations 79 and 80 define the square root of the discriminant <ref type="bibr" target="#b37">[31]</ref> and equations 81 to 83 intermediate variables.</p><formula xml:id="formula_37">2 SR r 2 i 2 r r ∆ + ∆ + ∆ = and 2 - SR r 2 i 2 r i ∆ ∆ + ∆ = Eq. 79 i SR SR SR1 i r + = and i SR - SR - SR2 i r</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>=</head><p>Eq. 80</p><p>The sign of Ri is changed if 2 Rr Ri is different from ∆i.</p><formula xml:id="formula_38">) b - (R a 2 ) R (-b a 2 S i i i r r r 1r + + = and ) b - (R a 2 - ) R (-b a 2 S r r i i i r 1i + = Eq. 81 ) b - (-R a 2 ) R - (-b a 2 S i i i r r r 2r + = and ) b - (-R a 2 - ) R - (-b a 2 S r r i i i r 2i =</formula><p>Eq. 82 Eq. 84</p><p>The following equations (equations 85 and 86) give other information in particular the modulus or magnitude of Z, which can be considered as the "absolute value" of the imaginary number and it is a positive or a null real, and the argument (arg Z) which is as the angle between the x axis and the line from the point 0,0 and the image of the imaginary number in a complex plane. <ref type="bibr" target="#b37">[31,</ref><ref type="bibr" target="#b38">32]</ref> The argument is a real number. <ref type="bibr" target="#b37">[31]</ref><ref type="bibr" target="#b38">[32]</ref><ref type="bibr" target="#b39">[33]</ref>   The resolution of equation 87, a cubic equation, is more complicated than the resolution of a quadratic equation. The method used here is a slightly modified method of Bernard Sotta and is described as algorithm in the supporting information (see section 8.1.). <ref type="bibr" target="#b40">[34]</ref> Schematically, GDA searches the trivial triple and double solutions and otherwise the three solutions by dichotomy. In this latter, if needed, complex solutions are given (Figure <ref type="figure" target="#fig_21">21</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.7.">Arrhenius/Eyring Module (actual version: 1.00)</head><p>This module is accessible only by the combo box list.</p><p>In 1889, Arrhenius, working on reaction's kinetic, found experimentally a relation between the reaction rate k and the temperature which is presented in equation 88 (A is the pre-exponential factor or the "action constant" (A), Ea the energy of activation , R is the gas constant (8.314472 J.mol -1 .K -1 ) and T the absolute temperature in Kelvin (TK = t°C + 273.15)).</p><formula xml:id="formula_39">      = R.T E -a A.e k</formula><p>Eq. 88</p><p>Later, the equation (88) was theoretically explained by Eyring in 1935. As this latter also worked on rheology, equation 88 became equation 89 (ηa is the apparent viscosity (Pa.s), η0 is considered as the viscosity at infinite temperature (mPa.s) and Ea the (standard free) energy of activation (by mole) written sometimes ∆Evisco <ref type="bibr" target="#b26">20</ref> . The other constants have the same meaning as in equation 88). <ref type="bibr" target="#b41">[35]</ref>  </p><formula xml:id="formula_40">    = R.T E 0 a a .e η η</formula><p>Eq. 89</p><p>In the two cases, the neperian logarithm as a function of the inverse of the absolute temperature is plotted to find the parameters. In GDA, this is equation 89 that has been implemented as can be seen in Figure <ref type="figure" target="#fig_22">22</ref>. The values are found by the internal CLS subroutine using (1/(X+273.15)) as x and (ln Y) as y, the slope being equal to E/R and the intercept to η0 (see Figure <ref type="figure" target="#fig_22">22</ref> in the right part).  The aim of this module is more for education than for research. After entering the data points and set up the flag to pH in the Input Module, Figure <ref type="figure" target="#fig_24">23</ref> shows a typical screen. This module can either simulate a curve (Simulate button) or calculate with the data the missing information (Search button). The different equations will not be discussed here and the reader will find them in the section 8.2.</p><p>In the screen from the top to bottom, first the number of points is found with the information from the Input Module's comments textbox, followed below on the left by the plot of the pH as a function of the titrant added, the crosses are the experimental points and the red and green lines the theoretical curve of which the constants are determined by experimental data (Search button) or by the constants given by the user (Simulate button). More below, the plot of the derivative as a function of the titrant added ; in blue the line equal to zero. The derivative, first <ref type="bibr" target="#b27">21</ref> or second <ref type="bibr" target="#b28">22</ref> , used for determining the equivalent point can be chosen, the second derivative giving better results, but sometimes cannot work. The results are indicated in the square: equivalent volume, concentration of the titrant and if this is the case, the pKa. In the right part of the screen, in the top, the Gran plot curves (the equations will be discussed hereafter), then the type of titration (this must be chosen first) and next the experimental data of the titration and if the user wants to simulate an experiment the data of this simulation.</p><p>Two cases must be distinguished for the Gran plot. <ref type="bibr" target="#b42">[36]</ref> In the first, during an acid titration with a base, the plot for the acidic data is the v 10 -pH as a function of v, the volume of base added, while the alkaline plot corresponds to (v0+v)10 pH as a function of v, with v the volume of the titrant and v0 the sample volume. <ref type="bibr" target="#b42">[36]</ref> The second case is the titration of a base by an acid. Here the alkaline data is defined as (v0+v)10 pH as a function of v and the acidic data as (v0+v)10 -pH as a function of v, v and v0 have the same meaning as above. <ref type="bibr" target="#b42">[36]</ref> 4.9. LFW Analyze Module (actual version: 1.17)</p><p>The aim of this module is more for research than for education, as it is complex by the number of calculations. This module is used for analyzing the monolayer's isotherm obtained by the Lauda FW 2</p><p>Langmuir-Balance. The principle of a Langmuir balance will not be discussed here and can be found elsewhere. <ref type="bibr" target="#b43">[37]</ref><ref type="bibr" target="#b44">[38]</ref><ref type="bibr" target="#b45">[39]</ref> The screen is laid out in five parts as can be seen in Figure <ref type="figure" target="#fig_1">24</ref>. The raw data are plotted in part 1 of the screen. As the Langmuir balance is sensitive to the noise, the first thing to do is to reduce the noise by smoothing the data. The algorithm used here is the same as the one already described in the Input Module on the x and y's values. In the same time, the calculation will take into account whether the molecular weight is known or not: if the molecular is known, the result will be expressed in area by molecule (equation 90), or else in area by mg (equation 91), and part 3 and 5 (with a new variable change:</p><p>x will be changed to it neperian logarithm) of the screen will be plotted.</p><formula xml:id="formula_41">        × ×       × = 60230 Volume Spreaded Volume Solution Weight Solute Weight Molecular Data al Experiment Smoothed Y Eq. 90         ×       = Volume Spreaded Volume Solution Weight Solute Data al Experiment Smoothed Y</formula><p>Eq. 91</p><p>The free energy of compression (∆Gc (J.g -1 )) defines the work necessary for compressing the film. It corresponds to the surface under the compression isotherm curve and is determined by equation 92 in which π is the surface pressure (mN.m -1 ), dA is the variation of the molecular area (m 2 .mg -1 ). <ref type="bibr" target="#b44">[38]</ref> Ai and Af are respectively the surface of the film at the beginning and at the end of compression.</p><formula xml:id="formula_42">∫ = i f A A c dA π - ΔG</formula><p>Eq. 92</p><p>Part 3 of the screen is devoted to this calculation and uses the already described trapeze's method (Equation <ref type="formula">29</ref>) between the two indicated boundaries Ai and Af (text boxes). <ref type="bibr" target="#b29">[23]</ref> Fig. <ref type="figure" target="#fig_1">24</ref> : LFW Analyze Module screen.</p><p>In part 4 of the screen, the user can calculate the initial area A0 (which is the surface when no compression is active) or the inflexion At (which could be a change of state or a collapse) and the user <ref type="bibr" target="#b28">22</ref> For the equivalent point, GDA searches, when the second derivative is equal to zero by linear interpolation between the two can see in part 5 the graphical results. All calculations are performed on the neperian logarithm of x and of y according to equation 90 or 91. The way is always the same for all calculations: the user enters the boundaries x in the textboxes (caution: under logarithm form), GDA searches the nearest data point and then performs the calculation(s).</p><p>The first point discussed here is the search of A0. One of the ways is to calculate this value for a pressure of 5 mN.m -1 , the slope is calculated first according equation 93 and A0 from equations 94 and 95.  In some cases a second transition occurs in the curve (At-At'). The algorithm used here is the same as above, for the second way of calculating the slope and A0, but only the slopes are calculated (equations 93 and 94). This is also the same for the last part of the curve (At-Ac).</p><p>It is important to find the exact inflexion. Therefore, first the user has to choose the first part (A05, A0Boundaries or At-At') of the curve by selecting the appropriate button, as the second part is always the curve At-Ac. The co-ordinates are found by equations 96 to 98. It could be useful to plot the compressibility or the elasticity as a function of the surface pressure or as a function of the logarithm of the area. Equations 99 and 100 respectively define exactly the elasticity and exactly the compressibility (A is the area of the film and π is the surface pressure) <ref type="bibr" target="#b43">[37,</ref><ref type="bibr" target="#b44">38]</ref> , but are defined in GDA by equations 101 and 102: the elasticity corresponds to the slope at one point in the graphic pressure as a function of neperian logarithm of the area while the compressibility corresponds to the inverse of the slope at one point in the graphic pressure as a function of neperian logarithm of the area).  The reader will remark that every part of the rheogram can be modeled independently. On the rheogram of the kefir (Figure <ref type="figure" target="#fig_3">26</ref>), he can also see that the second part of the profile can be modeled with two models, the Herschel-Bulkley model suitable at high shear rate while the Casson model is more appropriate for low shear rate (black circles in Figure <ref type="figure" target="#fig_3">26</ref>).</p><p>The last part is devoted to the hysteresis loop area, which uses the trapezes method (Equation <ref type="formula">29</ref>) already described in the Two Variables Statistic Module chapter. The area is calculated for each part of the profile then the second part is subtracted of the first.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.11.">TVT Analyze Module (actual version: 1.05)</head><p>The aim of the Lauda TVT 1 apparatus and of this module is the determination of surface tension γ.</p><p>Schematically the apparatus measures the fall of a drop. <ref type="bibr" target="#b43">[37,</ref><ref type="bibr" target="#b45">39]</ref> One of the parameters that can be calculated from the curve γ as a function of the time (blue circle in the left part of the Figure <ref type="figure" target="#fig_4">27</ref>) is the equilibrium tension, which expresses the maximum surface-active power that a surface-active agent can develop. From the absorption kinetics curves the equilibrium tension γe (or γ∞) can be extrapolated and can be considered as a tension for an infinite time. To estimate this tension, a variable change is needed, and the curve becomes the surface tension γ as a function of the inverse of the time square root ( t 1/ ) that becomes a straight line. The ordinate at the origin (which corresponds to an infinite time) found by the internal CLS subroutine will give directly the equilibrium tension (right and lower part of Figure <ref type="figure" target="#fig_4">27</ref>).</p><p>In fact, as can be seen in Figure <ref type="figure" target="#fig_4">27</ref>, GDA will calculate the values for each number of last cycles (or point) and also gives the correlation coefficient, so the user can choose the best fit.</p><p>As a comparison, some other TVT files can be added to the RAW Data windows (red circle in the left part of the Figure <ref type="figure" target="#fig_4">27</ref>). But the calculations are only performed on those loaded from the Input Module (Figure <ref type="figure" target="#fig_4">27</ref>). As can be seen in Figure <ref type="figure" target="#fig_23">28</ref> the left part is devoted to the initial file (at the top, the pathway while the middle part is the file itself in ASCII) and the right part to the converted file (at the top again the pathway, the middle part the file as it will be saved when the button Convert is pressed).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.13.">Options</head><p>The number of digit after the dot can be chosen for some modules (One Variable Statistic, Two Variables Statistic, LFW analyze modules, etc...) (Figure <ref type="figure" target="#fig_29">29</ref>). It is sometimes annoying when saving, to have a message that asks for overwriting a file, especially when entering the data. The user can check the checkbox if he wants to have a warning message in case of overwriting (Figure <ref type="figure" target="#fig_29">29</ref>).</p><p>This information can be saved in .INI file and be used at the next launch of GDA.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.14.">Examples</head><p>In this section, some examples will be described where GDA has been used.</p><p>In 2009, Freschi used GDA for the determination of equilibrium surface tension of the different parts of the egg yolk. <ref type="bibr" target="#b46">[40]</ref> This can help to find new applications for those compounds, in particular in the food industry.</p><p>Fatty acid sugar esters are non-ionic, biodegradable, non toxic, non skin irritant, odourless and tasteless surfactants which allow their use in the food or the cosmetic industries. <ref type="bibr" target="#b47">[41]</ref><ref type="bibr" target="#b48">[42]</ref><ref type="bibr" target="#b49">[43]</ref> In recent years, lipasecatalyzed synthesis of sugar esters has emerged as an interesting alternative of the chemical synthesis because of milder conditions using less toxic solvents. <ref type="bibr" target="#b50">[44]</ref><ref type="bibr" target="#b51">[45]</ref><ref type="bibr" target="#b52">[46]</ref><ref type="bibr" target="#b53">[47]</ref><ref type="bibr" target="#b54">[48]</ref> The initial water content is important in the enzymatic reaction in several ways. Modeling the different parameters plays an important role for industrial processes. In this way, the author published a paper dealing with the influence of the initial water content on the conversion rate of the lauric acid, that can be modelled by a Herschel-Bulkley threeparameter power law equation, in which the first coefficient is related to the experimental conditions if no water is present and the third (the exponent) corresponds to the "efficiency" of the water (for decreasing the conversion rate). <ref type="bibr" target="#b55">[49]</ref> In this paper, the litterature data have been fitted too. In another publication dealing with the study of some parameters of the lipase-catalyzed reaction, the authors found that the influence of the reaction time can be modeled by a hyperbolic correlation. <ref type="bibr" target="#b57">[50]</ref> Now, some useful equations will be given to demonstrate the power of GDA. All data are taken from the CRC Handbook of chemistry and physics. <ref type="bibr">[51]</ref> The first equation concerns the pressure vapor of ice. The curve can be well fitted only by a polynomial with a degree of 6, given at equation 103 (the pressure is in Pascal while the temperature is in the range of 0 to -80 °C). P = 610.9070 + 50.0988 t + 1.8416 t 2 + 00387 t 3 + 4.8592.10 -04 t 4</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 2 :</head><label>2</label><figDesc>Fig. 2 : Screen of GN2 for calculating 31 P NMR chemical shift values of phosphorylated compounds. 4</figDesc><graphic coords="6,111.24,63.60,372.96,278.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 4 :</head><label>4</label><figDesc>Fig. 4 : Main screen of GCS.</figDesc><graphic coords="9,111.48,63.60,372.48,264.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 5 :</head><label>5</label><figDesc>Fig. 5 : Results screen of GCS.</figDesc><graphic coords="10,152.28,229.20,290.88,333.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 6 :</head><label>6</label><figDesc>Fig. 6 : Viscosity screen of GCS.</figDesc><graphic coords="11,218.28,262.68,158.88,174.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 7 :</head><label>7</label><figDesc>Fig. 7 : Input Module screen of GDA.</figDesc><graphic coords="13,75.84,63.60,443.76,323.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 8 :</head><label>8</label><figDesc>Fig. 8 : Algorithm (as tree) for calculating the best derivative of the First line.</figDesc><graphic coords="14,228.36,386.28,138.72,274.56" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 9 :</head><label>9</label><figDesc>Fig. 9 : Algorithm (as tree) for calculating the best derivative of the Second line.</figDesc><graphic coords="15,199.08,432.72,197.28,294.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 10 :Fig. 11 :</head><label>1011</label><figDesc>Fig. 10 : Algorithm (as tree) for calculating the best</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 13 :</head><label>13</label><figDesc>Fig. 13 : One Variable Statistic Module (results) screen of GDA.</figDesc><graphic coords="18,75.84,63.60,443.76,323.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Fig. 14 :</head><label>14</label><figDesc>Fig. 14 : Graphical window of the Two Variables Statistic Module of GDA.</figDesc><graphic coords="21,75.84,201.60,443.76,323.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Fig. 15 :</head><label>15</label><figDesc>Fig. 15 : Equations Panel of the Two Variables Statistic Module of GDA.</figDesc><graphic coords="22,184.08,125.64,227.16,347.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Fig. 16 :</head><label>16</label><figDesc>Fig. 16 : Graphical comparison of CLS, Theil and Theil-Siegel regressions.</figDesc><graphic coords="26,106.44,63.60,382.56,257.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17"><head>4. 6 . 1 .</head><label>61</label><figDesc>Quadratic Equation (actual version: 1.01) This module will resolve equations of the form a x 2 + b x + c = 0 (Eq. 74). GDA is able to resolve equation 74 with a, b and c coefficients, real or imaginary. Cells X1, X2 and X3 are used for introducing respectively a, b and c if they are real and Y1, Y2 and Y3 for the imaginary part with X1, X2 and X3 for the real part. Naturally GDA is able to give imaginary results also if the coefficients are real only. Figure20shows the result screen.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_18"><head>Fig. 20 :</head><label>20</label><figDesc>Fig. 20 : Result screen of Quadratic Equation (in Equation Resolver Module) of GDA.</figDesc><graphic coords="35,208.56,63.60,178.20,205.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_20"><head>4 . 6 . 1 .</head><label>461</label><figDesc>equation 86 is calculated only if S1r and S2r are different of zero. If S1r or S2r is negative then Pi is added to the corresponding result. Bulletin de la Société Royale des Sciences de Liège, Vol. 85, 2016, p. 57 -118 92 Cubic Equation (actual version: 1.01) a x 3 + b x 2 + c x + d = 0 (Eq. 87) is the form that computes GDA. GDA is able to resolve equation 87 with a, b, c and d coefficients that are real only. In this case cells X1, X2, X3 and X4 are used for introducing respectively a, b, c and d. Figure 21 shows a typical result screen.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_21"><head>Fig. 21 :</head><label>21</label><figDesc>Fig. 21 : Result screen of Cubic Equation (in Equation Resolver Module) of GDA.</figDesc><graphic coords="37,208.56,201.60,178.20,205.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_22"><head>Fig. 22 :</head><label>22</label><figDesc>Fig. 22 : Arrhenius-Eyring module's results.</figDesc><graphic coords="38,74.16,357.24,447.12,326.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_23"><head>4. 8 .</head><label>8</label><figDesc>pH Analyze Module (actual version: 1.01)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_24"><head>Fig. 23 :</head><label>23</label><figDesc>Fig. 23 : pH Analyze Module screen.</figDesc><graphic coords="39,75.84,180.84,443.76,323.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_25"><head></head><label></label><figDesc>of calculating the slope and A0 is by introducing the boundaries in the textboxes (under logarithm form). Here two calculations are performed. The first one uses the same equations 93 to 95 in which n-1 is the second boundary while n and n+1 are the first boundary. The second calculation uses the average of each slope (equation 93) calculated between the two boundaries.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_26"><head></head><label></label><figDesc>only accessible from the file menu and Figure25shows two typical screens after indicating the limits.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_27"><head>Fig. 25 :Fig. 26 :</head><label>2526</label><figDesc>Fig. 25 : Typical plots of the compressibility and the elasticity as a function of the neperian logarithm of the area from the LFW Analyze Module.</figDesc><graphic coords="43,92.04,427.32,411.36,165.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_28"><head>Fig. 27 :Fig. 28 :</head><label>2728</label><figDesc>Fig. 27 : TVT Analyze Module screen of GDA.</figDesc><graphic coords="46,75.84,63.60,443.76,323.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_29"><head>Fig. 29 :</head><label>29</label><figDesc>Fig. 29 : The options panel.</figDesc><graphic coords="47,194.88,594.36,205.68,141.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="5,111.24,125.88,372.96,278.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="7,111.24,125.64,372.96,278.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="16,199.08,98.04,197.28,294.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="41,75.84,319.44,443.76,323.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>. Two Variables Statistic Module (actual version: 1.31)</head><label></label><figDesc></figDesc><table><row><cell>4.3</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>x</cell><cell>-</cell><cell>Value</cell><cell cols="2">to</cell><cell>be</cell><cell>tested</cell></row><row><cell>t</cell><cell>HC =</cell><cell></cell><cell cols="2">Sd</cell><cell>n</cell><cell></cell><cell>n</cell><cell>-</cell><cell>1</cell><cell>Eq. 26</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 1 :</head><label>1</label><figDesc>Non linear regressions</figDesc><table><row><cell>Name of the</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Variable(s) linearized</cell><cell>Use the</cell></row><row><cell>equation or function</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="8">Equation</cell><cell>Initial variables</cell><cell>Variables used in calculations</cell><cell>internal CLS subroutines</cell></row><row><cell>Logarithmic</cell><cell cols="2">y</cell><cell>=</cell><cell>a</cell><cell cols="3">+</cell><cell cols="2">b</cell><cell cols="3">ln x</cell><cell>Eq. 45</cell><cell>x y</cell><cell>ln x y</cell><cell>No</cell></row><row><cell>Power law</cell><cell cols="3">y =</cell><cell>a</cell><cell cols="3">x</cell><cell cols="2">b</cell><cell></cell><cell></cell><cell>Eq. 46</cell><cell>x y</cell><cell>ln x ln y</cell><cell>No</cell></row><row><cell>Exponential 1 13</cell><cell cols="3">y =</cell><cell>a</cell><cell cols="3">b</cell><cell cols="2">x</cell><cell></cell><cell></cell><cell>Eq. 47</cell><cell>x y</cell><cell>x ln y</cell><cell>No</cell></row><row><cell>Exponential 2</cell><cell cols="2">y</cell><cell>=</cell><cell>e</cell><cell>(a</cell><cell cols="3">+</cell><cell>b</cell><cell>x)</cell><cell></cell><cell>Eq. 48</cell><cell>x y</cell><cell>x ln y</cell><cell>Yes</cell></row><row><cell>Exponential 3 14</cell><cell cols="3">y =</cell><cell>a</cell><cell cols="2">e</cell><cell cols="2">b</cell><cell>x</cell><cell></cell><cell></cell><cell>Eq. 49</cell><cell>x y</cell><cell>x ln y</cell><cell>Yes</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1</cell></row><row><cell>Reciprocal</cell><cell cols="2">y</cell><cell>=</cell><cell cols="2">(a</cell><cell cols="5">b x +</cell><cell cols="2">x)</cell><cell>Eq. 50</cell><cell>x y</cell><cell>x 1</cell><cell>Yes</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>y</cell></row><row><cell>Casson 15</cell><cell>y</cell><cell cols="2">=</cell><cell cols="2">a</cell><cell></cell><cell cols="3">+</cell><cell></cell><cell>b</cell><cell>x</cell><cell>Eq. 51</cell><cell>x y</cell><cell>x y</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0"><p>An alternative to this problem is to run this software under a Virtual Machine like Virtual PC from Microsoft, Virtual Box, VMware, etc ...</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1"><p>The abbreviations have the same meaning as in reference<ref type="bibr" target="#b9">[6]</ref> : P(O)XY, phosphonyl substituent.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_2"><p>The abbreviations do not have the same meaning as in reference<ref type="bibr" target="#b9">[6]</ref> : OnAlkyl, OMe or OEt or OnBu; P(O)XY, phosphonyl substituent; NHX, secondary amino substituent; NH2, primary amino substituent.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_3"><p>If a file was saved with a Save Version older than 1.2, the language is automatically set to French. Resave the file just after loading and change again the language.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_4"><p>If the iodine value was not found, -1 is indicated in the list.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_5"><p>The INS factor is a coefficient which is obtained by removing the iodine value to the saponification index of a fat. It is used to estimate the quality of the soap that will give the mixture of fats and must be around 146.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_6"><p>With this module you can import Excel files via the CSV format. The actual version of this module is 1.02.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="9" xml:id="foot_7"><p>Since version 1.43 of this module, it is possible to delete multiple rows in Grid 2.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="12" xml:id="foot_8"><p>The second reason is that there is no easy software for kinetics and rheological treatment as they use more than two non linear variables and need sophisticated method like the Levenberg-Marquardt algorithm.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="20" xml:id="foot_9"><p>It seems interesting to compare the activation energy of viscosity and the variation of the internal energy of vaporization (study of Ewell and Eyring). Kincaid gives the empirical law ∆Evisco = ∆Uvap / 2.45 (not implemented in GDA).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="21" xml:id="foot_10"><p>In this case GDA takes the volume when the derivative is maximum for calculating the equivalent point.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_11"><p>the number of information given by GDA in this module is high, the same principle as the Two Variables Statistic Module is used: an equations panel and a graphical window. The last one is the same and calls no</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>+ 3.3852.10 -06 t 5 + 1.0050.10 -08 t <ref type="bibr" target="#b9">6</ref> Eq. 103 r = 1,00000 -SEE = 0,11528</p><p>The second equation corresponds to the refractive index of water as a function of the temperature. In this case a polynomial with an order of 4 is enough (equation 104, with the temperature ranging from 0 to 100 °C)</p><p>t D n = 1.33432 -2.60198.10 -06 t -2.56868 -06 t 2 + 1.52040.10 -08 t 3 -4.98252 -11 t <ref type="bibr" target="#b7">4</ref> Eq. 104 r = 1,00000 -SEE = 1,33.10 -05</p><p>And the last one is a three dimensional analysis of the water electrical conductivity (σ in µS.cm -1 ), because the conductivity depends on the temperature (in the range of 0 to 600 °C) and the pressure (in the range of 50 to 600 MPa). <ref type="bibr">[51]</ref> The results of the analysis by the Z = f(X, Y) Module are given by the equations 105 to 108. As can be seen, the best correlation is obtained by equation 105, corresponding to the product of the temperature and the pressure. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusion</head><p>In this paper the equations, the data sets and the algorithms that are in use in the different software belonging to the Gabriel package have been detailed. All this software can be used in research or educational.</p><p>Now new functionalities will be added like for example, an HLB calculator using the Davie's group number for Gabriel Calculatrice Savon or new fit quality indicators in Gabriel Data Analysis. And more particularly the change of a programming language (to Java) to have a better compatibility with all computers will be undertaken.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Acknowledgement</head><p>The author would like to thank Paulette Desy for the helpful English correction of this manuscript. This publication is dedicated to my son Gabriel. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>weak acid by Strong Base</head><p>At the beginning We have a weak acid. pH = ½ (pKa -log CA)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Between the neutralization (buffer) pH = pKa + log ([B]/[A]</head><p>)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>At the neutralization (weak acid and Strong Base salt) pH = 7 + ½ (pKa + log [B]) and B</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>After the neutralization (Strong Base) pH= 14 + log [B] and</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Strong Acid by weak base</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>At the beginning</head><p>We have a Strong Acid. pH = -log [H3O + ] = [A] = CA</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Between the neutralization (Strong Acid) pH = -log [A] and B A B</head><p>At the neutralization (Strong Acid and weak base salt)</p><p>After the neutralization (buffer mixture </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>weak acid 1 by weak base 2</head><p>At the beginning We have a weak acid. pH = ½ (pKa1 -log CA1) and</p><p>Between the neutralization (buffer of the acid)</p><p>At the neutralization (weak acid and null force base salt) pH = ½ (pKa1 + pKa2)</p><p>After the neutralization (buffer of the base) Between the neutralization (buffer) </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Strong Base by Strong Acid</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>References</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Frisch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">W</forename><surname>Trucks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">B</forename><surname>Schlegel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Scuseria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Robb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Cheeseman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Montgomery</surname><genName>Jr</genName></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Vreven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Kudin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Burant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Millam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Iyengar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tomasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Barone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mennucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cossi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Scalmani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Rega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Petersson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nakatsuji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hada</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ehara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Toyota</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Fukuda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hasegawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ishida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nakajima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Honda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Kitao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nakai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Klene</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Knox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">P</forename><surname>Hratchian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Cross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Bakken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Adamo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jaramillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gomperts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Stratmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Yazyev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Austin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cammi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Pomelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Ochterski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">Y</forename><surname>Ayala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Morokuma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Voth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">P</forename><surname>Salvador</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Dannenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">G</forename><surname>Zakrzewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">S</forename><surname>Dapprich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Daniels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Strain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Farkas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">K</forename><surname>Malick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Rabuck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">K</forename><surname>Raghavachari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Foresman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Ortiz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Baboul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">S</forename><surname>Clifford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cioslowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">B</forename><surname>Stefanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Liashenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Piskorz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Komaromi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Keith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Al-Laham</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Y</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nanayakkara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Challacombe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M W</forename><surname>Gill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">W</forename><surname>Chen</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">; C</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">J A</forename><surname>Pople</surname></persName>
+		</author>
+		<title level="m">Gaussian 03</title>
+		<meeting><address><addrLine>Wallingford CT</addrLine></address></meeting>
+		<imprint>
+			<publisher>Gaussian, Inc</publisher>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="volume">02</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Tinker Home Page</title>
+		<author>
+			<persName><forename type="first">Jay</forename><forename type="middle">William</forename><surname>Ponder</surname></persName>
+		</author>
+		<ptr target="http://dasher.wustl.edu/tinker/" />
+		<imprint>
+			<date type="published" when="2010-01">January 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Firefly Home Page</title>
+		<author>
+			<persName><forename type="first">Alex</forename><forename type="middle">A</forename><surname>Granovsky</surname></persName>
+		</author>
+		<ptr target="http://classic.chem.msu.su/gran/gamess/index.html" />
+		<imprint>
+			<date type="published" when="2010-01">January 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Facio Home Page</title>
+		<author>
+			<persName><forename type="first">Masahiko</forename><surname>Suenaga</surname></persName>
+		</author>
+		<ptr target="http://www1.bbiq.jp/zzzfelis/Facio.html" />
+		<imprint>
+			<date type="published" when="2010-01">January 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Utilisation d&apos;Aminophosphonates comme Marqueurs de pH en RMN du 31P</title>
+		<author>
+			<persName><forename type="first">Sylvia</forename><surname>Pietri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>François</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Moigne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Malvina</forename><surname>Miollan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Culcasi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Patent</title>
+		<imprint>
+			<biblScope unit="page">9947527</biblScope>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">α-and β-Phosphorylated Amines and Pyrrolidines, a New Class of Low Toxic Highly Sensitive 31 P NMR pH Indicators. Modeling of pKa and chemical shift values as a function of substituents</title>
+		<author>
+			<persName><forename type="first">Sylvia</forename><surname>Pietri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Malvina Miollan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sophie</forename><surname>Martel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>François</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Moigne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Bruno Blaive</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Culcasi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biological Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">275</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<biblScope unit="page" from="19505" to="19512" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Sylvia</forename><surname>Pietri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sophie</forename><surname>Martel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Culcasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marie-Christine</forename><surname>Delmas-Beauvieux</surname></persName>
+		</author>
+		<imprint>
+			<publisher>Paul Canioni</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Use of Diethyl (2-methylpyrrolidin-2-yl) phosphonate as a Highly Sensitive Extra-and Intracellular 31 P NMR pH Indicator in Isolated Organs</title>
+		<author>
+			<persName><forename type="first">Jean-Louis</forename><surname>Gallis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biological Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">276</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1750" to="1758" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Les aminophosphonates: des marqueurs de pH en RMN 31 P. De l&apos;étude physicochimique à la biologie</title>
+		<author>
+			<persName><forename type="first">Sophie</forename><surname>Martel</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<pubPlace>Aix-Marseille I)</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Chimie, Université de Provence</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Synthesis and 31 P NMR Characterization of New Low Toxic Highly Sensitive pH Probes Designed for In Vivo Acidic pH Studies</title>
+		<author>
+			<persName><forename type="first">Sophie</forename><surname>Martel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Louis</forename><surname>Clément</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">; Agnès</forename><surname>Muller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Culcasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sylvia</forename><surname>Pietri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bioorganic and Medicinal Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1451" to="1458" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Nouveaux marqueurs de pH utilisables en RMN du 31 P : étude de la relaxation longitudinale en fonction de la structure chimique, de la température, du pH et du milieu biologique (New highly sensitive pH probes for 31 P NMR spectroscopy: study of spin-lattice relaxation time as a function of molecular structure, temperature, pH and biological medium)</title>
+		<author>
+			<persName><forename type="first">Gaëlle</forename><surname>Gosset</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sophie</forename><surname>Martel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Louis</forename><surname>Clement</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bruno</forename><surname>Blaive</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gilles</forename><surname>Olive</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Culcasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roselyne</forename><surname>Rosas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">André</forename><surname>Thevand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sylvia</forename><surname>Peitri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comptes Rendus Chimie</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4-5</biblScope>
+			<biblScope unit="page" from="541" to="552" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Investigation of subcellular acidic compartments using alphaaminophosphonate P-31 nuclear magnetic resonance probes</title>
+		<author>
+			<persName><forename type="first">Gaelle</forename><surname>Gosset</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Michel Satre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Bruno Blaive</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Louis</forename><surname>Clement</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Baptiste</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Culcasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sylvia</forename><surname>Pietri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Analytical Biochemistry</title>
+		<imprint>
+			<biblScope unit="volume">380</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="184" to="194" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">COURBE: Numerical analysis of points and functions -Resolution, regression, integration</title>
+		<author>
+			<persName><forename type="first">Bruno</forename><surname>Blaive</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="1992" to="2007" />
+			<pubPlace>Marseilles</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Aix-Marseille III</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<author>
+			<persName><forename type="first">Sujoy</forename><surname>Mukherjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">; Cancan</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francisco</forename><surname>Guerra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">; Ke</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Oldfield</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Thermodynamics of Bisphosphonates Binding to Human Bone: A Two-Site Model</title>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="page" from="8374" to="8375" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">O</forename><surname>Fasina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hallman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Craig-Schmidt</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Predicting Temperature-Dependence Viscosity of Vegetable Oils from Fatty Acid Composition</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Clements</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Oil Chemical Society</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="899" to="903" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Correlation of fatty acid composition of vegetable oils with rheological behaviour and oil uptake</title>
+		<author>
+			<persName><forename type="first">Juyoung</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Deok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nyun</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Sung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lee</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sang-Ho</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">; Suyong</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Food Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="page" from="398" to="402" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">A lattice fluid approach to the concept of hydrophile lipophile balance: alkylethoxylated surfactants</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Von Bergen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">E</forename><surname>Rogel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Fluid Phase Equilibria</title>
+		<imprint>
+			<biblScope unit="volume">153</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="63" to="72" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Hydrophile-lipophile balance and solubility parameter of cationic surfactants</title>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">E</forename><surname>Proverbio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Bardavid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Arancibia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">C</forename><surname>Schulz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Colloids and Surfaces a-Physicochemical and Engineering Aspects</title>
+		<imprint>
+			<biblScope unit="volume">214</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="167" to="171" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Calculation of hydrophile-lipophile balance for polyethoxylated surfactants by group contribution method</title>
+		<author>
+			<persName><forename type="first">Xiaowen</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Zongming Rong; Xugen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Colloid and Interface Science</title>
+		<imprint>
+			<biblScope unit="volume">298</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="441" to="450" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Pasquali</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Some considerations about the hydrophilic-lipophilic balance system</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Taurozzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bregni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Pharmaceutics</title>
+		<imprint>
+			<biblScope unit="volume">356</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="44" to="51" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Hydrophile-lipophile balance (HLB) of n-alkane phosphonic acids and theirs salts</title>
+		<author>
+			<persName><forename type="first">Valeria</forename><surname>Verdinelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Paula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Messina; Pablo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Schulz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bruno</forename><surname>Vuano</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Colloids and Surfaces a-Physicochemical and Engineering Aspects</title>
+		<imprint>
+			<biblScope unit="volume">316</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="131" to="135" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<author>
+			<persName><surname>Thomaelle</surname></persName>
+		</author>
+		<ptr target="http://lysblancsdevenus.canalblog.com/archives/les_techniques_de_base/index.html" />
+		<title level="m">Les lys blancs de Venus</title>
+		<imprint>
+			<date type="published" when="2010-12">December 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The temperature dependence of dynamic viscosity for some vegetable oils</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Abramovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Klofutar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Chimica Slovenia</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="77" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Nougier</surname></persName>
+		</author>
+		<title level="m">Méthodes de calcul numérique</title>
+		<meeting><address><addrLine>Paris</addrLine></address></meeting>
+		<imprint>
+			<publisher>Masson</publisher>
+			<date type="published" when="1983">1983</date>
+			<biblScope unit="page" from="144" to="171" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Théorie et applications de la statistique -875 exercices résolus</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Murray</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Spiegel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Serie Schaum</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>McGraw-Hill</publisher>
+			<date type="published" when="1974">1974</date>
+			<biblScope unit="volume">188</biblScope>
+			<biblScope unit="page">358</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Calculator programs for chemical engineers</title>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Cavaseno</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chemical Engineering Magazine</title>
+		<imprint>
+			<biblScope unit="page" from="75" to="78" />
+			<date type="published" when="1982">1982</date>
+			<publisher>McGraw-Hill Publications Co</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>328 pp</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Two-Variable Linear Regression: Modeling with Orthogonal Least-Squares Analysis</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vincente De Julian-Ortiz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lionelle</forename><surname>Pogliani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emili</forename><surname>Besalu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Chemical Education</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="994" to="995" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Least Square Regression Lines. Calculations assuming a constant percent error</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Edgar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Daniel</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Mathews</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Chemical Education</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="757" to="759" />
+			<date type="published" when="1967">1967</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Dealing with Outliers: Robust, Resistant Regression</title>
+		<author>
+			<persName><forename type="first">Leslie</forename><surname>Glasser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Chemical Education</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="533" to="534" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Non-linear least squares fitting of coefficients in the Herschel-Bulkley model</title>
+		<author>
+			<persName><forename type="first">Glen</forename><surname>Mullineux</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Applied Mathematical Modeling</title>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="2538" to="2551" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Martial Chabanel, Thermodynamique chimique</title>
+		<imprint>
+			<biblScope unit="page" from="244" to="277" />
+			<date type="published" when="1986">1986</date>
+			<publisher>Ellipses</publisher>
+			<pubPlace>Paris</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Wikipedia: The complex number</title>
+		<ptr target="http://en.wikipedia.org/wiki/Complex_number" />
+		<imprint>
+			<date type="published" when="2011-01">January 2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Gourion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Jacques Chevalet; Christian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mathématiques</forename><surname>Lixi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Terminale</surname></persName>
+		</author>
+		<title level="m">Collection Marc Gourion</title>
+		<meeting><address><addrLine>Paris</addrLine></address></meeting>
+		<imprint>
+			<publisher>Fernand Nathan</publisher>
+			<date type="published" when="1983">1983</date>
+			<biblScope unit="page" from="149" to="176" />
+		</imprint>
+	</monogr>
+	<note>286 pp</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Wikipedia: The complex plane</title>
+		<ptr target="http://en.wikipedia.org/wiki/Complex_plane" />
+		<imprint>
+			<date type="published" when="2011-01">January 2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<ptr target="http://fr.wikipedia.org/wiki/Méthode_de_Sotta" />
+		<title level="m">La méthode de Sotta</title>
+		<imprint>
+			<date type="published" when="2011-01">January 2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Mathematical model for prediction of apparent viscosity of molasses</title>
+		<author>
+			<persName><forename type="first">Hasan</forename><surname>Togrul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Nurhan Arslan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Food Engineering</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page" from="281" to="289" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Wikipedia: Graphe de Gran</title>
+		<ptr target="http://fr.wikipedia.org/wiki/Graphe_de_Gran" />
+		<imprint>
+			<date type="published" when="2011-10">October 2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Dynamic surface properties of the Proteose-Peptone fraction of bovine milk</title>
+		<author>
+			<persName><forename type="first">Nadia</forename><surname>Innocente</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">; Cesare</forename><surname>Corradini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christophe</forename><surname>Blecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Michel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paquot</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Dairy Science</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1833" to="1839" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Etude des propriétés interfaciales du gluten et des protéines du Sorgho en vue de la panification</title>
+	</analytic>
+	<monogr>
+		<title level="j">Communauté française de Belgique, Faculté des Sciences Agronomiques de Gembloux</title>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<publisher>Abdourahamane Balla</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">Thèse de doctorat</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Contribution à l&apos;étude des propriétés physico-chimiques de la fraction proteose-peptone</title>
+		<author>
+			<persName><forename type="first">Gaoussou</forename><surname>Karamoko</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communauté française de Belgique, Faculté des Sciences Agronomiques de Gembloux</title>
+		<imprint>
+			<date type="published" when="2006">Année académique 2006-2007. 2007</date>
+		</imprint>
+	</monogr>
+	<note>Travail de fin d&apos;études</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Etude des propriétés physicochimiques de différentes fractions du jaune d&apos;oeuf</title>
+		<author>
+			<persName><forename type="first">Jérôme</forename><surname>Freschi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communauté française de Belgique, Faculté des Sciences Agronomiques de Gembloux</title>
+		<imprint>
+			<date type="published" when="2008">Année académique 2008-2009. 2009</date>
+		</imprint>
+	</monogr>
+	<note>Travail de fin d&apos;études</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Effect of acyl donor chain length and sugar/acyl donor molar ratio on enzymatic synthesis of fatty acid fructose esters</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Soultani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">; J.-M</forename><surname>Engasser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghoul</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Molecular Catalysis B: Enzymatic</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="725" to="731" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Production and characterisation of enzymatically produced lauric acid esters of fructose</title>
+		<author>
+			<persName><forename type="first">Gülten</forename><surname>Sekeroglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Sibel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fadiloglu; Esra</forename><surname>Ibanoglu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Science of Food and Agriculture</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="1516" to="1522" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Lipase-catalyzed synthesis of fatty acid fructose esters</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sabeder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Habulin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Knez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Food Engineering</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page" from="880" to="886" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Effect of different biochemical parameters on the enzymatic synthesis of fructose oleate</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Coulon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">A</forename><surname>Ismail</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Girardin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Rovel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghoul</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biotechnology</title>
+		<imprint>
+			<biblScope unit="page" from="51" to="115" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Enzymic synthesis of fructose monooleate in a reduced pressure pilot scale reactor using various acyl donors</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Coulon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Girardin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghoul</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Process Biochemistry</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="913" to="918" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Influence of water activity and water content on sugar esters lipase-catalyzed synthesis in organic media</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Chamouleau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Coulon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">M</forename><surname>Girardin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghoul</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Molecular Catalysis B: Enzymatic</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="949" to="954" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Les esters de sucres : voies de synthèse et potentialités d&apos;utilisation</title>
+		<author>
+			<persName><forename type="first">Salvator</forename><surname>Piccicuto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christophe</forename><surname>Blecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Christophe</forename><surname>Brohée</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georges</forename><surname>Lognay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claude</forename><surname>Deroanne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Michel Paquot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Michel Marlier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biotechnologie Agronomie Société et Environnement</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="209" to="219" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Synthesis of novel D-glucuronic acid fatty esters using Candida antartica lipase in tert-butanol</title>
+		<author>
+			<persName><forename type="first">Benoît</forename><surname>Moreau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Georges</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lognay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christophe</forename><surname>Blecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Christophe</forename><surname>Brohée</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florence</forename><surname>Chéry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Patrick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rollin</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Paquot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Michel Marlier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biotechnology Letters</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="419" to="424" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Gilles</forename><surname>Olive</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Influence of the water content in the synthesis of fructose laurate by immobilized lipase B of Candida antarctica (Novozym 435)</title>
+		<author>
+			<persName><forename type="first">Gabriela</forename><forename type="middle">A</forename><surname>Pompeu Torezan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christophe</forename><surname>Blecker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin de la Société Royale des Sciences de Liège</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="page" from="82" to="89" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Synthèse enzymatique d&apos;esters de fructose (Enzymatic synthesis of fructose esters)</title>
+		<author>
+			<persName><forename type="first">Gilles</forename><surname>Olive</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Gabriela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pompeu Torezan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christophe</forename><surname>Blecker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comptes Rendus Chimie</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">11-12</biblScope>
+			<biblScope unit="page" from="1037" to="1047" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">Supporting information</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Resolution of cubic equation by Sotta&apos;s méthod 8.2. Equations used in the pH Analyze Module of Gabriel Data Analysis CA and CB are respectively the concentration of the acid and the base. VA and VB are the volume of acid and of base</title>
+		<imprint/>
+	</monogr>
+	<note>n means the number of moles</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

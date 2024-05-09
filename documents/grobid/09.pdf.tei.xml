@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">FTIR spectroscopic semi-quantification of iron phases: A new method to evaluate the protection ability index (PAI) of archaeological artefacts corrosion systems</title>
+				<funder ref="#_Huk2ZZe">
+					<orgName type="full">European Regional Development Fund (FEDER)</orgName>
+				</funder>
+				<funder ref="#_P4FRXbW">
+					<orgName type="full">unknown</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Ministry of Innovation and Competitiveness (MINECO)</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2018-02-03">03 February 2018</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Marco</forename><surname>Veneranda</surname></persName>
+							<email>marco.veneranda@ehu.eus</email>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Analytical Chemistry</orgName>
+								<orgName type="department" key="dep2">Faculty of Science and Technology</orgName>
+								<orgName type="institution">University of the Basque Country UPV/EHU</orgName>
+								<address>
+									<postBox>P.O. Box 644</postBox>
+									<postCode>48080</postCode>
+									<settlement>Bilbao</settlement>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Basque Country</orgName>
+								<address>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Julene</forename><surname>Aramendia</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Analytical Chemistry</orgName>
+								<orgName type="department" key="dep2">Faculty of Science and Technology</orgName>
+								<orgName type="institution">University of the Basque Country UPV/EHU</orgName>
+								<address>
+									<postBox>P.O. Box 644</postBox>
+									<postCode>48080</postCode>
+									<settlement>Bilbao</settlement>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Basque Country</orgName>
+								<address>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ludovic</forename><surname>Bellot-Gurlet</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Interactions et Spectroscopies&apos;</orgName>
+								<orgName type="laboratory">UMR 8233</orgName>
+								<orgName type="institution" key="instit1">Sorbonne Universités</orgName>
+								<orgName type="institution" key="instit2">UPMC Université Paris 6</orgName>
+								<orgName type="institution" key="instit3">MONARIS &apos;de la Molécule aux Nano-objets: Réactivité</orgName>
+								<orgName type="institution" key="instit4">CNRS</orgName>
+								<address>
+									<addrLine>4 Place Jussieu</addrLine>
+									<postCode>75005</postCode>
+									<settlement>Paris</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Philippe</forename><surname>Colomban</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Interactions et Spectroscopies&apos;</orgName>
+								<orgName type="laboratory">UMR 8233</orgName>
+								<orgName type="institution" key="instit1">Sorbonne Universités</orgName>
+								<orgName type="institution" key="instit2">UPMC Université Paris 6</orgName>
+								<orgName type="institution" key="instit3">MONARIS &apos;de la Molécule aux Nano-objets: Réactivité</orgName>
+								<orgName type="institution" key="instit4">CNRS</orgName>
+								<address>
+									<addrLine>4 Place Jussieu</addrLine>
+									<postCode>75005</postCode>
+									<settlement>Paris</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kepa</forename><surname>Castro</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Analytical Chemistry</orgName>
+								<orgName type="department" key="dep2">Faculty of Science and Technology</orgName>
+								<orgName type="institution">University of the Basque Country UPV/EHU</orgName>
+								<address>
+									<postBox>P.O. Box 644</postBox>
+									<postCode>48080</postCode>
+									<settlement>Bilbao</settlement>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Basque Country</orgName>
+								<address>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Juan</forename><forename type="middle">Manuel</forename><surname>Madariaga</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Analytical Chemistry</orgName>
+								<orgName type="department" key="dep2">Faculty of Science and Technology</orgName>
+								<orgName type="institution">University of the Basque Country UPV/EHU</orgName>
+								<address>
+									<postBox>P.O. Box 644</postBox>
+									<postCode>48080</postCode>
+									<settlement>Bilbao</settlement>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Basque Country</orgName>
+								<address>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="laboratory">Unesco Chair of Cultural Landscapes and Heritage</orgName>
+								<orgName type="institution">University of the Basque Country (UPV/EHU)</orgName>
+								<address>
+									<postBox>P.O. Box 450</postBox>
+									<postCode>01080</postCode>
+									<settlement>Vitoria-Gasteiz</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">FTIR spectroscopic semi-quantification of iron phases: A new method to evaluate the protection ability index (PAI) of archaeological artefacts corrosion systems</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2018-02-03">03 February 2018</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.corsci.2018.01.016</idno>
+					<note type="submission">Submitted on 12 Jul 2018 Received 9 March 2017; Received in revised form 5 January 2018; Accepted 18 January 2018 ⁎ Corresponding author.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-09T13:41+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Iron corrosion Semi-quantification Fourier transform infrared spectroscopy PALME software Spectra decomposition Archaeological artefacts</keywords>
+			</textClass>
+			<abstract xml:lang="fr">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>HAL is a multi-disciplinary open access archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from teaching and research institutions in France or abroad, or from public or private research centers. L'archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non, émanant des établissements d'enseignement et de recherche français ou étrangers, des laboratoires publics ou privés.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The indispensable condition to ensure proper conservation of ancient iron artefacts is to reach a state of chemical and physical balance with the environment in which they are preserved <ref type="bibr" target="#b0">[1]</ref>.</p><p>In this sense, the recovery of irons from archaeological sites only takes place when their matrix reaches the equilibrium with the soil, maintaining it throughout the burial time. However, this delicate balance suffers a critical disruption during archaeological excavation. In fact, artefacts recovery exposes them to a completely different environment, resulting often in the activation of many degradation pathways <ref type="bibr" target="#b1">[2]</ref>.</p><p>Therefore, conservators must act promptly in the later stages of archaeological excavation with the purpose of achieving, through specific conservation treatments, a renewed equilibrium with the new environmental context <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>.</p><p>In this light, the work of conservators can be strongly benefited from analytical studies. In the early stage, the molecular analysis of iron artefacts enables the identification of the corrosion phases developed during the burial time. Those qualitative data are extremely important to conservators, helping them to identify the real preservation state of the analysed object. This is because each iron corrosion phase has a different influence on the conservation of artefacts. With regards to archaeological iron artefacts resumed from oxic environments, the corrosion system is generally mainly composed of magnetite (Fe 3 O 4 ), goethite (α-FeOOH), lepidocrocite (γ-FeOOH) and akaganeite (β-FeOOH). In this context, is it well known that magnetite and goethite are stable compounds that help the preservation of findings, whereas lepidocrocite and akaganeite can be considered as degradation accelerators, as seen in the literature <ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref>.</p><p>In addition to qualitative analysis, further useful information can be obtained by determining the relative concentration (quantitative or semi-quantitative analysis) of each iron phase composing the corrosion system. For example, the quantitative analysis of fragments that, one after the other, are removed by conservators during the conservation work helps to identify the in-depth distribution of the reactive degradation products and to characterize the reactivity of the whole corrosion system <ref type="bibr" target="#b7">[8]</ref>. Such approaches were also developed in the context of atmospheric corrosion in which the quantification of iron phases was been to describe the stability of the corrosion layers <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b9">10]</ref>.</p><p>The quantitative analysis of iron corrosion can also find reliable applications in the stages following the conservation works. In the short term, it can be used to control whether conservation treatments were able to stabilize the reactive corrosion phases <ref type="bibr" target="#b10">[11]</ref>. In the long term, it can also be used to identify any new corrosion processes that may be entailed by the interaction between the object and the storage/exhibition environmental conditions <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b12">13]</ref>.</p><p>In this context, molecular analytical techniques such as X-Ray Diffraction (XRD) <ref type="bibr" target="#b13">[14,</ref><ref type="bibr" target="#b14">15]</ref> and Mossbauer spectroscopy <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b16">17]</ref> have been extensively used with the specific purpose of determining the relative concentration of the phases that compose the iron corrosion systems.</p><p>Morevover, Raman spectroscopy is acquiring a steadily increasing importance in studies related to cultural heritage materials due to its versatility and capability of collecting molecular data in a non-intrusive way <ref type="bibr" target="#b17">[18]</ref>.</p><p>Considering that the intensity of Raman signals are proportional to the concentration, the most used quantification method is the one based on the use of external calibration curves <ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref>. To avoid the use of calibration curves for each analysed compound and their mixing, an approach using spectral decomposition in a linear combination of reference spectra was proposed for studying atmospheric corrosion of medieval iron <ref type="bibr" target="#b9">[10]</ref>. To go further than using point analyses the corrosion heterogeneities were taken into account using the automated treatment of Raman maps over the corrosion system. This approach was also applied for the diagnostic of self-weathering steel atmospheric corrosion of contemporary work of Art <ref type="bibr" target="#b21">[22]</ref>.</p><p>However, it must be pointed out that Raman spectroscopy is poorly suitable for the study of materials featuring high auto-fluorescence emissions. In these cases, the use of Fourier Transform Infrared Spectroscopy (FTIR) is more indicated, since it avoids any problem related to the auto-fluorescence of the sample. Moreover, working with powdered samples, FTIR systems also ensure a better accuracy and repeatability of the results over the sample heterogeneities by sampling the whole corrosion system <ref type="bibr" target="#b22">[23]</ref>.</p><p>Even though FTIR systems have been successfully applied for the quantification of several kind of liquid <ref type="bibr" target="#b23">[24,</ref><ref type="bibr" target="#b24">25]</ref> and solid <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b26">27]</ref> samples, only a few works describe the use of this spectroscopic technique for the quantification of iron phases <ref type="bibr" target="#b27">[28,</ref><ref type="bibr" target="#b28">29]</ref>.</p><p>Considering that this analytical approach has never been applied in the field of cultural heritage characterization, the main objective of the present work was to evaluate if FTIR spectroscopy can be used as an alternative technique to semi-quantify the main corrosion phases of iron archaeological artefacts. For this purpose, a dedicated software (PALME) designed by the LADIR group (now MONARIS, Pierre and Marie Curie University, France) was employed to perform the decomposition of FTIR spectra.</p><p>Afterwards, the proposed procedure was also used to assess whether it can be used to reliably assess the stability of real rust samples coming from archaeological artefacts. In this regards, the stability assessment has been inspired by the protection ability index (PAI index), proposed for the first time by Yamashita et al. <ref type="bibr" target="#b29">[30]</ref> and subsequently adjusted by Dillmann et al. <ref type="bibr" target="#b6">[7]</ref> for the analysis of rust layers covering ancient iron objects exposed to atmospheric corrosion.</p><p>The main advantage obtained from PAI index calculation consists in helping conservators on predicting the corrosion behaviour of iron artefacts after their recovery from the archaeological site. Thus, objects providing high stability values can be treated and stored by following routine protocols, whereas unstable artefacts require targeted treatments in order to prevent the onset of post-excavation degradation processes. In this context, it is important to clarify that the semiquantification of iron phases involves the sampling/processing of corrosion material. However, this aspect does not represent a remarkable issue since thick corrosion systems are generally removed/thinned in order to recover the original shape of the artefacts <ref type="bibr" target="#b30">[31]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Experimental methods and tests</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Samples preparation</head><p>This work was based on the analysis of both, standard mixtures and archaeological rust samples. In the first case, pure magnetite, lepidocrocite and goethite iron phases (from Sigma-Aldrich corp. St Luis, USA) were kindly provided by D. Neff from the LAPA group (NIMBE UMR3685 CEA/CNRS, France). On the other hand, pure akaganeite was synthesized using the method described by Reguer et al. <ref type="bibr" target="#b31">[32]</ref>. The synthesis method involved the hydrolysis of a 0.1 M ferric chloride solution (FeCl 3 •6H 2 O) by heating 2 l of the solution at 70 °C during 48 h.</p><p>On the one hand, 10 standard mixtures were prepared by mixing iron oxide and oxyhydroxide standards at different proportions. Considering that FTIR spectroscopy needs a small particle size (1-2 μm) to avoid any distortion phenomena, an agate mortar was used for the grinding and the homogenization of all samples. The relative weight of each iron phase in the mixtures was monitored by using an analytical balance (AE200, Mettler) with an accuracy of 0.0001 g.</p><p>On the other hand, real samples were collected from iron artefacts excavated in the Roman archaeological site of Forua (Spain) <ref type="bibr" target="#b32">[33]</ref>. This Roman settlement, discovered in 1982, stands just few kilometres inland from the Bay of Biscay. In the archaeological excavations several objects were discovered, including five iron-based nails dated back between the 2nd and the 4th century A.D (see Fig. <ref type="figure">SM1</ref> in Supplementary material).</p><p>Since their recovery, all artefacts have been constantly kept in a controlled environment room (temperature and relative humidity of 20 ± 2 °C and 65 ± 2% respectively) without the implementation of further conservation treatments. To minimize post-excavation corrosion phenomena, each nail had been stored in hermetic boxes equipped with desiccant silica gel beads that ensure humidity levels below 10% relative humidity.</p><p>In the frame of this study, one rust micro-sample was collected from each of the five nails. The sampling, carried out with the collaboration of the conservators of the Archaeological Museum of Bizkaia, was performed after cleaning the outer rust layer from impurities (e.g. earth, clays and organic material) deposited on its surface during the burial time. In this way, the possible interferences proportioned by extraneous materials during the analytical characterization of the iron corrosion were minimized. The collected samples were finally analysed to semi-quantify the main iron phases and evaluate their stability through the protective ability index calculation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">FTIR systems</head><p>For the development of this work two FTIR systems were used. On the one hand, a Jasco 6300 system, operating in transmittance, diffuse reflection (DRIFT, Jasco DR PR0410M) and ATR (diamond crystal with a ZnSe focusing lens, PIKE Miracle™) modes, was used with the aim of checking what configuration provided the most reliable results. The instrument is equipped with a Ge on KBr beamsplitter, a Michelson interferometer and a DLaTGS detector with Peltier temperature control. Analysis were performed in the middle infrared region (from 4000 to 400 cm -1 ) recording 64 scans at 4 cm -1 spectral resolution.</p><p>To collect ATR spectra, a small portion of homogenized sample (around 0.05 g) was placed in the microsample holder, firmly clamped against the ATR crystal and analysed in its pure form.</p><p>On the other side, KBr-matrix pellets were made to carry out transmittance analysis. To prepare the pellets, 0.5 mg of sample was mixed with 170 mg of dry KBr (&gt; 99% FTIR grade, Sigma-Aldrich), milled in an agate mortar and pressed under 10 tons (CrushIR, PIKE technologies) for 8 min.</p><p>For DRIFT analysis, the microsample holder was filled with a powder mixture composed of 10% (w/w) sample and 90% (w/w) KBr. This dilution ratio ensured having a lower specular component on the surface of the sample increasing the contribution of the diffuse reflectance component <ref type="bibr" target="#b22">[23]</ref>.</p><p>In a second step, the results obtained by the use of the above described laboratory instruments were compared with those of a portable FTIR. The aim was to verify if the proposed semi-quantification method could be applied to in-situ analysis. For this purpose, a compact portable Alpha FTIR spectrometer (Bruker Optics Inc., Germany) equipped with a Ge on KBr beamsplitter and a diamond ATR accessory was used.</p><p>To compare the results of the portable instrument with those obtained by the laboratory one, the same measurement parameters were used (64 acquisitions at 4 cm -1 resolution over a spectral range of 400-4000 cm -1 , see above).</p><p>To improve the reliability of the proposed method, the FTIR spectra obtained from both portable and laboratory systems were treated using the Opus 7.2 software (Bruker Optics, Germany). Thus, CO 2 /H 2 O and noise corrections, spectra baseline adjustment and fingerprint region selection were performed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">PALME software</head><p>After completing the analysis of all samples by using both FTIR systems, the PALME software (Program d'AnaLyse vibrationnelle de spectres de MElanges à partir de spectres purs) developed by the LADIR Laboratory (now MONARIS, Pierre et Marie Curie University, France) was applied to semi-quantify the detected iron corrosion phases. This program was specifically designed to treat spectra provided by vibrational spectroscopy techniques. PALME software automatically performs the semi-quantification of compounds mixtures by the linear combination of spectra of pure reference standards <ref type="bibr" target="#b33">[34,</ref><ref type="bibr" target="#b34">35]</ref>. The process consists of two steps. In the first one, the software uses a sum of Gaussian and/or Lorentzian band profiles and a least-square fitting to produce for each reference compound (in this work akaganeite, lepidocrocite, goethite and magnetite) a calculated spectrum that fits the recorded experimental one <ref type="bibr" target="#b35">[36]</ref>. The calculations and the fitting procedures performed by PALME software have been detailed in a specific publication <ref type="bibr" target="#b36">[37]</ref>.</p><p>In a second step, a linear combination of the calculated standard spectra is used for the fitting of a spectrum similar to the sample spectrum by means of the least-squares criterion and the Levenberg-Marquardt algorithm. After validation of the fitting by the user, PALME software provides a txt document including the contribution of each standard (expressed as a weighting coefficient) to the decomposition of the sample spectrum.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Corrosion system stability evaluation</head><p>After completing the semi-quantification of the iron phases, the percentage values of each compound were used to determine the sample corrosion stability.</p><p>As explained above, the adjusted index (*PAI index) considers the presence of akaganeite, lepidocrocite as reactive phases; and goethite, and magnetite as protective ones (Eq. ( <ref type="formula">1</ref>)). Unlike Yamashita et al. <ref type="bibr" target="#b29">[30]</ref>, due to its passivity and stability, magnetite (Fe 3 O 4 ) is here considered as protective.</p><p>In this light, the stability of archaeological corrosion samples was calculated as follows:</p><formula xml:id="formula_0">= + + Corrosion stability mass fraction(αFeO(OH)) (Fe O ) mass fraction(γFeO(OH)) (βFeO(OH)) 3 4</formula><p>(1)</p><p>In the case of the mixtures of standards, the reliability of the stability calculation was determined by comparison with the results obtained using the weighted proportions of each compounds. In the case of archaeological samples, the reliability evaluation was performed using as a reference the value calculated through the semi-quantification values obtained by X-ray diffraction (XRD) analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">X-ray diffraction</head><p>In order to characterize and semi-quantify the iron phases in the archaeological rust samples, a PRO PANalytical Xpert XRD was used.</p><p>The system is equipped with a copper tube, a vertical goniometer (Bragg-Brentano geometry), a programmable divergence slit, a secondary graphite monochromator and a Pixcel detector. The condition of all measurements were set at 40 KV, 40 mA and a scan ranging between 5 and 70°2theta.</p><p>It is important to recall that the peaks' shape of the XRD diffractogram depends on the crystallinity of the phases (the narrowness of the peaks increase with increasing short and long range ordering). For this reason semi-quantitative values were obtained by treating areas values.</p><p>To obtain semi-quantitative data from the collected diffractograms, two different softwares were used. Both Xpert HighScore and EVA software (PANanalytical, Holland) apply the Reference Intensity Ratio (RIR) method to predict the phase abundances. Considering that the intensity of a diffraction peak profile is a convolution of many factors, the RIR method measures and reduces to a constant all the factors except concentration to determine phases concentration (by comparison to a reference pattern). Although the softwares are both based on the Reference Intensity Ratio method, the algorithm used for the decomposition of the experimental data is different, which can result in different semi-quantitative results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results and discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Characterization of pure standards</head><p>The semi-quantification performed by PALME software is based on the decomposition of the vibrational spectrum of a sample by comparison with pure reference spectra. Thus, the first step was focused on the collection of the characteristic FTIR spectra of pure akaganeite, lepidocrocite, goethite and magnetite using the same experimental conditions in order to obtain absorbances (relative intensities between bands) related to each sample specificities, spectrometer characteristics and measurement mode (transmittance, DRIFT, ATR). For example, Fig. <ref type="figure">1</ref> reports the FTIR spectra of pure iron phases, collected by using the JASCO 6300 laboratory system in transmittance mode.</p><p>As showed in Fig. <ref type="figure">1</ref>, the magnetite vibrational spectrum was characterized by the presence of strong signals at 588 and 3437 cm -1 (Fig. <ref type="figure">1a</ref>). Goethite spectrum showed three strong peaks at 615, 798 and 905 cm -1 respectively, together with two broad bands at 3136 and 3431 cm -1 (Fig. <ref type="figure">1b</ref>). Lepidocrocite spectrum stood out by the presence of a main peak at 1023 cm -1 , followed by several secondary signals at 485, 615, 759, 1152, 3014 and 3414 cm -1 (Fig. <ref type="figure">1c</ref>). Finally, akaganeite standard provided an intense double peak at 648 and 693 cm -1 , together with two weak signals at 844 and 1623 cm -1 and a broad band at 3385 cm -1 (Fig. <ref type="figure">1d</ref>).</p><p>To illustrate the signal differences produced by each acquisition mode, the comparison of the akaganeite spectra recorded using the Jasco 6300 in ATR, DRIFT and transmittance modes are shown in Fig. <ref type="figure">2</ref>.</p><p>As evidenced in Fig. <ref type="figure">2</ref>, transmittance and DRIFT modes were more sensitive to the OeH bonds vibrations with respect to the ATR mode <ref type="bibr" target="#b37">[38,</ref><ref type="bibr" target="#b38">39]</ref>, promoting the enhancement of the hydroxide signals on the spectrum of pure akaganeite (3385 and 3470 cm -1 ). This is due to the lesser penetration of the high wavenumber IR lights in ATR mode which result in a smaller volume sampled and then a lower absorbance. As here the ATR spectra were not corrected by the ATR correction function which is commonly provided by the IR software (we choose to not introduce such corrections of spectra) the differences between the ATR profile and the transmittance/DRIFT ones remain. Furthermore, it must be pointed out that, using the DRIFT method, the infrared radiation penetrates the sample/KBr mixture, producing a high number of refractions and absorption processes which result in an enhancement of the intensity in the interfaces contribution, and combination bands <ref type="bibr" target="#b39">[40]</ref>. This statement was confirmed by experimental data owing to the presence of several secondary peaks in a wavelength range between 1400 and 3000 cm -1 (Fig. <ref type="figure">2</ref>). Thus, both position and shape of DRIFT and ATR peaks are more or less shifted/modified because the complexity of the interaction (superimposition of absorption and Fig. <ref type="figure">1</ref>. FTIR raw spectra of iron oxide standards carried out using the Jasco 6300 system in transmittance mode. Fig. <ref type="figure">2</ref>. Comparison among akaganeite spectra obtained using the Jasco 6300 system in ATR, DRIFT and transmittance modes. reflection), that explains the differences, especially below 1000 cm -1 <ref type="bibr" target="#b40">[41,</ref><ref type="bibr" target="#b41">42]</ref>.</p><p>After completing laboratory analysis, the characteristic spectra of pure standards were also collected by means of the portable FTIR Alpha system. This instrument offered better performances to low wavelengths (below 525 cm -1 ) with respect to the Jasco 6300 due to the different sensitivity of the coupled beamsplitter and ATR cell.</p><p>3.2. Semi-quantification of pure standards mixtures 3.2.1. Semi-quantification using raw spectra</p><p>Once confirmed that both FTIR systems were able to differentiate the iron oxides and oxyhydroxides typically found in archaeological artefacts corrosion systems, the next step of this work was focused on the molecular analysis of the reference mixtures described in Section 2.1. After analyzing all mixtures with the laboratory (transmittance, diamond/ZnSe-ATR and DRIFT modes) and the portable (diamond-ATR mode) spectrometers, the raw spectra were semi-quantified by means of the PALME software to determine the contribution of each iron phase in the mixtures. The amount of each iron phase is determined by PALME software with the decomposition of each spectrum which provided the weight coefficient expressed as content percentage (Table <ref type="table" target="#tab_0">1</ref>).</p><p>As can be observed in Table <ref type="table" target="#tab_0">1</ref>, the semi-quantification reliability of the laboratory Jasco 6300 system varied widely depending on the measurement configuration used. For example, the analysis carried out in transmittance mode ensured concentration absolute errors below 12.7%. On the other hand, the values obtained by using the DRIFT and ATR configurations, provided amounts differences from 0.2 to 19.1% and from 1.2 to 31.7% respectively. Finally, the concentration values obtained through the use of the portable Alpha system in ATR mode showed less reliable results in comparison with the previous cases (errors ranging from 0.1 to 38.2%).</p><p>The semi-quantification of raw spectra brought to misleading considerations. For example, sample 10 was mainly constituted by akaganeite but, independently of the FTIR system and the configuration used, the PALME software assigned the role of main phase to magnetite. As magnetite has the less structured spectrum (Fig. <ref type="figure">1</ref>) on the whole spectral range, the calculation will use this spectrum just in order to improve the fit quality but not to take into account a specific spectral range/band.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2.">Spectra treatment</head><p>To improve the reliability of the results a focus on the most discriminating part of the spectra is proposed. The range of wavelengths between 500 and 1100 cm -1 was selected as the spectral fingerprint region, since it includes all the main characteristic bands of the analysed iron-based phases and focus on bands specific to each compound (see Fig. <ref type="figure">3</ref>). In addition, both pure phases and mixture of standards were subjected to baseline correction (see Fig. <ref type="figure">3</ref>). Hereafter these spectra will be called "treated spectra".</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.3.">Semi-quantification using treated spectra</head><p>Once treated, all spectra were re-processed by means of the PALME software. The new semi-quantification results are summarized in Table <ref type="table" target="#tab_1">2</ref>.</p><p>The new semi-quantification values proved that the use of treated spectra helped to increase remarkably the reliability of the proposed method. The comparison between weighted and experimental values obtained by using the Jasco 6300 spectrometer in transmittance mode showed the most reliable results, providing absolute error values comprised between 0.1 and 7.1%. The values obtained by using the DRIFT and ATR configuration instead, showed absolute errors ranging from 0.5 to 20.8% and from 0.3 to 32.8% respectively. Finally, the semi-quantification values obtained by using the portable Alpha spectrophotometer provided concentration absolute errors ranging from 0.3 to 13.8%.</p><p>The accuracy of the semi-quantification method was assessed by means of the paired t-test. By comparing the experimental data to the weighted concentration values it was proved that the two groups are not statistically different from each other.</p><p>After completing the semi-quantification of all treated spectra, a trend line (including the value of all iron corrosion phases) was constructed for each FTIR mode. The linear correlation between both weighted and experimental concentrations allowed to determine more clearly the reliability of the FTIR-PALME method. By analyzing the obtained trend lines (Fig. <ref type="figure" target="#fig_0">4</ref>), several important conclusions can be deduced. First of all, the comparison between Jasco 6300 configurations showed that, as expected, the most reliable results were provided by the use of the transmittance mode (y = 0.9861x, R 2 = 0.9583), because with this procedure bands position and shape are almost not distorted by combination of absorption and reflection phenomena, which are especially important for solids exhibiting electronic conductivity (for instance magnetite). Besides, the comparison between the ATR trend lines proved that the reliability of the portable FTIR (y = 0.9439x, R 2 = 0.8607), after data treating, is comparable to that obtained by the laboratory system (y = 0.9577 x R 2 = 0.8981). As well as to spectroscopic reasons, the higher deviation of the ATR measurements can be due to the significant reduction of the amount of sample measured in ATR mode that could enhance the detection of the samples heterogeneities (originated by the mixing of powders), therefore introducing some dispersion of results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.4.">Stability evaluation of pure standard mixtures</head><p>The content values of pure standards mixtures were used to determine the stability of the reference samples. Considering the results summarized in Fig. <ref type="figure" target="#fig_0">4</ref>, the ratio between stable and reactive phases was calculated by using the Jasco 6300 and Alpha systems in transmittance and ATR modes respectively.</p><p>The experimental stability values obtained from mixture of pure corrosion standards are summarized in Table <ref type="table" target="#tab_2">3</ref>.</p><p>The trend line values obtained by comparing calculated and expected concentration values (obtained after excluding outliers), are y = 1.0558 x R 2 = 0.9929 for the laboratory FTIR system used in transmittance mode (Figure <ref type="figure">SM2a</ref>) and y = 1.0252 x R 2 = 0.9337 for the portable FTIR system used in ATR mode (Figure <ref type="figure">SM2b</ref>). Thus, the results demonstrate that real and experimental data fits well to the linear model.</p><p>To assess the accuracy of the stability calculation, the paired t-test was also applied. The results statistically proved that regardless of the analytical configuration used, there are no significant differences between the stability values obtained from real and experimental data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Application to archaeological samples</head><p>After completing the study of standard mixtures as well as the optimization of the proposed semi-quantification method, the analytical work was directed to the study of archaeological rust samples.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.1.">Semi-quantification of archaeological samples using XRD diffractograms</head><p>The corrosion samples collected from the 5 archaeological iron nails previously mentioned were firstly analysed by means of the XRD system described in Section 2.5.</p><p>As can be observed in Fig. <ref type="figure" target="#fig_1">5</ref>, the collected diffractograms showed several narrow and intense peaks that suggest the presence of multiple crystalline compounds. Considering that the 2 theta position of the detected signals is dependent on the type of excitation source employed by the analytical instrument (in this case Cu Kα), the Bragg law was Fig. <ref type="figure">3</ref>. FTIR shows spectra of iron oxide standards obtained by using the Jasco 6300 system in transmittance mode, spectral range between 500 and 1100 cm -1 and baseline corrected.</p><p>applied to determine the interplanetary distances values. The distance values were finally compared with those of pure mineral pattern. In this way the presence of akaganeite (A), goethite (G), lepidocrocite (L) and magnetite (M) was clearly detected on archaeological (Arch.) Samples 1, 2, 4 and 5. In addition to those, no further crystalline compounds were identified. In the case of Arch. Sample 3, the characteristic signals of lepidocrocite were not detected. Thus, either this iron phase was not present in the corrosion sample or its concentration was below the  detection limit of the employed analytical technique. Afterwards, the Xpert Highscore and EVA programs were applied to obtain semi-quantitative data from the collected diffractograms. The predicted concentration values are summarized in Fig. <ref type="figure" target="#fig_2">6</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.2.">Semi-quantification of archaeological samples using treated FTIR spectra</head><p>Raw FTIR spectra were first collected by using the Jasco 6300 and the Alpha systems in transmittance and ATR mode respectively and treated as described above.</p><p>Under a qualitative point of view, FTIR results perfectly fit with XRD data. Indeed a mixture of akaganeite, goethite, lepidocrocite and magnetite was detected on Arch. Samples 1, 2, 4 and 5, whereas no lepidocrocite was identified in Arch. Sample 3.</p><p>Afterwards, the PALME software was employed to evaluate the relative concentration of each detected compound. An example of the fitting results obtained through the use of the PALME software is provided as supplementary material (Fig. <ref type="figure">SM3</ref>)</p><p>The concentrations values obtained from the decomposition of treated FTIR spectra by PALME software were compared to those provided by the treatment of the XRD diffractograms. The results demonstrate that the proposed method ensures similar semi-quantification results to those obtained from the XRD calculation used.</p><p>It is important to emphasize that, as proved by several works <ref type="bibr" target="#b42">[43,</ref><ref type="bibr" target="#b43">44]</ref>, the XRD technique have been often used for semi-quantification purposes despite the low reliability of its results (about 10-20% relative percent error) <ref type="bibr" target="#b6">[7]</ref>. For this reason, the proposed semi-quantification method can be considered as a viable alternative to those based on the use of XRD analysis for the study of archaeological iron corrosion systems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.3.">Stability evaluation of archaeological samples</head><p>Considering the good results obtained by calculating the stability of pure standards mixtures, the FTIR-PALME method was also applied for the study of the archaeological samples. To evaluate the reliability of results obtained with Jasco 6300 and Alpha, FTIR-PALME stability values were compared with those calculated from the semi-quantification of X-Ray diffractograms.</p><p>As can be observed in Fig. <ref type="figure" target="#fig_3">7</ref>, the stability values provided by the decomposition of Jasco 6300 transmittance and Alpha ATR FTIR spectra fit to those obtained from XRD data. In this sense, the reliability of the semi-quantification method proposed in this paper was further demonstrated, except for the Arch. Sample 1. This sample is characterized by a lower akaganeite and lepidocrocite amounts (and also a higher dispersion of their quantification results), and small variations of those oxides will induce big variations of the stability values. When small amounts of reactive or stable compounds are present, then a small numerator or denominator will be used in the stability index calculation and some slight variations in their quantification will introduce high variation of the index.</p><p>Although a reliable stability assessment can only be obtained through the study of several corrosion samples, the results herein  summarized attest that the proposed method can be effectively used to establish the stability of iron corrosion systems. This information can play a remarkable role during the planning of the conservation intervention to be applied in the post-excavation phase. Indeed, objects presenting stable corrosion systems (i.e. Arch. Samples 1, 4 and 5) can be submitted to routine conservation treatments, whereas artefacts covered by a reactive rust layer (i.e. Arch. Sample 3) require specific stabilization treatments (such as desalination baths) that minimize postexcavation degradation issues.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Conclusions</head><p>This paper introduces a new analytical method, based on the use of FTIR spectroscopy, to evaluate the stability of archaeological artefacts corrosion systems.</p><p>In the first step, the semi-quantification of standard mixtures spectra collected by means of laboratory system (Jasco 6300) indicated that the most reliable results were provided as expected by the decomposition of transmittance spectra (powder dispersed in a KBr pellet). This work also demonstrated that, by performing spectra treatments (fingerprint region selection and baseline correction), the method accuracy especially of those using DRIFT or ATR procedures can be significantly improved.</p><p>Afterwards, the results obtained by means of laboratory systems (Transmission, DRIFT &amp; ATR) were compared to those of the portable Alpha IR spectrometer in ATR mode. As proved by the trend line showed in Fig. <ref type="figure" target="#fig_0">4</ref>, the results obtained by semi-quantifying treated Alpha spectra were good enough to enable the application of the proposed protocol also to on site analysis. Once the analytical procedure was validated, the current availability of various small movable ATR-FTIR devices allows working out of analytical laboratories, in restoration workshops, museums or even on the archaeological field.</p><p>PALME concentration values obtained by the decomposition of both portable (in ATR mode) and laboratory (in transmittance mode) spectra were used to calculate the stability values of both standard mixtures and archaeological samples. Concretely, the experimental stability values obtained from archaeological iron corrosion samples were in line with those calculated from XRD data. For this reason we believe that the FTIR-PALME method represents a viable alternative to those based on the treatment of X-Ray diffractograms for both iron phases semiquantification and stability evaluation.</p><p>Finally, it must be emphasized that FTIR analyses require a smaller amount of sample (0.3-0.5 mg in transmittance mode) compared to the XRD technique. Thus, this method can be particularly suitable for the study of iron-based objects of cultural interest because the amount of sample that is usually available is very little due to the special characteristic of the cultural objects.</p><p>In conclusion, the reliability of the proposed method for PAI index determinations could represent a great advantage for conservators, helping them on predicting the corrosion behaviour of iron artefacts and consequently planning optimal conservation treatment.  </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. FTIR correlation curves between weighted and calculated concentration values on pre-treated spectra for all compounds.</figDesc><graphic coords="8,37.59,415.11,322.85,323.13" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. XRD analysis of the five archaeological rust samples. In each diffractogram, the main diffraction peak of akaganeite (A), goethite (G), lepidocrocite (L) and magnetite (M) is highlighted.</figDesc><graphic coords="9,58.22,427.24,478.80,293.04" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 6 .</head><label>6</label><figDesc>Fig. 6. Comparison between FTIR and XRD semi-quantification results of archaeological rust samples.</figDesc><graphic coords="10,69.62,56.81,456.05,241.06" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 7 .</head><label>7</label><figDesc>Fig. 7. Comparison between the stability values (of archaeological samples) provided by the use of both XRD and FTIR analytical techniques.</figDesc><graphic coords="10,43.31,326.84,239.62,153.07" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="5,57.88,56.81,479.52,380.01" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="5,37.59,509.73,299.95,228.53" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="7,58.51,56.81,478.22,377.28" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Comparison between the weighted and experimental concentration values of standard mixtures obtained on raw spectra. Experimental values were obtained by semi-quantifying raw FTIR spectra acquired in different modes and devices using PALME software.</figDesc><table><row><cell>Sample</cell><cell>Composition</cell><cell></cell><cell cols="2">Lab. JASCO 6300 ATR</cell><cell cols="2">Lab. JASCO 6300 DRIFT</cell><cell cols="2">Lab. JASCO 6300 Transmittance</cell><cell cols="2">Portable Alpha ATR</cell></row><row><cell></cell><cell>Iron compound</cell><cell>% weighted</cell><cell>% exper.</cell><cell>Diff.</cell><cell>% exper.</cell><cell>Diff.</cell><cell>% exper.</cell><cell>Diff.</cell><cell>% exper.</cell><cell>Diff.</cell></row><row><cell>Sample 1</cell><cell>Akaganeite</cell><cell>83.3</cell><cell>78.0</cell><cell>5.3</cell><cell>63.3</cell><cell>20.0</cell><cell>77.8</cell><cell>5.5</cell><cell>69.3</cell><cell>14.0</cell></row><row><cell></cell><cell>Goethite</cell><cell>16.7</cell><cell>22.0</cell><cell>-5.3</cell><cell>36.7</cell><cell>-20.0</cell><cell>22.2</cell><cell>-5.5</cell><cell>30.7</cell><cell>-14.0</cell></row><row><cell>Sample 2</cell><cell>Akaganeite</cell><cell>50.0</cell><cell>49.3</cell><cell>0.7</cell><cell>61.2</cell><cell>-11.2</cell><cell>43.0</cell><cell>7.0</cell><cell>37.8</cell><cell>12.2</cell></row><row><cell></cell><cell>Goethite</cell><cell>50.0</cell><cell>50.7</cell><cell>-0.7</cell><cell>38.8</cell><cell>11.2</cell><cell>57.0</cell><cell>-7.0</cell><cell>61.2</cell><cell>-12.2</cell></row><row><cell>Sample 3</cell><cell>Akaganeite</cell><cell>26.1</cell><cell>26.3</cell><cell>-0.2</cell><cell>39.0</cell><cell>-12.9</cell><cell>18.3</cell><cell>7.8</cell><cell>21.4</cell><cell>4.7</cell></row><row><cell></cell><cell>Goethite</cell><cell>73.9</cell><cell>73.7</cell><cell>0.2</cell><cell>61.0</cell><cell>12.9</cell><cell>81.7</cell><cell>-7.8</cell><cell>78.6</cell><cell>-4.7</cell></row><row><cell>Sample 4</cell><cell>Magnetite</cell><cell>77.3</cell><cell>65.0</cell><cell>12.3</cell><cell>83.5</cell><cell>-6.2</cell><cell>75.6</cell><cell>1.7</cell><cell>65.8</cell><cell>11.5</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>22.7</cell><cell>35.0</cell><cell>-12.3</cell><cell>16.5</cell><cell>6.2</cell><cell>24.4</cell><cell>-1.7</cell><cell>34.2</cell><cell>-11.5</cell></row><row><cell>Sample 5</cell><cell>Magnetite</cell><cell>27.3</cell><cell>32.5</cell><cell>-5.2</cell><cell>38.8</cell><cell>-11.5</cell><cell>24.2</cell><cell>3.1</cell><cell>5.2</cell><cell>22.1</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>72.7</cell><cell>67.5</cell><cell>5.2</cell><cell>61.1</cell><cell>11.6</cell><cell>75.8</cell><cell>-3.1</cell><cell>94.8</cell><cell>-22.1</cell></row><row><cell>Sample 6</cell><cell>Magnetite</cell><cell>47.1</cell><cell>52.0</cell><cell>-4.9</cell><cell>55.5</cell><cell>-8.4</cell><cell>48.6</cell><cell>-1.5</cell><cell>47.0</cell><cell>0.1</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>52.9</cell><cell>48.0</cell><cell>4.9</cell><cell>44.5</cell><cell>8.4</cell><cell>51.4</cell><cell>1.5</cell><cell>53.0</cell><cell>-0.1</cell></row><row><cell>Sample 7</cell><cell>Goethite</cell><cell>17.8</cell><cell>20.6</cell><cell>-2.8</cell><cell>16.6</cell><cell>1.2</cell><cell>17.1</cell><cell>0.7</cell><cell>31.2</cell><cell>13.4</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>46.6</cell><cell>53.8</cell><cell>-7.2</cell><cell>51.7</cell><cell>-5.1</cell><cell>44.5</cell><cell>2.1</cell><cell>56.6</cell><cell>-10.0</cell></row><row><cell></cell><cell>Magnetite</cell><cell>35.6</cell><cell>25.6</cell><cell>10.0</cell><cell>31.7</cell><cell>3.9</cell><cell>38.4</cell><cell>-2.8</cell><cell>12.2</cell><cell>23.4</cell></row><row><cell>Sample 8</cell><cell>Goethite</cell><cell>23.2</cell><cell>28.8</cell><cell>-5.6</cell><cell>21.7</cell><cell>1.5</cell><cell>27.2</cell><cell>-4.0</cell><cell>36.7</cell><cell>-13.5</cell></row><row><cell></cell><cell>Magnetite</cell><cell>49.5</cell><cell>36.2</cell><cell>13.3</cell><cell>69.9</cell><cell>-20.4</cell><cell>57.7</cell><cell>-8.2</cell><cell>38.9</cell><cell>10.6</cell></row><row><cell></cell><cell>Akaganeite</cell><cell>27.3</cell><cell>35.0</cell><cell>-7.7</cell><cell>8.4</cell><cell>18.9</cell><cell>15.1</cell><cell>12.2</cell><cell>24.4</cell><cell>2.9</cell></row><row><cell>Sample 9</cell><cell>Magnetite</cell><cell>31.5</cell><cell>37.9</cell><cell>-6.4</cell><cell>50.2</cell><cell>-18.7</cell><cell>36.5</cell><cell>-5.0</cell><cell>-6.7</cell><cell>38.2</cell></row><row><cell></cell><cell>Akaganeite</cell><cell>39.3</cell><cell>36.0</cell><cell>3.3</cell><cell>27.3</cell><cell>12.0</cell><cell>35.3</cell><cell>4.0</cell><cell>67.5</cell><cell>-28.2</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>29.2</cell><cell>27.9</cell><cell>1.3</cell><cell>22.5</cell><cell>6.7</cell><cell>28.2</cell><cell>1.0</cell><cell>39.2</cell><cell>-10.0</cell></row><row><cell>Sample 10</cell><cell>Magnetite</cell><cell>16.9</cell><cell>36.0</cell><cell>-19.1</cell><cell>48.6</cell><cell>-31.7</cell><cell>29.0</cell><cell>-12.1</cell><cell>-1.4</cell><cell>18.3</cell></row><row><cell></cell><cell>Akaganeite</cell><cell>41.6</cell><cell>28.8</cell><cell>12.8</cell><cell>22.1</cell><cell>19.5</cell><cell>28.9</cell><cell>12.7</cell><cell>33.5</cell><cell>8.1</cell></row><row><cell></cell><cell>Goethite</cell><cell>12.3</cell><cell>11.5</cell><cell>0.8</cell><cell>17.8</cell><cell>-5.5</cell><cell>15.5</cell><cell>-3.2</cell><cell>21.1</cell><cell>-8.8</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>29.2</cell><cell>23.6</cell><cell>5.6</cell><cell>11.4</cell><cell>17.8</cell><cell>26.6</cell><cell>2.6</cell><cell>46.9</cell><cell>-17.7</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Comparison between weighted and experimental concentration values of standard mixtures obtained on pre-treated spectra. Experimental values were obtained by semi-quantifying treated FTIR spectra using PALME software.</figDesc><table><row><cell>Sample</cell><cell>Composition</cell><cell></cell><cell cols="2">Lab. JASCO 6300 ATR</cell><cell cols="2">Lab. JASCO 6300 DRIFT</cell><cell cols="2">Lab. JASCO 6300 Transmittance</cell><cell cols="2">Portable Alpha ATR</cell></row><row><cell></cell><cell>Iron compound</cell><cell>% weighted</cell><cell>% exper.</cell><cell>Diff.</cell><cell>% exper.</cell><cell>Diff.</cell><cell>% exper.</cell><cell>Diff.</cell><cell>% exper.</cell><cell>Diff.</cell></row><row><cell>Sample 1</cell><cell>Akaganeite</cell><cell>83.3</cell><cell>78.5</cell><cell>4.8</cell><cell>81.2</cell><cell>2.1</cell><cell>78.7</cell><cell>4.6</cell><cell>73.6</cell><cell>9.6</cell></row><row><cell></cell><cell>Goethite</cell><cell>16.7</cell><cell>21.5</cell><cell>-4.8</cell><cell>18.8</cell><cell>-2.1</cell><cell>21.3</cell><cell>-4.6</cell><cell>26.4</cell><cell>-9.6</cell></row><row><cell>Sample 2</cell><cell>Akaganeite</cell><cell>50.0</cell><cell>49.7</cell><cell>0.3</cell><cell>56.9</cell><cell>-6.9</cell><cell>46.8</cell><cell>3.2</cell><cell>44.9</cell><cell>5.1</cell></row><row><cell></cell><cell>Goethite</cell><cell>50.0</cell><cell>50.3</cell><cell>-0.3</cell><cell>43.1</cell><cell>6.9</cell><cell>53.2</cell><cell>-3.2</cell><cell>55.1</cell><cell>-5.1</cell></row><row><cell>Sample 3</cell><cell>Akaganeite</cell><cell>26.1</cell><cell>26.5</cell><cell>-0.4</cell><cell>33.6</cell><cell>-7.5</cell><cell>26.0</cell><cell>0.1</cell><cell>27.9</cell><cell>-1.8</cell></row><row><cell></cell><cell>Goethite</cell><cell>73.9</cell><cell>73.5</cell><cell>0.4</cell><cell>66.4</cell><cell>7.5</cell><cell>74.0</cell><cell>-0.1</cell><cell>72.1</cell><cell>1.8</cell></row><row><cell>Sample 4</cell><cell>Magnetite</cell><cell>77.3</cell><cell>70.0</cell><cell>7.3</cell><cell>80.9</cell><cell>-3.6</cell><cell>83.6</cell><cell>-6.3</cell><cell>66.4</cell><cell>10.9</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>22.7</cell><cell>30.0</cell><cell>-7.3</cell><cell>19.1</cell><cell>3.6</cell><cell>16.4</cell><cell>6.3</cell><cell>33.6</cell><cell>-10.9</cell></row><row><cell>Sample 5</cell><cell>Magnetite</cell><cell>27.3</cell><cell>39.4</cell><cell>-12.1</cell><cell>41.0</cell><cell>-13.7</cell><cell>30.6</cell><cell>-3.3</cell><cell>28.3</cell><cell>-1.0</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>72.7</cell><cell>60.6</cell><cell>12.1</cell><cell>59.0</cell><cell>13.7</cell><cell>69.4</cell><cell>3.3</cell><cell>71.7</cell><cell>1.0</cell></row><row><cell>Sample 6</cell><cell>Magnetite</cell><cell>47.1</cell><cell>79.9</cell><cell>-32.8</cell><cell>33.8</cell><cell>13.3</cell><cell>31.0</cell><cell>16.1</cell><cell>44.6</cell><cell>2.5</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>52.9</cell><cell>20.1</cell><cell>32.8</cell><cell>66.2</cell><cell>-13.3</cell><cell>69.0</cell><cell>-16.1</cell><cell>55.4</cell><cell>-2.5</cell></row><row><cell>Sample 7</cell><cell>Goethite</cell><cell>17.8</cell><cell>19.5</cell><cell>-1.7</cell><cell>23.3</cell><cell>-5.5</cell><cell>19.9</cell><cell>-2.1</cell><cell>21.3</cell><cell>-3.5</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>46.6</cell><cell>41.8</cell><cell>4.8</cell><cell>40.6</cell><cell>6.0</cell><cell>46.5</cell><cell>0.1</cell><cell>49.5</cell><cell>-2.9</cell></row><row><cell></cell><cell>Magnetite</cell><cell>35.6</cell><cell>38.7</cell><cell>-3.1</cell><cell>36.1</cell><cell>-0.5</cell><cell>33.6</cell><cell>2.0</cell><cell>29.2</cell><cell>6.4</cell></row><row><cell>Sample 8</cell><cell>Goethite</cell><cell>23.2</cell><cell>28.5</cell><cell>-5.3</cell><cell>26.8</cell><cell>-3.6</cell><cell>28.3</cell><cell>-5.1</cell><cell>37.0</cell><cell>-13.8</cell></row><row><cell></cell><cell>Magnetite</cell><cell>49.5</cell><cell>50.1</cell><cell>-0.6</cell><cell>38.7</cell><cell>10.8</cell><cell>46.3</cell><cell>3.2</cell><cell>38.1</cell><cell>11.4</cell></row><row><cell></cell><cell>Akaganeite</cell><cell>27.3</cell><cell>21.4</cell><cell>5.9</cell><cell>34.5</cell><cell>-7.2</cell><cell>25.4</cell><cell>1.9</cell><cell>24.9</cell><cell>2.4</cell></row><row><cell>Sample 9</cell><cell>Magnetite</cell><cell>31.5</cell><cell>41.5</cell><cell>-10.0</cell><cell>43.2</cell><cell>-11.7</cell><cell>32.4</cell><cell>-0.9</cell><cell>30.8</cell><cell>0.7</cell></row><row><cell></cell><cell>Akaganeite</cell><cell>39.3</cell><cell>37.8</cell><cell>1.5</cell><cell>48.4</cell><cell>-9.1</cell><cell>39.1</cell><cell>0.2</cell><cell>40.3</cell><cell>-1.0</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>29.2</cell><cell>20.7</cell><cell>8.5</cell><cell>8.4</cell><cell>20.8</cell><cell>28.5</cell><cell>0.7</cell><cell>28.9</cell><cell>0.3</cell></row><row><cell>Sample 10</cell><cell>Magnetite</cell><cell>16.9</cell><cell>43.0</cell><cell>-26.1</cell><cell>12.1</cell><cell>4.8</cell><cell>20.2</cell><cell>-3.3</cell><cell>29.3</cell><cell>-12.4</cell></row><row><cell></cell><cell>Akaganeite</cell><cell>41.6</cell><cell>35.9</cell><cell>5.7</cell><cell>46.8</cell><cell>-5.2</cell><cell>34.5</cell><cell>7.1</cell><cell>36.8</cell><cell>4.8</cell></row><row><cell></cell><cell>Goethite</cell><cell>12.3</cell><cell>10.8</cell><cell>1.5</cell><cell>13.9</cell><cell>-1.6</cell><cell>13.8</cell><cell>-1.5</cell><cell>17.4</cell><cell>-5.1</cell></row><row><cell></cell><cell>Lepidocrocite</cell><cell>29.2</cell><cell>10.3</cell><cell>18.9</cell><cell>27.2</cell><cell>2.0</cell><cell>31.4</cell><cell>-2.2</cell><cell>16.5</cell><cell>12.7</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Comparison between expected and calculated stability values of standard mixtures (from pre-treated IR spectra).</figDesc><table><row><cell>Stability value</cell><cell>Sample 1</cell><cell>Sample 2</cell><cell>Sample 3</cell><cell>Sample 4</cell><cell>Sample 5</cell><cell>Sample 6</cell><cell>Sample 7</cell><cell>Sample 8</cell><cell>Sample 9</cell><cell>Sample 10</cell></row><row><cell>Expected</cell><cell>0.20</cell><cell>1.00</cell><cell>2.83</cell><cell>3.41</cell><cell>0.38</cell><cell>0.89</cell><cell>1.15</cell><cell>2.66</cell><cell>0.46</cell><cell>0.41</cell></row><row><cell>Jasco 6300 (transmittance)-PALME</cell><cell>0.27</cell><cell>1.14</cell><cell>2.85</cell><cell>5.10</cell><cell>0.44</cell><cell>0.45</cell><cell>1.15</cell><cell>2.94</cell><cell>0.48</cell><cell>0.52</cell></row><row><cell>Alpha (ATR)-PALME</cell><cell>0.36</cell><cell>1.23</cell><cell>2.58</cell><cell>1.98</cell><cell>0.39</cell><cell>0.81</cell><cell>1.02</cell><cell>3.02</cell><cell>0.44</cell><cell>0.88</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>This project has been funded by the <rs type="projectName">UFI "Global Change and Heritage</rs>" project (<rs type="grantNumber">Ref UFI 11-26 UPV-EHU</rs>), the <rs type="programName">DISILICA-1930</rs> project (ref <rs type="grantNumber">BIA2014-59124</rs>) and the <rs type="funder">European Regional Development Fund (FEDER)</rs>. <rs type="person">Marco Veneranda</rs> thanks the <rs type="funder">Ministry of Innovation and Competitiveness (MINECO)</rs> for his pre-doctoral fellowship. We would like to thank the <rs type="institution">LAPA laboratory</rs> for providing iron phases standards and <rs type="person">Professor Juan Manuel Gutierrez Zorrilla</rs> for his support in the synthesis of akaganeite.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funded-project" xml:id="_P4FRXbW">
+					<idno type="grant-number">Ref UFI 11-26 UPV-EHU</idno>
+					<orgName type="project" subtype="full">UFI &quot;Global Change and Heritage</orgName>
+					<orgName type="program" subtype="full">DISILICA-1930</orgName>
+				</org>
+				<org type="funding" xml:id="_Huk2ZZe">
+					<idno type="grant-number">BIA2014-59124</idno>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Appendix A. Supplementary data Supplementary data associated with this article can be found, in the online version, at https://doi.org/10.1016/j.corsci.2018.01.016.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Characterization of archaeometallurgical artefacts by means of portable Raman systems: corrosion mechanisms influenced by marine aerosol</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Veneranda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Aramendia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Fdez-Ortiz De Vallejuelo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Garcia-Camino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Azkarate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Madariaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="258" to="266" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Post-excavation changes in iron antiquities</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Turgoose</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Stud. Conserv</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="97" to="101" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A method of conserving ancient iron artefacts retrieved from shipwrecks using a combination of silane self-assembled monolayers and wax coating</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ashkenazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Nusbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shacham-Diamand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cvikel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kaanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Inberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="page" from="88" to="102" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<author>
+			<persName><surname>Ph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Dillmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Beranger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Piccardo</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Matthiessen</surname></persName>
+		</author>
+		<title level="m">Corrosion of Metallic Heritage Artefacts</title>
+		<meeting><address><addrLine>England</addrLine></address></meeting>
+		<imprint>
+			<publisher>Woodhead Publishing</publisher>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="volume">48</biblScope>
+		</imprint>
+	</monogr>
+	<note>first ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Study of corrosion in archaeological gilded irons by Raman imaging and a coupled scanning electron microscope-Raman system</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Veneranda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Costantini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Fdez-Ortiz De Vallejuelo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>García</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Azkarate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Madariaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Philos. Trans. R. Soc. A</title>
+		<imprint>
+			<biblScope unit="volume">374</biblScope>
+			<date type="published" when="2016">2016. 20160046</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Corrosion of iron from heritage buildings: proposal for degradation indexes based on rust layer composition and electrochemical reactivity</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Monnier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dillmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Legrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Guillot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Eng. Sci. Technol</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="375" to="380" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Advances in understanding atmospheric corrosion of iron. Rust characterization of ancient ferrous artefacts exposed to indoor atmospheric corrosion</title>
+		<author>
+			<persName><surname>Ph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Dillmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mazaudier</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hoerlé</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="1401" to="1429" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Structural characterization of corrosion products on archaeological iron: an integrated analytical approach to establish corrosion forms</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Neff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Reguer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bellot-Gurlet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ph</forename><surname>Dillmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bertholon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="739" to="745" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Recent progress in the study of protective rust-layer formation on weathering steel</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yamashita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Misawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceeding of the NACE Corrosion Conference</title>
+		<meeting>eeding of the NACE Corrosion Conference</meeting>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+	<note>Paper No. 357</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A methodology for Raman structural quantification imaging and its application to iron indoor atmospheric corrosion products</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Monnier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bellot-Gurlet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Baron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Neff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Guillot</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ph</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Dillmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="773" to="781" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Corrosion product transformations in alkaline baths under pressure and high temperatura: the subcritical stabilisation of marine iron artefacts stored under atmospheric conditions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bayle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Vivés</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Memet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Foy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ph</forename><surname>Dillmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Neff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mater. Corros</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="190" to="199" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<author>
+			<persName><forename type="first">S</forename><surname>Réguer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Mirambet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rémazeilles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Vantelon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Kergourlay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Neff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ph</forename><surname>Dillmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Iron corrosion in archaeological context: structural refinement of the ferrous hydroxychloride β-Fe</title>
+		<imprint>
+			<publisher>OH) 3 Cl</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="589" to="598" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">New insights in the long-term atmospheric corrosion mecanisms of low alloy steel reinforcements of cultural heritage buildigs</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bouchar</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dillmann</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Neff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Meterials</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">SEM/micro-Raman characterization of the morphologies of marine atmospheric corrosion products formed on mild steel</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Morcillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Chico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Alcántara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Díaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>De La Fuente</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">163</biblScope>
+			<biblScope unit="page" from="426" to="C439" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Characterisation of rust surfaces formed on mild steel exposed to marine atmospheres using XRD and SEM/micro-Raman techniques</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>De La Fuente</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Alcántara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Chico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Díaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Morcillo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="page" from="253" to="264" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Spectroscopic identification of protective and non-protective corrosion coatings on steel structures in marine environment</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Cook</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="2550" to="2570" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Mössbauer characterization of iron oxides and (oxy)hydroxides: the present state of the art</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Vandenberghe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Barrero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Da Costa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Van San</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">De</forename><surname>Grave</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Hyperfine Interact</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="page" from="247" to="259" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Investigation of atmospheric corrosion layers on historic iron nails by micro-Raman spectroscopy</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Yucel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kalkanli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">N</forename><surname>Caner-Saltik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="1486" to="1493" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Raman spectroscopic study of the degradation of a middle age mural painting: the role of agricultural activities</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Veneranda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Irazola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Díez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Iturregui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Aramendia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Madariaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="1110" to="1118" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Quantitative analysis using Raman spectroscopy without spectral standardization</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Giles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Gilmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Denton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="767" to="771" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Raman mapping of corrosion products formed onto spring steels during salt spray experiments. A correlation between the scale composition and the corrosion resistance</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Dubois</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mendibide</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pagnier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Perrard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Duret</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="3401" to="3409" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Protective ability index measurement through Raman quantification imaging to diagnose the conservation state of weathering steel structures</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Aramendia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Gomez-Nubla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bellot-Gurlet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Paris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ph</forename><surname>Colomban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Madariaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="1076" to="1084" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Diffuse reflectance FTIR database for the interpretation of the spectra obtained with a handheld device on built heritage materials</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Arrizabalaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Gómez-Laserna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Carrero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Arana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Madariaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal. Methods</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="1061" to="1070" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Application of FTIR spectroscopy for the quantification of sugars in mango juice as a function of ripening</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">F</forename><surname>Duarte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Delgadillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Gil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Agric. Food Chem</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="3104" to="3111" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Application of FTIR-ATR spectroscopy to the quantification of sugar in honey</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Anjos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Campos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">C</forename><surname>Ruiz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Antunes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Food Chem</title>
+		<imprint>
+			<biblScope unit="volume">169</biblScope>
+			<biblScope unit="page" from="218" to="223" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Quantitative determination of CaCO3 in cement blends by FT-IR</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Legodi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>De Waal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Potgieter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="361" to="365" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">FTIR quantitative analysis of calcium carbonate (calcite) and silica (quartz) mixtures using the constant ratio method. Application to geological samples</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">B</forename><surname>Reig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V G</forename><surname>Adelantado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C M</forename><surname>Moya Moreno</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Talanta</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="811" to="821" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Quantitative analysis of iron oxides using Fourier transform infrared spectrophotometry</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Namduri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nasrazadani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="2493" to="2497" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Quantitative aproach in iron oxides and oxihydroxides by vibrational analysis, Opt. Pura Apl</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Betancur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">R</forename><surname>Pérez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Correa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Barrero</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="269" to="275" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">The long term growth of the protective rust layer formed on weathering steel by atmospheric corrosion during a quarter of a century</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yamashita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Miyuki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Matsuda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nagano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Misawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="283" to="299" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">A method of conserving ancient iron artefacts retrieved from shipwrecks using a combination of silane self-assembled monolayers and wax coating</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ashkenazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Nusbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shacham-Diamand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cvikel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kahanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Inberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="page" from="88" to="102" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Structural evidence for the desalination of akaganeite in the preservation of iron archaeological objects, using synchrotron X-ray powder diffraction and absorption spectroscopy</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Reguer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Mirambet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Dooryhee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Hodeau</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dillmann</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Lagarde</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="2795" to="2802" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Fernández</forename><surname>Ibáñez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Theatre bronce mask as ornamental top of a chandelier, coming from roman deposit in Forua (Biskay area)</title>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="455" to="470" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">A new quantitative method: non-destructive study by Raman spectroscopy of dyes fixed on wool fibres</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Salpin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Trivier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lecomte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Coupry</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="1403" to="1410" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Towards a non-invasive quantitative analysis of the organic components in museum objects varnishes by vibrational spectroscopies: methodological approach</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Daher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Pimenta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bellot-Gurlet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Talanta</title>
+		<imprint>
+			<biblScope unit="volume">129</biblScope>
+			<biblScope unit="page" from="336" to="345" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Comparison of semicuantification experimental methodologies using micro-Raman spectroscopy: PALME software as an altertative tool for the study of salt efflorescence</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Costantini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Veneranda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Prieto-Taboada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bellot-Gurlet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Madariaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Raman Spectrosc</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="1415" to="1421" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Analysis of vibrational spectra of multicomponent systems. Application to pH-dependent resonance Raman spectra of ferricytochrome c</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Döpner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hildebrandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Grant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mauk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Werner</forename><surname>Lenk</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Stempfle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Spectrochim. Acta A</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="573" to="584" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Determination of the pigments present in a wallpaper of the middle nineteenth century: the combination of mid-diffuse reflectance and far infrared spectroscopies</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Arrizabalaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Gomez-Laserna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Aramendia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Arana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Madariaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Spectrochim. Acta A</title>
+		<imprint>
+			<biblScope unit="volume">124</biblScope>
+			<biblScope unit="page" from="308" to="314" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Applicability of a dffuse reflectance infrared fourier transform handheld spectrometer to perform in situ analyses on cultural heritage materials</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Arrizabalaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Gomez-Laserna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Aramendia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Arana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Madariaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Spectrochim. Acta A</title>
+		<imprint>
+			<biblScope unit="volume">129</biblScope>
+			<biblScope unit="page" from="259" to="267" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">In situ noninvasive study of artworks: the MOLAB multitechnique approach</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Miliani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Rosi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">G</forename><surname>Brunetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sgamelloti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acc. Chem. Res</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="728" to="738" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Hydrogen bonding in hydrogen-substituted lithium aluminosilicates</title>
+		<author>
+			<persName><surname>Ph</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Colomban</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mol. Struct</title>
+		<imprint>
+			<biblScope unit="volume">270</biblScope>
+			<biblScope unit="page" from="407" to="416" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Anomalies in diffuse reflectance infrared spectra of wood and wood polymers</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Weaver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">L</forename><surname>Owen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mol. Struct</title>
+		<imprint>
+			<biblScope unit="volume">249</biblScope>
+			<biblScope unit="page" from="257" to="275" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Comparative amorphization quantification of two apatitic materials irradiated with heavy ions using XRD and RSB results</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tisserand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rebetez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Grivet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bouffard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Benyagoup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Levesque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Carpena</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nucl. Instrum. Methods A</title>
+		<imprint>
+			<biblScope unit="volume">215</biblScope>
+			<biblScope unit="page" from="129" to="136" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Estimate of clay minerals amounts from XRD pattern modeling: the arquant model</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Blanc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Legendre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">C</forename><surname>Gaucher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Chem. Earth</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="135" to="144" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

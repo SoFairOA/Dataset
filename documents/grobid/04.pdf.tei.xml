@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">imzML -A common data format for the flexible exchange and processing of mass spectrometry imaging data</title>
+				<funder>
+					<orgName type="full">Hessian Ministry of Science and Art (LOEWE focus Ambiprobe)</orgName>
+				</funder>
+				<funder ref="#_SE9BfTZ">
+					<orgName type="full">European Union</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Thorsten</forename><surname>Schramm</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Justus Liebig University</orgName>
+								<address>
+									<settlement>Giessen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Alfons</forename><surname>Hester</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Justus Liebig University</orgName>
+								<address>
+									<settlement>Giessen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ivo</forename><surname>Klinkert</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">FOM Institute AMOLF</orgName>
+								<address>
+									<settlement>Amsterdam</settlement>
+									<country key="NL">Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jean-Pierre</forename><surname>Both</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="institution">CEA-LIST</orgName>
+								<address>
+									<settlement>Saclay</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ron</forename><forename type="middle">M A</forename><surname>Heeren</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">FOM Institute AMOLF</orgName>
+								<address>
+									<settlement>Amsterdam</settlement>
+									<country key="NL">Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Alain</forename><surname>Brunelle</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="department" key="dep1">Centre de recherche de Gif</orgName>
+								<orgName type="department" key="dep2">Institut de Chimie des Substances Naturelles</orgName>
+								<orgName type="institution">CNRS</orgName>
+								<address>
+									<settlement>Gif-sur-Yvette Cedex</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Olivier</forename><surname>Laprévote</surname></persName>
+							<affiliation key="aff5">
+								<orgName type="department">Chimie et Toxicologie Analytique et Cellulaire</orgName>
+								<orgName type="institution">Université Paris Descartes</orgName>
+								<address>
+									<settlement>Paris</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Nicolas</forename><surname>Desbenoit</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Justus Liebig University</orgName>
+								<address>
+									<settlement>Giessen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Marie-France</forename><surname>Robbe</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="institution">CEA-LIST</orgName>
+								<address>
+									<settlement>Saclay</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Markus</forename><surname>Stoeckli</surname></persName>
+							<affiliation key="aff6">
+								<orgName type="institution">Novartis Institutes for BioMedical Research</orgName>
+								<address>
+									<settlement>Basel</settlement>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><roleName>PhD</roleName><forename type="first">Andreas</forename><surname>Roempp</surname></persName>
+							<email>andreas.roempp@anorg.chemie.uni-giessen.de</email>
+						</author>
+						<author>
+							<persName><forename type="first">Olivier</forename><surname>Laprevote</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Bernhard</forename><surname>Spengler</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Justus Liebig University</orgName>
+								<address>
+									<settlement>Giessen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Andreas</forename><surname>Römpp</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Justus Liebig University</orgName>
+								<address>
+									<settlement>Giessen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="institution">Justus Liebig University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff7">
+								<orgName type="department">Institute of Inorganic and Analytical Chemistry -Analytical Chemistry -Justus</orgName>
+								<orgName type="institution">Liebig University</orgName>
+								<address>
+									<addrLine>Giessen Schubertstrasse 60, Build. 16</addrLine>
+									<postCode>D-35392</postCode>
+									<settlement>Giessen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">imzML -A common data format for the flexible exchange and processing of mass spectrometry imaging data</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.jprot.2012.07.026</idno>
+					<note type="submission">Submitted on 17 Dec 2020</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-09T13:41+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Mass Spectrometry Imaging Section/Category: Technical Note mass spectrometry imaging data format data processing standardization</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>HAL is a multi-disciplinary open access archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from teaching and research institutions in France or abroad, or from public or private research centers. L'archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non, émanant des établissements d'enseignement et de recherche français ou étrangers, des laboratoires publics ou privés.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>In mass spectrometry imaging (MS Imaging) a sample of interest is scanned and the resulting ion signals are reconstructed into a pixel image. Several overviews of this method have been published recently <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>.The application of MS imaging is rapidly growing with a constantly increasing number of different instrumental systems and software tools. This results in a need of exchangeability of MS imaging data between different instruments and data analysis software. As for many analytical methods, data processing has become an essential part of the workflow for MS imaging. MS Imaging data consist of several thousand spectra which frequently result in data files of several gigabytes. Mass spectra of one experiment are usually acquired with identical measurement parameters. Existing standards such as the DICOM standard <ref type="bibr" target="#b2">[3]</ref> for in-vivo imaging data or the mzML standard <ref type="bibr" target="#b3">[4]</ref> established by HUPO-PSI <ref type="bibr" target="#b4">[5]</ref> are not suitable to adequately represent an MS imaging experiment. Therefore a common data format dedicated to mass spectrometry imaging data was developed within the EU project COMPUTIS (www.computis.org). The data format is in part based on the HUPO-PSI format mzML (see details below) and is thus called imzML for 'imaging mzML'.</p><p>This technical report provides an overview of the most important properties and features of the imzML format. Additional information and all technical details necessary to implement imzML is provided on the website www.imzml.org and in a recently published book chapter <ref type="bibr" target="#b5">[6]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology</head><p>MS imaging data in imzML is divided into two separate files (Figure <ref type="figure" target="#fig_2">1</ref>). This structure, consisting of a small file (text or XML) and a larger (binary) file, has been shown to be efficient in previous data formats for MS imaging, for example in BioMap <ref type="bibr" target="#b6">[7]</ref> and internal data formats at FOM Institute and Justus Liebig University. All metadata (e.g. instrumental parameters, sample details) are stored in an XML file. Mass spectral data is stored in a binary file to ensure efficient storage. Corresponding XML and binary files contain a universally unique identifier (UUID) <ref type="bibr" target="#b7">[8]</ref> in order to link them unequivocally and to prevent loss of information.</p><p>The XML file (*.imzml) contains all relevant information about the MS imaging experiment.</p><p>In order to stay as close as possible to existing formats this metadata file is based on the mass spectrometry data standard mzML <ref type="bibr" target="#b3">[4]</ref> developed by HUPO-PSI <ref type="bibr" target="#b8">[9]</ref>. Discussions with HUPO-PSI resulted in the strategy to maintain imzML as a separate format, but keep the XML structure consistent with mzML. Information is provided in the form of a 'controlled vocabulary' (CV) which is stored in an open biomedical ontology <ref type="bibr" target="#b9">[10]</ref>. This approach is used in order to unequivocally describe the parameters and to avoid redundancy in nomenclature.</p><p>The mzML controlled vocabulary <ref type="bibr" target="#b10">[11]</ref> has been supplemented by parameters which are necessary for a comprehensive description of MS imaging experiments. These additional imzML CV parameters (including x/y position, scan direction/pattern, pixel size) are stored in the imagingMS.obo file <ref type="bibr" target="#b11">[12]</ref>.</p><p>The imaging binary data file (*.ibd) contains the mass spectral data of the MS imaging measurement. In order to ensure efficient storage, two different binary modes are defined: continuous and processed. 'Continuous' means that an intensity value is stored for each m/z bin even if there is no measurable signal (resulting in an intensity of zero). This data structure is used for many MALDI-TOF mass spectrometers. As a result the m/z axis is identical for all mass spectra of one image. Therefore it is sufficient to store the m/z array only once in the binary file. This structure can reduce the file size significantly (up to a factor of 2). On the other hand mass spectra are often processed before they are stored e.g. for noise-reduction, peak-picking, deisotoping. This results in discontinuous and non-constant m/z arrays. In this case the m/z array has to be stored for each spectrum separately. This data structure was termed 'Processed'. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implementation and Discussion</head><p>A number of software tools already support imzML. This allows for choosing from a (growing) number of options to display and process MS imaging data. Users will be no longer limited to proprietary software, but are able to use the processing software best suited for a specific question or application. Multiple software tools can also be combined in one workflow using imzML as demonstrated in Figure <ref type="figure" target="#fig_3">2</ref>. In this example a whole body rat section was coated with α-Cyano-4-hydroxycinnamic acid (CHCA) and analysed with a QStar mass spectrometer (AB Sciex). Mass spectra were acquired for 344 x 87 pixels (500 µm pixel size) in the mass range m/z = 300-1000 u. Data was saved in the Analyze 7.5 data format and opened in 'BioMap' for initial inspection (Figure <ref type="figure" target="#fig_3">2A</ref>). Subsequently the dataset was converted to imzML using the 'Toimzml' converter developed by the CEA-LIST institute.</p><p>The imzML file was opened in 'SpectViewer' (developed by CEA-LIST) and a wavelet denoising procedure was applied in order to improve image quality (Figure <ref type="figure" target="#fig_3">2B</ref>). This particular processing function is not available in the other software tools. The processed data was saved in a new imzML file which was subjected to further analysis. This conversion tool has also been used in previous studies in combination with the Datacube Explorer for analyzing and displaying MS imaging data <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b13">14]</ref>. More information on sample details, image properties and conversion method are provided in the 'imzML gallery' on www.imzml.org. This page also includes additional examples of MS images generated with imzML.</p><p>The examples discussed above illustrate the functionalities and possibilities of the imzML data format. A number of additional software tools are currently adopted for usage with imzML. This includes 'MSImageView' the successor of BioMap which is probably the most widely used independent software to analyze MS imaging data. The first two commercial software packages supporting imzML have been released recently <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b15">16]</ref>. The concept of imzML is also actively supported by major vendors of instrumentation for MS imaging including Waters Corporation (Manchester, United Kingdom), Thermo Fisher Scientific (Bremen, Germany) and Bruker Daltonik (Bremen, Germany). Their data formats are integrated in the imzML workflow through export options in proprietary software suites (Waters) or by external converters being developed by the MS imaging community with technical support from the companies (Thermo, Bruker). An updated list of available tools and workflows can be found on the imzML website. imzML was chosen as the central platform for exchange of data in the European COST network 'Mass Spectrometry Imaging: New Tools for Healthcare Research' which includes more than 30 MS imaging groups <ref type="bibr" target="#b16">[17]</ref>.</p><p>The future development of imzML-based software will also be coordinated in this framework.</p><p>These activities ensure a wide distribution and active development of imzML as the data standard for mass spectrometry imaging data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>The data format imzML enables efficient and flexible exchange of MS imaging data. It allows for a flexible selection of data analysis tools. imzML is increasingly used in the MS imaging community. A number of software tools are available and many more are currently being adapted to imzML. A common data format is not a mere technical detail, but has significant impact on practical work: fully searchable mass spectrometry imaging data can be shared with collaborators in biological or clinical labs without being restricted to proprietary vendor software. imzML is thus an important step towards more efficient collaboration as well as more flexible and transparent data processing in mass spectrometry imaging. These are key requirements for MS imaging to finally be established as a routine method.    </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>The two files (XML and binary) are connected by offset values in the XML file that indicate the position of the corresponding data in the binary file. This allows for fast reading/access of large data sets. The combination of non-redundant metadata representation and binary data leads to efficient storage. The resulting datasets are comparable in size to the proprietary data and the separate metadata file allows flexible handling of large datasets. This is important since MS imaging experiments typically consist of several thousand spectra, and increased file size due to format conversion could lead to data sets which are very difficult to handle. imzML has been extensively discussed with academic and industrial users at various occasions in recent years. The current version 1.1.0 of imzML was released at the International Mass Spectrometry Conference (IMSC) in Bremen, Germany in September 2009. The flexible structure based on XML and the controlled vocabulary allows for compatibility with new instruments and methods in the future. Technical documentation including XML scheme, mapping file, controlled vocabulary (obo file) and example files are provided on www.imzml.org.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>The 'Datacube Explorer' developed by AMOLF allows for fast browsing of MS images and can thus be used to visually search for signals that show interesting spatial features. The denoised imzML data set was displayed in Datacube Explorer and spectra from two regions of interest (ROI) were extracted (Figure2C). The data analysis tool 'Mirion' developed by JLU can be used to semiautomatically generate MS images based on parameters such as pixel coverage or incremental mass. It can also be used to open multiple files as shown in Figure2D(original and denoised imzML data set), data from these files can be combined for example by RGB overlay (not shown). The combination of processing steps within the four programmes is only possible due to the standardised and open data format imzML. A detailed description of the different software packages would be beyond the scope of this technical note. The purpose of the example shown in Figure 2 is to demonstrate the possibility to open and process imzML files in different MS imaging software packages. Details about functionalities of SpectViewer, Datacube Explorer and Mirion will be provided in separate publications which are currently in preparation. The demonstrated workflow is only one example for the use of imzML for analysis of MSI data with different tools. Another application is the comparison of measurements from different instruments. Options for data processing (e.g. binning, normalization) and displaying (e.g. interpolation options, color schemes) vary strongly between different MS imaging software tools and can make a direct comparison of data difficult. This problem can be avoided, if all data sets are converted to imzML and the data is displayed with identical parameters in one software package. Examples of imzML data sets from different instrument platforms are shown in Figure 3. All images are displayed in the same software package (two masses in green and red, no interpolation). Data from the most commonly used matrixassisted desorption/ionization (MALDI) mass spectrometers (Thermo, Bruker, AB Sciex and Waters) are shown in Figures 3A-D. A data set originating from secondary ion mass spectrometry (SIMS) is shown in Figure 3E. The majority of MS imaging applications are based on MALDI and SIMS, but other ionization techniques are increasingly used. Data acquisition in desorption electrospray ionization (DESI) mode is based on one data file per line scan and conversion to imzML therefore differs from most MALDI experiments where usually a single file is acquired per image. The 'RAW to imzML' converter developed by Justus Liebig University was modified to convert multiple line scans into a unified imzML file. An example of a DESI imzML file generated with this converter is shown in Figure 3F.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Scheme of imzML structure (adapted from www.imzml.org).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Example of sequential processing of an MS imaging data set based on imzML. MS imaging data acquired on an AB Sciex QStar instrument was converted to imzML. The imzML file was opened and processed in different software packages for analysis of MS imaging data. A) BioMap: Selected ion image of m/z = 772 and averaged mass spectrum, B) SpectViewer: averaged mass spectrum and selected ion image of m/z = 772 for original data (left) and after application of wavelet denoising algorithm (right), C) Datacube Explorer: mass spectrum of full image and two regions of interest (ROI) which are indicated in selected ion image of m/z 772, D) Mirion: selected ion image of m/z = 772 from original (top) and denoised (bottom) data set.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Examples of data sets from different instrument platforms that were converted to imzML.All images are displayed in the same software tool (Mirion) with identical settings (showing an overlay of two masses in red and green, no interpolation). Ionization type and mass spectrometer type are indicated for each measurement. A) mouse kidney, MALDI, LTQ Orbitrap (Thermo), data provided by Sabine Guenther (Justus Liebig University, Giessen, Germany), B) mouse brain (left half), MALDI, ultrafleXtreme (Bruker), data provided by Corinna Henkel (Bochum University, Germany), C) whole body rat section (head), MALDI, QStar (ABSciex), same data as shown in Figure2, D) whole bod yrat section, MALDI, Synapt G2 (Waters), data provided by Emmanuelle Claude (Waters, Manchester, UK), E) rabbit eye, SIMS, TOF-SIMS IV (IonTOF), data provided by Alain Brunelle (CNRS, Gif-sur-Yvette, France), F) tumor tissue, DESI, Exactive (Thermo), data provided by Zoltan Takats (Imperial College, London, UK). More details on these data sets can be found in the 'imzML gallery' on the www.imzml.org.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>3</head><label>3</label><figDesc>Figure 1 Click here to download high resolution image</figDesc><graphic coords="15,87.00,36.00,617.00,540.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="3,36.00,162.00,720.00,288.00" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>First and foremost we would like to thank all the members of the <rs type="institution">HUPO Proteomics Standards Initiative (PSI)</rs> for developing the data format mzML which has been used as a model for imzML. We are especially thankful to <rs type="person">Lennart Martens</rs>, <rs type="person">Eric Deutsch</rs>, <rs type="person">Randall Julian</rs> and <rs type="person">Martin Eisenacher</rs> for many helpful discussions in the last years. We would like to thank <rs type="person">Sabine Guenther</rs>, <rs type="person">Corinna Henkel</rs>, <rs type="person">Brendan Prideaux</rs>, <rs type="person">Emmanuelle Claude</rs>, <rs type="person">Zoltan Takats</rs> for providing MS imaging data sets. This work was supported by the <rs type="funder">European Union</rs> (Contract <rs type="grantNumber">LSHG-CT-2005-518194 COMPUTIS</rs>). JLU acknowledges support by the <rs type="funder">Hessian Ministry of Science and Art (LOEWE focus Ambiprobe)</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_SE9BfTZ">
+					<idno type="grant-number">LSHG-CT-2005-518194 COMPUTIS</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Mass Spectrometric Imaging for Biomedical Tissue Analysis</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chughtai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rma</forename><surname>Heeren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chem Rev</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="page" from="3237" to="3277" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Imaging mass spectrometry</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Mcdonnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rma</forename><surname>Heeren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mass Spectrometry Reviews</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="606" to="643" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Digital imaging and communications in medicine -DICOM</title>
+		<author>
+			<persName><surname>Dicom</surname></persName>
+		</author>
+		<ptr target="http://medical.nema.org" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<author>
+			<persName><forename type="first">L</forename><surname>Martens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chambers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sturm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kessner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Levander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shofstahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">H</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rompp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Neumann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Pizarro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Montecchi-Palazzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tasman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Coleman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Reisinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Souda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hermjakob</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P-A</forename><surname>Binz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">W</forename><surname>Deutsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">mzML -a Community Standard for Mass Spectrometry Data</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">10</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The HUPO proteomics standards initiative -Overcoming the fragmentation of proteomics data</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hermjakob</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proteomics</title>
+		<imprint>
+			<biblScope unit="page" from="34" to="38" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Imaging mzML (imzML) -a common data format for imaging mass spectrometry</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Römpp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schramm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hester</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Klinkert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Heeren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Stöckli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J-P</forename><surname>Both</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Brunelle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Spengler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Data Mining in Proteomics</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Hamacher</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Stephan</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Eisenacher</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Humana Press</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="205" to="224" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<ptr target="http://maldi-msi.org/index.php?option=com_content&amp;task=view&amp;id=14&amp;Itemid=39" />
+		<title level="m">Biomap</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">RFC 4122 -A Universally Unique IDentifier (UUID) URN Namespace</title>
+		<author>
+			<persName><surname>Network_Working_Group</surname></persName>
+		</author>
+		<ptr target="http://tools.ietf.org/html/rfc4122" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<author>
+			<persName><surname>Hupo-Psi</surname></persName>
+		</author>
+		<ptr target="http://psidev.info" />
+		<title level="m">The Human Proteome Organization: Proteomics Standards Initiative</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ashburner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rosse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Bug</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ceusters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Goldberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Eilbeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ireland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Mungall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Leontis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Rocca-Serra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ruttenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Sansone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">H</forename><surname>Scheuermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Whetzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Obi</forename><surname>Consortium</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biotechnology</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="1251" to="1255" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<author>
+			<persName><surname>Hupo-Psi</surname></persName>
+		</author>
+		<ptr target="http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo" />
+		<title level="m">Mass Spectrometry Standards Working Group -controlled vocabulary</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<ptr target="http://www.maldi-msi.org/index.php?option=com_content&amp;view=article&amp;id=193&amp;Itemid=66" />
+		<title level="m">MS Imaging controlled vocabulary</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Characterization of barley leaf tissue using direct and indirect desorption electrospray ionization imaging mass spectrometry</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bjarnholt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Janfelt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Mass Spectrom</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="1241" to="1246" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Analysis of Secondary Plant Metabolites by Indirect Desorption Electrospray Ionization Imaging Mass Spectrometry</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Thunig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Janfelt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anal Chem</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="3256" to="3259" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">MALDIVision</title>
+		<ptr target="http://www.premierbiosoft.com/maldi-tissue-imaging/index.html" />
+		<imprint>
+			<publisher>PREMIERBiosoft</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<author>
+			<persName><surname>Imabiotech</surname></persName>
+		</author>
+		<ptr target="http://www.imabiotech.com/Quantinetix-TM-Maldi-Imaging.html?lang=en" />
+		<title level="m">Quantinetix MALDI Imaging Software</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Figure 1: Scheme of imzML structure (adapted from www.imzml.org). Figure 2: Example of sequential processing of an MS imaging data set based on imzML</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Mcdonnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rma</forename><surname>Heeren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">E</forename><surname>Andrén</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Stoeckli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">L</forename><surname>Corthals</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MS imaging data acquired on</title>
+		<imprint/>
+	</monogr>
+	<note>Journal of Proteomics.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

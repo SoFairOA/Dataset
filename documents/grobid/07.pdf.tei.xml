@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">PySHS:A Python Open Source Software for Second Harmonic Scattering</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Lotfi</forename><surname>Boudjema</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Hanna</forename><surname>Aarrass</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Marwa</forename><surname>Assaf</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Marie</forename><surname>Morille</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Gaelle</forename><surname>Martin-Gassin</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Pierre-Marie</forename><surname>Gassin</surname></persName>
+						</author>
+						<title level="a" type="main">PySHS:A Python Open Source Software for Second Harmonic Scattering</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1021/acs.jcim.0c00789</idno>
+					<note type="submission">Submitted on 17 Jan 2021</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-09T13:41+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>HAL is a multi-disciplinary open access archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from teaching and research institutions in France or abroad, or from public or private research centers. L'archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non, émanant des établissements d'enseignement et de recherche français ou étrangers, des laboratoires publics ou privés.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>solution <ref type="bibr" target="#b7">8</ref> , self assembly <ref type="bibr" target="#b8">9,</ref><ref type="bibr" target="#b9">10</ref> , interfacial properties of small particles <ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref> , droplets in liquids <ref type="bibr" target="#b14">15,</ref><ref type="bibr" target="#b15">16</ref> , biological membranes <ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref><ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref> or structuration of materials <ref type="bibr" target="#b21">[22]</ref><ref type="bibr" target="#b22">[23]</ref><ref type="bibr" target="#b23">[24]</ref> . Numerous models <ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref><ref type="bibr" target="#b26">[27]</ref><ref type="bibr" target="#b27">[28]</ref><ref type="bibr" target="#b28">[29]</ref><ref type="bibr" target="#b29">[30]</ref> have been developed to interpret experimental data and in particular angular distribution and polarization dependence of the second harmonic scattered light. The understanding of such variation allows the recovery of important properties about the symmetry <ref type="bibr" target="#b30">31</ref> , the organization <ref type="bibr" target="#b8">9</ref> and/or the correlation <ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref> of the nano-objects probed. Some of these models have also been implemented in software to compute the SHS intensity, in particular in the NLS_simulate software <ref type="bibr" target="#b31">32,</ref><ref type="bibr" target="#b32">33</ref> or HRS_Computing software <ref type="bibr" target="#b33">34</ref> . The NLS_simulate software computes the SHS angular dependence using the Nonlinear Rayleigh Gans Debye approximation <ref type="bibr" target="#b32">33,</ref><ref type="bibr" target="#b34">35</ref> . Those simulations are limited to spherical objects. In the HRS_computing software, the program computes the polarization resolved SHS intensity for any supramolecular structure build as a sum of correlated individual molecules. This second software is restricted to the assumption that the correlation length is small in regards to the incident wavelength.</p><p>In this article, a new free python based program named PySHS 36 is presented. First, it integrates in the same package the two kind of calculation discussed above: both angular and polarization dependance SHS. Moreover, it generalizes the computational possibility to any system dimensions as no assumption about the size of the nano-object is required thank to the calculation strategy. Indeed, PySHS has been developed in order to compute SHS of different class of nano-objects: i) uncorrelated molecules in solution in the HRS module, ii) supramolecular assemblies in the SHS module, iii) Second Harmonic Light scattered by the surface of colloidal spheres in the SPHERE module. All the calculations can be done in different experimental configurations: polarization resolved at a fixed scattered angle or angular distribution for different polarization configurations. This article presents the equation implemented in the PySHS software, and gives some computational examples useful to interpret experimental data concerning the assembly of molecular dye intercalated inside liposomes.</p><p>2) The PySHS program</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2.1) General notation and configuration</head><p>This first part will review the different calculation implemented in the SHS module and sphere module of the PySHS package and the notation used are described in Figure <ref type="figure">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 1. The notation used in the laboratory frame</head><p>The fundamental light at the frequency is defined by its wave vector and its polarization direction . The input polarization angle is equal to the angle between ( ). The second harmonic scattered light at the 2 frequency is defined by its wave vector and the angle ( ) defines the scattered angle The polarization of the second harmonic scattered light is defined by and the output polarization angle is equal to the angle between ( ). For simplicity, we referred as V out polarization state and as H out polarization state. In the laboratory frame, we have the following relations:</p><p>(1-a,b,c)</p><p>The scattered wave vector is defined as follow:</p><formula xml:id="formula_0">= 2 -=<label>(2)</label></formula><p>2.2) Calculation for N fully correlated molecules in a supramolecular assembly: SHS module</p><p>The Second Harmonic Scattering of N fully correlated molecules in solution can be expressed as</p><p>with the vector defined as:</p><p>This vector is determined by the total hyperpolarizability tensor of the N molecules assembly expressed in the laboratory frame which can be itself be expressed in a mesoscopic frame as depicted in Figure <ref type="figure" target="#fig_0">2</ref>.</p><p>(</p><formula xml:id="formula_3">)<label>5</label></formula><p>Here is the second order hyperpolarisability of the molecule j located at the position expressed in the mesoscopic frame. The hyperpolarisability tensor components in the different frames are linked according:</p><p>The transformation matrix is:</p><p>Finally, the bracket in formula (3) means the average over all the orientation of the scattered molecule and is implemented by a numerical integration in the PySHS program.</p><p>(</p><formula xml:id="formula_6">)<label>9</label></formula><p>To perform the I SHS calculation, the user needs to specify the position and orientation ( of each molecule in the mesoscopic frame. Two ways are implemented to perform the I SHS calculation: the first way implemented in the SHS program of PySHS package explicitly computes I SHS according to equations (3-9). The second way implemented in the SHSlinear program, uses the approach detailed in these references <ref type="bibr" target="#b5">6,</ref><ref type="bibr" target="#b22">23,</ref><ref type="bibr" target="#b30">31</ref> and in the HRS_Computing software <ref type="bibr" target="#b33">34</ref> , approximates the exponential term in equation ( <ref type="formula" target="#formula_3">5</ref>) by: (10)   This last calculation is only valid in the domain where is small compared to 1, ie if the characteristic size of the molecular assembly is small compared to the incident wavelength.</p><p>Taking the molecular hyperpolarizability, the position and orientation of each molecule in the supramolecular assembly as input parameters, the SHS and SHSlinear programs can compute the polarization resolved plot or the scattered angle plot. For the polarization plot, the outputs of the program are the coefficients , , and , defined in this reference <ref type="bibr" target="#b30">31</ref> . Indeed, the SHS intensity exhibits the equivalent following dependencies with the input polarization angle :</p><formula xml:id="formula_7">(11)<label>(12)</label></formula><p>The link between these two descriptions are given by:</p><formula xml:id="formula_8">(13)<label>(14) (15)</label></formula><p>The full expression of the , , coefficients are given in SI. For an angular dependency study, the output of the program is the dependency for different combination of polarization state ( ): ( °); (9 °); ( °); (9 °).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2.3) Calculation for the surface of colloidal sphere in solution: SPHERE module</head><p>PySHS package offers the possibility to compute the SHS intensity of homogeneous spheres in solution. To perform this calculation, an effective nonlinear susceptibility <ref type="bibr" target="#b24">25</ref> is introduced, which represents the nonlinear response of the entire sphere surface: (16)   where is the surface second order nonlinear susceptibility of the sphere. Using the same formalism as above, The SHS intensity is expressed with the same equation (3) where is now expressed as:</p><p>The SPHERE program in the PySHS package takes the surface second order nonlinear susceptibility and the radius of the sphere as input parameters and computes the same quantities as define above in equations (11-14)   3) Results and discussion section Some results illustrating the possibilities given by the PySHS package are presented and compared with experimental data. This part focuses on the SHS polarization plot in the right angle direction for spherical supramolecular assemblies in order to interpret experimental results concerning the organization of molecular dyes inclusion into the membrane of liposomes. The Figure <ref type="figure" target="#fig_1">3</ref> shows the polarization plot computed with the programs implemented in PySHS package a 50 nm radius sphere. An file containing the position and orientation of 100 molecules equally spaced onto the sphere surface and radially oriented was generated by the script provided in the package. The other input parameters of the calculations are the refractive index set to 1.33, the incident wavelength set to 800 nm and the hyperpolarizability of the molecule which is assumed to have only the component to be no zero. The simulations b) and c) give exactly the same results at the 3rd digit after the decimal point although the two approaches are not the same. It just shows that 100 dipoles equally spaced onto a sphere is equivalent to an homogenous sphere. We have also tested the case of few dipoles spaced onto a sphere, and we found the same results as given in this previous work <ref type="bibr" target="#b30">31</ref> concerning the evolution of I 2 and I 4 parameters with the number of dipoles onto the sphere. When this number N is superior to 10, these quantities reach the asymptote of the homogeneous sphere given by the sphere program. To reproduce the experimental data presented in Figure <ref type="figure" target="#fig_2">4</ref>, a microscopic model taking into account both the effect of the order/disorder of the assembly onto the colloidal object and the shape of the colloidal object is implemented. Some scripts provided in the PySHS package generates randomly the position and orientation of the molecules with a normal distribution characterized by its standard deviation  around the radial direction, for spheroid objects characterized by radius a and c. These different configurations are used as a PySHS input and the computed polarization plot, ie both the Hout and Vout polar plots are compared with the experimental data concerning dye organization onto liposome membrane. The molecular dye, is the trans-4-[4-(Dibutylamino)styryl]-1-methylpyridinium iodide simply referred as DIA-4 in the following. This dye has been brought together with a solution of 55 +/-5 nm radius DOPG liposomes in PBS buffer and the SHS polarization plots are presented in Figure <ref type="figure" target="#fig_2">4</ref>. All the experimental details concerning the sample preparation are given in SI. The SHS experimental setup has been described elsewhere <ref type="bibr" target="#b1">2,</ref><ref type="bibr">37</ref> , and the experimental data has been treated as follow: the incoherent contribution of the liposomes solution, i.e. the HRS contribution has been removed, so that the experimental point can be directly compared with the computational model. The best fit is obtained for a spheroid arrangement characterized with radius a=70 nm and c=50 nm and with a disorder characterized by standard deviation =12°.</p><p>Other simulations with different disorders and shapes are given in SI. usefulness of its package, the polarization plot for different supramolecular organizations onto a sphere or spheroid object are presented in this publication. Especially, the numerical results are compared with experimental results concerning dye inclusion inside liposome bilayer. This comparison shows that both the disorder parameter and the deviation from the spherical geometry have to be taken into account to explain the experimental data. We hope that this work will stimulate the SHS community, will encourage the reader to try PySHS package, and help the experimenter to interpret their SHS results. ASSOCIATED CONTENT Supporting Information. Additional information are given about the full expression of the coefficients, about the comparison of the PySHS computation versus other softwares, about additional PySHS output simulation and about the sample preparation of the dye inclusion inside the liposome membrane. The following files are available free of charge.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Notes.</head><p>The authors declare no competing financial interest. The PySHS package is available here: https://www.researchgate.net/profile/Pierre-Marie_Gassin/publication/342742567_PySHS_V11_A_Python_Open_Source_Software_For_Se cond_Harmonic_Scattering/data/5f72fe6d458515b7cf565a6d/PySHS-V1-1.zip Funding Sources.  </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Definition of the angles ( and ( which describe the</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Computational polarization plot obtained with 3 different calculations: a) SHSlinear</figDesc><graphic coords="10,82.10,72.00,502.02,315.78" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. a) Experimental polarization resolved SHS for a solution of 5 M of DIA-4 with 5.10 10 DOPG 50 nm radius liposomes in PBS buffer. The circular and rectangular markers are</figDesc><graphic coords="12,82.10,184.19,142.10,156.97" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Financial</head><label></label><figDesc>support for this work by the ANR project CAMOMILS (ANR-15-CE21-0002) is greatly acknowledged. ACKNOWLEDGMENT We warmly thank Pierre-Francois Brevet for fruitful regular discussions about simulation and 37. Gassin, P.-M.; Bellini, S.; Zajac, J.; Martin-Gassin, G., Adsorbed Dyes onto Nanoparticles: Large Wavelength Dependence in Second Harmonic Scattering. J. Phys. Chem. C 2017, 121 (27), 14566-14571.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table of Contents graphic</head><label>of</label><figDesc></figDesc><table><row><cell></cell><cell>Angle Resolved</cell></row><row><cell>Second</cell><cell></cell></row><row><cell>Harmonic Scattering</cell><cell>Polarization Resolved</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" />			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">What Does Second-Harmonic Scattering Measure in Diluted Electrolytes?</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Borgis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Belloni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Levesque</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. Lett</title>
+		<imprint>
+			<biblScope unit="volume">2018</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="3698" to="3702" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Second-Harmonic Scattering Can Probe Hydration and Specific Ion Effects in Clay Particles</title>
+		<author>
+			<persName><forename type="first">P.-M</forename><surname>Gassin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Prelot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gregoire</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Martin-Gassin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="4109" to="4113" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Hyper-Rayleigh scattering from correlated molecules</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Shelton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">2013</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page">154502</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Long-range orientation correlation in water</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Shelton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">2014</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page">224506</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Second-Harmonic Scattering as a Probe of Structural Correlations in Liquids</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tocci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Wilkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ceriotti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. Lett</title>
+		<imprint>
+			<biblScope unit="volume">2016</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page" from="4311" to="4316" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Salt-induced Long-to-Short Range Orientational Transition in Water</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Duboisset</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P.-F</forename><surname>Brevet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<biblScope unit="page">263001</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Electrolytes induce longrange orientational order and free energy changes in the H-bond network of bulk water</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">I</forename><surname>Okur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Gomopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Macias-Romero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Cremer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tocci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Wilkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ceriotti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Adv</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">1501891</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Hyper-Rayleigh scattering in solution</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Clays</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Persoons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page" from="2980" to="2983" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Harmonic light scattering study reveals structured clusters upon the supramolecular aggregation of regioregular poly(3-alkylthiophene)</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Moris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-P</forename><surname>Van Den Eede</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Koeckelberghs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Deschaume</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bartic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Van Cleuvenbergen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Clays</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Verbiest</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. Chem</title>
+		<imprint>
+			<biblScope unit="volume">2019</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">130</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Multipolar Contributions to the Second Harmonic Response from Mixed DiA-SDS Molecular Aggregates</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Revillod</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Duboisset</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Russier-Antoine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Benichou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Bachelier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jonin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P.-F</forename><surname>Brevet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2716" to="2723" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Dynamics of Micropollutant Adsorption to Polystyrene Surfaces Probed by Angle-Resolved Second Harmonic Scattering</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">T S</forename><surname>Cole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">B</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Saykally</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page" from="14362" to="14369" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Second Harmonic Light Scattering from the Surface of Colloidal Objects: Theory and Applications</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gonella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-L</forename><surname>Dai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Langmuir</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2588" to="2599" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Second Harmonic Spectroscopy of Aqueous Nano-and Microparticle Interfaces</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Eisenthal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chem. Rev</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1462" to="1477" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Surface Characterization of Colloidal Silica Nanoparticles by Second Harmonic Scattering: Quantifying the Surface Potential and Interfacial Water Order</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marchioro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bischoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lütgebaucks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Biriukov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Předota</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="issue">33</biblScope>
+			<biblScope unit="page" from="20393" to="20404" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Nonlinear Light Scattering and Spectroscopy of Particles and Droplets in Liquids</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gonella</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annu. Rev. Phys. Chem</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="353" to="378" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The interfacial structure of nano-and micron-sized oil and water droplets stabilized with SDS and Span80</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Zdrali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Etienne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Smolentsev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Amstad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page">204704</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Influence of molecular structure on passive membrane transport: A case study by second harmonic light scattering</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Wilhelm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Gh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-L</forename><surname>Dai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">2019</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">104705</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Molecular Adsorption and Transport at Liposome Surfaces Studied by Molecular Dynamics Simulations and Second Harmonic Generation Spectroscopy</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hamal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nguyenhuu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Subasinghege Don</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Kumal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Mccarley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">H</forename><surname>Haber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. B</title>
+		<imprint>
+			<biblScope unit="issue">36</biblScope>
+			<biblScope unit="page" from="7722" to="7730" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Transient domains of ordered water induced by divalent ions lead to lipid membrane curvature fluctuations</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">B</forename><surname>Tarun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">I</forename><surname>Okur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Rangamani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. Chem</title>
+		<imprint>
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">17</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Chemistry of Lipid Membranes from Models to Living Systems: A Perspective of Hydration, Surface Potential, Curvature, Confinement and Heterogeneity</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">I</forename><surname>Okur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">B</forename><surname>Tarun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Am. Chem. Soc</title>
+		<imprint>
+			<biblScope unit="issue">31</biblScope>
+			<biblScope unit="page" from="12168" to="12181" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Second Harmonic Generation Spectroscopy of Membrane Probe Dynamics in Gram-Positive Bacteria</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">N</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">T</forename><surname>Brewer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Fozo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Calhoun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biophys. J</title>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1419" to="1428" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Morphology and structure of ZIF-8 during crystallisation measured by dynamic angle-resolved second harmonic scattering</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Van Cleuvenbergen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">J</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Deschaume</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bartic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wachsmann-Hogiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Verbiest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Van Der Veen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Commun</title>
+		<imprint>
+			<biblScope unit="volume">2018</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3418" to="3418" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Second-Harmonic Scattering in Layered Double Hydroxide Colloids: A Microscopic View of Adsorption and Intercalation</title>
+		<author>
+			<persName><forename type="first">P.-M</forename><surname>Gassin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Prelot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Grégoire</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Martin-Gassin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Langmuir</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">40</biblScope>
+			<biblScope unit="page" from="12206" to="12213" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Detection of Buried Microstructures by Nonlinear Light Scattering Spectroscopy</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G F</forename><surname>De Beer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">B</forename><surname>De Aguiar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F W</forename><surname>Nijsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">95502</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Nonlinear optical scattering: The concept of effective susceptibility</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bonn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Petukhov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">115106</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Determination of adsorption geometry on spherical particles from nonlinear Mie theory analysis of surface second harmonic generation</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gonella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-L</forename><surname>Dai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">121402</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Second-Harmonic Rayleigh Scattering from a Sphere of Centrosymmetric Material</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">I</forename><surname>Dadap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Eisenthal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">F</forename><surname>Heinz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page" from="4045" to="4048" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Theory of optical second-harmonic generation from a sphere of centrosymmetric material: small-particle limit</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">I</forename><surname>Dadap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">F</forename><surname>Heinz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Opt. Soc. Am. B</title>
+		<imprint>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1328" to="1347" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Second Harmonic and Sum-Frequency Generation from Aqueous Interfaces Is Modulated by Interference</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gonella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lütgebaucks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G F</forename><surname>De Beer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="9165" to="9173" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Nonlinear Mie theory for second-harmonic and sumfrequency scattering</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G F</forename><surname>De Beer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page">155420</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Second-Harmonic Scattering-Defined Topological Classes for Nano-Objects</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Duboisset</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P.-F</forename><surname>Brevet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="issue">41</biblScope>
+			<biblScope unit="page" from="25303" to="25308" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>De Beer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>F; Roke</surname></persName>
+		</author>
+		<ptr target="https://www.epfl.ch/labs/lbp/page-89617-en-html/" />
+		<imprint>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Obtaining molecular orientation from second harmonic and sum frequency scattering experiments in water: Angular distribution and polarization dependence</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G F D</forename><surname>Beer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">2010</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">234702</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><surname>Carrazza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Duboisset</surname></persName>
+		</author>
+		<ptr target="https://sourceforge.net/projects/hrscomputing/" />
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">The Effect of Particle Size in Second Harmonic Generation from the Surface of Spherical Colloidal Particles. II: The Nonlinear Rayleigh-Gans-Debye Model</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Jen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-L</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gonella</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. C</title>
+		<imprint>
+			<biblScope unit="page">114</biblScope>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">11_A_Python_Open_Source_Software_For_Se cond_Harmonic_Scattering/data/5f72fe6d458515b7cf565a6d/PySHS-V1-1.zip</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Gassin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Martin-Gassin</surname></persName>
+		</author>
+		<ptr target="https://www.researchgate.net/profile/Pierre-Marie_Gassin/publication/342742567_PySHS_V" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
