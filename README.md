@@ -22,6 +22,14 @@ There is a single zip file which contains 13 sub-directories, one per domain. Fi
 
 https://core.ac.uk/exports/SoFAIR_Annotation_Dataset.zip 
 
+ADDENDUM
+
+There is now an extension to the above dataset that can be downloaded from the following link:
+
+https:://core.ac.uk/exports/SoFAIR_Annotation_Dataset_Extension.zip
+
+This additional file contains an additional 1265 papers from 4 domains (Medicine, Physics, Biochemistry and Engineering. 
+
 Additionally, there is a spreadsheet with the metadata for all papers included in this repository. 
 
 [1] Waltman, Ludo, and Nees Jan Van Eck. "A new methodology for constructing a publication‐level classification system of science." Journal of the American Society for Information Science and Technology 63.12 (2012): 2378-2392.
