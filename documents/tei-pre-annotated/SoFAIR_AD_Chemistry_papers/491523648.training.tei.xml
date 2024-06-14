@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:id="_1"/>
+        <encodingDesc>
+            <appInfo>
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-13T15:09+0000">
+                    <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <p>(C) Representative images of TIG3 cells expressing mKeima-tagged RPL10A untreated or treated with 100mM or 250 mM sorbitol for 3h and analyzed for pH neutral keima signal (CytoKeima). Experiment was performed for one biological replicate, imaging was performed in three technical replicates.(C) Representative images of TIG3 cells expressing mKeima-tagged RPL10A untreated or treated with 100mM or 250 mM sorbitol for 3h and analyzed for pH neutral keima signal (CytoKeima). Experiment was performed for one biological replicate, imaging was performed in three technical replicates.</p>
+        <p>Similarly, for NDUFA9, we can see that the compartments with more presence of the protein after FR4 are those corresponding to the nuclear compartment (FR5 and FR6) (see figure below). Moreover, in the Thul et al work, they also refer to ribosomal protein L19 as potentially present in the cytosol, the endoplasmic reticulum and the nucleoli. Same as before, we extracted the information for those proteins from our datasets, and found that those multiple location matches our quantitative data. When we plot the scaled intensity distribution of this protein across our six fractions, we can clearly see that it also in our datasets is distributed across those three subcellular compartments (see figure below).Similarly, for NDUFA9, we can see that the compartments with more presence of the protein after FR4 are those corresponding to the nuclear compartment (FR5 and FR6) (see figure below). Moreover, in the Thul et al work, they also refer to ribosomal protein L19 as potentially present in the cytosol, the endoplasmic reticulum and the nucleoli. Same as before, we extracted the information for those proteins from our datasets, and found that those multiple location matches our quantitative data. When we plot the scaled intensity distribution of this protein across our six fractions, we can clearly see that it also in our datasets is distributed across those three subcellular compartments (see figure below).</p>
+        <p>The 
+            <rs type="software">kgg</rs> output files from Cluster 
+            <rs type="version">3.0</rs> contain protein identifiers and group assignment. The lists are copied into the «Groups» worksheet in the Analysis Workbook Repeat with all marker sets.
+        </p>
+        <p>Paste F-scores (paste special: values) for each markerset set under the corresponding header in the «F-scores» sheet in the Analysis Workbook. When the operation is completed for both datasets, differences can be visualized using the bargraph in the F-scores sheet.Paste F-scores (paste special: values) for each markerset set under the corresponding header in the «F-scores» sheet in the Analysis Workbook. When the operation is completed for both datasets, differences can be visualized using the bargraph in the F-scores sheet.</p>
+        <p>Enter numbers for marker sets in cell A18 (yellow) to select markerset for the bar graph Typically, markersets from mass spectrometry data yield higher F-scores for subcellular proteomics data than do annotations from Uniprot, The Human Protein Atlas and the Compartments Database. Add new columns to the datasheet and copy headers for heatmap ordering and protein locations from the Classification sheet. The 
+            <rs type="software">AbleBits Excel</rs> Plugin Merge Two Tables is highly recommended for easy transfer of data between spreadsheets using one or more column(s) as common reference(s).
+        </p>
+        <p>1313</p>
+        <p>The proteins in the «Data» worksheet are sorted according to the ordering in the heatmaps. A new text file is saved and opened in Cluster 
+            <rs type="version">3.0</rs>. By choosing a single group for k-means clustering, the ordering in the heatmap will be the same as in the 
+            <rs type="software">Excel</rs> spreadsheet.
+        </p>
+        <p>For more detailed analysis, use the Copy STATS button to copy statistics for recall and precision of the markers within a given set.For more detailed analysis, use the Copy STATS button to copy statistics for recall and precision of the markers within a given set.</p>
+        <p>Open a new 
+            <rs type="software">Excel Spreadsheet</rs>, select «paste special» Values and then Formats. Click a cell in MetaMass II to inspect the formulas used to calculate recall, precision and Fscore (harmonic mean of recall and precision).
+        </p>
+        <p>Statistics 15 Classification Method:Statistics 15 Classification Method:</p>
+        <p>The algorithm counts markers for all subcellular locations within all groups. All proteins in the same group are assigned to the location with the highest marker count. Thus, if there are three markers for the nucleus and two for the cytosol, all are assigned to the nucleus. The purity is, however only 0.6; 3/(3+2), and the total number of markers in the group is 3. Higher purity and higher marker counts indicate higher precision for the assigned locations.The algorithm counts markers for all subcellular locations within all groups. All proteins in the same group are assigned to the location with the highest marker count. Thus, if there are three markers for the nucleus and two for the cytosol, all are assigned to the nucleus. The purity is, however only 0.6; 3/(3+2), and the total number of markers in the group is 3. Higher purity and higher marker counts indicate higher precision for the assigned locations.</p>
+        <p>The classification is based on standard 
+            <rs type="software">Excel</rs> functions. Click yellow cells to inspect them.
+        </p>
+        <p>16 3016 30</p>
+        <p>Supplementary Figure 1 In the main manuscript text, we state that 82% of the proteins were reproducibly identified in two or more of the six subcellular fractions. It has been published that a significant part of the proteome is not restricted to only one subcellular location 1 . However, it is very important to differentiate between identification in a subcellular fraction and actual colocalization of a protein in a subcellular niche. Merely identification cannot provide accurate information of the subcellular niche of the protein. In contrast, that information should be derived from the quantification of a protein's abundance across the six fractions, i.e. the relative enrichment of the protein in each fraction. Throughout the manuscript, we use the relative enrichment in each fraction to extrapolate the subcellular niches, assigning the fraction with the highest intensity as the main subcellular location for a protein.Supplementary Figure 1 In the main manuscript text, we state that 82% of the proteins were reproducibly identified in two or more of the six subcellular fractions. It has been published that a significant part of the proteome is not restricted to only one subcellular location 1 . However, it is very important to differentiate between identification in a subcellular fraction and actual colocalization of a protein in a subcellular niche. Merely identification cannot provide accurate information of the subcellular niche of the protein. In contrast, that information should be derived from the quantification of a protein's abundance across the six fractions, i.e. the relative enrichment of the protein in each fraction. Throughout the manuscript, we use the relative enrichment in each fraction to extrapolate the subcellular niches, assigning the fraction with the highest intensity as the main subcellular location for a protein.</p>
+        <p>When trying to accurately assess dual or multiple locations of proteins, our approach is limited by the fact this it is comprising only six fractions, which can group several subcellular niches. Methods that provide higher resolution, such as hyperLOPIT 3 ,LOPIT-DC 4 or SubCellBarCode 5 , offer better insights in this regard. In fact, some bioinformatics tools have been developed to assess simultaneous protein sub-cellular localization in those datasets, such as the one described by Crook et al 7 . However, as already mentioned, the predictive outcome of this tool is better suited for subcellular approaches with more fractions analyzed.When trying to accurately assess dual or multiple locations of proteins, our approach is limited by the fact this it is comprising only six fractions, which can group several subcellular niches. Methods that provide higher resolution, such as hyperLOPIT 3 ,LOPIT-DC 4 or SubCellBarCode 5 , offer better insights in this regard. In fact, some bioinformatics tools have been developed to assess simultaneous protein sub-cellular localization in those datasets, such as the one described by Crook et al 7 . However, as already mentioned, the predictive outcome of this tool is better suited for subcellular approaches with more fractions analyzed.</p>
+        <p>Nevertheless, although with certain limitations due to the purification of only six subcellular compartments, our approach can also identify proteins that are present in multiple compartments simultaneously. In fact, we demonstrated in the main text the dual, and also dynamic, location of EGFR-adaptor proteins SHC1, GRB2 and CBL, which were all found in both the cytosol and the membrane-associated compartment (Main Figure 4C). However, to assess if dual or multiple locating proteins are captured by our experimental approach, we investigated some proteins known to have dual localization according to the antibody-based fluorescent image analysis described in the publication by Thul et al 1 . As an example of proteins with dual/multiple location, Thul et al described CCAR1 and NDUFA9, which they found in both the nucleus and the Golgi apparatus or mitochondria, respectively. For both CCAR1 and NDUFA9, we find that in our dataset is in line with the observations by Thul et al as the majority of each protein is in FR5 (nucleoplasm) and FR4 (mitochondrion), respectively. Moreover, we can see some contribution of CCAR1 in FR4 (enriched in Golgi proteins), which is especially clear in Supplementary Note 2: 
+            <rs type="software">MetaMass</rs>
+            <rs type="version">II</rs> User Manual The input a list of protein identifiers and group-assignments obtained by cluster analysis (typically kmeans clustering).
+        </p>
+        <p>-Users paste the list into the spreadsheet and click buttons to select a set of markers for subcellular locations. The sets are from published articles or annotation databases.-Users paste the list into the spreadsheet and click buttons to select a set of markers for subcellular locations. The sets are from published articles or annotation databases.</p>
+        <p>The output is a list of subcellular locations for each protein, a score to indicate precision of the assigned location and statistics for the overall fit between the dataset and the marker set.The output is a list of subcellular locations for each protein, a score to indicate precision of the assigned location and statistics for the overall fit between the dataset and the marker set.</p>
+        <p>The Datasets sheet in 
+            <rs type="software">MetaMass</rs>
+            <rs type="version">II</rs> contains normalized data from indicated studies. Normalization to a fixed max value is recommended for better visualization of data in heatmaps.
+        </p>
+        <p>Columns TD:TU can be used to filter the overlap between individual studies.Columns TD:TU can be used to filter the overlap between individual studies.</p>
+        <p>33</p>
+        <p>We recommend that 
+            <rs type="software">MetaMass</rs> is used in combination with an 
+            <rs type="software">Excel</rs> Workbook formatted for saving the output. Supplementary tables for individual comparisons can be used as templates.
+        </p>
+        <p>Here, we pasted the overlap between the HeLa results from this study and results from Mendes et al into the «Data» worksheet.Here, we pasted the overlap between the HeLa results from this study and results from Mendes et al into the «Data» worksheet.</p>
+        <p>Results from the two studies were saved as separate tab-delimited text files for processing in Cluster 
+            <rs type="version">3.0</rs>. Both contain the first column with protein identifiers.
+        </p>
+        <p>The Tab-delimited text files are opened in Cluster. 
+            <rs type="version">3.0</rs>, data and formatted as indicated above.
+        </p>
+        <p>With 875 groups for k-means clustering, the groups will contain an average of five proteins. Larger groups will yield higher coverage and lower precision for assigning subcellular locations (see later).With 875 groups for k-means clustering, the groups will contain an average of five proteins. Larger groups will yield higher coverage and lower precision for assigning subcellular locations (see later).</p>
+        <p>Annotations:Annotations:</p>
+        <p>The annotations sheet in 
+            <rs type="software">MetaMass</rs> contains annotations on the subcellular location of proteins from indicated sources. The marker sets were generated by filtering on single locations in full annotations. Scores from the Compartments database serve as an independent reference 18
+        </p>
+    </text>
+</tei>

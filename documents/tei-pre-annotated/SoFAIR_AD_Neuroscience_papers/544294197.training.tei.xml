@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:id="_1"/>
+        <encodingDesc>
+            <appInfo>
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-14T14:06+0000">
+                    <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <p>This study investigated dexamethasone-treatment, shedding routes, tissue antigen distribution, and pathology of caprine Brucellosis. Eighteen non-pregnant goats were randomly grouped into A, B, and C. Group A was administered dexamethasone for 7 days at 2 mg/kg before inoculating 0.5 mL B. melitensis at 107 CFU ocularly while group B was inoculated 0.5 mL B. melitensis only, and C as control negative. Blood samples, ocular, nasal, and vaginal swabs were obtained for evaluation. Three goats were sacrificed from each group at days 21 and 42 post-inoculation (pi) and selected tissues collected for PCR, histopathology, and immunohistochemistry. Brucella melitensis was detected in the ocular swabs of group A significantly higher than group B. Shedding was prolonged in group A compared to B. The overall shedding was 22.2% in group A and 9.4% in group B. The uterus of both groups A and B revealed mild inflammation and microgranuloma, extensive necrotic lesions in lymph nodes. Liver showed multifocal necrosis predominantly in group A. Lesion scoring showed significantly higher scores in A compared to B. Strong immunostaining was observed in the liver, lungs, and spleen, predominantly at day 21 pi. This study demonstrated dexamethasone prolonged shedding, tissue antigen distribution, and pathology in dexamethasone-treated goats.This study investigated dexamethasone-treatment, shedding routes, tissue antigen distribution, and pathology of caprine Brucellosis. Eighteen non-pregnant goats were randomly grouped into A, B, and C. Group A was administered dexamethasone for 7 days at 2 mg/kg before inoculating 0.5 mL B. melitensis at 107 CFU ocularly while group B was inoculated 0.5 mL B. melitensis only, and C as control negative. Blood samples, ocular, nasal, and vaginal swabs were obtained for evaluation. Three goats were sacrificed from each group at days 21 and 42 post-inoculation (pi) and selected tissues collected for PCR, histopathology, and immunohistochemistry. Brucella melitensis was detected in the ocular swabs of group A significantly higher than group B. Shedding was prolonged in group A compared to B. The overall shedding was 22.2% in group A and 9.4% in group B. The uterus of both groups A and B revealed mild inflammation and microgranuloma, extensive necrotic lesions in lymph nodes. Liver showed multifocal necrosis predominantly in group A. Lesion scoring showed significantly higher scores in A compared to B. Strong immunostaining was observed in the liver, lungs, and spleen, predominantly at day 21 pi. This study demonstrated dexamethasone prolonged shedding, tissue antigen distribution, and pathology in dexamethasone-treated goats.</p>
+    </text>
+</tei>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:id="_1"/>
+        <encodingDesc>
+            <appInfo>
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-13T09:32+0000">
+                    <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <p>Background: Since the original publication of the VCF and SAM formats, an explosion of software tools have been created to process these data files. To facilitate this a library was produced out of the original 
+            <rs type="software">SAMtools</rs> implementation, with a focus on performance and robustness. The file formats themselves have become international standards under the jurisdiction of the Global Alliance for Genomics and Health. Findings: We present a software library for providing programmatic access to sequencing alignment and variant formats. It was born out of the widely used 
+            <rs type="software">SAMtools</rs> and 
+            <rs type="software">BCFtools</rs> applications. Considerable improvements have been made to the original code plus many new features including newer access protocols, the addition of the CRAM file format, better indexing and iterators, and better use of threading. Conclusion: Since the original 
+            <rs type="software">Samtools</rs> release, performance has been considerably improved, with a BAM read-write loop running 5 times faster and BAM to SAM conversion 13 times faster (both using 16 threads, compared to 
+            <rs type="software">Samtools</rs>
+            <rs type="version">0.1.19</rs>). Widespread adoption has seen 
+            <rs type="software">HTSlib</rs> downloaded &gt;1 million times from GitHub and 
+            <rs type="software">conda</rs>. The C library has been used directly by an estimated 900 GitHub projects and has been incorporated into Perl, Python, 
+            <rs type="software">Rust</rs>, and 
+            <rs type="software">R</rs>, significantly expanding the number of uses via other languages. 
+            <rs type="software">HTSlib</rs> is open source and is freely available from htslib.org under MIT/BSD license.
+        </p>
+        <p>When the 1000 Genomes Project [1] was launched in early 2008, there were many short-read aligners and variant callers. Each of them had its own input or output format for limited use cases, and interoperability was a major challenge. Users were forced to implement bespoke format converters to bridge tools, and because formats encoded different information, this was time consuming, laborious, and sometimes impossible. This fragmented ecosystem hampered the collaboration between the participants of the project and delayed the development of advanced data analysis algorithms.When the 1000 Genomes Project [1] was launched in early 2008, there were many short-read aligners and variant callers. Each of them had its own input or output format for limited use cases, and interoperability was a major challenge. Users were forced to implement bespoke format converters to bridge tools, and because formats encoded different information, this was time consuming, laborious, and sometimes impossible. This fragmented ecosystem hampered the collaboration between the participants of the project and delayed the development of advanced data analysis algorithms.</p>
+        <p>In a conference call on 21 October 2008, the 1000 Genomes Project analysis subgroup decided to take on the issue by unifying a variety of short-read alignment formats into the Sequence Alignment/Map format (SAM). Towards the end of 2008 the subgroup announced the first SAM specification, detailing a text-based SAM format and its binary representation, the BAM format [2]. SAM/BAM quickly replaced all the other short-read alignment formats and became the de facto standard in the analysis of high-throughput sequence data. In 2010, a Variant Call Format (VCF) was introduced for storing genetic variation [3]. Later, in 2011, as the number of sequenced samples increased and the text format proved too slow to parse, a binary version BCF (see Supplementary Fig. S1) was developed [4].In a conference call on 21 October 2008, the 1000 Genomes Project analysis subgroup decided to take on the issue by unifying a variety of short-read alignment formats into the Sequence Alignment/Map format (SAM). Towards the end of 2008 the subgroup announced the first SAM specification, detailing a text-based SAM format and its binary representation, the BAM format [2]. SAM/BAM quickly replaced all the other short-read alignment formats and became the de facto standard in the analysis of high-throughput sequence data. In 2010, a Variant Call Format (VCF) was introduced for storing genetic variation [3]. Later, in 2011, as the number of sequenced samples increased and the text format proved too slow to parse, a binary version BCF (see Supplementary Fig. S1) was developed [4].</p>
+        <p>The SAM/BAM format originally came with a reference implementation, 
+            <rs type="software">SAMtools</rs> [2,5], and VCF/BCF with 
+            <rs type="software">VCFtools</rs> [3] and 
+            <rs type="software">BCFtools</rs> (then part of the 
+            <rs type="software">SAMtools</rs> package) [6]. Numerous other tools have been developed since then in a wide variety of programming languages. For example, 
+            <rs type="software">HTSJDK</rs> is the Java equivalent [7] and is used extensively in Java applications; 
+            <rs type="software">Sambamba</rs> [8] is written in the D language and focuses primarily on efficient multi-threaded work; 
+            <rs type="software">Scramble</rs> [9] has BAM and SAM capability and is the primary source for experimental CRAM [10,11] development; and 
+            <rs type="software">JBrowse</rs> [12] implements read-only support for multiple formats in JavaScript.
+        </p>
+        <p>While the original implementation of 
+            <rs type="software">SAMtools</rs> and 
+            <rs type="software">BCFtools</rs> provided APIs to parse the files, it mixed these APIs with application code. This did not guarantee long-term stability and made it difficult to interface in other programs. To solve this, in 2013 the decision was taken to separate the API from the command line tools and to produce 
+            <rs type="software">HTSlib</rs> as a dedicated programming library that processes common data formats used in highthroughput sequencing. Support for the European Bioinformatics Institute's CRAM format was added and in 2014 the first official release (1.0) was published. This library implements stable and robust APIs that other programs can rely on. It enables efficient access to SAM/BAM/CRAM, VCF/BCF, FASTA, FASTQ, blockgzip compressed data, and indexes. It can be used natively in C/C++ code and has bindings to many other popular programming languages, such as Python, 
+            <rs type="software">Rust</rs>, and 
+            <rs type="software">R</rs>, boosting the development of sequence analysis tools.
+        </p>
+        <p>HTSlib is not merely a separation; it also brought numerous improvements to SAMtools, BCFtools, and other third-party programs depending on it. HTSlib is linked into ∼900 GitHub projects (see Supplementary Section S2), and HTSlib itself has been forked &gt;300 times. HTSlib has been installed via bioconda &gt;1 million times, and there are ∼10,000 GitHub projects using it via 
+            <rs type="software">Pysam</rs>. The library is freely available for commercial and non-commercial use (the MIT/BSD compatible license) from htslib.org and GitHub [13].
+        </p>
+        <p>The main purpose of 
+            <rs type="software">HTSlib</rs> is to provide access to genomic information files, both alignment data (SAM, BAM, and CRAM formats) and variant data (VCF and BCF formats). The library also provides interfaces to access and index genome reference data in FASTA format and tab-delimited files with genomic coordinates.
+        </p>
+        <p>Given the typical file sizes of genomic data, compression is necessary for efficient storage of data. 
+            <rs type="software">HTSlib</rs> supports the GZIPcompatible format BGZF (Blocked GNU Zip Format), which limits the size of compressed blocks, thus allowing indexing and random access to the compressed files. 
+            <rs type="software">HTSlib</rs> includes 2 standalone programs that work with BGZF; bgzip is a general-purpose compression tool while 
+            <rs type="software">tabix</rs> works on tab-delimited genome coordinate files (e.g., BED and GFF) and provides indexing and random access. BGZF compression is also used for BAM, BCF, and compressed FASTA files. The CRAM format uses columnspecific compression methods including gzip, 
+            <rs type="software">rANS</rs> [14], LZMA, and bzip2. The CRAM implementation in 
+            <rs type="software">HTSlib</rs> learns the bestperforming compression method on the fly (see Supplementary Section S3).
+        </p>
+        <p>The 
+            <rs type="software">HTSlib</rs> library is structured as follows: the media access layer (Fig. 1a) is a collection of low-level system and library (
+            <rs type="software">libcurl</rs>, knet) functions, which facilitate access to files on different storage environments (disk, memory, network) and over multiple protocols to various online storage providers (AWS S3, Google Cloud, GA4GH htsget [15]; Fig. 1b). This functionality is transparently available through a unified low-level stream interface 
+            <rs type="software">hFILE</rs> (Fig. 1c). All file formats (Fig. 1d ande) are accessible through a higher-level file format-agnostic 
+            <rs type="software">htsFILE</rs> interface, which provides functions to detect file types and set write options and provides common code for file iterators. Building on this layer are specializations for alignment (SAM, BAM, and CRAM) and variant (VCF and BCF) files and various auxiliary functions (Fig. 1f andg).
+        </p>
+        <p>This API (Fig. 1f andg) can be roughly divided into several classes:This API (Fig. 1f andg) can be roughly divided into several classes:</p>
+        <p>1. The File Access API has basic methods for opening and closing alignment and variant files, as well as reading and writing records to a file. 
+            <rs type="software">HTSlib</rs> automatically determines the input file type by its contents and output type by filename. Further explicit control is provided for format, data layout (in CRAM), and file compression levels. Data sorted in genomic order may also be indexed at the time of writing (for alignment data) or at a later post-writing stage. 2. The Header API is a collection of methods that enables extensive control of SAM and VCF headers, including reading, writing, and parsing the header, accessing and updating individual tags, and adding and removing header lines. 3. The Data API provides methods for parsing, updating, and retrieving information from individual record fields on both alignment and variant data. The library also includes the ability to read multiple VCF and BCF files in parallel, transparently merging their contents, so that the reader can easily process records with matching genomic positions and alleles. 4. The Index/Iterator API offers the ability to extract information from the various index formats specific to genomic data (BAI, CSI, CRAI, TBI), and to create iterators for genomic files.
+        </p>
+        <p>The original BAI and TBI indices were limited to 512 Mb and were replaced by CSI allowing ≤2 44 bp. Both sequence alignment and variant call formats have millions of records that can be indexed by genomic location. An iterator groups a list of target genomic regions into a list of file offsets and contains the stepping and filtering logic to allow the file reader to extract only the information of interest. Additionally, the library provides the 
+            <rs type="software">regidx API</rs>, which allows the user to efficiently search and intersect regions from arbitrary row-oriented text formats. 5. The 
+            <rs type="software">Mpileup</rs> API performs a data pivot. Alignment data in SAM, BAM, and CRAM are retrieved in row-oriented format, record by record. Data rotation (merging ≥1 input files) presents the sequence data in a column-oriented form per reference position. This information can be used for singlenucleotide polymorphism and indel calling, consensus generation, and to make alignment viewers. 
+            <rs type="software">Mpileup</rs> can also optionally calculate base alignment quality scores for each read [16]. The base alignment quality scores can be used to reduce false-positive single-nucleotide polymorphism calls by lowering the confidence scores at locations where the read alignment may be incorrect. 6. 
+            <rs type="software">HTSlib</rs> also includes various utility convenience functions such as hash tables, string manipulation, linked lists, heaps, sorting, and logging, and ensures portability between bigand little-endian platforms. Many of these originate from Klib [17]. A thread pool interface is provided for general multi-threading.
+        </p>
+        <p>Given the widespread use of the library, performance and low memory requirements are paramount, which means that even relatively small improvements can lead to time and energy savings when analyzing large amounts of data.Given the widespread use of the library, performance and low memory requirements are paramount, which means that even relatively small improvements can lead to time and energy savings when analyzing large amounts of data.</p>
+        <p>To test maximum throughput for alignment data, elapsed times were obtained for each file type using both 1 main thread and also 16 additional worker threads. Not all tools supported indexing of all formats, and only in more recent 
+            <rs type="software">HTSlib</rs> versions is there support for indexing and random access of BGZFcompressed SAM files. Full benchmarks are in Supplementary Table S5, with a summary for BAM shown here in Fig. 2.
+        </p>
+        <p>The tests were performed on a RAM disk (/dev/shm) so represent maximum I/O rates for this system.The tests were performed on a RAM disk (/dev/shm) so represent maximum I/O rates for this system.</p>
+        <p>Figure 2 shows read and write elapsed timings for the BAM format on chromosome 1 of ENA accession ERR3239276. Note that "
+            <rs type="software">samtools</rs> 2013" refers to 
+            <rs type="software">SAMtools</rs> version 
+            <rs type="version">0.1.19</rs> and not the current 
+            <rs type="software">SAMtools</rs> release. Other tool versions are 
+            <rs type="software">HTSlib</rs>
+            <rs type="version">1.10.2-</rs>32-
+            <rs type="version">ga</rs>22
+            <rs type="version">a</rs>0
+            <rs type="version">af</rs>, 
+            <rs type="software">HTSJDK</rs>
+            <rs type="version">2.22.0</rs>, 
+            <rs type="software">Sambamba</rs>
+            <rs type="version">0.7.1</rs>, and 
+            <rs type="software">Scramble</rs>
+            <rs type="version">1.14.13</rs>. These use up to 16 threads, but the 
+            <rs type="software">HTSJDK</rs> times are with only 1 additional thread per file. 
+            <rs type="software">SAMtools</rs>
+            <rs type="version">0.1.19</rs> has multithreaded writing only, so the speed is limited by the reading portion. (See Supplementary Section S4 for full single-threaded and multi-threaded timings, along with benchmarks for the SAM and CRAM formats.) 
+            <rs type="software">HTSlib</rs> was the only tool tested capable of multi-threaded SAM decoding and encoding, which is important when processing output from a fast multi-threaded aligner. The use of the faster compression library 
+            <rs type="software">libdeflate</rs> [18] over Zlib [19] is also a major contributing factor in BAM performance, meaning that BAM to BAM transcoding with 16 threads is 5 times faster than the original 
+            <rs type="software">SAMtools</rs> 0.1.19 and BAM to SAM is 13 times faster.
+        </p>
+        <p>File sizes also differ slightly for BAM, owing to differing Deflate implementations (Zlib, 
+            <rs type="software">Libdeflate</rs>, and Intel deflate). HT-Slib's CRAM size is 24% smaller than HTSJDK, while being 4 times faster (with a single thread), although the files remain compatible (see Supplementary Table S5).
+        </p>
+        <p>To compare the random access capabilities of 
+            <rs type="software">HTSlib</rs> we chose gene and exon regions from the 
+            <rs type="software">Ensembl</rs> database across chromosome 1 and measured the time and I/O statistics to retrieve all alignments overlapping those regions. 
+            <rs type="software">HTSlib</rs>, 
+            <rs type="software">HTSJDK</rs>, and 
+            <rs type="software">Sambamba</rs> all support a multi-region iterator that is able to optimize I/O for many regions, reporting alignments that overlap multiple regions once only. 
+            <rs type="software">SAMtools</rs>
+            <rs type="version">0.1.19</rs> and 
+            <rs type="software">Scramble</rs> have no such feature; hence, regions that overlap will report some records multiple times and the same block may be read more than once.
+        </p>
+        <p>The exon list had 58,160 regions (many overlapping each other) covering 5.5% of the chromosome. Figure 3 shows the random access efficiency, in both time and number of bytes read, for the exon list with BAM input. 
+            <rs type="software">HTSlib</rs> is the fastest and requires less I/O to retrieve the same records.
+        </p>
+        <p>The only common format supported between current HT-Slib/BCFtools and HTSJDK is BGZF-compressed VCF. Figure 4 shows the time to read and read/write this format on a 929sample test set [20] (see Supplementary Section S8). The source file is hgdp wgs. 20 from ENA PRJEB6463. Only single thread times are shown because currently multi-threading is suboptimal in BCFtools and not available in HTSJDK.The only common format supported between current HT-Slib/BCFtools and HTSJDK is BGZF-compressed VCF. Figure 4 shows the time to read and read/write this format on a 929sample test set [20] (see Supplementary Section S8). The source file is hgdp wgs. 20 from ENA PRJEB6463. Only single thread times are shown because currently multi-threading is suboptimal in BCFtools and not available in HTSJDK.</p>
+        <p>HTSlib also supports the BGZF-compressed BCF format, a binary variant of VCF. This performs considerably better than the compressed VCF, being 5 times faster to decode and nearly 3 times faster to encode (see Supplementary Tables S10 andS11 for details and more complete results).HTSlib also supports the BGZF-compressed BCF format, a binary variant of VCF. This performs considerably better than the compressed VCF, being 5 times faster to decode and nearly 3 times faster to encode (see Supplementary Tables S10 andS11 for details and more complete results).</p>
+        <p>Over the lifetime of HTSlib the cost of sequencing has decreased by ∼100-fold, with a corresponding increase in data volume [21]. New sequencing technologies have also been developed that produce much longer reads. The alignment and variant file formats have moved on from being group-led research to being maintained by the File Formats subgroup of the Global Alliance Downloaded from https://academic.oup.com/gigascience/article/10/2/giab007/6139334 by guest on 06 October 2021 for Genomics and Health [22]. Over the years various improvements and modifications have been made to the specifications. Together these have been and will continue to be a driving force for continued development.Over the lifetime of HTSlib the cost of sequencing has decreased by ∼100-fold, with a corresponding increase in data volume [21]. New sequencing technologies have also been developed that produce much longer reads. The alignment and variant file formats have moved on from being group-led research to being maintained by the File Formats subgroup of the Global Alliance Downloaded from https://academic.oup.com/gigascience/article/10/2/giab007/6139334 by guest on 06 October 2021 for Genomics and Health [22]. Over the years various improvements and modifications have been made to the specifications. Together these have been and will continue to be a driving force for continued development.</p>
+        <p>Since 
+            <rs type="software">HTSlib</rs>
+            <rs type="version">1.0</rs>, there have been 11 major releases and &gt;1,600 code commits, more than doubling the number of lines of C code [15]. It has gained support for the CRAM file format, better indexing, extended APIs, more transfer protocols (S3, 
+            <rs type="software">Google Cloud</rs>, 
+            <rs type="software">Htsget</rs>), and improved threading and speed. Through the use of automated tests, static analysis tools, and fuzz testing it has been made much more reliable (see Supplementary Section S12). Some of the existing limitations in 
+            <rs type="software">HTSlib</rs> come from the design of the underlying file formats, e.g., BAM, CRAM, and BCF limit the maximum reference length to 2 Gb (see Supplementary Section S13). We expect future standards development to include improvements leading to better scaling of many-sample VCF, additional support for structural variation, better handling of very long sequencing reads, large genomes, and support for base modifications. Further plans include speeding up both the VCF parser and 
+            <rs type="software">mpileup</rs>, improved documentation, and better support for BED files.
+        </p>
+        <p>This work was supported by the Wellcome Trust grant (206194).This work was supported by the Wellcome Trust grant (206194).</p>
+        <p>Project name: HTSlib Project home page: https://www.htslib.org, https://github.com/s amtools/htslib Operating system(s): Platform independent Programming language: C License: A mix of Modified 2-Clause BSD (CRAM) and MIT/Expat (everything else) RRID:SCR 002105 biotools: htslibProject name: HTSlib Project home page: https://www.htslib.org, https://github.com/s amtools/htslib Operating system(s): Platform independent Programming language: C License: A mix of Modified 2-Clause BSD (CRAM) and MIT/Expat (everything else) RRID:SCR 002105 biotools: htslib</p>
+        <p>The data set supporting the benchmarking results of this article is available in the ENA (ERR3239276 and PRJEB6463) and via FTP [23]. Snapshots of the code are also available via the GigaScience GigaDB repository [24].The data set supporting the benchmarking results of this article is available in the ENA (ERR3239276 and PRJEB6463) and via FTP [23]. Snapshots of the code are also available via the GigaScience GigaDB repository [24].</p>
+        <p>An accompanying article describing the latest versions of SAMtools and BCFtools is published alongside this article [25].An accompanying article describing the latest versions of SAMtools and BCFtools is published alongside this article [25].</p>
+        <p>The authors declare they have no competing interests.The authors declare they have no competing interests.</p>
+        <p>J.K.B., P.D., R.M.D., H.L., J.M., V.O., and A.W. wrote the software. R.M.D., T.K., and J.M. supervised the project. J.K.B., P.D., R.M.D., and A.W. wrote the original draft of the manuscript with all authors reviewing.J.K.B., P.D., R.M.D., H.L., J.M., V.O., and A.W. wrote the software. R.M.D., T.K., and J.M. supervised the project. J.K.B., P.D., R.M.D., and A.W. wrote the original draft of the manuscript with all authors reviewing.</p>
+    </text>
+</tei>
