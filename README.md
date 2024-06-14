@@ -1,30 +1,30 @@
-# SoFAIR
+# SoFAIR Dataset
 
-This repository belongs to the WP T4.1, "Support for the creation of annotated software mentions and disambiguations"
+This repository belongs to the Work Package T4.1, "Support for the creation of annotated software mentions and disambiguations"
 
 ### SoFAIR Gold Standard Dataset 
 
 Description: 
 
-* `documents` contains the selection of scientific articles used in the annotation process. 
+* `documents/` contains the selection of scientific articles used in the annotation process. 
 
-* `guidelines` 
+* `guidelines/` 
 
-* `benchmarks`
+* `benchmarks/`
 
 The documents are organized as follow: 
 
-* `documents/tei-pre-annotated`: the articles in XML, extracted from the PDF, with software mentions pre-annotated by the SoftCite Software Mentions Recognizer. Pre-annotations are only present to help the annotaters, they have to be checked entirely, and non pre-annotated passages must also be examinedandannotated. 
+* `documents/tei-pre-annotated/`: the articles in XML, extracted from the PDF, with software mentions pre-annotated by the SoftCite Software Mentions Recognizer. Pre-annotations are only present to help the annotaters, they have to be checked entirely, and non pre-annotated passages must also be examinedandannotated. 
 
-* `documents/tei-annotated`: the articles manually annoated in XML format, as expected by the Softcite Software Mention Recognizer to train machine learning models
+* `documents/tei-annotated/`: the articles manually annoated in XML format, as expected by the Softcite Software Mention Recognizer to train machine learning models
 
-* `documents/tei-annotated`: the articles afer manual expert validation and enrichment, this will be used as final gol standard corpus to be published
+* `documents/tei-annotated/`: the articles afer manual expert validation and enrichment, this will be used as final gol standard corpus to be published
 
-* `documents/metadata`: the metadata information required for attribution under the CC-BY license, to be added in the final dataset for publication. 
+* `documents/metadata/`: the metadata information required for attribution under the CC-BY license, to be added in the final dataset for publication. 
 
-* `documents/grobid`: the full TEI XML extraction from PDF as produced by GROBID, to be used to compile the final dataset.
+* `documents/grobid/`: the full TEI XML extraction from PDF as produced by GROBID, to be used to compile the final dataset.
 
-* `documents/test`: a small test set that should be ignored. 
+* `documents/test/`: a small test set that should be ignored. 
 
 #### Selection of articles
 
