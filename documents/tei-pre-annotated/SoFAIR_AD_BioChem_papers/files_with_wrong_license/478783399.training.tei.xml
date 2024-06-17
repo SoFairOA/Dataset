@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:id="_1"/>
+        <encodingDesc>
+            <appInfo>
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-13T09:38+0000">
+                    <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <p>Background: 
+            <rs type="software">SAMtools</rs> and 
+            <rs type="software">BCFtools</rs> are widely used programs for processing and analysing high-throughput sequencing data. They include tools for file format conversion and manipulation, sorting, querying, statistics, variant calling, and effect analysis amongst other methods. Findings: The first version appeared online 12 years ago and has been maintained and further developed ever since, with many new features and improvements added over the years. The 
+            <rs type="software">SAMtools</rs> and 
+            <rs type="software">BCFtools</rs> packages represent a unique collection of tools that have been used in numerous other software projects and countless genomic pipelines. Conclusion: Both 
+            <rs type="software">SAMtools</rs> and 
+            <rs type="software">BCFtools</rs> are freely available on GitHub under the permissive MIT licence, free for both non-commercial and commercial use. Both packages have been installed &gt;1 million times via 
+            <rs type="software">Bioconda</rs>. The source code and documentation are available from https://www.htslib.org.
+        </p>
+        <p>With the advancement of genome sequencing technologies and large-scale sequencing projects, new data formats became necessary for interoperability, compact storage, and efficient analysis of the data. Among the most common formats used in this field today are SAM [1] and VCF [2], developed by the 1000 Genomes Project [3]. These specialized formats for storing read alignments (SAM) and genetic variants (VCF) are row-oriented tab-delimited text files, which are easy to process using custom scripts but slow to parse and can be inefficient to store. Therefore in practice, the binary counterparts BAM or CRAM are used for alignment data and, when parsing of large VCF files becomes prohibitively slow, BCF provides a more efficient format for processing variation data.With the advancement of genome sequencing technologies and large-scale sequencing projects, new data formats became necessary for interoperability, compact storage, and efficient analysis of the data. Among the most common formats used in this field today are SAM [1] and VCF [2], developed by the 1000 Genomes Project [3]. These specialized formats for storing read alignments (SAM) and genetic variants (VCF) are row-oriented tab-delimited text files, which are easy to process using custom scripts but slow to parse and can be inefficient to store. Therefore in practice, the binary counterparts BAM or CRAM are used for alignment data and, when parsing of large VCF files becomes prohibitively slow, BCF provides a more efficient format for processing variation data.</p>
+        <p>Despite the conceptual simplicity of the underlying DNA sequence, the alignment and variant data carry rich information. These data undergo a number of processing steps, many of which are algorithmically complex and require specialized software. Also more programming effort and expertise are necessary to parse binary formats. Therefore programs and toolkits that encompass functionality for the most common tasks have been developed. These include tools for file manipulation, quality control, and data analyses, such as sambamba [4], biobambam [5], 
+            <rs type="software">FastQC</rs> [6], and 
+            <rs type="software">GATK</rs> [7]. A successful bioinformatics tool must keep up with advancements in sequencing technolo-gies (e.g., substantial increase in sequencing read length), scale well with ever-increasing amounts of data (from single to hundreds of thousands of genomes), and expand focus to encompass new analyses and more complex types of variation. New species also bring challenges such as large chromosomes not representable by 32 bits (&gt;2 Gb) or assumptions about the ploidy of an organism. In this article we describe the status, new features, and developments in 
+            <rs type="software">SAMtools</rs> and 
+            <rs type="software">BCFtools</rs>.
+        </p>
+        <p>
+            <rs type="software">SAMtools</rs> was originally published in 2009 [1]. Readers of the online edition of that article would have been able to download release 
+            <rs type="version">0.1.4</rs>. The package included not only utilities to convert and manipulate SAM and BAM files but also a variant caller, which was soon restructured into the BCFtools subpackage (2010, release 0.1.9). Later it became apparent that thirdparty projects were trying to use code from 
+            <rs type="software">SAMtools</rs> despite it not being designed to be embedded in that way. Therefore the decision was taken in August 2014 (release 1.0) to split the 
+            <rs type="software">SAMtools</rs> package into a stand-alone library with a well-defined API (HTSlib, currently 82k lines of 
+            <rs type="software">code</rs>) [8], a project for variant calling and manipulation of variant data (BCFtools, 71k lines), and 
+            <rs type="software">SAMtools</rs> for working with alignment data (42k lines). All 3 projects are maintained in parallel, and improvements to HT-Slib naturally filter into new releases of 
+            <rs type="software">SAMtools</rs> and 
+            <rs type="software">BCFtools</rs>. Since the original release the combined size of 
+            <rs type="software">HTSlib</rs>, 
+            <rs type="software">SAMtools</rs>, and BCFtools has doubled.
+        </p>
+        <p>Since the initial release there have been &gt;2,200 commits to the code repository and 52 releases, the most recent being version 1.11 in September 2020 [9].Since the initial release there have been &gt;2,200 commits to the code repository and 52 releases, the most recent being version 1.11 in September 2020 [9].</p>
+        <p>The main part of the 
+            <rs type="software">SAMtools</rs> package is a single executable that offers various commands for working on alignment data. The "view" command performs format conversion, file filtering, and extraction of sequence ranges. Files can be reordered, joined, and split in various ways using the commands sort, collate, merge, cat, and split. Files can be indexed for fast random access using "index" for alignment files and "faidx" for reference sequences in the FASTA format. File content can be manipulated with commands like addreplacerg, calmd, fixmate, and reheader. Duplicated reads, caused by artefacts in the library creation and sequencing process, can be flagged using markdup. Various statistics on alignment files can be calculated using idxstats, flagstat, stats, depth, and bedcov. Data can be converted to legacy formats using fasta and fastq. For positionordered files, the sequence alignment can be viewed using tview or output via mpileup in a way that can be used for ongoing processing (e.g., variant calling). Most recently 
+            <rs type="software">SAMtools</rs> has gained support for amplicon-based sequencing projects via ampliconclip and ampliconstats.
+        </p>
+        <p>For a complete list of 
+            <rs type="software">SAMtools</rs> commands with a short summary, version, and date of the initial commit see Supplementary Table S1. Full documentation for these commands is included with the package in the form of UNIX man pages and can also be found online [10].
+        </p>
+        <p>Early releases of 
+            <rs type="software">SAMtools</rs> could read and write alignment data in the SAM and BAM formats. The 1.0 release introduced support for the better-compressed CRAM format [11]. Originally, the program required the use of command line options to select the input format, and most commands were tied to using BAM files. These restrictions were removed as 
+            <rs type="software">SAMtools</rs> transitioned to use 
+            <rs type="software">HTSlib</rs>, so by release 1.0 most commands could automat-ically detect the input file format and could directly read and write SAM, BAM, and CRAM files. In particular, there is rarely any need to convert SAM to BAM using "
+            <rs type="software">samtools view -b</rs>" before running commands like "
+            <rs type="software">samtools</rs> sort," although regrettably this idiom still appears in a large number of online tutorials. We encourage readers to follow best practices and workflows published at [12].
+        </p>
+        <p>
+            <rs type="software">SAMtools</rs> has also become faster, most notably by gaining the ability to use threads to take better advantage of the parallelism available on modern multicore systems. Thread support first arrived in version 
+            <rs type="version">0.1.19</rs> (March 2013), which enabled them for sorting and BAM file writing in the view command. The number of tasks using threads has slowly increased, so now (thanks to improvements in 
+            <rs type="software">HTSlib</rs>) it is possible to use them for both reading and writing SAM, BAM, and CRAM formats in most of the commands. Another time-saving improvement is the ability to index files as they are written (added in 1.10). This allows pipelines that need to index files to remove the separate "samtools index" stage and associated read-through of the file being indexed.
+        </p>
+        <p>The original purpose of the 
+            <rs type="software">BCFtools</rs> package was to divide the I/O-and CPU-intensive tasks of variant calling into separate steps.
+        </p>
+        <p>The first step, initially "
+            <rs type="software">samtools</rs> mpileup" but subsequently moved to "
+            <rs type="software">bcftools mpileup</rs>," reads the alignments and for each position of the genome constructs a vertical slice across all reads covering the position ("pileup"). Genotype likelihoods are then calculated, representing how consistent are the observed data with the possible diploid genotypes. The calculation takes into account mapping qualities of the reads, base qualities, and the probability of local misalignment, per-base alignment quality (BAQ) [13]. The second step, "
+            <rs type="software">bcftools</rs> call" (known in the initial release as "bcftools view"), then evaluates the most likely genotype under the assumption of Hardy-Weinberg equilibrium (in the sample context customizable by the user) using allele frequencies estimated from the data or provided explicitly by the user. In 2016 (release 1.4) genotype likelihood generation was moved from 
+            <rs type="software">SAMtools</rs> to 
+            <rs type="software">BCFtools</rs> to make both variant-calling steps part of the same package and to prevent errors arising from the possible use of incompatible versions of the 2 programs.
+        </p>
+        <p>Today 
+            <rs type="software">BCFtools</rs> is a full-featured program that consists of 21 commands and 38 plugins (single-purpose tools) with &gt;230 documented command line switches and options. As of writing, there have been &gt;2,300 commits and 29 releases since 2012, with the most recent, 1.11, released in September 2020 [14].
+        </p>
+        <p>The "
+            <rs type="software">bcftools view</rs>" command provides conversion between the text VCF and the binary BCF format, where both formats can be either plain (uncompressed) or block-compressed with BGZF for random access and compact size. The plain text VCF output is useful for visual inspection, for processing with custom scripts, and as a data exchange format. It should not be used when performance is critical because BCFtools internally uses the binary BCF representation and the conversion between the text VCF format and the binary BCF format is costly. Also compression and decompression is CPU intensive, and therefore when streaming between multiple commands in a pipeline it is recommended to stream uncompressed BCF by appending the option "-Ou."
+        </p>
+        <p>The program can do much more than convert between VCF and BCF formats. It can also process third-party formats (using the "convert" command) and manipulate variant files in many ways. It can be used to index, sort, and normalize variants ("norm"), replace headers ("reheader"), add and remove annotations ("annotate"), and subset samples ("view"). Most commands can filter sites either by a region, list of sites, or a general Boolean expression involving any combination of VCF tags (-include, -exclude). Multiple files can be compared, splitting common and file-specific variants into separate files according to custom rules (isec). Files sorted by position can also be combined using the merge command (input files have different samples) or concat command (input files have the same samples). Arbitrary fields can be extracted and formatted into a custom text output (query), a feature that, among other things, is useful for scripting.The program can do much more than convert between VCF and BCF formats. It can also process third-party formats (using the "convert" command) and manipulate variant files in many ways. It can be used to index, sort, and normalize variants ("norm"), replace headers ("reheader"), add and remove annotations ("annotate"), and subset samples ("view"). Most commands can filter sites either by a region, list of sites, or a general Boolean expression involving any combination of VCF tags (-include, -exclude). Multiple files can be compared, splitting common and file-specific variants into separate files according to custom rules (isec). Files sorted by position can also be combined using the merge command (input files have different samples) or concat command (input files have the same samples). Arbitrary fields can be extracted and formatted into a custom text output (query), a feature that, among other things, is useful for scripting.</p>
+        <p>Apart from file manipulation, the program offers variant callers and algorithms useful for analysis. For calling singlenucleotide polymorphisms and short indels from read alignment files, 
+            <rs type="software">BCFtools</rs> implements 2 variant-calling models. In addition to the original biallelic caller ("
+            <rs type="software">bcftools call -c</rs>" [15]) there is a newer model available, capable of handling positions with multiple alternate alleles ("
+            <rs type="software">bcftools</rs> call 
+            <rs type="software">-m</rs>") and supporting gVCF output [16]. (For a recent comparison of the variantcalling component of the software see [17][18][19][20].) The package implements a hidden Markov model caller for detection of runs of homozygosity (roh [21]), copy-number variation calling from single-nucleotide polymorphism array data (cnv [22]), and the detection of whole-chromosome aberrations (polysomy). The program can construct a consensus sequence given a FASTA and a variant file (consensus), perform sample identity checks (gtcheck), and collect various statistics (stats).
+        </p>
+        <p>In addition to built-in commands, the program supports a dynamic plugin mechanism for specific single-purpose tasks with a diverse range of functions. Examples from a large and ever-growing collection include the plugin split-vep for convenient querying and extraction of VEP annotations [23]; trio-dnm for ascertainment of de novo variants and their parental origin (parental-origin), or for collection of statistics (trio-stats) in trio data; gVCF manipulation (gvcfz); and many more.In addition to built-in commands, the program supports a dynamic plugin mechanism for specific single-purpose tasks with a diverse range of functions. Examples from a large and ever-growing collection include the plugin split-vep for convenient querying and extraction of VEP annotations [23]; trio-dnm for ascertainment of de novo variants and their parental origin (parental-origin), or for collection of statistics (trio-stats) in trio data; gVCF manipulation (gvcfz); and many more.</p>
+        <p>For a complete list of BCFtools commands and plugins with a short summary, version, and date of the initial commit see Supplementary Table S2. Full documentation for these commands is included with the package in the form of 
+            <rs type="software">UNIX</rs> man pages and can also be found online together with short tutorials, math notes, and other documentation at [24].
+        </p>
+        <p>SAMtools and BCFtools represent a unique collection of tools useful for processing and analysis of sequencing data. Their development has been driven by the need of both large projects and individual user requests issued via GitHub. The code has been installed &gt;1 million times via 
+            <rs type="software">Bioconda</rs> [25] and 
+            <rs type="software">GitHub</rs> releases [9,14], and &gt;1600 support and feature requests have been resolved on GitHub.
+        </p>
+        <p>The programs are written in the C programming language and optimized for low memory consumption and high speed. For example, the "bcftools csq" command for prediction of functional consequences in a haplotype-aware manner requires only a fraction of the memory required by VEP and is 2 orders of magnitude faster [26].The programs are written in the C programming language and optimized for low memory consumption and high speed. For example, the "bcftools csq" command for prediction of functional consequences in a haplotype-aware manner requires only a fraction of the memory required by VEP and is 2 orders of magnitude faster [26].</p>
+        <p>Much work has been done to increase the reliability of SAMtools and BCFtools. The test harnesses now include ∼700 tests in 
+            <rs type="software">SAMtools</rs> and ∼1,400 in 
+            <rs type="software">BCFtools</rs>. Continuous integration services run all of the tests on a variety of platforms (including 
+            <rs type="software">Linux</rs>, 
+            <rs type="software">MacOS</rs>, and 
+            <rs type="software">Windows</rs>) whenever code is checked into the source repository, ensuring that bugs are discovered and fixed rapidly. Code quality is also assured by checking for memory errors, originally using 
+            <rs type="software">Valgrind memcheck</rs> [27] and more recently with 
+            <rs type="software">AddressSanitizer</rs> [28]. Additionally, 
+            <rs type="software">Unde-finedBehaviorSanitizer</rs> is used to detect violations of the C standard.
+        </p>
+        <p>Despite the ever-growing sample sizes and rapid increases in the amount of sequenced data, the programs have withstood the test of time. However, extremely big files are produced by large projects and their processing requires a high degree of parallelization on computing clusters. Future versions of 
+            <rs type="software">SAMtools</rs> and 
+            <rs type="software">BCFtools</rs> are expected to make more use of threaded code to allow faster processing of such files. Sometimes even the limits of BCF representation itself can be reached. For example, highly polymorphic sites can contain dozens of alternate indel alleles, which, in files with tens of thousands of samples, exceed the internal limit of 4 GB per site due to quadratic scaling of annotations such as FORMAT/PL. An extension of the VCF specification has been proposed to address this problem by introducing a localized version of such annotations with linear scaling [29] and has been implemented in 
+            <rs type="software">BCFtools</rs>.
+        </p>
+        <p>The programs have been used to process and analyze sequencing data from all types of species: vertebrates, invertebrates, pathogens, plants, and viruses. This provides interesting challenges and opportunities for future development. For example, some of the BCFtools commands are limited to handling haploid and diploid organisms and the support for large "64-bit" genomes is currently only partial. More work is also planned to overcome difficulties stemming from ambiguities in VCF allele encoding (such as operations of atomization and deatomization) and to improve visualization of results, and there are &gt;50 feature requests currently registered on GitHub to investigate.The programs have been used to process and analyze sequencing data from all types of species: vertebrates, invertebrates, pathogens, plants, and viruses. This provides interesting challenges and opportunities for future development. For example, some of the BCFtools commands are limited to handling haploid and diploid organisms and the support for large "64-bit" genomes is currently only partial. More work is also planned to overcome difficulties stemming from ambiguities in VCF allele encoding (such as operations of atomization and deatomization) and to improve visualization of results, and there are &gt;50 feature requests currently registered on GitHub to investigate.</p>
+        <p>Project name: 
+            <rs type="software">SAMtools</rs> Project home page: https://www.htslib.org, https://github.com/s amtools/samtools Operating system(s): Platform independent Programming language: C License: MIT/Expat RRID:SCR 002105 biotools: samtools Project name: BCFtools Project home page: https://www.htslib.org, https://github.com/s amtools/bcftools Operating system(s): Platform independent Programming language: C Other requirements: Optional use of GNU Scientific Library (GSL) License: MIT/Expat RRID:SCR 002105 biotools: bcftools
+        </p>
+        <p>This work was supported by a Wellcome Trust grant (206194).This work was supported by a Wellcome Trust grant (206194).</p>
+        <p>Snapshots of the code and tabular files are available from the GigaScience GigaDB repository [30].Snapshots of the code and tabular files are available from the GigaScience GigaDB repository [30].</p>
+        <p>An accompanying article describing the 
+            <rs type="software">HTSlib</rs> software library for providing programmatic access is published alongside this article [8].
+        </p>
+        <p>Supplementary Table S1Supplementary Table S1</p>
+        <p>The authors declare that they have no competing interests.The authors declare that they have no competing interests.</p>
+    </text>
+</tei>

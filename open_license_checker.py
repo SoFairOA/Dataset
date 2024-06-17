@@ -66,6 +66,7 @@ for category_directy in list(os.listdir(base_path)):
     for file_to_check in os.listdir(category_directy_path):
         if file_to_check.replace(".training.tei.xml", '') not in list_fileid_ccby:
             list_fileid_whitout_ccby.append(file_to_check.replace(".training.tei.xml", ''))
+            shutil.move(os.path.join(category_directy_path,file_to_check),os.path.join(category_directy_path,'files_with_wrong_license'))
         else:
             nb += 1
 print('nb of files to move:', len(list_fileid_whitout_ccby))
