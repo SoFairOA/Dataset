@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:id="_1"/>
+        <encodingDesc>
+            <appInfo>
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-14T11:27+0000">
+                    <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <p>Thermoplastic starch composites have attracted significant attention due to the rise of environmental pollutions induced by the use of synthetic petroleum-based polymer materials. The degradation of traditional plastics requires an unusually long time, which may lead to high cost and secondary pollution. To solve these difficulties, more petroleum-based plastics should be substituted with sustainable bio-based plastics. Renewable and natural materials that are abundant in nature are potential candidates for a wide range of polymers, which can be used to replace their synthetic counterparts. This paper focuses on some aspects of biopolymers and their classes, providing a description of starch as a main component of biopolymers, composites, and potential applications of thermoplastics starch-based in packaging application. Currently, biopolymer composites blended with other components have exhibited several enhanced qualities. The same behavior is also observed when natural fibre is incorporated with biopolymers.Thermoplastic starch composites have attracted significant attention due to the rise of environmental pollutions induced by the use of synthetic petroleum-based polymer materials. The degradation of traditional plastics requires an unusually long time, which may lead to high cost and secondary pollution. To solve these difficulties, more petroleum-based plastics should be substituted with sustainable bio-based plastics. Renewable and natural materials that are abundant in nature are potential candidates for a wide range of polymers, which can be used to replace their synthetic counterparts. This paper focuses on some aspects of biopolymers and their classes, providing a description of starch as a main component of biopolymers, composites, and potential applications of thermoplastics starch-based in packaging application. Currently, biopolymer composites blended with other components have exhibited several enhanced qualities. The same behavior is also observed when natural fibre is incorporated with biopolymers.</p>
+        <p>However, it should be noted that the degree of compatibility between starch and other biopolymers extensively varies depending on the specific biopolymer. Although their efficacy is yet to reach the level of their fossil fuel counterparts, biopolymers have made a distinguishing mark, which will continue to inspire the creation of novel substances for many years to come.However, it should be noted that the degree of compatibility between starch and other biopolymers extensively varies depending on the specific biopolymer. Although their efficacy is yet to reach the level of their fossil fuel counterparts, biopolymers have made a distinguishing mark, which will continue to inspire the creation of novel substances for many years to come.</p>
+    </text>
+</tei>
