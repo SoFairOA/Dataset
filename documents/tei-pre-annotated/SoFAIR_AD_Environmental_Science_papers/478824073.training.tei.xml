@@ -4,13 +4,13 @@
         <fileDesc xml:id="_1"/>
         <encodingDesc>
             <appInfo>
-                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-14T08:10+0000">
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-24T15:11+0000">
                     <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
                 </application>
             </appInfo>
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
-        <p>In the version of this Article initially published, in the first sentence of the second paragraph of the section titled "Blue carbon wealth redistribution, " there was an error. In the sentence reading: "The five donor countries that generate the largest blue carbon wealth surpluses are, in addition to Australia: Indonesia, Cuba, Russia and Papua New Guinea, " the country Papua New Guinea should instead have read as "Guinea-Bissau.In the version of this Article initially published, in the first sentence of the second paragraph of the section titled "Blue carbon wealth redistribution, " there was an error. In the sentence reading: "The five donor countries that generate the largest blue carbon wealth surpluses are, in addition to Australia: Indonesia, Cuba, Russia and Papua New Guinea, " the country Papua New Guinea should instead have read as "Guinea-Bissau.</p>
+        <p>In the version of this Article initially published, in the first sentence of the second paragraph of the section titled "Blue carbon wealth redistribution, " there was an error. In the sentence reading: "The five donor countries that generate the largest blue carbon wealth surpluses are, in addition to Australia: Indonesia, Cuba, Russia and Papua New Guinea, " the country Papua New Guinea should instead have read as "Guinea-Bissau.</p>
     </text>
 </tei>

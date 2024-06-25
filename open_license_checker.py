@@ -64,9 +64,14 @@ destination_directory = 'file_whitout_ccby'
 for category_directy in list(os.listdir(base_path)):
     category_directy_path = os.path.join(base_path, category_directy)
     for file_to_check in os.listdir(category_directy_path):
+        if file_to_check is 'files_with_wrong_license' or  category_directy_path.find('files_with_wrong_license') != -1:
+            continue
         if file_to_check.replace(".training.tei.xml", '') not in list_fileid_ccby:
             list_fileid_whitout_ccby.append(file_to_check.replace(".training.tei.xml", ''))
-            shutil.move(os.path.join(category_directy_path,file_to_check),os.path.join(category_directy_path,'files_with_wrong_license'))
+            try:
+                shutil.move(os.path.join(category_directy_path,file_to_check),os.path.join(category_directy_path,'files_with_wrong_license',file_to_check))
+            except:
+                print("invalid file move:", os.path.join(category_directy_path,file_to_check), "->", os.path.join(category_directy_path,'files_with_wrong_license',file_to_check))
         else:
             nb += 1
 print('nb of files to move:', len(list_fileid_whitout_ccby))

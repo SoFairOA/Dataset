@@ -4,13 +4,13 @@
         <fileDesc xml:id="_1"/>
         <encodingDesc>
             <appInfo>
-                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-13T09:41+0000">
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-24T09:21+0000">
                     <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
                 </application>
             </appInfo>
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
-        <p>(A) HEK293-hACE2-mCherry cells were transfected with plasma membrane (PM)localized GFP and stained for cell surface (green), ACE2 (red), nucleus (DAPI, blue), and actin (white). Scale bar: 30 µm.(A) HEK293-hACE2-mCherry cells were transfected with plasma membrane (PM)localized GFP and stained for cell surface (green), ACE2 (red), nucleus (DAPI, blue), and actin (white). Scale bar: 30 µm.</p>
+        <p>(A) HEK293-hACE2-mCherry cells were transfected with plasma membrane (PM)localized GFP and stained for cell surface (green), ACE2 (red), nucleus (DAPI, blue), and actin (white). Scale bar: 30 µm.</p>
     </text>
 </tei>
