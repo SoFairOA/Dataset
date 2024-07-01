@@ -4,151 +4,151 @@
         <fileDesc xml:id="_1"/>
         <encodingDesc>
             <appInfo>
-                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-14T12:45+0000">
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-24T15:45+0000">
                     <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
                 </application>
             </appInfo>
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
-        <p>We prove that sequences of functions (un) ⊂ W s,p (R N ), with s ∈ (0, 1) and p ∈ (1, N s ), bounded in W s,p (R N ), strongly convergent in L N p N -sp (R N ) and solving nonlinear fractional p-Laplacian Schrödinger equations in R N , must vanish at infinity uniformly with respect to n ∈ N.We prove that sequences of functions (un) ⊂ W s,p (R N ), with s ∈ (0, 1) and p ∈ (1, N s ), bounded in W s,p (R N ), strongly convergent in L N p N -sp (R N ) and solving nonlinear fractional p-Laplacian Schrödinger equations in R N , must vanish at infinity uniformly with respect to n ∈ N.</p>
-        <p>In this paper, we show the uniform vanishing property at infinity of W s,p (R N )-sequences, with s ∈ (0, 1) and p ∈ (1, N s ), bounded in W s,p (R N ), strongly convergent in L p * s (R N ), where p * s := N p N -sp , and that are solutions of nonlinear Schrödinger equations in R N driven by the fractional p-Laplacian operator (-∆) s p defined (up to a normalization constant), for u : R N → R smooth enough, byIn this paper, we show the uniform vanishing property at infinity of W s,p (R N )-sequences, with s ∈ (0, 1) and p ∈ (1, N s ), bounded in W s,p (R N ), strongly convergent in L p * s (R N ), where p * s := N p N -sp , and that are solutions of nonlinear Schrödinger equations in R N driven by the fractional p-Laplacian operator (-∆) s p defined (up to a normalization constant), for u : R N → R smooth enough, by</p>
-        <p>More precisely, our main result can be stated as follows.More precisely, our main result can be stated as follows.</p>
-        <p>Theorem 1.1. Let s ∈ (0, 1) and p ∈ (1, N s ). Let f : R N × R → R be a Carathéodory function such that for all ε &gt; 0 there exists C ε &gt; 0 such that |f (x, t)| ε |t| p-1 + C ε |t| q-1 for a.e x ∈ R N and for all t ∈ R,Theorem 1.1. Let s ∈ (0, 1) and p ∈ (1, N s ). Let f : R N × R → R be a Carathéodory function such that for all ε &gt; 0 there exists C ε &gt; 0 such that |f (x, t)| ε |t| p-1 + C ε |t| q-1 for a.e x ∈ R N and for all t ∈ R,</p>
-        <p>(1.1)(1.1)</p>
-        <p>with q ∈ (p, p * s ], and let V : R N → R be a continuous potential such that, for some V 0 ∈ (0, ∞), V (x) V 0 for all x ∈ R N .with q ∈ (p, p * s ], and let V : R N → R be a continuous potential such that, for some V 0 ∈ (0, ∞), V (x) V 0 for all x ∈ R N .</p>
-        <p>(1.2)(1.2)</p>
-        <p>Let (u n ) be a nonnegative sequence in W s,p V (R N ) (see Section 2 for the precise definition of this space) such that u n W s,p V (R N ) C for all n ∈ N, u n → u in L p * s (R N ) and each u n solves (in weak sense)Let (u n ) be a nonnegative sequence in W s,p V (R N ) (see Section 2 for the precise definition of this space) such that u n W s,p V (R N ) C for all n ∈ N, u n → u in L p * s (R N ) and each u n solves (in weak sense)</p>
-        <p>Then, (u n ) satisfies the uniform vanishing property at infinity, i.e. We recall that nonlocal equations like (1.3) have been extensively investigated in recent years, both for their interesting theoretical structure and in view of concrete real world applications; see [3,4,9,20] and the references therein. Now we give a sketch of the proof of Theorem 1.1. First we use suitable Moser iterations [15] to deduce that u n L ∞ (R N )Then, (u n ) satisfies the uniform vanishing property at infinity, i.e. We recall that nonlocal equations like (1.3) have been extensively investigated in recent years, both for their interesting theoretical structure and in view of concrete real world applications; see [3,4,9,20] and the references therein. Now we give a sketch of the proof of Theorem 1.1. First we use suitable Moser iterations [15] to deduce that u n L ∞ (R N )</p>
-        <p>C for all n ∈ N. The condition u n → u in L p * s (R N ) plays a crucial role when q = p * s in (1.1), while for q ∈ (p, p * s ) it suffices to use the boundedness of (u n ) in L p * s (R N ). The uniform L ∞ -bound combined with the strong convergence in L p * s (R N ) and an interpolation argument, implies that u n → u in L r (R N ) for all r ∈ (p, ∞). By (1.1), we see that each u n also satisfies (-∆) s p u n + σu p-1 light of Browder-Minty theorem we can construct a nonnegative sequenceC for all n ∈ N. The condition u n → u in L p * s (R N ) plays a crucial role when q = p * s in (1.1), while for q ∈ (p, p * s ) it suffices to use the boundedness of (u n ) in L p * s (R N ). The uniform L ∞ -bound combined with the strong convergence in L p * s (R N ) and an interpolation argument, implies that u n → u in L r (R N ) for all r ∈ (p, ∞). By (1.1), we see that each u n also satisfies (-∆) s p u n + σu p-1 light of Browder-Minty theorem we can construct a nonnegative sequence</p>
-        <p>By comparison, we know that 0 u n z n in R N . Furthermore, thanks to the strong convergence of (u n ) in L r (R N ) for all r ∈ (p, ∞), and the boundedness of (z n ) in W s,p (R N ), we show that (z n ) strongly converges in W s,p (R N ). This fact together with a Moser iteration yield z n L ∞ (R N ) C for all n ∈ N. Then we can invoke the interior Hölder regularity result in [11] to infer that z n C 0,α (R N ) C for all n ∈ N. Accordingly, we apply Lemma 2.1 below to see that lim |x|→∞ sup n∈N |z n (x)| = 0. Since 0 u n z n in R N , we conclude that lim |x|→∞ sup n∈N |u n (x)| = 0. We stress that the hypothesis on the sign of (u n ) is not essential and can be removed; see Remark 2.1.By comparison, we know that 0 u n z n in R N . Furthermore, thanks to the strong convergence of (u n ) in L r (R N ) for all r ∈ (p, ∞), and the boundedness of (z n ) in W s,p (R N ), we show that (z n ) strongly converges in W s,p (R N ). This fact together with a Moser iteration yield z n L ∞ (R N ) C for all n ∈ N. Then we can invoke the interior Hölder regularity result in [11] to infer that z n C 0,α (R N ) C for all n ∈ N. Accordingly, we apply Lemma 2.1 below to see that lim |x|→∞ sup n∈N |z n (x)| = 0. Since 0 u n z n in R N , we conclude that lim |x|→∞ sup n∈N |u n (x)| = 0. We stress that the hypothesis on the sign of (u n ) is not essential and can be removed; see Remark 2.1.</p>
-        <p>When s → 1, (-∆) s p u reduces to the p-Laplacian operator -∆ p u := div(|∇u| p-2 ∇u), and the proof of the uniform vanishing property at infinity of sequencesWhen s → 1, (-∆) s p u reduces to the p-Laplacian operator -∆ p u := div(|∇u| p-2 ∇u), and the proof of the uniform vanishing property at infinity of sequences</p>
-        <p>where f verifies (1.1) with q ∈ (p, p * ], p * := N p N -p and N &gt; p &gt; 1, is classically obtained by using appropriate Moser iterations. More precisely, arguing as in [14,Theorem 1.11] (see also [1,Lemma 4.5]), one takes as test function in the weak formulation of equation solved by u n , the functionwhere f verifies (1.1) with q ∈ (p, p * ], p * := N p N -p and N &gt; p &gt; 1, is classically obtained by using appropriate Moser iterations. More precisely, arguing as in [14,Theorem 1.11] (see also [1,Lemma 4.5]), one takes as test function in the weak formulation of equation solved by u n , the function</p>
-        <p>r , with R &gt; 0 and 0 &lt; r R 2 . A standard Moser iterative method andr , with R &gt; 0 and 0 &lt; r R 2 . A standard Moser iterative method and</p>
-        <p>for all n ∈ N, from which we derive that lim |x|→∞ |u n (x)| = 0 uniformly in n ∈ N. Alternatively, reasoning as in [7,Theorem 2.3], one can choose as test functionfor all n ∈ N, from which we derive that lim |x|→∞ |u n (x)| = 0 uniformly in n ∈ N. Alternatively, reasoning as in [7,Theorem 2.3], one can choose as test function</p>
-        <p>and by means of a Moser iteration and u n → u in L p * (R N ), we arrive at (u n ) ⊂ L r (R N ) for all r ∈ [p, ∞) and that there exists a constant C r &gt; 0 such that u n L r (R N ) C r for all n ∈ N. These facts combined with the local L ∞ -estimate for quasilinear equations due to Serrin [16,Theorem 1] ensure that, fixed x ∈ R N and t &gt; N p ,and by means of a Moser iteration and u n → u in L p * (R N ), we arrive at (u n ) ⊂ L r (R N ) for all r ∈ [p, ∞) and that there exists a constant C r &gt; 0 such that u n L r (R N ) C r for all n ∈ N. These facts combined with the local L ∞ -estimate for quasilinear equations due to Serrin [16,Theorem 1] ensure that, fixed x ∈ R N and t &gt; N p ,</p>
-        <p>) for all n ∈ N, which provides the desired assertion by letting |x| → ∞. However, these techniques do not seem adaptable for equations involving the nonlocal operator (-∆) s p , and thus Theorem 1.1 gives a useful tool to reach the uniform vanishing property at infinity of sequences) for all n ∈ N, which provides the desired assertion by letting |x| → ∞. However, these techniques do not seem adaptable for equations involving the nonlocal operator (-∆) s p , and thus Theorem 1.1 gives a useful tool to reach the uniform vanishing property at infinity of sequences</p>
-        <p>3). Notice that, when s ∈ (0, 1) and p = 2, Theorem 1.1 can be proved by exploiting the properties of the kernel of the resolvent ((-∆) s + λ) -1 on R N with λ &gt; 0 (see [2,Lemma 2.6] and [3, Remark 7.2.10]), or making use of the extension method [8] and applying the L ∞ -estimate for subsolutions of degenerate elliptic equations in half-balls (see [3,Lemma 6.3.23]). Nevertheless, these methods are not available for s ∈ (0, 1) and p ∈ (1, ∞) \ {2}, and new ideas are needed to accomplish the desired result.3). Notice that, when s ∈ (0, 1) and p = 2, Theorem 1.1 can be proved by exploiting the properties of the kernel of the resolvent ((-∆) s + λ) -1 on R N with λ &gt; 0 (see [2,Lemma 2.6] and [3, Remark 7.2.10]), or making use of the extension method [8] and applying the L ∞ -estimate for subsolutions of degenerate elliptic equations in half-balls (see [3,Lemma 6.3.23]). Nevertheless, these methods are not available for s ∈ (0, 1) and p ∈ (1, ∞) \ {2}, and new ideas are needed to accomplish the desired result.</p>
-        <p>To our knowledge, our approach is completely new in literature. We emphasize that our arguments can be adapted for the local case s = 1; see Remark 2.3. In addition, we observe that Theorem 1.1 and [9, Theorem 7.1] allow us to prove a decay estimate for u n (x) as |x| → ∞ uniformly in n ∈ N; see Corollary 2.1. The remaining cases N = sp and N &lt; sp in Theorem 1.1 are discussed in Section 3. Finally, we demonstrate a Kato's type inequality [12] for (-∆) s p in Appendix.To our knowledge, our approach is completely new in literature. We emphasize that our arguments can be adapted for the local case s = 1; see Remark 2.3. In addition, we observe that Theorem 1.1 and [9, Theorem 7.1] allow us to prove a decay estimate for u n (x) as |x| → ∞ uniformly in n ∈ N; see Corollary 2.1. The remaining cases N = sp and N &lt; sp in Theorem 1.1 are discussed in Section 3. Finally, we demonstrate a Kato's type inequality [12] for (-∆) s p in Appendix.</p>
-        <p>We start by establishing a very useful lemma that can be seen as a generalization for L p -sequences uniformly equicontinuous in R N of the following well-known fact: ifWe start by establishing a very useful lemma that can be seen as a generalization for L p -sequences uniformly equicontinuous in R N of the following well-known fact: if</p>
-        <p>Proof. Suppose the assertion of the lemma is false. Then there exist a sequenceProof. Suppose the assertion of the lemma is false. Then there exist a sequence</p>
-        <p>On the other hand, from (a) and [6, Theorem 4.9], we derive that there exists h ∈ L p (R N ) such that, up to a subsequence,On the other hand, from (a) and [6, Theorem 4.9], we derive that there exists h ∈ L p (R N ) such that, up to a subsequence,</p>
-        <p>Next, in order to prove Theorem 1.1, we collect some notations and definitions. Let s ∈ (0, 1) and p ∈ (1, N s ). By D s,p (R N ) we denote the closure of C ∞ c (R N ) with respect toNext, in order to prove Theorem 1.1, we collect some notations and definitions. Let s ∈ (0, 1) and p ∈ (1, N s ). By D s,p (R N ) we denote the closure of C ∞ c (R N ) with respect to</p>
-        <p>The fractional Sobolev space W s,p (R N ) given byThe fractional Sobolev space W s,p (R N ) given by</p>
-        <p>It is well-known that there exists a constant S * = S(N, s, p) &gt; 0 such that [3,10] for more details. Let V : R N → R be a continuous potential satisfying (1.2). We define the Banach space W s,p V (R N ) as the completion of C ∞ c (R N ) with respect to the normIt is well-known that there exists a constant S * = S(N, s, p) &gt; 0 such that [3,10] for more details. Let V : R N → R be a continuous potential satisfying (1.2). We define the Banach space W s,p V (R N ) as the completion of C ∞ c (R N ) with respect to the norm</p>
-        <p>In what follows, when we say that a nonnegative function u ∈ W s,p V (R N ) solves (in weak sense)In what follows, when we say that a nonnegative function u ∈ W s,p V (R N ) solves (in weak sense)</p>
-        <p>We split the proof into two main steps.We split the proof into two main steps.</p>
-        <p>Step 1 There exists a constant C &gt; 0 such thatStep 1 There exists a constant C &gt; 0 such that</p>
-        <p>We perform a Moser iteration argument [15]. For each L &gt; 0 and γ &gt; 1, we define ∈ W s,p V (R N ) as test function in the weak formulation of (1.3), and exploiting (2.3), we haveWe perform a Moser iteration argument [15]. For each L &gt; 0 and γ &gt; 1, we define ∈ W s,p V (R N ) as test function in the weak formulation of (1.3), and exploiting (2.3), we have</p>
-        <p>Let us observe thatLet us observe that</p>
-        <p>L for all t 0, which combined with (2.1) yieldsL for all t 0, which combined with (2.1) yields</p>
-        <p>Thus, by (2.4),Thus, by (2.4),</p>
-        <p>Using (1.1) (with ε = V 0 2 ) and (1.2), we see that, for some constantUsing (1.1) (with ε = V 0 2 ) and (1.2), we see that, for some constant</p>
-        <p>dx from which we derivedx from which we derive</p>
-        <p>wherewhere</p>
-        <p>&gt; 0. Now we distinguish the following cases.&gt; 0. Now we distinguish the following cases.</p>
-        <p>Case 1 When q ∈ (p, p * s ). Because u q n u p(γ-1) L,n = u q-p n w p L,n , the Hölder inequality and (2.5) lead toCase 1 When q ∈ (p, p * s ). Because u q n u p(γ-1) L,n = u q-p n w p L,n , the Hölder inequality and (2.5) lead to</p>
-        <p>, where, where</p>
-        <p>Exploiting the fact thatExploiting the fact that</p>
-        <p>we havewe have</p>
-        <p>&lt; ∞, and applying Fatou's lemma, as L → ∞, we get&lt; ∞, and applying Fatou's lemma, as L → ∞, we get</p>
-        <p>and so u n ∈ L γp * s (R N ). Now we set γ := p * s α * s &gt; 1, and observe that, since u n ∈ L p * s (R N ) for all n ∈ N, (2.7) holds for this choice of γ. Thus, owing to γ 2 α * s = γp * s , we see that (2.7) is true with γ replaced by γ 2 . Hence,and so u n ∈ L γp * s (R N ). Now we set γ := p * s α * s &gt; 1, and observe that, since u n ∈ L p * s (R N ) for all n ∈ N, (2.7) holds for this choice of γ. Thus, owing to γ 2 α * s = γp * s , we see that (2.7) is true with γ replaced by γ 2 . Hence,</p>
-        <p>where we have used the fact that γα * s = p * s . Iterating this process, we obtainwhere we have used the fact that γα * s = p * s . Iterating this process, we obtain</p>
-        <p>In view of (2.6), we arrive atIn view of (2.6), we arrive at</p>
-        <p>Letting m → ∞ in (2.8), we deduce thatLetting m → ∞ in (2.8), we deduce that</p>
-        <p>wherewhere</p>
-        <p>, where, where</p>
-        <p>, and recalling (2.5), we have, and recalling (2.5), we have</p>
-        <p>(2.9)(2.9)</p>
-        <p>Let M &gt; 0 to be fixed later and setLet M &gt; 0 to be fixed later and set</p>
-        <p>Then,Then,</p>
-        <p>(2.10)(2.10)</p>
-        <p>Combining (2.9), (2.10) and (2.11), and using w L,n u γ n , we getCombining (2.9), (2.10) and (2.11), and using w L,n u γ n , we get</p>
-        <p>and invoking Fatou's lemma, as L → ∞, we reachand invoking Fatou's lemma, as L → ∞, we reach</p>
-        <p>(2.12)(2.12)</p>
-        <p>Therefore a bootstrap argument can start: because (u n ) ⊂ L p * s (R N ), we can apply (2.12) withTherefore a bootstrap argument can start: because (u n ) ⊂ L p * s (R N ), we can apply (2.12) with</p>
-        <p>We can then apply again (2.12) and, after k iterations, we findWe can then apply again (2.12) and, after k iterations, we find</p>
-        <p>. We now go back to inequality (2.5). By 0 u L,n u n and letting L → ∞ in (2.5), we have. We now go back to inequality (2.5). By 0 u L,n u n and letting L → ∞ in (2.5), we have</p>
-        <p>and soand so</p>
-        <p>..</p>
-        <p>( for all m, n ∈ N.( for all m, n ∈ N.</p>
-        <p>Consequently, (2.13) can be written asConsequently, (2.13) can be written as</p>
-        <p>where C m+1 := q √ C 1 γ m+1 . Iterating the above relation, we findwhere C m+1 := q √ C 1 γ m+1 . Iterating the above relation, we find</p>
-        <p>(2.14)(2.14)</p>
-        <p>In view of (2.6), it follows from (2.12) with γ = γ 1 = p * s p that, for some C &gt; 0,In view of (2.6), it follows from (2.12) with γ = γ 1 = p * s p that, for some C &gt; 0,</p>
-        <p>C for all n ∈ N.C for all n ∈ N.</p>
-        <p>On the other hand, standard calculations show that there exists C &gt; 0 such thatOn the other hand, standard calculations show that there exists C &gt; 0 such that</p>
-        <p>C for all m ∈ N \ {1}.C for all m ∈ N \ {1}.</p>
-        <p>Then, passing to the limit as m → ∞ in (2.14), we can infer thatThen, passing to the limit as m → ∞ in (2.14), we can infer that</p>
-        <p>Step 2 Conclusion. From (2.2) and [11, Corollary 5.5], we know thatStep 2 Conclusion. From (2.2) and [11, Corollary 5.5], we know that</p>
-        <p>) and the interpolation inequality for L r -spaces, we get) and the interpolation inequality for L r -spaces, we get</p>
-        <p>andand</p>
-        <p>Now, we fix ε ∈ (0, V 0 ). Exploiting (1.1) and (1.2), we have that u n solves (in weak sense)Now, we fix ε ∈ (0, V 0 ). Exploiting (1.1) and (1.2), we have that u n solves (in weak sense)</p>
-        <p>where σ := V 0 -ε &gt; 0 and C := C ε &gt; 0.where σ := V 0 -ε &gt; 0 and C := C ε &gt; 0.</p>
-        <p>Let us introduce the operator A : W s,p (R N ) → (W s,p (R N )) * , where (W s,p (R N )) * denotes the dual of W s,p (R N ), given byLet us introduce the operator A : W s,p (R N ) → (W s,p (R N )) * , where (W s,p (R N )) * denotes the dual of W s,p (R N ), given by</p>
-        <p>We claim that A satisfies all assumptions of Browder-Minty theorem (see [19,Theorem 26.A]), and as a result A is surjective. Recall that W s,p (R N ) is a (real) reflexive Banach space 1 . Next we verify that A is hemicontinuous, i.e. the real function t → A(u + tv), w is continuous on [0, 1] for all u, v, w ∈ W s,p (R N ). Let (t n ) ⊂ [0, 1] be such that t n → t. We have,We claim that A satisfies all assumptions of Browder-Minty theorem (see [19,Theorem 26.A]), and as a result A is surjective. Recall that W s,p (R N ) is a (real) reflexive Banach space 1 . Next we verify that A is hemicontinuous, i.e. the real function t → A(u + tv), w is continuous on [0, 1] for all u, v, w ∈ W s,p (R N ). Let (t n ) ⊂ [0, 1] be such that t n → t. We have,</p>
-        <p>1 Let us consider the linear isometry T :1 Let us consider the linear isometry T :</p>
-        <p>is a closed subspace of E. Using this fact and that L r (R k ) is a reflexive, separable and uniformly convex Banach space for all r ∈ (1, ∞) and k ∈ N (see [6,Chapter 4]), we deduce that W s,p (R N ) is a reflexive, separable and uniformly convex space for all s ∈ (0, 1)is a closed subspace of E. Using this fact and that L r (R k ) is a reflexive, separable and uniformly convex Banach space for all r ∈ (1, ∞) and k ∈ N (see [6,Chapter 4]), we deduce that W s,p (R N ) is a reflexive, separable and uniformly convex space for all s ∈ (0, 1)</p>
-        <p>Then, applying the dominated convergence theorem, we deduce the assertion. Bearing in mind the following Simon's inequalities [17, formula (2.Then, applying the dominated convergence theorem, we deduce the assertion. Bearing in mind the following Simon's inequalities [17, formula (2.</p>
-        <p>2)],2)],</p>
-        <p>Taking z - n := min{z n , 0} in the weak formulation of (2.17), and using u n 0 and the elementary inequality |x -y| p-2 (x -y)(x --y -) |x --y -| p for all x, y ∈ R, it is easy to check that z n 0 in R N . By comparison (see [9,Theorem 7.1]), we obtain that 0 u n z n in R N and for all n ∈ N. Now, testing (2.17) with z n , we derive thatTaking z - n := min{z n , 0} in the weak formulation of (2.17), and using u n 0 and the elementary inequality |x -y| p-2 (x -y)(x --y -) |x --y -| p for all x, y ∈ R, it is easy to check that z n 0 in R N . By comparison (see [9,Theorem 7.1]), we obtain that 0 u n z n in R N and for all n ∈ N. Now, testing (2.17) with z n , we derive that</p>
-        <p>and exploiting the Young's inequality with η ∈ (0, σ), i.e. ab ηa p + C η b p p-1 for all a, b 0, on the right hand side of (2.18), we haveand exploiting the Young's inequality with η ∈ (0, σ), i.e. ab ηa p + C η b p p-1 for all a, b 0, on the right hand side of (2.18), we have</p>
-        <p>In view of (q-1)p p-1 ∈ (p, ∞) and (2.15), we know thatIn view of (q-1)p p-1 ∈ (p, ∞) and (2.15), we know that</p>
-        <p>and so z n W s,p (R N ) C for all n ∈ N. Hence, up to a subsequence, we may assume thatand so z n W s,p (R N ) C for all n ∈ N. Hence, up to a subsequence, we may assume that</p>
-        <p>From (2.19) and u n → u in L (q-1)p p-1 (R N ) (thanks to (2.16)), it follows that z solves (in weak sense)From (2.19) and u n → u in L (q-1)p p-1 (R N ) (thanks to (2.16)), it follows that z solves (in weak sense)</p>
-        <p>2 Indeed, A is invertible because A is strictly monotone.2 Indeed, A is invertible because A is strictly monotone.</p>
-        <p>In particular,In particular,</p>
-        <p>Next we show thatNext we show that</p>
-        <p>Let us observe thatLet us observe that</p>
-        <p>In light of (2.19), it is clear that Y n → 0. On the other hand, employing the Hölder inequality, (2.19), (2.16) with r = (q-1)p p-1 , and the dominated convergence theorem, we haveIn light of (2.19), it is clear that Y n → 0. On the other hand, employing the Hölder inequality, (2.19), (2.16) with r = (q-1)p p-1 , and the dominated convergence theorem, we have</p>
-        <p>Therefore, (2.21) is satisfied. Combining (2.18), (2.20) and (2.21), we deduce thatTherefore, (2.21) is satisfied. Combining (2.18), (2.20) and (2.21), we deduce that</p>
-        <p>, and recalling that W s,p (R N ) is a uniformly convex space, we infer that z n → z in W s,p (R N ). In particular, z n → z in L t (R N ) for all t ∈ [p, p * s ] and condition (a) of Lemma 2.1 is true. Testing (2.17) with z n z p(γ-1) L,n and exploiting Cu q-1 n Cz q-1 n , we can proceed as in Step 1 to obtain the following estimate, and recalling that W s,p (R N ) is a uniformly convex space, we infer that z n → z in W s,p (R N ). In particular, z n → z in L t (R N ) for all t ∈ [p, p * s ] and condition (a) of Lemma 2.1 is true. Testing (2.17) with z n z p(γ-1) L,n and exploiting Cu q-1 n Cz q-1 n , we can proceed as in Step 1 to obtain the following estimate</p>
-        <p>where C1 := S -1 * C &gt; 0, instead of (2.5). On account of z n → z in L p * s (R N ), we can perform the same iteration arguments given in Step 1 to arrive atwhere C1 := S -1 * C &gt; 0, instead of (2.5). On account of z n → z in L p * s (R N ), we can perform the same iteration arguments given in Step 1 to arrive at</p>
-        <p>Invoking [11, Corollary 5.5] and using (2.22), we see that, fixed x 0 ∈ R N , (z n ) ⊂ C 0,α (B 1/2 (x 0 )) for some α ∈ (0, 1) depending only on N, s, p and independent of n ∈ N and x 0 , and it holdsInvoking [11, Corollary 5.5] and using (2.22), we see that, fixed x 0 ∈ R N , (z n ) ⊂ C 0,α (B 1/2 (x 0 )) for some α ∈ (0, 1) depending only on N, s, p and independent of n ∈ N and x 0 , and it holds</p>
-        <p>where C N,s,p &gt; 0 is independent of x 0 ∈ R N . Combining (2.22) with (2.23), we getwhere C N,s,p &gt; 0 is independent of x 0 ∈ R N . Combining (2.22) with (2.23), we get</p>
-        <p>2 and from (2.23) we have2 and from (2.23) we have</p>
-        <p>In particular, (2.24) implies that condition (b) of Lemma 2.1 holds. Indeed, fixed η &gt; 0 and setting δ := η Recalling that 0 u n z n in R N and for all n ∈ N, the above limit givesIn particular, (2.24) implies that condition (b) of Lemma 2.1 holds. Indeed, fixed η &gt; 0 and setting δ := η Recalling that 0 u n z n in R N and for all n ∈ N, the above limit gives</p>
-        <p>The proof of the theorem is now complete. Remark 2.2. If V ∈ L ∞ (R N ), then it is not needed to introduce the sequence (z n ) given in the proof of Theorem 1.1. In fact, in this situation, we have that (-∆) s p u n = h n in R N , where h n (x) := -V (x)u p-1 n (x) + f (x, u n (x)). Now, h n ∈ L ∞ (R N ) (by V ∈ L ∞ (R N ) and (2.2)), and using the same argument to prove (2.24), we infer that u n C 0,α (R N ) C for all n ∈ N. Since u n → u in L p * s (R N ), we can apply Lemma 2.1 to get the desired result.The proof of the theorem is now complete. Remark 2.2. If V ∈ L ∞ (R N ), then it is not needed to introduce the sequence (z n ) given in the proof of Theorem 1.1. In fact, in this situation, we have that (-∆) s p u n = h n in R N , where h n (x) := -V (x)u p-1 n (x) + f (x, u n (x)). Now, h n ∈ L ∞ (R N ) (by V ∈ L ∞ (R N ) and (2.2)), and using the same argument to prove (2.24), we infer that u n C 0,α (R N ) C for all n ∈ N. Since u n → u in L p * s (R N ), we can apply Lemma 2.1 to get the desired result.</p>
-        <p>where C 1 := 2 p S -1 * C V 0 2 (here S * is the best constant related to the embedding D 1,p (R N ) ⊂ L p * (R N )). Then, the same iteration arguments used in Step 1 in Theorem 1.1 show that u n L ∞ (R N ) C for all n ∈ N.where C 1 := 2 p S -1 * C V 0 2 (here S * is the best constant related to the embedding D 1,p (R N ) ⊂ L p * (R N )). Then, the same iteration arguments used in Step 1 in Theorem 1.1 show that u n L ∞ (R N ) C for all n ∈ N.</p>
-        <p>Moreover, instead of the result in [11], we invoke the standard regularity theory for quasilinear elliptic equations (see for instance [13,14,16,18]) to deduce that z n C 0,α (R N ) C for all n ∈ N. Repeating the reasonings made in Step 2 of Theorem 1.1 (with the appropriate modifications), we achieve lim |x|→∞ sup n∈N |u n (x)| = 0.Moreover, instead of the result in [11], we invoke the standard regularity theory for quasilinear elliptic equations (see for instance [13,14,16,18]) to deduce that z n C 0,α (R N ) C for all n ∈ N. Repeating the reasonings made in Step 2 of Theorem 1.1 (with the appropriate modifications), we achieve lim |x|→∞ sup n∈N |u n (x)| = 0.</p>
-        <p>Corollary 2.1. Under the same assumptions of Theorem 1.1, with f ∈ C 0 (R N × R), there exists a constant C &gt; 0 independent on n ∈ N such thatCorollary 2.1. Under the same assumptions of Theorem 1.1, with f ∈ C 0 (R N × R), there exists a constant C &gt; 0 independent on n ∈ N such that</p>
-        <p>for all |x| &gt;&gt; 1 and n ∈ N.for all |x| &gt;&gt; 1 and n ∈ N.</p>
-        <p>Proof. Using Theorem 1.1, |f (x,t)| t p-1 → 0 as t → 0 uniformly in x ∈ R N (by (1.1)), and (1.2), we can find k 0 &gt; 0 such thatProof. Using Theorem 1.1, |f (x,t)| t p-1 → 0 as t → 0 uniformly in x ∈ R N (by (1.1)), and (1.2), we can find k 0 &gt; 0 such that</p>
-        <p>On the other hand, by [9, Lemma 7.1], taking α := N +sp p-1 and a positive functionOn the other hand, by [9, Lemma 7.1], taking α := N +sp p-1 and a positive function</p>
-        <p>for some c 1 &gt; 0. Define φ(x) := mΥ (rx), where m, r &gt; 0 will be chosen later in a suitable way. By means of (2.26), we see thatfor some c 1 &gt; 0. Define φ(x) := mΥ (rx), where m, r &gt; 0 will be chosen later in a suitable way. By means of (2.26), we see that</p>
-        <p>and settingand setting</p>
-        <p>we obtain thatwe obtain that</p>
-        <p>Put κ := max{k 0 , k 2 }. Combining (2.25) and (2.27), we getPut κ := max{k 0 , k 2 }. Combining (2.25) and (2.27), we get</p>
-        <p>Using (2.2) and that Υ is a positive and continuous function in R N , we can chooseUsing (2.2) and that Υ is a positive and continuous function in R N , we can choose</p>
-        <p>in order to have u n φ in B κ (0). Then, by comparison (see [9,Theorem 7.1]), we derive that u n φ in R N . Therefore,in order to have u n φ in B κ (0). Then, by comparison (see [9,Theorem 7.1]), we derive that u n φ in R N . Therefore,</p>
-        <p>and n ∈ N.and n ∈ N.</p>
-        <p>The proof of the corollary is now complete.The proof of the corollary is now complete.</p>
-        <p>In this section, we discuss the remaining cases N &lt; sp and N = sp, with s ∈ (0, 1) and p ∈ (1, ∞).In this section, we discuss the remaining cases N &lt; sp and N = sp, with s ∈ (0, 1) and p ∈ (1, ∞).</p>
-        <p>Let us first assume N &lt; sp.Let us first assume N &lt; sp.</p>
-        <p>C for all n ∈ N, and u n → u in L r (R N ) for some r ∈ [p, ∞), then the conclusion of Theorem 1.1 still remains true. In fact, thanks to the continuous embedding W s,p (R N ) ⊂ C 0,s-N p (R N ), we deduce that (u n ) is a uniformly equicontinuous sequence and thus we can apply Lemma 2.1. Now we suppose N = sp. We replace (1.1) by the following condition: there exists α 0 0 such that, for all ε &gt; 0, q &gt; p and α &gt; α 0 there exists C ε,q,α &gt; 0 such thatC for all n ∈ N, and u n → u in L r (R N ) for some r ∈ [p, ∞), then the conclusion of Theorem 1.1 still remains true. In fact, thanks to the continuous embedding W s,p (R N ) ⊂ C 0,s-N p (R N ), we deduce that (u n ) is a uniformly equicontinuous sequence and thus we can apply Lemma 2.1. Now we suppose N = sp. We replace (1.1) by the following condition: there exists α 0 0 such that, for all ε &gt; 0, q &gt; p and α &gt; α 0 there exists C ε,q,α &gt; 0 such that</p>
-        <p>wherewhere</p>
-        <p>and assume thatand assume that</p>
-        <p>C for all n ∈ N if α 0 = 0, andC for all n ∈ N if α 0 = 0, and</p>
-        <p>Then the conclusion of Theorem 1.1 still holds. In this case, we invoke the following version of the Trudinger-Moser inequality [20, Theorem 1.3]:Then the conclusion of Theorem 1.1 still holds. In this case, we invoke the following version of the Trudinger-Moser inequality [20, Theorem 1.3]:</p>
-        <p>The main differences concern the estimates below to handle (2.4) in Step 1. Using the growth assumption on f , we see thatThe main differences concern the estimates below to handle (2.4) in Step 1. Using the growth assumption on f , we see that</p>
-        <p>Select σ &gt; 1 such that σ(q -p) p. Choose t &gt; 1 and α &gt; 0 small if α 0 = 0, while t &gt; 1 close to 1 and α &gt; α 0 close to α 0 if α 0 &gt; 0, such thatSelect σ &gt; 1 such that σ(q -p) p. Choose t &gt; 1 and α &gt; 0 small if α 0 = 0, while t &gt; 1 close to 1 and α &gt; α 0 close to α 0 if α 0 &gt; 0, such that</p>
-        <p>From the generalized Hölder inequality, Θ N,s (a) ρ Θ N,s (ρa) for all a 0 and ρ 1, the boundedness of (u n ) in W s,p (R N ), the Sobolev embedding W s,p (R N ) ⊂ L ν (R N ) for all ν ∈ [p, ∞), and (3.1), we have, for all sufficiently large n ∈ N,From the generalized Hölder inequality, Θ N,s (a) ρ Θ N,s (ρa) for all a 0 and ρ 1, the boundedness of (u n ) in W s,p (R N ), the Sobolev embedding W s,p (R N ) ⊂ L ν (R N ) for all ν ∈ [p, ∞), and (3.1), we have, for all sufficiently large n ∈ N,</p>
-        <p>where C &gt; 0 is independent of L and n. On the other hand, fixed τ &gt; µp, and exploiting w p L,n Φ(u n ) p (by (2.3)), the Sobolev embedding W s,pwhere C &gt; 0 is independent of L and n. On the other hand, fixed τ &gt; µp, and exploiting w p L,n Φ(u n ) p (by (2.3)), the Sobolev embedding W s,p</p>
-        <p>Consequently,Consequently,</p>
-        <p>, and letting L → ∞ we find, and letting L → ∞ we find</p>
-        <p>Therefore, taking κ := τ µp &gt; 1, we get, for all m ∈ N,Therefore, taking κ := τ µp &gt; 1, we get, for all m ∈ N,</p>
-        <p>C for all sufficiently large n ∈ N.C for all sufficiently large n ∈ N.</p>
-        <p>We establish a Kato's type inequality [12] for the fractional p-Laplacian operator.We establish a Kato's type inequality [12] for the fractional p-Laplacian operator.</p>
-        <p>Theorem 4.1. Let s ∈ (0, 1)Theorem 4.1. Let s ∈ (0, 1)</p>
-        <p>))</p>
-        <p>for all ϕ ∈ W s,p V (R N ) such that ϕ 0 in R N , wherefor all ϕ ∈ W s,p V (R N ) such that ϕ 0 in R N , where</p>
-        <p>Proof. The proof is inspired by some arguments found in [3, Theorem 17.3.5] and [5, Theorem 3.1]. We start by recalling the following useful inequality (see [5,Proof. The proof is inspired by some arguments found in [3, Theorem 17.3.5] and [5, Theorem 3.1]. We start by recalling the following useful inequality (see [5,</p>
-        <p>We first consider the case p 2. LetWe first consider the case p 2. Let</p>
-        <p>and soand so</p>
-        <p>Next we show that we can pass to the limit as δ → 0 in the above relation to deduce (4.2). By virtue of ζ δ (t) → |t| as δ → 0 andNext we show that we can pass to the limit as δ → 0 in the above relation to deduce (4.2). By virtue of ζ δ (t) → |t| as δ → 0 and</p>
-        <p>where we have used the fact that ζ δ (t) has Lipschitz constant equals to one, we can apply the dominated convergence theorem to see that Since ζ δ (t) → sign(t) as δ → 0 and |V (xwhere we have used the fact that ζ δ (t) has Lipschitz constant equals to one, we can apply the dominated convergence theorem to see that Since ζ δ (t) → sign(t) as δ → 0 and |V (x</p>
-        <p>, we can again invoke the dominated convergence theorem to obtain (4.4) and the assumption on g), the dominated convergence theorem yields, we can again invoke the dominated convergence theorem to obtain (4.4) and the assumption on g), the dominated convergence theorem yields</p>
-        <p>When p ∈ (1, 2), ψ δ is no more a legitimate test function and we consider a slight modification of it. More precisely, we pick ψ = ψδ := ϕ(δWhen p ∈ (1, 2), ψ δ is no more a legitimate test function and we consider a slight modification of it. More precisely, we pick ψ = ψδ := ϕ(δ</p>
-        <p>2 t| |t| p-1 for all t ∈ R and (4.4)) and Lipschitz (due to |(δ In what follows we justify the passage to the limit as δ → 0 in the above relation. Since p ∈ (1, 2), we see that2 t| |t| p-1 for all t ∈ R and (4.4)) and Lipschitz (due to |(δ In what follows we justify the passage to the limit as δ → 0 in the above relation. Since p ∈ (1, 2), we see that</p>
+        <p>We prove that sequences of functions (un) ⊂ W s,p (R N ), with s ∈ (0, 1) and p ∈ (1, N s ), bounded in W s,p (R N ), strongly convergent in L N p N -sp (R N ) and solving nonlinear fractional p-Laplacian Schrödinger equations in R N , must vanish at infinity uniformly with respect to n ∈ N.</p>
+        <p>In this paper, we show the uniform vanishing property at infinity of W s,p (R N )-sequences, with s ∈ (0, 1) and p ∈ (1, N s ), bounded in W s,p (R N ), strongly convergent in L p * s (R N ), where p * s := N p N -sp , and that are solutions of nonlinear Schrödinger equations in R N driven by the fractional p-Laplacian operator (-∆) s p defined (up to a normalization constant), for u : R N → R smooth enough, by</p>
+        <p>More precisely, our main result can be stated as follows.</p>
+        <p>Theorem 1.1. Let s ∈ (0, 1) and p ∈ (1, N s ). Let f : R N × R → R be a Carathéodory function such that for all ε &gt; 0 there exists C ε &gt; 0 such that |f (x, t)| ε |t| p-1 + C ε |t| q-1 for a.e x ∈ R N and for all t ∈ R,</p>
+        <p>(1.1)</p>
+        <p>with q ∈ (p, p * s ], and let V : R N → R be a continuous potential such that, for some V 0 ∈ (0, ∞), V (x) V 0 for all x ∈ R N .</p>
+        <p>(1.2)</p>
+        <p>Let (u n ) be a nonnegative sequence in W s,p V (R N ) (see Section 2 for the precise definition of this space) such that u n W s,p V (R N ) C for all n ∈ N, u n → u in L p * s (R N ) and each u n solves (in weak sense)</p>
+        <p>Then, (u n ) satisfies the uniform vanishing property at infinity, i.e. We recall that nonlocal equations like (1.3) have been extensively investigated in recent years, both for their interesting theoretical structure and in view of concrete real world applications; see [3,4,9,20] and the references therein. Now we give a sketch of the proof of Theorem 1.1. First we use suitable Moser iterations [15] to deduce that u n L ∞ (R N )</p>
+        <p>C for all n ∈ N. The condition u n → u in L p * s (R N ) plays a crucial role when q = p * s in (1.1), while for q ∈ (p, p * s ) it suffices to use the boundedness of (u n ) in L p * s (R N ). The uniform L ∞ -bound combined with the strong convergence in L p * s (R N ) and an interpolation argument, implies that u n → u in L r (R N ) for all r ∈ (p, ∞). By (1.1), we see that each u n also satisfies (-∆) s p u n + σu p-1 light of Browder-Minty theorem we can construct a nonnegative sequence</p>
+        <p>By comparison, we know that 0 u n z n in R N . Furthermore, thanks to the strong convergence of (u n ) in L r (R N ) for all r ∈ (p, ∞), and the boundedness of (z n ) in W s,p (R N ), we show that (z n ) strongly converges in W s,p (R N ). This fact together with a Moser iteration yield z n L ∞ (R N ) C for all n ∈ N. Then we can invoke the interior Hölder regularity result in [11] to infer that z n C 0,α (R N ) C for all n ∈ N. Accordingly, we apply Lemma 2.1 below to see that lim |x|→∞ sup n∈N |z n (x)| = 0. Since 0 u n z n in R N , we conclude that lim |x|→∞ sup n∈N |u n (x)| = 0. We stress that the hypothesis on the sign of (u n ) is not essential and can be removed; see Remark 2.1.</p>
+        <p>When s → 1, (-∆) s p u reduces to the p-Laplacian operator -∆ p u := div(|∇u| p-2 ∇u), and the proof of the uniform vanishing property at infinity of sequences</p>
+        <p>where f verifies (1.1) with q ∈ (p, p * ], p * := N p N -p and N &gt; p &gt; 1, is classically obtained by using appropriate Moser iterations. More precisely, arguing as in [14,Theorem 1.11] (see also [1,Lemma 4.5]), one takes as test function in the weak formulation of equation solved by u n , the function</p>
+        <p>r , with R &gt; 0 and 0 &lt; r R 2 . A standard Moser iterative method and</p>
+        <p>for all n ∈ N, from which we derive that lim |x|→∞ |u n (x)| = 0 uniformly in n ∈ N. Alternatively, reasoning as in [7,Theorem 2.3], one can choose as test function</p>
+        <p>and by means of a Moser iteration and u n → u in L p * (R N ), we arrive at (u n ) ⊂ L r (R N ) for all r ∈ [p, ∞) and that there exists a constant C r &gt; 0 such that u n L r (R N ) C r for all n ∈ N. These facts combined with the local L ∞ -estimate for quasilinear equations due to Serrin [16,Theorem 1] ensure that, fixed x ∈ R N and t &gt; N p ,</p>
+        <p>) for all n ∈ N, which provides the desired assertion by letting |x| → ∞. However, these techniques do not seem adaptable for equations involving the nonlocal operator (-∆) s p , and thus Theorem 1.1 gives a useful tool to reach the uniform vanishing property at infinity of sequences</p>
+        <p>3). Notice that, when s ∈ (0, 1) and p = 2, Theorem 1.1 can be proved by exploiting the properties of the kernel of the resolvent ((-∆) s + λ) -1 on R N with λ &gt; 0 (see [2,Lemma 2.6] and [3, Remark 7.2.10]), or making use of the extension method [8] and applying the L ∞ -estimate for subsolutions of degenerate elliptic equations in half-balls (see [3,Lemma 6.3.23]). Nevertheless, these methods are not available for s ∈ (0, 1) and p ∈ (1, ∞) \ {2}, and new ideas are needed to accomplish the desired result.</p>
+        <p>To our knowledge, our approach is completely new in literature. We emphasize that our arguments can be adapted for the local case s = 1; see Remark 2.3. In addition, we observe that Theorem 1.1 and [9, Theorem 7.1] allow us to prove a decay estimate for u n (x) as |x| → ∞ uniformly in n ∈ N; see Corollary 2.1. The remaining cases N = sp and N &lt; sp in Theorem 1.1 are discussed in Section 3. Finally, we demonstrate a Kato's type inequality [12] for (-∆) s p in Appendix.</p>
+        <p>We start by establishing a very useful lemma that can be seen as a generalization for L p -sequences uniformly equicontinuous in R N of the following well-known fact: if</p>
+        <p>Proof. Suppose the assertion of the lemma is false. Then there exist a sequence</p>
+        <p>On the other hand, from (a) and [6, Theorem 4.9], we derive that there exists h ∈ L p (R N ) such that, up to a subsequence,</p>
+        <p>Next, in order to prove Theorem 1.1, we collect some notations and definitions. Let s ∈ (0, 1) and p ∈ (1, N s ). By D s,p (R N ) we denote the closure of C ∞ c (R N ) with respect to</p>
+        <p>The fractional Sobolev space W s,p (R N ) given by</p>
+        <p>It is well-known that there exists a constant S * = S(N, s, p) &gt; 0 such that [3,10] for more details. Let V : R N → R be a continuous potential satisfying (1.2). We define the Banach space W s,p V (R N ) as the completion of C ∞ c (R N ) with respect to the norm</p>
+        <p>In what follows, when we say that a nonnegative function u ∈ W s,p V (R N ) solves (in weak sense)</p>
+        <p>We split the proof into two main steps.</p>
+        <p>Step 1 There exists a constant C &gt; 0 such that</p>
+        <p>We perform a Moser iteration argument [15]. For each L &gt; 0 and γ &gt; 1, we define ∈ W s,p V (R N ) as test function in the weak formulation of (1.3), and exploiting (2.3), we have</p>
+        <p>Let us observe that</p>
+        <p>L for all t 0, which combined with (2.1) yields</p>
+        <p>Thus, by (2.4),</p>
+        <p>Using (1.1) (with ε = V 0 2 ) and (1.2), we see that, for some constant</p>
+        <p>dx from which we derive</p>
+        <p>where</p>
+        <p>&gt; 0. Now we distinguish the following cases.</p>
+        <p>Case 1 When q ∈ (p, p * s ). Because u q n u p(γ-1) L,n = u q-p n w p L,n , the Hölder inequality and (2.5) lead to</p>
+        <p>, where</p>
+        <p>Exploiting the fact that</p>
+        <p>we have</p>
+        <p>&lt; ∞, and applying Fatou's lemma, as L → ∞, we get</p>
+        <p>and so u n ∈ L γp * s (R N ). Now we set γ := p * s α * s &gt; 1, and observe that, since u n ∈ L p * s (R N ) for all n ∈ N, (2.7) holds for this choice of γ. Thus, owing to γ 2 α * s = γp * s , we see that (2.7) is true with γ replaced by γ 2 . Hence,</p>
+        <p>where we have used the fact that γα * s = p * s . Iterating this process, we obtain</p>
+        <p>In view of (2.6), we arrive at</p>
+        <p>Letting m → ∞ in (2.8), we deduce that</p>
+        <p>where</p>
+        <p>, where</p>
+        <p>, and recalling (2.5), we have</p>
+        <p>(2.9)</p>
+        <p>Let M &gt; 0 to be fixed later and set</p>
+        <p>Then,</p>
+        <p>(2.10)</p>
+        <p>Combining (2.9), (2.10) and (2.11), and using w L,n u γ n , we get</p>
+        <p>and invoking Fatou's lemma, as L → ∞, we reach</p>
+        <p>(2.12)</p>
+        <p>Therefore a bootstrap argument can start: because (u n ) ⊂ L p * s (R N ), we can apply (2.12) with</p>
+        <p>We can then apply again (2.12) and, after k iterations, we find</p>
+        <p>. We now go back to inequality (2.5). By 0 u L,n u n and letting L → ∞ in (2.5), we have</p>
+        <p>and so</p>
+        <p>.</p>
+        <p>( for all m, n ∈ N.</p>
+        <p>Consequently, (2.13) can be written as</p>
+        <p>where C m+1 := q √ C 1 γ m+1 . Iterating the above relation, we find</p>
+        <p>(2.14)</p>
+        <p>In view of (2.6), it follows from (2.12) with γ = γ 1 = p * s p that, for some C &gt; 0,</p>
+        <p>C for all n ∈ N.</p>
+        <p>On the other hand, standard calculations show that there exists C &gt; 0 such that</p>
+        <p>C for all m ∈ N \ {1}.</p>
+        <p>Then, passing to the limit as m → ∞ in (2.14), we can infer that</p>
+        <p>Step 2 Conclusion. From (2.2) and [11, Corollary 5.5], we know that</p>
+        <p>) and the interpolation inequality for L r -spaces, we get</p>
+        <p>and</p>
+        <p>Now, we fix ε ∈ (0, V 0 ). Exploiting (1.1) and (1.2), we have that u n solves (in weak sense)</p>
+        <p>where σ := V 0 -ε &gt; 0 and C := C ε &gt; 0.</p>
+        <p>Let us introduce the operator A : W s,p (R N ) → (W s,p (R N )) * , where (W s,p (R N )) * denotes the dual of W s,p (R N ), given by</p>
+        <p>We claim that A satisfies all assumptions of Browder-Minty theorem (see [19,Theorem 26.A]), and as a result A is surjective. Recall that W s,p (R N ) is a (real) reflexive Banach space 1 . Next we verify that A is hemicontinuous, i.e. the real function t → A(u + tv), w is continuous on [0, 1] for all u, v, w ∈ W s,p (R N ). Let (t n ) ⊂ [0, 1] be such that t n → t. We have,</p>
+        <p>1 Let us consider the linear isometry T :</p>
+        <p>is a closed subspace of E. Using this fact and that L r (R k ) is a reflexive, separable and uniformly convex Banach space for all r ∈ (1, ∞) and k ∈ N (see [6,Chapter 4]), we deduce that W s,p (R N ) is a reflexive, separable and uniformly convex space for all s ∈ (0, 1)</p>
+        <p>Then, applying the dominated convergence theorem, we deduce the assertion. Bearing in mind the following Simon's inequalities [17, formula (2.</p>
+        <p>2)],</p>
+        <p>Taking z - n := min{z n , 0} in the weak formulation of (2.17), and using u n 0 and the elementary inequality |x -y| p-2 (x -y)(x --y -) |x --y -| p for all x, y ∈ R, it is easy to check that z n 0 in R N . By comparison (see [9,Theorem 7.1]), we obtain that 0 u n z n in R N and for all n ∈ N. Now, testing (2.17) with z n , we derive that</p>
+        <p>and exploiting the Young's inequality with η ∈ (0, σ), i.e. ab ηa p + C η b p p-1 for all a, b 0, on the right hand side of (2.18), we have</p>
+        <p>In view of (q-1)p p-1 ∈ (p, ∞) and (2.15), we know that</p>
+        <p>and so z n W s,p (R N ) C for all n ∈ N. Hence, up to a subsequence, we may assume that</p>
+        <p>From (2.19) and u n → u in L (q-1)p p-1 (R N ) (thanks to (2.16)), it follows that z solves (in weak sense)</p>
+        <p>2 Indeed, A is invertible because A is strictly monotone.</p>
+        <p>In particular,</p>
+        <p>Next we show that</p>
+        <p>Let us observe that</p>
+        <p>In light of (2.19), it is clear that Y n → 0. On the other hand, employing the Hölder inequality, (2.19), (2.16) with r = (q-1)p p-1 , and the dominated convergence theorem, we have</p>
+        <p>Therefore, (2.21) is satisfied. Combining (2.18), (2.20) and (2.21), we deduce that</p>
+        <p>, and recalling that W s,p (R N ) is a uniformly convex space, we infer that z n → z in W s,p (R N ). In particular, z n → z in L t (R N ) for all t ∈ [p, p * s ] and condition (a) of Lemma 2.1 is true. Testing (2.17) with z n z p(γ-1) L,n and exploiting Cu q-1 n Cz q-1 n , we can proceed as in Step 1 to obtain the following estimate</p>
+        <p>where C1 := S -1 * C &gt; 0, instead of (2.5). On account of z n → z in L p * s (R N ), we can perform the same iteration arguments given in Step 1 to arrive at</p>
+        <p>Invoking [11, Corollary 5.5] and using (2.22), we see that, fixed x 0 ∈ R N , (z n ) ⊂ C 0,α (B 1/2 (x 0 )) for some α ∈ (0, 1) depending only on N, s, p and independent of n ∈ N and x 0 , and it holds</p>
+        <p>where C N,s,p &gt; 0 is independent of x 0 ∈ R N . Combining (2.22) with (2.23), we get</p>
+        <p>2 and from (2.23) we have</p>
+        <p>In particular, (2.24) implies that condition (b) of Lemma 2.1 holds. Indeed, fixed η &gt; 0 and setting δ := η Recalling that 0 u n z n in R N and for all n ∈ N, the above limit gives</p>
+        <p>The proof of the theorem is now complete. Remark 2.2. If V ∈ L ∞ (R N ), then it is not needed to introduce the sequence (z n ) given in the proof of Theorem 1.1. In fact, in this situation, we have that (-∆) s p u n = h n in R N , where h n (x) := -V (x)u p-1 n (x) + f (x, u n (x)). Now, h n ∈ L ∞ (R N ) (by V ∈ L ∞ (R N ) and (2.2)), and using the same argument to prove (2.24), we infer that u n C 0,α (R N ) C for all n ∈ N. Since u n → u in L p * s (R N ), we can apply Lemma 2.1 to get the desired result.</p>
+        <p>where C 1 := 2 p S -1 * C V 0 2 (here S * is the best constant related to the embedding D 1,p (R N ) ⊂ L p * (R N )). Then, the same iteration arguments used in Step 1 in Theorem 1.1 show that u n L ∞ (R N ) C for all n ∈ N.</p>
+        <p>Moreover, instead of the result in [11], we invoke the standard regularity theory for quasilinear elliptic equations (see for instance [13,14,16,18]) to deduce that z n C 0,α (R N ) C for all n ∈ N. Repeating the reasonings made in Step 2 of Theorem 1.1 (with the appropriate modifications), we achieve lim |x|→∞ sup n∈N |u n (x)| = 0.</p>
+        <p>Corollary 2.1. Under the same assumptions of Theorem 1.1, with f ∈ C 0 (R N × R), there exists a constant C &gt; 0 independent on n ∈ N such that</p>
+        <p>for all |x| &gt;&gt; 1 and n ∈ N.</p>
+        <p>Proof. Using Theorem 1.1, |f (x,t)| t p-1 → 0 as t → 0 uniformly in x ∈ R N (by (1.1)), and (1.2), we can find k 0 &gt; 0 such that</p>
+        <p>On the other hand, by [9, Lemma 7.1], taking α := N +sp p-1 and a positive function</p>
+        <p>for some c 1 &gt; 0. Define φ(x) := mΥ (rx), where m, r &gt; 0 will be chosen later in a suitable way. By means of (2.26), we see that</p>
+        <p>and setting</p>
+        <p>we obtain that</p>
+        <p>Put κ := max{k 0 , k 2 }. Combining (2.25) and (2.27), we get</p>
+        <p>Using (2.2) and that Υ is a positive and continuous function in R N , we can choose</p>
+        <p>in order to have u n φ in B κ (0). Then, by comparison (see [9,Theorem 7.1]), we derive that u n φ in R N . Therefore,</p>
+        <p>and n ∈ N.</p>
+        <p>The proof of the corollary is now complete.</p>
+        <p>In this section, we discuss the remaining cases N &lt; sp and N = sp, with s ∈ (0, 1) and p ∈ (1, ∞).</p>
+        <p>Let us first assume N &lt; sp.</p>
+        <p>C for all n ∈ N, and u n → u in L r (R N ) for some r ∈ [p, ∞), then the conclusion of Theorem 1.1 still remains true. In fact, thanks to the continuous embedding W s,p (R N ) ⊂ C 0,s-N p (R N ), we deduce that (u n ) is a uniformly equicontinuous sequence and thus we can apply Lemma 2.1. Now we suppose N = sp. We replace (1.1) by the following condition: there exists α 0 0 such that, for all ε &gt; 0, q &gt; p and α &gt; α 0 there exists C ε,q,α &gt; 0 such that</p>
+        <p>where</p>
+        <p>and assume that</p>
+        <p>C for all n ∈ N if α 0 = 0, and</p>
+        <p>Then the conclusion of Theorem 1.1 still holds. In this case, we invoke the following version of the Trudinger-Moser inequality [20, Theorem 1.3]:</p>
+        <p>The main differences concern the estimates below to handle (2.4) in Step 1. Using the growth assumption on f , we see that</p>
+        <p>Select σ &gt; 1 such that σ(q -p) p. Choose t &gt; 1 and α &gt; 0 small if α 0 = 0, while t &gt; 1 close to 1 and α &gt; α 0 close to α 0 if α 0 &gt; 0, such that</p>
+        <p>From the generalized Hölder inequality, Θ N,s (a) ρ Θ N,s (ρa) for all a 0 and ρ 1, the boundedness of (u n ) in W s,p (R N ), the Sobolev embedding W s,p (R N ) ⊂ L ν (R N ) for all ν ∈ [p, ∞), and (3.1), we have, for all sufficiently large n ∈ N,</p>
+        <p>where C &gt; 0 is independent of L and n. On the other hand, fixed τ &gt; µp, and exploiting w p L,n Φ(u n ) p (by (2.3)), the Sobolev embedding W s,p</p>
+        <p>Consequently,</p>
+        <p>, and letting L → ∞ we find</p>
+        <p>Therefore, taking κ := τ µp &gt; 1, we get, for all m ∈ N,</p>
+        <p>C for all sufficiently large n ∈ N.</p>
+        <p>We establish a Kato's type inequality [12] for the fractional p-Laplacian operator.</p>
+        <p>Theorem 4.1. Let s ∈ (0, 1)</p>
+        <p>)</p>
+        <p>for all ϕ ∈ W s,p V (R N ) such that ϕ 0 in R N , where</p>
+        <p>Proof. The proof is inspired by some arguments found in [3, Theorem 17.3.5] and [5, Theorem 3.1]. We start by recalling the following useful inequality (see [5,</p>
+        <p>We first consider the case p 2. Let</p>
+        <p>and so</p>
+        <p>Next we show that we can pass to the limit as δ → 0 in the above relation to deduce (4.2). By virtue of ζ δ (t) → |t| as δ → 0 and</p>
+        <p>where we have used the fact that ζ δ (t) has Lipschitz constant equals to one, we can apply the dominated convergence theorem to see that Since ζ δ (t) → sign(t) as δ → 0 and |V (x</p>
+        <p>, we can again invoke the dominated convergence theorem to obtain (4.4) and the assumption on g), the dominated convergence theorem yields</p>
+        <p>When p ∈ (1, 2), ψ δ is no more a legitimate test function and we consider a slight modification of it. More precisely, we pick ψ = ψδ := ϕ(δ</p>
+        <p>2 t| |t| p-1 for all t ∈ R and (4.4)) and Lipschitz (due to |(δ In what follows we justify the passage to the limit as δ → 0 in the above relation. Since p ∈ (1, 2), we see that</p>
     </text>
 </tei>

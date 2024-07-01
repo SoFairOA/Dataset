@@ -4,13 +4,13 @@
         <fileDesc xml:id="_1"/>
         <encodingDesc>
             <appInfo>
-                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-13T09:33+0000">
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-24T09:13+0000">
                     <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
                 </application>
             </appInfo>
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
-        <p>It was highlighted that the original article [1] contained only the initials of the authors' first names. This Correction article shows the full author names. The original article has been updated.It was highlighted that the original article [1] contained only the initials of the authors' first names. This Correction article shows the full author names. The original article has been updated.</p>
+        <p>It was highlighted that the original article [1] contained only the initials of the authors' first names. This Correction article shows the full author names. The original article has been updated.</p>
     </text>
 </tei>

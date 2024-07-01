@@ -4,15 +4,15 @@
         <fileDesc xml:id="_1"/>
         <encodingDesc>
             <appInfo>
-                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-13T09:38+0000">
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-24T09:18+0000">
                     <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
                 </application>
             </appInfo>
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
-        <p>Supplementary Figure 1: Workflow for SCRS of isolated lymphoid and myeloid immune cell populations from ccRCC subjects and computational analysis. SCRS data across ccRCC (both tumor and paired peripheral blood) and data derived from 10x Genomics and EGAS00001002325 were integrated using SCTtransform approach to form a UMAP of 37,055 from 7 different samples and acting as a basis for subclustering and further analysis by cell type. During the subclustering analysis of CD8 + , CD4 + T cells, and APCs, single-cells were reintegrated by patient sample, patients and corresponding numbers of cells indicated.Supplementary Figure 1: Workflow for SCRS of isolated lymphoid and myeloid immune cell populations from ccRCC subjects and computational analysis. SCRS data across ccRCC (both tumor and paired peripheral blood) and data derived from 10x Genomics and EGAS00001002325 were integrated using SCTtransform approach to form a UMAP of 37,055 from 7 different samples and acting as a basis for subclustering and further analysis by cell type. During the subclustering analysis of CD8 + , CD4 + T cells, and APCs, single-cells were reintegrated by patient sample, patients and corresponding numbers of cells indicated.</p>
-        <p>Normal and ccRCC tumor samples from the 3 patients were formalin-fixed and paraffinembedded samples. After antigen-retrieval, samples were stained with indicated anitbodies .Normal and ccRCC tumor samples from the 3 patients were formalin-fixed and paraffinembedded samples. After antigen-retrieval, samples were stained with indicated anitbodies .</p>
+        <p>Supplementary Figure 1: Workflow for SCRS of isolated lymphoid and myeloid immune cell populations from ccRCC subjects and computational analysis. SCRS data across ccRCC (both tumor and paired peripheral blood) and data derived from 10x Genomics and EGAS00001002325 were integrated using SCTtransform approach to form a UMAP of 37,055 from 7 different samples and acting as a basis for subclustering and further analysis by cell type. During the subclustering analysis of CD8 + , CD4 + T cells, and APCs, single-cells were reintegrated by patient sample, patients and corresponding numbers of cells indicated.</p>
+        <p>Normal and ccRCC tumor samples from the 3 patients were formalin-fixed and paraffinembedded samples. After antigen-retrieval, samples were stained with indicated anitbodies .</p>
         <p>Digital images of 24 IHC-stained slides were obtained using the 3DHistech P1000 Panoramic Scanner (3DHistech, Budapest, Hungary). Each slide was annotated in 
             <rs type="software">CaseViewer</rs> (
             <rs type="creator">3DHistech</rs>) for tumor and or normal tissue. Areas with abundant artifact were annotated and subtracted. Image-based algorithms were created for detecting positive cells based on stain intensity using 

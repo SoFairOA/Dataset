@@ -4,13 +4,13 @@
         <fileDesc xml:id="_1"/>
         <encodingDesc>
             <appInfo>
-                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-14T13:04+0000">
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-24T15:59+0000">
                     <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
                 </application>
             </appInfo>
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
-        <p>Table S1. Results of all in-room samples collected in this study. UND denotes undetected, NC denotes Not Calculated. ND denotes No Data. The dotted background indicates the sample from which cell culture data is shown in Figure 2. In the case where no data was obtained, the patient had been transferred from another facility less than 24 hours prior to sampling.Table S1. Results of all in-room samples collected in this study. UND denotes undetected, NC denotes Not Calculated. ND denotes No Data. The dotted background indicates the sample from which cell culture data is shown in Figure 2. In the case where no data was obtained, the patient had been transferred from another facility less than 24 hours prior to sampling.</p>
+        <p>Table S1. Results of all in-room samples collected in this study. UND denotes undetected, NC denotes Not Calculated. ND denotes No Data. The dotted background indicates the sample from which cell culture data is shown in Figure 2. In the case where no data was obtained, the patient had been transferred from another facility less than 24 hours prior to sampling.</p>
     </text>
 </tei>

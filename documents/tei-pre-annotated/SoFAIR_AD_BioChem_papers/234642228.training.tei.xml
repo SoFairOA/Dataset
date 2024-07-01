@@ -4,14 +4,14 @@
         <fileDesc xml:id="_1"/>
         <encodingDesc>
             <appInfo>
-                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-13T13:47+0000">
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-24T09:23+0000">
                     <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
                 </application>
             </appInfo>
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
-        <p>Analysis of endoscopic brush samples identified mucosaassociated dysbiosis in inflammatory bowel disease.Analysis of endoscopic brush samples identified mucosaassociated dysbiosis in inflammatory bowel disease.</p>
-        <p>Analysis of endoscopic brush samples identified mucosa-associated dysbiosis in inflammatory bowel disease.Analysis of endoscopic brush samples identified mucosa-associated dysbiosis in inflammatory bowel disease.</p>
+        <p>Analysis of endoscopic brush samples identified mucosaassociated dysbiosis in inflammatory bowel disease.</p>
+        <p>Analysis of endoscopic brush samples identified mucosa-associated dysbiosis in inflammatory bowel disease.</p>
     </text>
 </tei>

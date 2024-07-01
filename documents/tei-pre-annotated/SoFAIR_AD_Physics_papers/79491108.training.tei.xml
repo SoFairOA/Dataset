@@ -4,39 +4,39 @@
         <fileDesc xml:id="_1"/>
         <encodingDesc>
             <appInfo>
-                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-14T14:37+0000">
+                <application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-06-25T06:53+0000">
                     <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
                 </application>
             </appInfo>
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
-        <p>General Management: -Dr. Karsten Tillmann, Ernst Ruska-Centre, Jülich Research Centre, 52425 Jülich, Germany, phone: ++49.2461.61.1438, e-mail: k.tillmann@fz-juelich.deGeneral Management: -Dr. Karsten Tillmann, Ernst Ruska-Centre, Jülich Research Centre, 52425 Jülich, Germany, phone: ++49.2461.61.1438, e-mail: k.tillmann@fz-juelich.de</p>
-        <p>Abstract: The FEI Titan G2 80-200 CREWLEY is a fourth generation transmission electron microscope which has been speci cally designed for the investigation of a wide range of solid state phenomena taking place on the atomic scale of both the structure and chemical composition. For these purposes, the FEI Titan G2 80-200 CREWLEY is equipped with a Schottky type high-brightness electron gun (FEI X-FEG), a Cs probe corrector (CEOS DCOR), an in-column Super-X energy dispersive X-ray spectroscopy (EDX) unit (ChemiSTEM technology), a post-column energy lter system (Gatan En nium ER 977) with dual electron energy-loss spectroscopy (EELS) option allowing a simultaneous read-out of EDX and EELS signals at a speed of 1000 spectra per second. For data recording the microscope is equipped with an angular dark-eld (ADF) scanning TEM (STEM) detector (Fischione Model 3000), onaxis triple BF, DF1, DF2 detectors, on-axis BF/DF Gatan detectors as well as a 4 megapixel CCD system (Gatan UltraScan 1000 XP-P). Typical examples of use and technical speci cations for the instrument are given below.Abstract: The FEI Titan G2 80-200 CREWLEY is a fourth generation transmission electron microscope which has been speci cally designed for the investigation of a wide range of solid state phenomena taking place on the atomic scale of both the structure and chemical composition. For these purposes, the FEI Titan G2 80-200 CREWLEY is equipped with a Schottky type high-brightness electron gun (FEI X-FEG), a Cs probe corrector (CEOS DCOR), an in-column Super-X energy dispersive X-ray spectroscopy (EDX) unit (ChemiSTEM technology), a post-column energy lter system (Gatan En nium ER 977) with dual electron energy-loss spectroscopy (EELS) option allowing a simultaneous read-out of EDX and EELS signals at a speed of 1000 spectra per second. For data recording the microscope is equipped with an angular dark-eld (ADF) scanning TEM (STEM) detector (Fischione Model 3000), onaxis triple BF, DF1, DF2 detectors, on-axis BF/DF Gatan detectors as well as a 4 megapixel CCD system (Gatan UltraScan 1000 XP-P). Typical examples of use and technical speci cations for the instrument are given below.</p>
-        <p>1 System Overview1 System Overview</p>
-        <p>The con guration of the FEI Titan G2 80-200 CREWLEY allows a variety of advanced transmission electron microscopy techniques to be applied to wide variety of solid state materials. These techniques include high-resolution scanning transmission electron microscopy (HRSTEM) with annular detectors for bright-eld, annular dark-eld, and high-angle annular dark eld imaging, electron energy-loss spectroscopy (EELS), energy-dispersive X-ray spectroscopy (EDX), electron tomography (ET), and combinations of the previous techniques. The excellent analytical research possibilities make the instrument an ultimate solution for studies of the structure and chemistry of materials in high-spatial resolution.The con guration of the FEI Titan G2 80-200 CREWLEY allows a variety of advanced transmission electron microscopy techniques to be applied to wide variety of solid state materials. These techniques include high-resolution scanning transmission electron microscopy (HRSTEM) with annular detectors for bright-eld, annular dark-eld, and high-angle annular dark eld imaging, electron energy-loss spectroscopy (EELS), energy-dispersive X-ray spectroscopy (EDX), electron tomography (ET), and combinations of the previous techniques. The excellent analytical research possibilities make the instrument an ultimate solution for studies of the structure and chemistry of materials in high-spatial resolution.</p>
-        <p>The FEI Titan G2 80-200 CREWLEY is not intended for the investigation of aqueous, contaminated, ferromagnetic or organic samples without further discussions with both of the instruments o cers and the ER-C general management.The FEI Titan G2 80-200 CREWLEY is not intended for the investigation of aqueous, contaminated, ferromagnetic or organic samples without further discussions with both of the instruments o cers and the ER-C general management.</p>
-        <p>Apart from the special case of the utilisation of dedicated cooling or heating stages, the FEI Titan G2 80-200 CREWLEY will allow samples to be investigated either under room temperature or liquid nitrogen cooling conditions at a vacuum level of about 10 -8 mbar. Besides this standard setup, the sample environment can be adapted to various conditions, e.g. the thermal treatment or the application of external electric or magnetic elds to samples, making use of a wide portfolio of in situ TEM holders available through the ER-C user services. The microscope is equipped with a large LN2 dewar, which holds liquid nitrogen for more than three days for optimum conditions around the sample.Apart from the special case of the utilisation of dedicated cooling or heating stages, the FEI Titan G2 80-200 CREWLEY will allow samples to be investigated either under room temperature or liquid nitrogen cooling conditions at a vacuum level of about 10 -8 mbar. Besides this standard setup, the sample environment can be adapted to various conditions, e.g. the thermal treatment or the application of external electric or magnetic elds to samples, making use of a wide portfolio of in situ TEM holders available through the ER-C user services. The microscope is equipped with a large LN2 dewar, which holds liquid nitrogen for more than three days for optimum conditions around the sample.</p>
-        <p>4 Technical Speci cations4 Technical Speci cations</p>
-        <p>• electron acceleration voltage 80 kV ... 200 kV• electron acceleration voltage 80 kV ... 200 kV</p>
-        <p>• X-FEG brightness @ 200 kV 1.8x10 9 A/cm 2 /sr• X-FEG brightness @ 200 kV 1.8x10 9 A/cm 2 /sr</p>
-        <p>• symmetrical analytical S-TWIN objective lens &lt; ∼ 5 mm• symmetrical analytical S-TWIN objective lens &lt; ∼ 5 mm</p>
-        <p>• information limit (TEM) @ 200 kV 110 pm• information limit (TEM) @ 200 kV 110 pm</p>
-        <p>• point resolution (TEM) @ 200 kV 240pm• point resolution (TEM) @ 200 kV 240pm</p>
-        <p>• total system drift (TEM)• total system drift (TEM)</p>
-        <p>&lt; 300 pm min -1 (rms)&lt; 300 pm min -1 (rms)</p>
-        <p>• resolution (STEM) @ 200 kV and 50 pA &lt; 80 pm• resolution (STEM) @ 200 kV and 50 pA &lt; 80 pm</p>
-        <p>• astigmatism instability (TEM) @ 200 kV &lt; 0.6 nm/min• astigmatism instability (TEM) @ 200 kV &lt; 0.6 nm/min</p>
-        <p>• combined electron probe and sample drift &lt; 300 pm/min• combined electron probe and sample drift &lt; 300 pm/min</p>
-        <p>• EDX system energy resolution (10 kcps)• EDX system energy resolution (10 kcps)</p>
-        <p>&lt; 136 eV @ MnK α&lt; 136 eV @ MnK α</p>
-        <p>• EDX solid angle 0.9 sr• EDX solid angle 0.9 sr</p>
-        <p>• EELS system energy resolution @200 kV 0.65 eV 5 Detectors• EELS system energy resolution @200 kV 0.65 eV 5 Detectors</p>
-        <p>• Peltier cooled Gatan Ultrascan 1000 XP-P charge coupled device camera (CCD) with a format of 2048 x 2048 pixels of 15 microns in size.• Peltier cooled Gatan Ultrascan 1000 XP-P charge coupled device camera (CCD) with a format of 2048 x 2048 pixels of 15 microns in size.</p>
-        <p>• Gatan En nium 977 ER spectrometer with 2.5 and 5 mm entrance apertures, electrostatic shutter and advanced dual-EELS spectroscopy modes.• Gatan En nium 977 ER spectrometer with 2.5 and 5 mm entrance apertures, electrostatic shutter and advanced dual-EELS spectroscopy modes.</p>
-        <p>• Medium angle BF/DF Gatan STEM detectors.• Medium angle BF/DF Gatan STEM detectors.</p>
-        <p>• Fischione Model 3000 HAADF detector.• Fischione Model 3000 HAADF detector.</p>
-        <p>• FEI on axis triple DF1/DF2/BF detectors.• FEI on axis triple DF1/DF2/BF detectors.</p>
-        <p>6 Specimen Stages6 Specimen Stages</p>
+        <p>General Management: -Dr. Karsten Tillmann, Ernst Ruska-Centre, Jülich Research Centre, 52425 Jülich, Germany, phone: ++49.2461.61.1438, e-mail: k.tillmann@fz-juelich.de</p>
+        <p>Abstract: The FEI Titan G2 80-200 CREWLEY is a fourth generation transmission electron microscope which has been speci cally designed for the investigation of a wide range of solid state phenomena taking place on the atomic scale of both the structure and chemical composition. For these purposes, the FEI Titan G2 80-200 CREWLEY is equipped with a Schottky type high-brightness electron gun (FEI X-FEG), a Cs probe corrector (CEOS DCOR), an in-column Super-X energy dispersive X-ray spectroscopy (EDX) unit (ChemiSTEM technology), a post-column energy lter system (Gatan En nium ER 977) with dual electron energy-loss spectroscopy (EELS) option allowing a simultaneous read-out of EDX and EELS signals at a speed of 1000 spectra per second. For data recording the microscope is equipped with an angular dark-eld (ADF) scanning TEM (STEM) detector (Fischione Model 3000), onaxis triple BF, DF1, DF2 detectors, on-axis BF/DF Gatan detectors as well as a 4 megapixel CCD system (Gatan UltraScan 1000 XP-P). Typical examples of use and technical speci cations for the instrument are given below.</p>
+        <p>1 System Overview</p>
+        <p>The con guration of the FEI Titan G2 80-200 CREWLEY allows a variety of advanced transmission electron microscopy techniques to be applied to wide variety of solid state materials. These techniques include high-resolution scanning transmission electron microscopy (HRSTEM) with annular detectors for bright-eld, annular dark-eld, and high-angle annular dark eld imaging, electron energy-loss spectroscopy (EELS), energy-dispersive X-ray spectroscopy (EDX), electron tomography (ET), and combinations of the previous techniques. The excellent analytical research possibilities make the instrument an ultimate solution for studies of the structure and chemistry of materials in high-spatial resolution.</p>
+        <p>The FEI Titan G2 80-200 CREWLEY is not intended for the investigation of aqueous, contaminated, ferromagnetic or organic samples without further discussions with both of the instruments o cers and the ER-C general management.</p>
+        <p>Apart from the special case of the utilisation of dedicated cooling or heating stages, the FEI Titan G2 80-200 CREWLEY will allow samples to be investigated either under room temperature or liquid nitrogen cooling conditions at a vacuum level of about 10 -8 mbar. Besides this standard setup, the sample environment can be adapted to various conditions, e.g. the thermal treatment or the application of external electric or magnetic elds to samples, making use of a wide portfolio of in situ TEM holders available through the ER-C user services. The microscope is equipped with a large LN2 dewar, which holds liquid nitrogen for more than three days for optimum conditions around the sample.</p>
+        <p>4 Technical Speci cations</p>
+        <p>• electron acceleration voltage 80 kV ... 200 kV</p>
+        <p>• X-FEG brightness @ 200 kV 1.8x10 9 A/cm 2 /sr</p>
+        <p>• symmetrical analytical S-TWIN objective lens &lt; ∼ 5 mm</p>
+        <p>• information limit (TEM) @ 200 kV 110 pm</p>
+        <p>• point resolution (TEM) @ 200 kV 240pm</p>
+        <p>• total system drift (TEM)</p>
+        <p>&lt; 300 pm min -1 (rms)</p>
+        <p>• resolution (STEM) @ 200 kV and 50 pA &lt; 80 pm</p>
+        <p>• astigmatism instability (TEM) @ 200 kV &lt; 0.6 nm/min</p>
+        <p>• combined electron probe and sample drift &lt; 300 pm/min</p>
+        <p>• EDX system energy resolution (10 kcps)</p>
+        <p>&lt; 136 eV @ MnK α</p>
+        <p>• EDX solid angle 0.9 sr</p>
+        <p>• EELS system energy resolution @200 kV 0.65 eV 5 Detectors</p>
+        <p>• Peltier cooled Gatan Ultrascan 1000 XP-P charge coupled device camera (CCD) with a format of 2048 x 2048 pixels of 15 microns in size.</p>
+        <p>• Gatan En nium 977 ER spectrometer with 2.5 and 5 mm entrance apertures, electrostatic shutter and advanced dual-EELS spectroscopy modes.</p>
+        <p>• Medium angle BF/DF Gatan STEM detectors.</p>
+        <p>• Fischione Model 3000 HAADF detector.</p>
+        <p>• FEI on axis triple DF1/DF2/BF detectors.</p>
+        <p>6 Specimen Stages</p>
     </text>
 </tei>
