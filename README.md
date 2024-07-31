@@ -60,6 +60,18 @@ https:://core.ac.uk/exports/SoFAIR_Annotation_Dataset_Extension.zip
 
 This additional file contains an additional 1265 papers from 4 domains (Medicine, Physics, Biochemistry and Engineering, all distributed under CC-BY. 
 
+* Humanities Articles
+
+A collection of articles from the Humanities has been gathered from the following domains: 
+  General Arts and Humanities
+  Culteral Studies
+  Language and Linguistics
+  Sociology and Political Science
+
+https://core.ac.uk/exports/SoFAIR_Humanities_Papers.zip
+
+All papers have a cc-by license.
+
 ### References
 
 [1] Waltman, Ludo, and Nees Jan Van Eck. "A new methodology for constructing a publication‐level classification system of science." Journal of the American Society for Information Science and Technology 63.12 (2012): 2378-2392.
