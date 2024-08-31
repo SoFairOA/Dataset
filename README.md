@@ -56,9 +56,21 @@ Warning: this set contains many non CC-BY articles that are not sharable and can
 
 A second set of articles (called `extension`) to the above dataset can be downloaded from the following link:
 
-https:://core.ac.uk/exports/SoFAIR_Annotation_Dataset_Extension.zip
+https://core.ac.uk/exports/SoFAIR_Annotation_Dataset_Extension.zip
 
 This additional file contains an additional 1265 papers from 4 domains (Medicine, Physics, Biochemistry and Engineering, all distributed under CC-BY. 
+
+* Humanities Articles
+
+A collection of articles from the Humanities has been gathered from the following domains: 
+  General Arts and Humanities,
+  Culteral Studies,
+  Language and Linguistics,
+  Sociology and Political Science.
+
+https://core.ac.uk/exports/SoFAIR_Humanities_Papers.zip
+
+All papers have a cc-by license.
 
 ### References
 
