@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:id="_1"/>
+        <encodingDesc>
+            <appInfo>
+                <application version="0.8.0" ident="GROBID" when="2024-08-31T06:20+0000">
+                    <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <p>In' this' paper' I' make' flesh' a' simple' thought' experiment' (first' proposed' by' Dan' Sperber)' that' directly' contrasts' the' effects' that' replica5on' and' reconstruc5on' have' on' cultural' items.'Results'demonstrate,'in'a'simple'and'graphic'way,'that'(i)'normal'cultural'propaga5on'is'not' replica5ve,'but'reconstruc5ve,'and'(ii)'that'these 'two'different'modes'of'propaga5on'afford'two' qualita5vely'different'explana5ons'of'stability.'If'propaga5on'is'replica5ve,'as'it'is'in'biology,'then' stability' arises' from' the' fidelity' of' that' replica5on,' on' the' other' hand,' propaga5on'is'reconstruc5ve'(as'it'is'in'culture),' while' others' are' not,' and' an' explana5on' of' why'they'are.'I'discuss'two'implica5ons'of'this'result'for'research'at'the'intersec5on'of'evolu5on,' cogni5on,'and'culture.'</p>
+        <p>Figure '1:'Experimental's5muli.'The'transmission'chains'were'seeded'with'one'of'these'two'images.' Both'images'contain'the'same'individual'lines'as'each'other.'As'can'be'seen,'one'image'is'a'token' of'a'familiar'type'(the'first'three'le,ers'of'the'Roman'alphabet),'while'the'other'is'not.' As' can' be' seen,' only' the' 'ABC '' s5muli' were' stable' in' the' Reconstruc5on' condi5ons.' In' contrast,' both'types'of's5muli'were'stable'in'the'Replica5on'condi5ons.'Moreover,'the'type'of'stability'was' different'across'the'two'different'Modes'of'Transmission'(replicates'in'the'Replica5on'condi5on;' tokens'of'the'same'type'in'the'Reconstruc5on'condi5on).'See'the'main'text'for'discussion'of'the' importance'of'these'results.' page' 12</p>
+    </text>
+</tei>
