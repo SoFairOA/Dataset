@@ -92,8 +92,8 @@
 <p>Where S i,j is the specificity score of gene i in condition j. In order to give the same weight to proteomic and transcriptomic evidence, the RNA and protein weights (W RNA and W prot ) were set to 0.5.</p>
 <p>To test which genes were more specific to one cell state than expected by chance, sample labels were randomly permuted and the specificity score was recalculated. Empirical P values were computed as the proportion of times the observed specificity score of a gene in a given cell state was larger than the corresponding permuted value. P values were corrected for the number of genes tested using the Benjamini-Hochberg procedure 57 . A total of permutations were performed. Finally, proteogenomic signatures for each cytokine condition were defined as any genes with a specificity score larger than 0.7 and an FDRadjusted P value lower than 0.1. This analysis was performed separately for naïve and memory T cells. The functions used to derive proteogenomic signatures are publicly available as an
 <rs xml:id="12875599" type="software" subtype="environment">R</rs> package on
-<rs xml:id="12875589" type="software">GitHub</rs> (
-<rs xml:id="12872511" type="url">https://github.com/eddiecg/ proteogenomic</rs>).
+GitHub (
+<rs xml:id="12872511" type="url" corresp="12875599">https://github.com/eddiecg/ proteogenomic</rs>).
 </p>
 <p>Single-cell RNA-seq data analysis. Single-cell RNA-sequencing data were processed using the
 <rs xml:id="12872512" type="software">Cell Ranger Single-Cell Software Suite</rs> <rs xml:id="12872513" type="bibr">33</rs> (v
