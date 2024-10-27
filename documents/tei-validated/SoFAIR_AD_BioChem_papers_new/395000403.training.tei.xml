@@ -52,7 +52,7 @@
 <p>Tonsillar immune cells (n=7) or FACS-sorted MBCs (n=6) single-cell libraries were generated with the 10x Genomics Chromium Single Cell 3' (v2; n=1) or 5' and V(D)J (v1; n = 6) assays (TableS1) prior to sequencing on the Illumina NextSeq500 with 26/8/134 bp (scRNA) or 155/8/155 bp (scVDJ) read configurations. scRNA-seq basecall files were processed with
 <rs xml:id="12883059" type="software">CellRanger</rs> (v
 <rs xml:id="12883060" type="version" corresp="12883059">3.0.0</rs>) to provide FASTQ files for mapping to GRCh38 (release 92) to produce gene-by-cell expression matrices. scVDJ datasets were processed with
-<rs xml:id="12883061" type="software">CellRanger</rs> vdj using the refdata-cellranger-vdj-GRCh38-alts-ensembl-2.0.0 reference. Incomplete or low quality IgH contigs, or those with insufficient coverage of constant regions to ensure accurate isotype assignment between closely related subclasses, were filtered from subsequent analyses.
+<rs xml:id="12883061" type="software" subtype="environment">CellRanger</rs> <rs xml:id="128830610" type="software" subtype="component" corresp="12883061">vdj</rs> using the refdata-cellranger-vdj-GRCh38-alts-ensembl-2.0.0 reference. Incomplete or low quality IgH contigs, or those with insufficient coverage of constant regions to ensure accurate isotype assignment between closely related subclasses, were filtered from subsequent analyses.
 </p>
 <p>Bulk VDJ sequencing reads were processed with
 <rs xml:id="12883062" type="software">pRESTO</rs> (v
@@ -65,7 +65,7 @@
 <rs xml:id="12883074" type="version" corresp="12883073">1.12.0</rs>) (<rs xml:id="12883075" type="bibr">62</rs>) before correction of ambiguous V gene assignments using
 <rs xml:id="12883076" type="software">TIgGER</rs> (v
 <rs xml:id="12883077" type="version" corresp="12883076">0.3.1</rs>) (<rs xml:id="12883078" type="bibr">63</rs>). Clonally-related sequences were identified using
-<rs xml:id="12883079" type="software" subtype="component">DefineClones.py</rs> with nearest neighbour distance threshold determined by
+<rs xml:id="12883079" type="software">DefineClones.py</rs> with nearest neighbour distance threshold determined by
 <rs xml:id="12883080" type="software" subtype="component" corresp="12883081">distToNearest</rs> (<rs xml:id="12883081" type="software" subtype="environment">Shazam</rs> v<rs xml:id="12883082" type="version" corresp="12883081">0
 .1.11</rs>) (<rs xml:id="12883083" type="bibr">61</rs>). Germline sequences were inferred using
 <rs xml:id="12883084" type="software">CreateGermlines.py</rs> and SHM frequencies calculated with <rs xml:id="12883085" type="software">observedMutations</rs>. SHM frequencies &gt;0.02 were annotated as "High", 0-0.02 as "Low" and 0 as "None". For bulk BCR repertoire analysis, scVDJ sequences were excluded, providing ~1.5 million high-confidence unique IgH sequences. Lineage trees of expanded clones were constructed via maximum parsimony using
@@ -88,7 +88,7 @@
 <rs xml:id="12883106" type="software" subtype="component" corresp="12883108">FindTransferAnchors</rs> and <rs xml:id="12883107" type="software" subtype="component" corresp="12883108">TransferData</rs> with 3000 variable features (<rs xml:id="12883108" type="software" subtype="environment">Seurat</rs>).
 </p>
 <p>Differential gene expression for antibody class-specific or somatic hypermutation frequency for GC B cells or class-switched MBCs was performed using
-<rs xml:id="12883109" type="software">FindAllMarkers</rs> with Benjamini-Hochberg false discovery rate (FDR) correction. Genes were deemed significantly different if FDR &lt;0.05, average log fold change &gt;0.1 and the gene was detected in &gt;20% of cells in that group. Ingenuity Pathway Analysis (Qiagen) was performed using avg_logFC values of all genes significantly enriched in at least one class.
+<rs xml:id="12883109" type="software">FindAllMarkers</rs> with Benjamini-Hochberg false discovery rate (FDR) correction. Genes were deemed significantly different if FDR &lt;0.05, average log fold change &gt;0.1 and the gene was detected in &gt;20% of cells in that group. <rs xml:id="128831090" type="software">Ingenuity Pathway Analysis</rs> (<rs xml:id="128831091" type="publisher" corresp="128831090">Qiagen</rs>) was performed using avg_logFC values of all genes significantly enriched in at least one class.
 </p>
 <p>Gene ontology enrichment analyses were otherwise performed with
 <rs xml:id="12883110" type="software">Metascape</rs> (<rs xml:id="12883111" type="bibr">68</rs>). Single-cell gene signature scoring was performed with
@@ -103,7 +103,7 @@
 <rs xml:id="12883124" type="software">bioMart</rs> (v
 <rs xml:id="12883125" type="version" corresp="12883124">2.38.0</rs>) (<rs xml:id="12883126" type="bibr">73</rs>). Genes upregulated following α-IgM treatment were identified from microarray data with Geo2R (74). preGC and FCRL3 high signatures used the top 50 most significantly enriched genes per cluster. Unless indicated otherwise, Wilcoxon Ranked Signed Sum test was used to test for significant differences.
 </p>
-<p>To examine the expression of ligand-receptor pairs between different scRNA-seq clusters raw count matrices were analysed with "<rs xml:id="12883127" type="software" subtype="component" corresp="12883128">statistical_analysis</rs>" option of <rs xml:id="12883128" type="software">CellPhoneDB</rs> (v<rs xml:id="12883129" type="version" corresp="12883128">2.0.6</rs>) (<rs xml:id="12883130" type="bibr">75</rs>). The number of unique significant ligand-receptor co-expression pairs between each cell type were determined and interactions of interest visualised by the means of average expression of gene 1 in cell type 1 and gene 2 in cell type 2 indicated by colour and p values indicated by circle size.</p>
+<p>To examine the expression of ligand-receptor pairs between different scRNA-seq clusters raw count matrices were analysed with "<rs xml:id="12883127" type="software" subtype="component" corresp="12883128">statistical_analysis</rs>" option of <rs xml:id="12883128" type="software" subtype="environment">CellPhoneDB</rs> (v<rs xml:id="12883129" type="version" corresp="12883128">2.0.6</rs>) (<rs xml:id="12883130" type="bibr">75</rs>). The number of unique significant ligand-receptor co-expression pairs between each cell type were determined and interactions of interest visualised by the means of average expression of gene 1 in cell type 1 and gene 2 in cell type 2 indicated by colour and p values indicated by circle size.</p>
 <p>Spliced and unspliced transcripts were quantified for tonsil immune samples with <rs xml:id="12883131" type="software">velocyto</rs> (v<rs xml:id="12883132" type="version" corresp="12883131">0.17.10</rs>) (<rs xml:id="12883133" type="bibr">17</rs>) and integrated with raw counts of annotated B cell scRNA-seq in
 <rs xml:id="12883134" type="software">Scanpy</rs> (v
 <rs xml:id="12883135" type="version" corresp="12883134">1.4</rs>) (<rs xml:id="12883136" type="bibr">76</rs>) using <rs xml:id="12883137" type="software">scVelo</rs> (v
@@ -130,7 +130,7 @@
 <p>Data quality control, processing and annotation of single-cell RNA-seq.</p>
 <p>Gene expression count matrices from cellranger were used to calculate percentage mitochondrial expression per cell barcode prior to mitochondrial genes being removed from gene expression matrices.</p>
 <p>Similarly, the V, D and J gene counts for each immunoglobulin and T cell receptor were summed to calculate an overall expression before individual genes were removed from gene expression matrices.</p>
-<p>Counts of individual IgH constant region genes were also summed together (IgG1-4, and IgA1-A2) and removed. Modified gene-by-cell matrices were then used to create <rs xml:id="12883157" type="software">Seurat</rs> objects for each sample using
+<p>Counts of individual IgH constant region genes were also summed together (IgG1-4, and IgA1-A2) and removed. Modified gene-by-cell matrices were then used to create Seurat objects for each sample using
 <rs xml:id="12883158" type="software">Seurat</rs> (v
 <rs xml:id="12883159" type="version" corresp="12883158">3.0.3</rs>) (<rs xml:id="12883160" type="bibr">65</rs>), removing genes expressed in fewer than 3 cells. Cell barcodes with &lt;1000 or &gt;60000 UMIs and &lt;500 or &gt;7000 genes detected were removed, as were cell barcodes with &gt;30% mitochondrial reads. Individual matrices were then log transformed, normalised by a factor of 10000 prior to predicting cell cycle phases using the <rs xml:id="12883161" type="software">CellCycleScoring</rs> command and identifying the 3000 most variable genes within each sample using the "vst" method. A preliminary integration of all unsorted immune cells or all sorted memory B cell datasets together was performed using
 <rs xml:id="12883162" type="software">FindIntegrationAnchors</rs> and
