@@ -8,7 +8,7 @@ Description:
 
 * `documents/` contains the selection of scientific articles used in the annotation process. 
 
-* `guidelines/` 
+* `guidelines/` contains the latest version of the guidelines, with possible changes/additions related to the SoFAIR annotations.
 
 * `benchmarks/`
 
@@ -16,9 +16,9 @@ The documents are organized as follow:
 
 * `documents/tei-pre-annotated/`: the articles in XML, extracted from the PDF, with software mentions pre-annotated by the SoftCite Software Mentions Recognizer. Pre-annotations are only present to help the annotaters, they have to be checked entirely, and non pre-annotated passages must also be examinedandannotated. 
 
-* `documents/tei-annotated/`: the articles manually annoated in XML format, as expected by the Softcite Software Mention Recognizer to train machine learning models
+* `documents/tei-annotated/`: the articles manually annotated in XML format.
 
-* `documents/tei-annotated/`: the articles afer manual expert validation and enrichment, this will be used as final gol standard corpus to be published
+* `documents/tei-validated/`: the articles afer manual expert validation and enrichment, this will be the basis of the final gold standard corpus to be published.
 
 * `documents/metadata/`: the metadata information required for attribution under the CC-BY license, to be added in the final dataset for publication. 
 
