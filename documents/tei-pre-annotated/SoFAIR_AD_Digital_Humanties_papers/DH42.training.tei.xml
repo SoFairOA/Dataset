@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:id="_1"/>
+        <encodingDesc>
+            <appInfo>
+                <application version="0.8.1" ident="GROBID" when="2024-11-15T07:09+0000">
+                    <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <p>Open, digital, collaborative scholarship in the arts and humanities is significant for facilitating public access to -and engagement with-research and as a mechanism of growing the digital scholarly infrastructure. But the path to adopting open, collaborative, digital scholarship has been challenging, not least of all due to questions of economic stability, infrastructure, access, understanding, implementation, and engagement.</p>
+        <p>The advent of online technologies has provided arts and humanities researchers with greater opportunities to collaborate and create different projects. These projects are computationally robust and require a significant</p>
+        <p>amount of collaboration, which brings together different types of expertise to collaborate on equal terms rather than a model where some sets of expertise are in service to others.</p>
+        <p>The convenience and familiarity of computational methods can make us forget (or overlook) that there is a certain fragility associated with our online tools. Kathleen Fitzpatrick has argued that many online projects in the digital humanities do not have a preservation strategy -which means that they will degrade over time once they cease to receive updates in their content and software libraries. In turn, this planned obsolescence threatens the completeness and the sustainability of our research outputs in the arts and humanities over time, presenting a complex problem made more complex when environments are not static objects but rather dynamic collaborative spaces.</p>
+        <p>Open, Digital, Collaborative Project Preservation in the Humanities took place as an aligned conference of the Digital Humanities Summer Institute in June 2021 ("DHSI 2021-Online Edition"). Due to COVID-19, the conference was held virtually with pre-recorded presentations and discussion periods. There were 7 papers presented and over 900 registered attendees. This special issue with three papers stems from the conference submissions. The articles in this issue of IDEAH approach project preservation from unique perspectives and look to answer the following research questions:</p>
+        <p>Stewart Arneil elaborates on how infrastructure relates to productivity and maintainability for various aspects of a project. Arneil then discusses how the resources available to support a project will inevitably vary and typically decline over time. This leads to the main argument of the paper: it is essential to produce a simpler version of the critical components of a project, which will likely be independent of the platform and technologies used to create it, and to work through the implications of that approach on the planning, implementation, and long-term maintenance of a digital project.</p>
+        <p>Along the same lines, Lisa Goddard examines the long-term archiving of digital humanities projects from a librarian's perspective. Goddard examines six different approaches to digital preservation to determine the strengths and weaknesses of each, considering comprehensiveness and researcher preference as well as technical and resource implications for libraries. This paper presents the following conclusion: the most viable approaches for libraries involve the archiving of static representations of project data and project websites. This paper also outlines principles to prepare for a project ending, which can be incorporated from its early design stages.</p>
+        <p>Finally, Zafiris Nikitas investigates the use of digital humanities in theatre studies and outlines a series of suggestions that can lead from fragility to sustainability. Based on case studies, Nikitas proposes an open scholarship framework for digital humanities in theatre studies, which prioritizes accessibility, research, and collaboration. Nikitas also emphasizes the need for connectivity between academic communities of theatre studies in different continents, which should present a path towards fulfilling the needs of each one of these global communities.</p>
+    </text>
+</tei>

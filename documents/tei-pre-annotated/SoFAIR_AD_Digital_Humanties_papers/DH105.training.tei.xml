@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:id="_1"/>
+        <encodingDesc>
+            <appInfo>
+                <application version="0.8.1" ident="GROBID" when="2024-11-15T07:11+0000">
+                    <ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <p>First Year Seminar Introduction to Latinx Literature and Culture Prof. Désirée Díaz Intro to the "Contemporary Latinx Media" Digital Humanities Research Project &amp; Workshop</p>
+        <p>During this semester-long research project we will explore and analyze different aspects related to the representation of Latinx in the media with an emphasis on digital content produced by Latinx groups and communities such as news outlets, blogs, magazines, video channels, social media platforms, advertisement, independent films, and others. This project will also offer the students the possibility of establishing an ongoing dialogue between canonical readings and more recent representations of Latinx communities. In their individual research projects, students are encouraged to investigate issues related to identity politics, gender, and race; the politics of bilingualism; diaspora and transculturation; social and political activism through art; the politics of self-representation, among many others. Together, we will collaboratively build a digital exhibit exploring different aspects, approaches, and themes related to the representation of Latinx in the media. Each student will participate in the collective exhibit, contributing to data collection and analysis while producing their individual research projects.</p>
+        <p>During the research project, we will:</p>
+        <p>--Collect relevant data, information, and bibliography about contemporary Latinx media.</p>
+        <p>--Learn about the process of doing research in the humanities.</p>
+        <p>--Get a better understanding of the current trends in the representation of Latinx in the media.</p>
+        <p>--Learn about digital humanities research methods.</p>
+        <p>--Implement humanities approaches and research methods to study digital products. Apply literary, visual, and cultural theories as our main analytical and conceptual framework to approach and analyze our particular research topics. --Produce original digital scholarship on the representation of Latinx in digital media.</p>
+        <p>--Collaboratively build a digital exhibit and database in the representation of Latinx in the media.</p>
+        <p>You will research one specific aspect or topic related to the representation of Latinx in the media. You will use the digital platform Scalar to publish your research project. Scalar allows you to include both traditional texts and digital elements (such as videos, music, images, graphics, etc.) to enrich your analysis. You research project must include the following elements: --Collaboratively compilation of data: web sites, media production, online magazines, social media, bibliography, etc. --Compilation of salient themes that are worth exploring. Start categorizing. Homework: Start thinking about your research topic. What would you like to work with? What topics would you like to explore. Focus your subsequent research on that topic.</p>
+        <p>Turn in your research proposal:</p>
+        <p>--Define your research topic.</p>
+        <p>--Define your research question.</p>
+        <p>--Discuss concepts related to your topic.</p>
+        <p>--Discuss bibliography related to that topic. Homework: Plan your research, find evidences, and further refine the project. Start working!!</p>
+        <p>--Keep working on your projects. Peer-review of analysis of evidence, examples.</p>
+        <p>Session 5 --Design, upload.</p>
+        <p>--Representation of (women, men, queer subjects, children, specific topics) in contemporary Latinx media (websites, digital magazines, news outlets, tv series, films, music videos, blogs, etc.) --You can compare or analyze one-three elements in particular, one character, one specific source, etc. --You can also focus on one type of discourse or genre (visual representation, blogs, social media, gaming platforms --You can also choose one specific topic or issue: language, race, gender, millennials, etc. --Analysis of evidences (objects/examples) Close "reading" or analysis of three objects, pieces of evidence that support and exemplify your thesis or argument.</p>
+        <p>--Conclusions --Bibliography and sources</p>
+    </text>
+</tei>
