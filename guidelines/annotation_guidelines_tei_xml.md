@@ -66,7 +66,7 @@ xml:id="PMC4968915-software-1">Matlab</rs> (<rs corresp="#PMC4968915-software-1"
 MA, USA).
 ```
 
-- **named software component:** `@subtype="environment"`, for a named software depending on another software environment mentioned in the mention context
+- **named software component:** `@subtype="component"`, for a named software depending on another software environment mentioned in the mention context
 to run. We always have a software environment expressed in the same mention context, and the dependency of the software component to the software environment is encoded with the `@corresp` pointer to the `xml:id` of the software environment. 
 
 ```xml
@@ -89,7 +89,7 @@ xml:id="PMC5458338-software-4">dprime_simple</rs> (<rs corresp="#PMC5458338-soft
 type="url">https://it.mathworks.com/matlabcentral/fileex change/47711-dprime-simple-m</rs>
 ```
 
-- **implicit software component:** `@subtype="implicit"` for an unnamed software. The software refering expression is a generic term for program, such as program, code, script, macro, package, library, etc. Optionally, if the unnamed software is depending on another software environment to run, the software environment being expressed in the mention context, then the the dependency of the unamed software to the software environment is encoded with the `@corresp` pointer to the `xml:id` of the software environment (similarly as for a software component). 
+- **implicit software component:** `@subtype="implicit"` for an unnamed software. The software referring expression is a generic term for program, such as program, code, script, macro, package, library, etc. Optionally, if the unnamed software is depending on another software environment to run, the software environment being expressed in the mention context, then the the dependency of the unnamed software to the software environment is encoded with the `@corresp` pointer to the `xml:id` of the software environment (similarly as for a software component). 
 
 ```xml
 We developed a <rs type="language" corresp="#PMC4551074-software-200">Perl</rs> <rs type="software" subtype="implicit" 
@@ -113,7 +113,7 @@ The `version` tag identifies the version of the mentioned software, it is encode
 Version annotation should cover only the specific number or date string, without any other token like "version", "v.", etc. or extra punctuations:
 
 ```xml
-<p>We performed meta-analysis using <rs type="software" xml:id="PMC4898839-software-100"> Review Manager</rs> Software 
+<p>We performed meta-analysis using <rs type="software" xml:id="PMC4898839-software-100">Review Manager</rs> Software 
 (version <rs type="version" corresp="#PMC4898839-software-100">5</rs>).</p>
 
 <p>All statistical analyses were conducted with IBM <rs type="software" subtype="environment" 
@@ -295,7 +295,7 @@ The [VITEK 2 system](https://www.biomerieux-usa.com/clinical/vitek-2-healthcare)
 
 Given the variety of software embodiments, what is mentioned is often larger system or devices including software. It is thus important to decide in context to which part the authors are referring to, and if the statement refers to the software part of the device. 
  
-- **Software components** of a more complete infrastructure: A reference is made to a general infrastructure, including some software components. For example in [10.20955/r.2018.1-16](http://herosolutions.com.pk/breera/foundation/images/whitepaper.pdf) "Bitcoin wallet". We consider that we are refering to a software environment, and thus annotate this as a software mention. 
+- **Software components** of a more complete infrastructure: A reference is made to a general infrastructure, including some software components. For example in [10.20955/r.2018.1-16](http://herosolutions.com.pk/breera/foundation/images/whitepaper.pdf) "Bitcoin wallet". We consider that we are referring to a software environment, and thus annotate this as a software mention. 
 
 - Reference to a **programming languages**. For example: [10.1257/jep.4.1.99](https://www.aeaweb.org/articles?id=10.1257/jep.4.1.99)
 
