@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc xml:id="_1"/>
+<encodingDesc>
+<appInfo>
+<application version="0.8.1" ident="GROBID" when="2024-11-15T07:12+0000">
+<ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+</application>
+</appInfo>
+</encodingDesc>
+</teiHeader>
+<text xml:lang="en">
+<p>Digital humanities are often described in terms of humanistic work being carried out with the aid of digital tools, usually computer-based. Other disciplinary fields in, for example biology or economy, went through a digital turn a few years or decades ago. Now, many areas of the humanities are going the same way. This is especially so of literary studies, linguistics, and archaeology. Many researchers in the humanities regularly carry out their work in information-and computing-intensive settings, employing techniques and tools that so far have been limited to software engineers or computer scientists [1]. However, there is little consensus on what digital humanities actually are, whether they constitute a new discipline or just a passing fad, or how they change the nature of humanistic enquiry.</p>
+<p>In this setting, the role of information is especially relevant. As with any other field of study, researchers in the humanities produce large amounts of information that is generated, stored, manipulated, communicated, and visualised through digital means. This Special Issue attempts to contribute to a better understanding of digital humanities by focusing on the role that information plays in humanistic research and, specifically, how humanistic knowledge is generated, communicated, used, and institutionalised through information-intensive tools, techniques, and methods. Relevant issues include how things are documented and described; how natural language is incorporated into the research process; how time, space, subjectivity, change, and multilingualism affect reasoning and knowledge production; how computing techniques (such as big data, artificial intelligence, or information visualisation) can help in the humanities; finally, any other aspects of humanistic research that are often performed in information-intensive settings.</p>
+<p>The articles in this Special Issue cover a wide range of topics related to information in digital humanities. Some address information issues from an ontological point of view. This includes, for example, "Capturing the Silences in Digital Archaeological Knowledge" [2], which explores non-knowledge, or lack of knowledge as captured in archaeological datasets. The article "Linking Theories, Past Practices, and Archaeological Remains of Movement through Ontological Reasoning" [3] proposes new approaches to knowledge generation through the construction of ontologies, with a special focus on movement over a territory. Finally, the article "Ontology-Mediated Historical Data Modeling: Theoretical and Practical Tools for an Integrated Construction of the Past" [4] takes a constructionist approach to the whole life cycle, from knowledge modelling to the development of a software tool, to aid in the study of the past.</p>
+<p>Other articles take a more specialised approach, such as "Exploring West African Folk Narrative Texts Using Machine Learning" [5], which employs a number of natural language processing techniques to process and compare two corpora of West African folk tales. Additionally, the article "One Archaeology: A Manifesto for the Systematic and Effective Use of Mapped Data from Archaeological Fieldwork and Research" [6] proposes a public sector-oriented approach to managing and sharing archaeological geospatial information.</p>
+<p>The remaining articles in the Special Issue tackle the very relevant aspect of language and its connection to information generation and use. "Measuring Language Distance of Isolated European Languages" [7] employs corpus-based techniques, as opposed to phylogenetic approaches,</p>
+<p>to obtain distance measurements between isolated languages in Europe, whereas "Software Support for Discourse-Based Textual Information Analysis: A
+Systematic Literature Review and Software Guidelines in Practice" [8] produces a systematic literature review of software <rs xml:id="12973139" type="software" subtype="implicit">tools</rs> for discourse analysis and introduces some guidelines for developing and adopting these tools.
+</p>
+<p>In summary, this Special Issue on information in digital humanities covers aspects of ontological modelling and reasoning, theorising on the past, natural language, geo-spatial information, and software <rs xml:id="12973140" type="software" subtype="implicit">tools</rs>, among others. We hope that these articles help us advance in our understanding of the roles that information play in humanistic research and practice.</p>
+<p>Funding: This research received no external funding.</p>
+<p>The author declares no conflict of interest.</p>
+</text>
+</tei>
