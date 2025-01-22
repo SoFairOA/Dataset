@@ -119,7 +119,7 @@ XGBoosT, as well as the most popular Deep Neural Network (DNN).
 <rs xml:id="12895687" type="software">Metasploit</rs> framework and then transferring it using the curl tool.
 </p>
 <p>• Password cracking attack: This attack consists of trying to find a password or a key through successive attempts. This means that the password is broken by trying successive combinations until the right one is found. This can range from alphanumeric attempts: a, aa aaa, ab, abb, abbb, etc., or from a dictionary of the most commonly used passwords. The offensive systems with the following IP address: 192.168.0.170 were used to lunch this attack. The
-<rs xml:id="12895688" type="software">CeWL</rs> tool is used as a <rs xml:id="12895689" type="language">Ruby</rs> app for creating a list of words (password crackers) and email addresses (usernames).
+<rs xml:id="12895688" type="software">CeWL</rs> tool is used as a Ruby app for creating a list of words (password crackers) and email addresses (usernames).
 </p>
 <p>• Ransomware attack: This is a type of malware that takes hostage files or IoT devices. Specifically, the attacker demands a ransom in exchange for restoring access or decrypting files. The cybercriminals behind this attack will contact the victim with their demands, promising to unlock the IoT device or decrypt the files once pay a ransom, which is usually in Bitcoin. The offensive systems with the following IP address: 192.168.0.170 were used to lunch this attack. After applying the Backdoor attack, the
 <rs xml:id="12895691" type="software">OpenSSL</rs> cryptography toolkit is used for creating RSA public/private keys and encrypting and decrypting victim files.
