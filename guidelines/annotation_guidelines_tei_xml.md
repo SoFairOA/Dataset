@@ -89,7 +89,9 @@ xml:id="PMC5458338-software-4">dprime_simple</rs> (<rs corresp="#PMC5458338-soft
 type="url">https://it.mathworks.com/matlabcentral/fileex change/47711-dprime-simple-m</rs>
 ```
 
-- **implicit software component:** `@subtype="implicit"` for an unnamed software. The software referring expression is a generic term for program, such as program, code, script, macro, package, library, etc. Optionally, if the unnamed software is depending on another software environment to run, the software environment being expressed in the mention context, then the the dependency of the unnamed software to the software environment is encoded with the `@corresp` pointer to the `xml:id` of the software environment (similarly as for a software component). 
+
+- **implicit software component:** `@subtype="implicit"` for an unnamed software. The software referring expression is a generic term for program, such as program, code, script, macro, package, library, etc. Optionally, if the unnamed software is depending on another software environment to run, the software environment being expressed in the mention context, then the dependency of the unnamed software to the software environment is encoded with the `@corresp` pointer to the `xml:id` of the software environment (similarly as for a software component). 
+
 
 ```xml
 We developed a <rs type="language" corresp="#PMC4551074-software-200">Perl</rs> <rs type="software" subtype="implicit" 
@@ -104,7 +106,7 @@ subtype="implicit" xml:id="10.1111%2Froie.12300-software-1" corresp="#10.1111%2F
 downloadable in <rs type="url" corresp="#10.1111%2Froie.12300-software-1">mwkang.site11.com/code/rie2016</rs>.
 ```
 
-For determining the type of a software, some search about the software on the internet is often necessary. 
+For determining the type of software, some search about the software on the internet is often necessary. 
 
 ### Version
 
