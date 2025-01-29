@@ -97,9 +97,9 @@
 <p>-QuikSCAT melt fluxes (Trusel et al., 2013). Contact: trusel@rowan.edu. Available through Quantarctica v3 http:// quantarctica.npolar.no/.</p>
 <p>-Accumulation radar-derived annual accumulation fluxes (Medley et al., 2015). Contact: brooke.c.medley@nasa.gov.</p>
 <p>-Kohnen radiosonde data (this study). Contact: gerit.birnbaum@awi.de. financial and logistical support of the French Polar Institute IPEV (programme CALVA-1013) Graphics and calculations were made using the
-<rs xml:id="12891887" type="language">NCAR
-Command Language</rs> (version
-<rs xml:id="12891888" type="version" corresp="12891887">6.3.0</rs>,
+NCAR
+Command Language (version
+6.3.0,
 2017).
 </p>
 <p>Edited by: Xavier Fettweis Reviewed by: Michael Lehning and one anonymous referee</p>

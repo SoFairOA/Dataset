@@ -45,9 +45,9 @@
 <p>Read extraction, assembly and phylogenetic analysis of L-lactate dehydrogenase (ldh) genes For phylogenetic assignment, ldh genes were reassembled based on raw reads and contigs from existing assemblies, with hits to KEGG gene K00016 from both metagenome and metatranscriptome data (see Additional file 5: Text S1) and ldh genes with a protein length of ≥310 aa were considered near full-length and included into the phylogenetic analysis. Reference ldh sequences from rumen bacterial isolates with hits to K00016 were extracted from the <rs xml:id="12895546" type="software">IMG/M</rs> database in June 2015. Amino acid sequences were aligned using
 <rs xml:id="12895547" type="software">MUSCLE</rs> <rs xml:id="12953721" type="bibr">[47]</rs>, and alignments were imported into
 <rs xml:id="12895549" type="software">ARB</rs> (v.
-<rs xml:id="12895550" type="version">6</rs>) <rs xml:id="12953722" type="bibr">[48]</rs> for manual refinement. Phylogenetic maximum likelihood bootstrap trees with 100 re-samplings were constructed using
+<rs xml:id="12895550" type="version" corresp="12895549">6</rs>) <rs xml:id="12953722" type="bibr">[48]</rs> for manual refinement. Phylogenetic maximum likelihood bootstrap trees with 100 re-samplings were constructed using
 <rs xml:id="12895552" type="software">RAxML</rs> (v.
-<rs xml:id="12895553" type="version">7.7.2</rs>) <rs xml:id="12953723" type="bibr">[49]</rs>, and the best scoring tree including bootstrap values was re-imported into
+<rs xml:id="12895553" type="version" corresp="12895552">7.7.2</rs>) <rs xml:id="12953723" type="bibr">[49]</rs>, and the best scoring tree including bootstrap values was re-imported into
 <rs xml:id="12895555" type="software">ARB</rs> for cluster annotation.
 </p>
 <p>Read mapping to reference genomes from rumen isolates and reassembled ldh and lcdA database genes</p>

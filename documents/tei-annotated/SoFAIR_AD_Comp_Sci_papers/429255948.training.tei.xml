@@ -83,18 +83,18 @@ API/
 <p>For stacking multiple base learners we use the SuperLearner method 39 , which is the most computational method but allows for an independent assessment of all individual learners through k-fold cross validation with refitting. To speed up computing we typically use a linear model (predict.lm) as the meta-learner, so that in fact the final formula to derive the final ensemble prediction can be directly interpreted by printing the model summary.</p>
 <p>The predictions in the Ensemble models described in Fig. 7 are in principle based on using the following five Machine Learning libraries common for many soil mapping projects 5 .</p>
 <p>1. Ranger: fully scalable implementation of Random Forest 23 . 2. <rs xml:id="12965883" type="software">XGboost</rs>: extreme gradient boosting 40 www.nature.com/scientificreports/ 5. <rs xml:id="12965884" type="software">Glmnet</rs>: GLM with Lasso or Elasticnet Regularization 24 .</p>
-<p>These Open source <rs xml:id="12965899" type="software" subtype="implicit">libraries</rs>, with the exception of the
+<p>These Open source <rs xml:id="12965899" type="software" subtype="implicit" corresp="12974348">libraries</rs>, with the exception of the
 <rs xml:id="12965885" type="software">Cubist</rs>, are available through a variety of programming environments including
-<rs xml:id="12965900" type="language">R</rs>, <rs xml:id="12965901" type="language">Python</rs> and also as standalone <rs xml:id="12965888" type="language">C++</rs> libraries.
+<rs xml:id="12974348" type="software" subtype="environment">R</rs>, <rs xml:id="12974349" type="software" subtype="environment">Python</rs> and also as standalone <rs xml:id="12965888" type="language" corresp="12974350">C++</rs> <rs xml:id="12974350" type="software" subtype="implicit">libraries</rs>.
 </p>
 <p>scales can be traced back to the work of McBratney 42 . In a multiscale model, soil variation can be considered a composite signal (Fig. 8):</p>
 <p>where S 4 is the value of the target variable estimated at the coarsest scale, S 3 , S 2 and S 1 are the higher order com- ponents, s B is the location or block of land, and ε is the residual soil variation i.e. pure noise.</p>
 <p>In this work we used a somewhat simplified version of Eq. ( 2) with only two scale-components: coarse ( S 2 ; 250 m) and fine ( S 1 ; 30 m). We produce the coarse-scale and fine-scale predictions independently, then merge using a weighted average 43 : where ŷ(s B ) is the ensemble prediction, w i is the model weight and σ 2 i,CV is the model squared prediction error obtained using cross-validation. This is an example of Ensemble Models fitted for coarse-scale model for soil pH:</p>
 <p>(2) www.nature.com/scientificreports/ and the model for soil pH: Note that in this case the coarse-scale model is somewhat more accurate with RMSE = 0.463 , while the 30 m covariates achieve at best RMSE = 0.661 , hence the weights for 250 m model are about 2 × higher than for the 30 m resolution models. A step-by-step procedure explaining in detail how the 2-scale predictions are derived and merged is available at
-<rs xml:id="12965890" type="url">https ://gitla b.com/openl andma p/spati al
+https ://gitla b.com/openl andma p/spati al
 -predi
 ction
-s-using -eml</rs>. An
+s-using -eml. An
 <rs xml:id="12965891" type="software" subtype="environment">R</rs> package
 <rs xml:id="12965892" type="software" subtype="component" corresp="12965891">landmap</rs> <rs xml:id="12965893" type="bibr">44</rs> that implements the procedure in a few lines of
 <rs xml:id="12965894" type="software" subtype="implicit">code</rs> is also available.

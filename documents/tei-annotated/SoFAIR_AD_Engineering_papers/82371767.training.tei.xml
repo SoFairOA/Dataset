@@ -83,10 +83,10 @@
 <p>In addition to DVR, we measure the spread of solutions along the Pareto frontier using the spacing metric (SPC) as follows (Tan, Goh, Yang, &amp; Lee, 2006):</p>
 <p>where d ξ is the Euclidan distance between solution ξ and its clos- (Tan et al., 2006).</p>
 <p>Finally, the number of solutions in the frontier is considered as the measure of cardinality of the Pareto frontier denoted by CRD :</p>
-<p>The constructive heuristic was coded in <rs xml:id="12895895" type="language">C++</rs> and run on an Intel Xeon CPU 3.50 GHz with 32.0 GB RAM under
+<p>The constructive heuristic was coded in C++ and run on an Intel Xeon CPU 3.50 GHz with 32.0 GB RAM under
 Windows 7 Enterprise. Moreover, we used
 <rs xml:id="12895896" type="software">CPLEX</rs>
-<rs xml:id="12895897" type="version" corresp="12895896">12.5</rs> in <rs xml:id="12895925" type="software">Concert Technology</rs> to code the MILP model in <rs xml:id="12895898" type="language">C++</rs>. Graphs and statistical analyses were performed on a MacBook Pro with Intel Core i7 2.2 GHz processor and OS X version 10.9.3 running
+<rs xml:id="12895897" type="version" corresp="12895896">12.5</rs> in <rs xml:id="12895925" type="software">Concert Technology</rs> to code the MILP model in C++. Graphs and statistical analyses were performed on a MacBook Pro with Intel Core i7 2.2 GHz processor and OS X version 10.9.3 running
 <rs xml:id="12895899" type="software">RStudio</rs> version
 <rs xml:id="12895900" type="version" corresp="12895899">0.97.551</rs> and
 <rs xml:id="12895901" type="software">R</rs> version
