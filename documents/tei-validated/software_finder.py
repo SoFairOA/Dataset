@@ -14,11 +14,12 @@ def extract_software_from_rs(xml_file):
         softwares = {}
 
         for rs in root.findall(".//tei:rs[@type='software']", NAMESPACE):
-            software_name = rs.text.strip() if rs.text else "[No Name]"
-            if software_name in softwares:
-                softwares[software_name].append(xml_file)  # Append new source file
-            else:
-                softwares[software_name] = [xml_file]  # Store first occurrence
+            if rs.attrib.get('subtype') not in ['environment', 'component','implicit']:
+                software_name = rs.text.strip()
+                if software_name in softwares:
+                    softwares[software_name].append(xml_file)  # Append new source file
+                else:
+                    softwares[software_name] = [xml_file]  # Store first occurrence
 
         return softwares  # Dictionary {software_name: [list of source_files]}
 
