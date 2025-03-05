@@ -11,57 +11,70 @@ def extract_software_from_rs(xml_file):
     try:
         tree = ET.parse(xml_file)
         root = tree.getroot()
-        softwares = set()
+        softwares = {}
 
         for rs in root.findall(".//tei:rs[@type='software']", NAMESPACE):
             software_name = rs.text.strip() if rs.text else "[No Name]"
-            softwares.add(software_name)
+            if software_name in softwares:
+                softwares[software_name].append(xml_file)  # Append new source file
+            else:
+                softwares[software_name] = [xml_file]  # Store first occurrence
 
-        return softwares
+        return softwares  # Dictionary {software_name: [list of source_files]}
 
     except (ET.ParseError, UnicodeDecodeError) as e:
         print(f"Error processing {xml_file}: {e}")
-        return set()  # Return empty set if error occurs
+        return {}  # Return empty dict if error occurs
 
 
 def process_directory(directory):
     """Builds a deduplicated list of software names from all XML files."""
     if not os.path.isdir(directory):
         print("Invalid directory path")
-        return set()
+        return {}
 
-    unique_softwares = set()
+    software_sources = {}  # Dictionary to track software origins
     for filename in os.listdir(directory):
         if filename.endswith(".xml"):
             file_path = os.path.join(directory, filename)
-            unique_softwares.update(extract_software_from_rs(file_path))
+            extracted = extract_software_from_rs(file_path)
 
-    return sorted(unique_softwares)  # Return sorted list for consistency
+            # Merge occurrences
+            for software, files in extracted.items():
+                if software in software_sources:
+                    software_sources[software].extend(files)
+                else:
+                    software_sources[software] = files
+
+    return software_sources  # {software_name: [list of source_files]}
 
 
-def check_untagged(directory, software_list):
+def check_untagged(directory, software_sources):
     """Checks if software names appear untagged in XML files."""
     for filename in os.listdir(directory):
         if filename.endswith(".xml"):
             xml_file = os.path.join(directory, filename)
 
-            # Extract tagged software from XML
-            tagged_software = extract_software_from_rs(xml_file)
+            # Extract tagged software from current XML
+            tagged_software = extract_software_from_rs(xml_file).keys()
 
             # Read the full XML content as text
             with open(xml_file, "r", encoding="utf-8") as file:
                 text_content = file.read()
 
-            for software in software_list:
+            for software, source_files in software_sources.items():
                 # Use regex to match software as a whole word
                 pattern = rf"\b{re.escape(software)}\b"
 
                 if re.search(pattern, text_content):  # If found in text
-                    if software not in tagged_software and software not in ["code","codes", "scripts"]:  # But not tagged
-                        print(f"⚠️ Missed: '{software}' in {filename}")
+                    if software not in tagged_software and software not in ["code", "codes", "scripts"]:
+                        origin_files = ", ".join(os.path.basename(f) for f in source_files)
+                        #print(f"⚠️ Missed: '{software}' in {filename} (Originally tagged in: {origin_files})")
+                        print(f"⚠️ Missed: '{software}' in {filename} (Originally tagged in: {source_files[:1]})")
+
 
 
 # Run the script
 directory_path = "./SoFAIR_AD_Medicine_papers"
-software_list = process_directory(directory_path)
-check_untagged(directory_path, software_list)
+software_sources = process_directory(directory_path)
+check_untagged(directory_path, software_sources)
