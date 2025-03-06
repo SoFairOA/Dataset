@@ -15,6 +15,8 @@ def extract_software_from_rs(xml_file):
 
         for rs in root.findall(".//tei:rs[@type='software']", NAMESPACE):
             if rs.attrib.get('subtype') not in ['environment', 'component','implicit']:
+                if '{http://www.w3.org/XML/1998/namespace}id' not in rs.attrib:
+                    print(f"not xml:id for {rs.attrib} in {xml_file}")
                 software_name = rs.text.strip()
                 if software_name in softwares:
                     softwares[software_name].append(xml_file)  # Append new source file
@@ -76,6 +78,6 @@ def check_untagged(directory, software_sources):
 
 
 # Run the script
-directory_path = "./SoFAIR_AD_Medicine_papers"
+directory_path = "./SoFAIR_AD_Physics_papers"
 software_sources = process_directory(directory_path)
 check_untagged(directory_path, software_sources)
