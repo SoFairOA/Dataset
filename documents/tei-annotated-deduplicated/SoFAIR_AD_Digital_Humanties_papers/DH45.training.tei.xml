@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc xml:id="_1"/>
+<encodingDesc>
+<appInfo>
+<application version="0.8.1" ident="GROBID" when="2024-11-15T07:10+0000">
+<ref target="https://github.com/kermitt2/grobid">A machine learning software for extracting information from scholarly documents</ref>
+</application>
+</appInfo>
+</encodingDesc>
+</teiHeader>
+<text xml:lang="en">
+<p>The articles that appear in this special issue were first presented at the online conference Open/Social/Digital Humanities Pedagogy, Training, and Mentorship in June 2021, an event aligned with the Digital Humanities Summer Institute. 1 This event was a collaboration between the Implementing New Knowledge Environments Pedagogy Cluster, co-led by Constance Crompton and Laura Estill, and the Alliance of Digital Humanities Organizations Pedagogy Special Interest Group, represented by Ray Siemens. 2 Thanks to our session chairs-Leigh Bonds, Theresa N. Kenney, Harvey Quamen, Hannah L. Jacobs, Lydia Zvyagintseva, Mary Elizabeth Leighton, Amanda Licastro, and David Ogborn-for facilitating wide-ranging and energetic discussions.</p>
+<p>The 2021 Open/Social/Digital Humanities Pedagogy, Training, and Mentorship event occurred online because of the ongoing COVID-19 pandemic, which meant that we were able to host over one thousand registered participants from around the world, many of whom were able to attend the synchronous and fruitful discussion.</p>
+<p>The Twitter hashtags for the event were #OSDHumanitiesPTM and #DHSI22. The articles that were selected for publication here capture the breadth of our interventions and discussions at this event, while also opening the door for further innovations in open, social, digital humanities pedagogy, training, and mentorship.</p>
+<p>The title of this event and special issue-Open/Social/Digital Humanities Pedagogy, Training, and Mentorship -yokes together multiple ideas with its slashes and commas: indeed, each of the terms themselves contain different meanings. Below, we have chosen just a single theme from the many that each of these ideas bring together, in order to showcase one way it explores the topics of this special issue. We have highlighted how this special issue brings together work on the themes of open, social, digital and pedagogy, training, and mentorship and highlighted how these themes are imbricated and implicated with one another: these are not neat categories and each article in this special issue speaks to many-if not all-of these ideas. And yet, it is the central word in our title, humanities, that also brings this work together. These articles all, in different ways, showcase how the use of digital resources as well as critical reflection about technology and media is important to humanities teaching and research. Indeed, it is this capacious and evolving field that is digital humanities pedagogy.</p>
+</text>
+</tei>
