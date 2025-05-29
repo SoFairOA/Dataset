@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>This is a PDF file of an article that has undergone enhancements after acceptance, such as the addition of a cover page and metadata, and formatting for readability, but it is not yet the definitive version of record. This version will undergo additional copyediting, typesetting and review before it is published in its final form, but we are providing this version to give early visibility of the article. Please note that, during the production process, errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
 <p>t present, the widespread usage of wearable medical data collection and surveillance devices, including but not limited to the intelligent bracelet, blood glucose monitor and defibrillator, leads to massive amounts of private data being generated. In the meantime, the emergence of social platforms has facilitated the convenient dissemination of data, thereby boosting their accessibility. With this comes the increasing concern of users about the privacy and security of data. In addition, digital image with vivid, visual, and intuitive features has become one of the most popular multimedia data formats. In this context, preventing digital images from divulging user-privacy-related information becomes extremely challenging for cryptologists owing to their large data volume, high redundancy, and strong relevance. Hence, it has emerged as one of research focuses on the information security field.</p>
 <p>In other aspects, for the resource-constrained applications, such as wearable devices and portable medical data collection sensors, it is extremely significant to encrypt sensitive data while taking into account the compression of its redundant data to conserve overhead. Then, considering as an emerging information acquisition technology, the Compressive Sensing (CS) (Donoho, 2006;Candes, 2006) can not only throw off the frequency constraint of the traditional Nyquist-Shannon sampling theorem and greatly curtail the redundancy among data, but also accomplish data compression while performing sampling, thereby effectively diminishing the complexity of information acquisition system (Jiang, 2021). Therefore, in the latest years, this promising technology has gained the close attention of widespread scholars and cryptographers.</p>
@@ -138,5 +139,6 @@ the <rs xml:id="12894669" type="software">Open Access Biomedical Image Search En
 <p>b</p>
 <p>The datasets generated and analyzed during the current study are available from the corresponding author upon a reasonable request.</p>
 <p>The authors report no conflicts of interest. The authors alone are responsible for content and writing of this paper.</p>
+</body>
 </text>
 </tei>

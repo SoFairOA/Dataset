@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Systematic reviews and meta-analyses rank the highest in the evidence hierarchy. However, they still have the risk of spurious results because they include too few studies and participants. The use of trial sequential analysis (TSA) has increased recently, providing more information on the precision and uncertainty of meta-analysis results. This makes it a powerful tool for clinicians to assess the conclusiveness of meta-analysis. TSA provides monitoring boundaries or futility boundaries, helping clinicians prevent unnecessary trials. The use and interpretation of TSA should be based on an understanding of the principles and assumptions behind TSA, which may provide more accurate, precise, and unbiased information to clinicians, patients, and policymakers. In this article, the history, background, principles, and assumptions behind TSA are described, which would lead to its better understanding, implementation, and interpretation.</p>
 <p>Sequential analysis is a statistical method in which the final number of patients analyzed is not predetermined, but sampling or enrollment of patients is decided by a predetermined stopping rule such as satisfying a statistical significance. Accordingly, the investigators may draw a conclusion earlier than that with the traditional statistical methods, reducing time, cost, effort, and resources.</p>
 <p>The concept and method of sequential analysis were introduced and described as expeditious industrial quality control methods during World War II by Abraham Wald [1]. This concept was used to prove the desired or undesired intervention effects by analyzing data from ongoing trials. After World War II, Peter Armitage introduced a sequential analysis method to medical research and suggested applying a strict significance level to stop a trial before a prede-termined number of patients was reached [2].</p>
@@ -100,5 +101,6 @@ Review Manager. Under these menu bars, another row, namely Meta-analysis, Trials
 <p>www.anesth-pain-med.org Anesth Pain Med</p>
 <p>The datasets generated during and/or analyzed during the current study are available from the corresponding author on reasonable request.</p>
 <p>No potential conflict of interest relevant to this article was reported.</p>
+</body>
 </text>
 </tei>

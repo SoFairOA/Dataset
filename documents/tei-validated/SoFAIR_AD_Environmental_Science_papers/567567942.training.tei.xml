@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Genomic analyses are sensitive to contamination in public databases caused by incorrectly labeled reference sequences. Here, we describe <rs xml:id="12972886" type="software">Conterminator</rs>, an efficient method to detect and remove incorrectly labeled sequences by an exhaustive all-against-all sequence comparison. Our analysis reports contamination of 2,161,746, 114,035, and 14,148 sequences in the RefSeq, GenBank, and NR databases, respectively, spanning the whole range from draft to "complete" model organism genomes. Our method scales linearly with input size and can process 3.3 TB in 12 days on a 32-core computer. <rs xml:id="12972887" type="software">Conterminator</rs> can help ensure the quality of reference databases. Source <rs xml:id="12972888" type="software" subtype="implicit">code</rs> (GPLv3): https://github.com/martin-steinegger/conterminator</p>
 <p>The number of genomes in public and private repositories has been skyrocketing for at least the past decade, primarily due to the rapidly dropping costs of sequencing. The public genome database GenBank, which is regularly synchronized with the EMBL and DDBJ databases, has been doubling in size roughly every 18 months [1]. These genomics databases provide a vital worldwide resource that has been driving new findings in biotechnology and medicine for nearly three decades.</p>
 <p>Draft genomes consisting of hundreds to thousands of unordered DNA sequence fragments represent a large fraction of the over 500,000 genomes stored in GenBank [2]. Some of these fragments contain foreign DNA due to contamination from reagents, laboratory materials, sample processing artifacts, or cross-contamination from multiplexed sequencing runs (Fig. 1a). These contaminating sequences may cause a variety of problems, including incorrect labels on sequences in metagenomic studies [3], faulty conclusions about horizontal gene transfer [4,5], or poor annotation quality of genomes [6].</p>
@@ -85,5 +86,6 @@
 <p>Not applicable.</p>
 <p>The authors declare that they have no competing interests.</p>
 <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

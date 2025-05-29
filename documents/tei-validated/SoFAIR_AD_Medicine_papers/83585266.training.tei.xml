@@ -11,6 +11,7 @@
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
+<body>
         <p>The Mediterranean diet has been linked to a number of health benefits, including reduced mortality risk and lower incidence of cardiovascular disease. Definitions of the Mediterranean diet vary across some settings, and scores are increasingly being employed to define Mediterranean diet adherence in epidemiological studies. Some components of the Mediterranean diet overlap with other healthy dietary patterns, whereas other aspects are unique to the Mediterranean diet. In this forum article, we asked clinicians and researchers with an interest in the effect of diet on health to describe what constitutes a Mediterranean diet in different geographical settings, and how we can study the health benefits of this dietary pattern.</p>
         <p>Antonia Trichopoulou, (Figure 1)</p>
         <p>In purely descriptive terms, the traditional Mediterranean diet is the dietary pattern prevailing among the people of the olive tree-growing areas of the Mediterranean basin before the mid-1960s, that is, before globalization made its influence on lifestyle, including diet. Key determinants of the traditional Mediterranean diet have been climate, flora and hardship, the latter discouraging import or consumption of expensive, at that time, red meat [1].</p>
@@ -82,5 +83,6 @@
         <p>2014, 12:112 http://www.biomedcentral.com/1741-7015/12/112</p>
         <p>Jul 2014 2014, 12:112</p>
         <p>The author declares that he has no competing interests.</p>
-    </text>
+    </body>
+</text>
 </tei>

@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Student engagement is critical to student learning, especially in the online environment, where students can often feel isolated and disconnected. Therefore, teachers and researchers need to be able to measure student engagement. This study provides validation of the Online Student Engagement scale (OSE) by correlating student self-reports of engagement (via the OSE) with tracking data of student behaviors from an online course management system. It hypothesized that reported student engagement on the OSE would be significantly correlated with two types of student behaviors: observational learning behaviors (i.e., reading e-mails, reading discussion posts, viewing content lectures and documents) and application learning behaviors (posting to forums, writing e-mails, taking quizzes). The OSE was significantly and positively correlated with application learning behaviors. Results are discussed along with potential uses of the OSE by researchers and online instructors.</p>
 <p>Despite the decrease in higher education enrollment overall, online instruction is still growing. A recent report funded by the Online Learning Consortium (Allen &amp; Seaman, 2013) found that 6.7 million students (about 32% of all college students) were taking at least one online course. Indeed, in the analysis of 2,820 institutions (of a potential 4,527 active degree-granting institutions of higher education in the United States), over 69% of chief academic officers felt that online learning is important for the future of their institutions. The vast majority of these officers (77%) believe that online learning is as good as or better than traditional brick-and-mortar learning.</p>
 <p>Certainly, research comparing face-to-face and online courses has demonstrated that online courses can be as effective as traditional face-to-face courses (Maki &amp; Maki, 2007;Robertson, Grant, &amp; Jackson, 2005;Zhao, Lei, Lai, &amp; Tan, 2005). Thus, scholarship has moved beyond comparing online and face-to-face classes to exploring ways to enhance teaching and learning in the online environment (Durrington, Berryhill, &amp; Swafford, 2006;Gaytan &amp; McEwen, 2007;Levy, 2008;Young, 2006). Creating and validating research tools to measure various aspects of the online teaching environment is an important part of advancing research about online learning (Roblyer &amp; Wiencke, 2004). Such tools may also provide feedback to instructors about individual courses.</p>
@@ -59,5 +60,6 @@
 <p>Online Learning -Volume 19 Issue 4 -September 2015Measuring Student Engagement in the Online Course: The Online Student Engagement Scale (OSE)</p>
 <p>Within that course, how well do the following behaviors, thoughts, and feelings describe you? Please answer using the following scale:</p>
 <p>1</p>
+</body>
 </text>
 </tei>

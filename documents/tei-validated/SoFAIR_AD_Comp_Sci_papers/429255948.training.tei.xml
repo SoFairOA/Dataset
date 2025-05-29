@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Soil property and class maps for the continent of Africa were so far only available at very generalised scales, with many countries not mapped at all. Thanks to an increasing quantity and availability of soil samples collected at field point locations by various government and/or NGO funded projects, it is now possible to produce detailed pan-African maps of soil nutrients, including micro-nutrients at fine spatial resolutions. In this paper we describe production of a 30 m resolution Soil Information System of the African continent using, to date, the most comprehensive compilation of soil samples ( N ≈ 150, 000 ) and Earth Observation data. We produced predictions for soil pH, organic carbon (C) and total nitrogen (N), total carbon, effective Cation Exchange Capacity (eCEC), extractablephosphorus (P), potassium (K), calcium (Ca), magnesium (Mg), sulfur (S), sodium (Na), iron (Fe), zinc (Zn)-silt, clay and sand, stone content, bulk density and depth to bedrock, at three depths (0, 20 and 50 cm) and using 2-scale 3D Ensemble Machine Learning framework implemented in the
 <rs xml:id="12965898" type="software">mlr (Machine Learning in
 R)</rs> package. As covariate layers we used 250 m resolution (MODIS, PROBA-V and SM2RAIN products), and 30 m resolution (Sentinel-2, Landsat and DTM derivatives) images. Our fivefold spatial Cross-Validation results showed varying accuracy levels ranging from the best performing soil pH (CCC = 0.900) to more poorly predictable extractable phosphorus (CCC = 0.654) and sulphur (CCC = 0.708) and depth to bedrock. Sentinel-2 bands SWIR (B11, B12), NIR (B09, B8A), Landsat SWIR bands, and vertical depth derived from 30 m resolution DTM, were the overall most important 30 m resolution covariates. Climatic data images-SM2RAIN, bioclimatic variables and MODIS Land Surface Temperature-however, remained as the overall most important variables for predicting soil chemical variables at continental scale. This publicly available 30-m Soil Information System of Africa aims at supporting numerous applications, including soil and fertilizer policies and investments, agronomic advice to close yield gaps, environmental programs, or targeting of nutrition interventions.
@@ -138,5 +139,6 @@ s-using -eml</rs>. An
 <p>The online version contains supplementary material available at https ://doi. org/10.1038/s4159 8-021-85639 -y.</p>
 <p>Correspondence and requests for materials should be addressed to T.H.</p>
 <p>Reprints and permissions information is available at www.nature.com/reprints. Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

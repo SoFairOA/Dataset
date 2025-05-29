@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Copyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright owners and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights.</p>
 <p>-Users may download and print one copy of any publication from the public portal for the purpose of private study or research.</p>
 <p>-You may not further distribute the material or use it for any profit-making activity or commercial gain -You may freely distribute the URL identifying the publication in the public portal -Brief CommuniCation</p>
@@ -126,5 +127,6 @@ _01) using <rs xml:id="12973113" type="software">Diamond</rs> v.
 <p>The online version contains supplementary material available at https://doi.org/10.1038/s41592-022-01539-7.</p>
 <p>Correspondence and requests for materials should be addressed to Mads Albertsen.</p>
 <p>Nature Methods thanks the anonymous reviewers for their contribution to the peer review of this work. Primary Handling Editor: Lin Tang, in collaboration with the Nature Methods team. Peer reviewer reports are available.</p>
+</body>
 </text>
 </tei>
