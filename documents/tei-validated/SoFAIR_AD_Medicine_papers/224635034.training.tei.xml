@@ -53,7 +53,7 @@
             <rs type="software">Metaphlan2 utils</rs>
             <rs type="software" subtype="implicit">script</rs>. The merged abundance table was edited to only include taxa which were identified to species level. Additional community profiling was done using
             <rs type="software" xml:id="s7">Metaxa2</rs> 47 version
-            <rs type="version" corresp="s7">2.1</rs> for 16S rRNA read extraction in paired-end mode. The 16S rRNA sequence reads were classified using <rs type="sofwtare" xml:id="s8"> mothur's</rs> 48 (version
+            <rs type="version" corresp="s7">2.1</rs> for 16S rRNA read extraction in paired-end mode. The 16S rRNA sequence reads were classified using <rs type="software" xml:id="s8"> mothur's</rs> 48 (version
             <rs type="version" corresp="s8">1.39.5</rs>) classify.seqs command with SILVA 49 v. 123 as the reference database, with the cutoff = 60, probs = F and processors = 8 parameters. A custom Unix
             <rs type="software" subtype="implicit">script</rs> was used to create an OTU table based on the classifications. Strain-level profiling and strain tracking analysis as done using
             <rs type="software">Strainphlan</rs> 50 and the extract_markers. py command to extract markers for Escherichia coli, Klebsiella pneumoniae and all Streptococcus and Staphylococcus species. The strainphlan.py command with-relaxed_parameters2 option was used to create taxonomic trees of the strains in all samples.
