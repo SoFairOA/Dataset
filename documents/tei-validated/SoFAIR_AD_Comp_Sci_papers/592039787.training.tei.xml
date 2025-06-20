@@ -95,7 +95,7 @@ BinData type in
 </p>
 <p>Similarity search with
 <rs xml:id="12967108" type="software">MongoDB</rs> was implemented following the excellent ChEBML blog post on LSH-based similarity search in
-<rs xml:id="12967167" type="software">MongoDB</rs> <rs corresp="12967167" type="bibr">[32]</rs> and adapted to <rs type="software" subtype="language" xml:id="3">Java</rs>, <rs type="software" subtype="language" xml:id="4">Kotlin</rs> and <rs type="software" subtype="environment" xml:id="4">Spring</rs> data. In this approach, the <rs xml:id="12967114" type="software">MongoDB</rs> aggregation framework is used to perform inverted indexing search against PubChem fingerprints stored in a separate table and referencing COCONUT identifiers that contain the molecular features encoded by each bit.
+<rs xml:id="12967167" type="software">MongoDB</rs> <rs corresp="12967167" type="bibr">[32]</rs> and adapted to <rs type="language" xml:id="3">Java</rs>, <rs type="language" xml:id="4">Kotlin</rs> and <rs type="software" subtype="environment" xml:id="4">Spring</rs> data. In this approach, the <rs xml:id="12967114" type="software">MongoDB</rs> aggregation framework is used to perform inverted indexing search against PubChem fingerprints stored in a separate table and referencing COCONUT identifiers that contain the molecular features encoded by each bit.
 </p>
 <p>The advanced search supports searching for NPs in
 COCONUT according to a range of parameters, such as molecular formula, molecular descriptor values, number of rings, type of sugar moieties present in them, etc.
