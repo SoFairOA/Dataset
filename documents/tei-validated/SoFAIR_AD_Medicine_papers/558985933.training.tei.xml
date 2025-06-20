@@ -11,6 +11,7 @@
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
+<body>
         <p>Background: Recently, much attention has been given to e-learning in higher education as it provides better access to learning resources online, utilising technologyregardless of learners' geographical locations and timescaleto enhance learning. It has now become part of the mainstream in education in the health sciences, including medical, dental, public health, nursing, and other allied health professionals. Despite growing evidence claiming that e-learning is as effective as traditional means of learning, there is very limited evidence available about what works, and when and how e-learning enhances teaching and learning. This systematic review aimed to identify and synthesise the factorsenablers and barriersaffecting e-learning in health sciences education (el-HSE) that have been reported in the medical literature. Methods: A systemic review of articles published on e-learning in health sciences education (el-HSE) was performed in MEDLINE, EMBASE, Allied &amp; Complementary Medicine, DH-DATA, PsycINFO, CINAHL, and Global Health, from 1980 through 2019, using 'Textword' and 'Thesaurus' search terms. All original articles fulfilling the following criteria were included: (1) e-learning was implemented in health sciences education, and (2) the investigation of the factorsenablers and barriersabout el-HSE related to learning performance or outcomes. Following the PRISMA guidelines, both relevant published and unpublished papers were searched. Data were extracted and quality appraised using 
             <rs type="software">QualSyst</rs> tools, and synthesised performing thematic analysis.
         </p>
@@ -111,5 +112,6 @@
         <p>Not applicable.</p>
         <p>The authors declare that they have no competing interests.</p>
         <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
-    </text>
+    </body>
+</text>
 </tei>

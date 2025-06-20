@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>During its two years mission around comet 67P/Churyumov-Gerasimenko, ESA's Rosetta spacecraft had the unique opportunity to follow closely a comet in the most active part of its orbit. Many studies have presented the typical features associated to the activity of the nucleus, such as localized dust and gas jets. Here we report on series of more energetic transient events observed during the three months surrounding the comet's perihelion passage in August 2015.</p>
 <p>We detected and characterized 34 outbursts with the Rosetta cameras, one every 2.4 nucleus rotation. We identified 3 main dust plume morphologies associated to these events: a narrow jet, a broad fan, and more complex plumes featuring both previous types together. These plumes are comparable in scale and temporal variation to what has been observed on other comets.</p>
 <p>We present a map of the outbursts source locations, and discuss the associated topography. We find that the spatial distribution sources on the nucleus correlates well with morphological region boundaries, especially in areas marked by steep scarps or cliffs.</p>
@@ -88,5 +89,6 @@
 <p>All Rosetta NavCam images are released under the Creative Commons license ESA/Rosetta/NAVCAM -CC BY-SA IGO 3.0</p>
 <p>This research has made use of NASA's Astrophysics Data System Bibliographic Services.</p>
 <p>The authors wish to thanks M. J. S. Belton for his helpful criticism of the paper during the review process.</p>
+</body>
 </text>
 </tei>

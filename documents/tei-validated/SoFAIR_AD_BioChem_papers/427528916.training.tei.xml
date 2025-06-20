@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>View metadata, citation and similar papers at core.ac.uk provided by Repositorio da Producao Cientifica e Intelectual da Unicamp ARTICLE Genome-wide mega-analysis identifies 16 loci and highlights diverse biological mechanisms in the common epilepsies</p>
 <p>The International League Against Epilepsy Consortium on Complex Epilepsies</p>
 <p>The epilepsies affect around 65 million people worldwide and have a substantial missing heritability component. We report a genome-wide mega-analysis involving 15,212 individuals with epilepsy and 29,677 controls, which reveals 16 genome-wide significant loci, of which 11 are novel. Using various prioritization criteria, we pinpoint the 21 most likely epilepsy genes at these loci, with the majority in genetic generalized epilepsies. These genes have diverse biological functions, including coding for ion-channel subunits, transcription factors and a vitamin-B6 metabolism enzyme. Converging evidence shows that the common variants associated with epilepsy play a role in epigenetic regulation of gene expression in the brain. The results show an enrichment for monogenic epilepsy genes as well as known targets of antiepileptic drugs. Using SNP-based heritability analyses we disentangle both the unique and overlapping genetic basis to seven different epilepsy subtypes. Together, these findings provide leads for epilepsy therapies based on underlying pathophysiology.</p>
@@ -102,5 +103,6 @@
 <p>Supplementary Information accompanies this paper at https://doi.org/10.1038/s41467-018-07524-z.</p>
 <p>Competing interests: The authors declare no competing interests.</p>
 <p>Reprints and permission information is available online at http://npg.nature.com/ reprintsandpermissions/ Publisher's note: Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

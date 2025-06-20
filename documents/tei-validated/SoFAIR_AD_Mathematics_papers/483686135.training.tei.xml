@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Recent methodological researches produced permutation methods to test parameters in presence of nuisance variables in linear models or repeated measures ANOVA. Permutation tests are also particularly useful to overcome the multiple comparisons problem as they are used to test the effect of factors or variables on signals while controlling the family-wise error rate (FWER). This article introduces the
 <rs xml:id="12895085" type="software">permuco</rs> package which implements several permutation methods. They can all be used jointly with multiple comparisons procedures like the cluster-mass tests or threshold-free cluster enhancement (TFCE). The
 <rs xml:id="12895086" type="software">permuco</rs> package is designed, first, for univariate permutation tests with nuisance variables, like regression and ANOVA; and secondly, for comparing signals as required, for example, for the analysis of event-related potential (ERP) of experiments using electroencephalography (EEG). This article describes the permutation methods and the multiple comparisons procedures implemented. A tutorial for each of theses cases is provided.
@@ -183,5 +184,6 @@ lmPerm")
 R&gt; library("flip")
 R&gt; library("GFD") R&gt; set.seed(42) R&gt; emergencycost$LOSc &lt;-scale(emergencycost$LOS, scale = FALSE) R&gt; contrasts(emergencycost$sex) &lt;-contr.sum R&gt; contrasts(emergencycost$insurance) &lt;-contr.sum R&gt; X &lt;-model.matrix( ~sex+insurance, data = emergencycost)[, -1] R&gt; colnames(X) &lt;-c("sex_num", "insurance_num") R&gt; emergencycost &lt;-data.frame(emergencycost, X) R&gt; anova_permuco &lt;-aovperm(cost ~sex*insurance, data = emergencycost) R&gt; anova_GFD &lt;-GFD(cost ~sex*insurance, data = emergencycost, + CI.method = "perm", nperm = 5000) R&gt; ancova_permuco &lt;-aovperm(cost ~LOSc*sex*insurance, data = emergencycost, + method = "huh_jhun") R&gt; ancova_flip &lt;-flip(cost ~1, X = ~sex_num, Z = ~LOSc*insurance_num*sex_num + -sex_num, data = emergencycost, statTest = "ANOVA", perms = 5000) R&gt; ancova_lmPerm &lt;-aovp(cost ~LOS*sex*insurance, data = emergencycost, + seqs = FALSE, nCycle = 1) R&gt; anova_permuco
 </p>
+</body>
 </text>
 </tei>

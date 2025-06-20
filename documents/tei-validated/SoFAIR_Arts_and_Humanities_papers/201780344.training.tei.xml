@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Background: From time to time, neuroimaging research findings receive press coverage and attention by the general public. Scientific articles therefore should be written in a readable manner to facilitate knowledge translation and dissemination. However, no published readability report on neuroimaging articles like those published in education, medical and marketing journals is available. As a start, this study therefore aimed to evaluate the readability of the most-cited neuroimaging articles.</p>
 <p>The 100 most-cited articles in neuroimaging identified in a recent study by Kim et al. (2016) were evaluated. Headings, mathematical equations, tables, figures, footnotes, appendices, and reference lists were trimmed from the articles. The rest was processed for number of characters, words and sentences. Five readability indices that indicate the school grade appropriate for that reading difficulty (Automated Readability Index, Coleman-Liau Index, Flesch-Kincaid Grade Level, Gunning Fog index and Simple Measure of Gobbledygook index) were computed. An average reading grade level (AGL) was calculated by taking the mean of these five indices. The Flesch Reading Ease (FRE) score was also computed. The readability of the trimmed abstracts and full texts was evaluated against number of authors, country of corresponding author, total citation count, normalized citation count, article type, publication year, impact factor of the year published and type of journal.</p>
 <p>Results: Mean AGL ± standard deviation (SD) of the trimmed abstracts and full texts were 17.15 ± 2.81 (college graduate level) and 14.22 ± 1.66 (college level) respectively. Mean FRE score ± SD of the abstracts and full texts were 15.70 ± 14.11 (college graduate level) and 32.11 ± 8.56 (college level) respectively. Both items indicated that the full texts were significantly more readable than the abstracts (p &lt; 0.001). Abstract readability was not associated with any factors under investigation. ANCOVAs showed that review/meta-analysis (mean AGL ± SD: 16.0 ± 1.4) and higher impact factor significantly associated with lower readability of the trimmed full texts surveyed.</p>
@@ -71,5 +72,6 @@
 <p>AY conceived the work, acquired and analyzed the data, and drafted the work. TG and WL facilitated the acquisition of data and critically revised the work. All authors approved the final content of the manuscript.</p>
 <p>The Supplementary Material for this article can be found online at: https://www.frontiersin.org/articles/10.3389/fnhum. 2018.00308/full#supplementary-material</p>
 <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</body>
 </text>
 </tei>

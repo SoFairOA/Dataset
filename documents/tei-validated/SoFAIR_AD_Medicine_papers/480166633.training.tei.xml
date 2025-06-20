@@ -11,6 +11,7 @@
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
+<body>
         <p>Highlights d Spike DH69/V70 does not confer escape from antibodies d Spike DH69/V70 increases cleaved S2 and spike infectivity d B.1.1.7 requires DH69/V70 for efficient cleaved spike incorporation and infectivity d B.1.1.7 spike requires DH69/V70 for rapid syncytium formation</p>
         <p>Meng et al. report that the SARS-CoV-2 spike DH69/V70 has arisen multiple times. The deletion increases entry efficiency associated with increased cleaved spike in virions and can compensate for loss of infectivity. The B.1.1.7 spike requires DH69/V70 for efficient cell entry and cell-cell fusion activity.</p>
         <p>Recurrent emergence of SARS-CoV-2 spike deletion H69/V70 and its role in the Alpha variant B.1.1.7</p>
@@ -108,5 +109,6 @@
             <rs type="version" corresp="s5">8</rs> (
             <rs type="creator" corresp="s5">GraphPad Software, Inc., San Diego, CA, USA</rs>). The neutralization assay was positive if the serum achieved at least 50% inhibition at 1 in 3 dilution of the SARS-CoV-2 spike protein pseudotyped virus in the neutralization assay. The neutralization result was negative if it failed to achieve 50% inhibition at 1 in 3 dilution. Statistical tests are described in the figure legends along with the value of n, mean, and standard deviation/error. Data were normally distributed consistent with statistical methods used.
         </p>
-    </text>
+    </body>
+</text>
 </tei>

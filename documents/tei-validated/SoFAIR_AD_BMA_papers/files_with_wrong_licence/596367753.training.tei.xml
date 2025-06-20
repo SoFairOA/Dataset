@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>This paper develops and tests a model of pathways between participation in entrepreneurship education programmes (EEPs) and entrepreneurial intention. EEPs are degree programmes designed to provide mastery and experience over several years of academic study. Structural equation modelling on survey data gathered from 348 graduating students from eight universities in Pakistan showed how three EEP components (learning, inspiration and resources) influence intention: learning and inspiration activities both increase perceived norms for being an entrepreneur and students' perceptions that they can be entrepreneurs (perceived control). Access to incubation resources had the strongest effect on intention by increasing perceived norms which in turn increases positive attitudes and perceived control. These findings provide insight into the conclusions drawn from previous studies by showing how positive student experience across different components of entrepreneurship programme have a positive impact on students' intentions to start their own business.</p>
 <p>Entrepreneurship is acknowledged as a vital source of economic growth and a prominent factor influencing a society's socio-economic wellbeing of (McMullan, Long, &amp; Graham, 1986). Schumpeter (1911;1934) considers the entrepreneurial process to be a major factor in economic development and the entrepreneur as the key to economic growth. The evolution of new businesses also opens social prospects. Entrepreneurship is regarded as an essential source of job creation, poverty reduction, innovation and societal development as well as economic competitiveness (Liñán, Rodriguez-Cohard &amp; Rueda-Cantuche, 2011;Wu, Kuo, &amp; Shen, 2013). Hence, a steady growth of business creation is necessary for social wellbeing as well as for economic development.</p>
 <p>The formalisation of entrepreneurship education in developed nations has been linked by scholars in developing countries to economic growth (Muhammad, Akbar, &amp; Dalziel, 2011) and to a view that university graduates can be considered potential entrepreneurs with a stronger tendency than non-graduates to start their own businesses (Zainuddin, 2012). One result of these observations has been the development of specialist entrepreneurship education programmes (Kourilsky &amp; Walstad, 1998).</p>
@@ -99,5 +100,6 @@
 <p>To what extent will starting a business provide you with opportunity to look for independence ATTQ2: Selfrealisation To what extent will starting a business provide you with opportunity to know about your abilities (self-realization)</p>
 <p>To what extent will starting a business provide you with opportunity to have a large share of your salary to be based on results</p>
 <p>To what extent will starting a business provide you with opportunity to have a</p>
+</body>
 </text>
 </tei>

@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>The extraction of data from the reports of primary studies, on Background: which the results of systematic reviews depend, needs to be carried out accurately. To aid reliability, it is recommended that two researchers carry out data extraction independently. The extraction of statistical data from graphs in PDF files is particularly challenging, as the process is usually completely manual, and reviewers need sometimes to revert to holding a ruler against the page to read off values: an inherently time-consuming and error-prone process.</p>
 <p>To mitigate some of the above problems we integrated and Methods: customised two existing <rs xml:id="12901033" type="software" subtype="environment">JavaScript</rs> <rs xml:id="12901034" type="software" subtype="component" corresp="12901033">libraries</rs> to create a new web-based graphical data extraction <rs xml:id="12970685" type="software" subtype="implicit">tool</rs> to assist reviewers in extracting data from graphs. This tool aims to facilitate more accurate and timely data extraction through a user interface which can be used to extract data through mouse clicks. We carried out a non-inferiority evaluation to examine its performance in comparison with participants' standard practice for extracting data from graphs in PDF documents.</p>
 <p>We found that the customised graphical data extraction <rs xml:id="12970686" type="software" subtype="implicit">tool</rs> is not Results: inferior to users' (N=10) prior standard practice. Our study was not designed to show superiority, but suggests that, on average, participants saved around 6 minutes per graph using the new <rs xml:id="12970689" type="software" subtype="implicit">tool</rs>, accompanied by a substantial increase in accuracy.</p>
@@ -178,5 +179,6 @@
 <p>Best wishes, James.</p>
 <p>Author Response 14 Dec 2018 , University College London, UK James Thomas Thanks Geoffrey, we will fix the lack of citation when we revise the manuscript. I remember looking for information re how to cite <rs xml:id="12901032" type="software">WebPlotdigitizer</rs>, and am not sure why it didn't make it into the submitted paper.</p>
 <p>Competing Interests:</p>
+</body>
 </text>
 </tei>

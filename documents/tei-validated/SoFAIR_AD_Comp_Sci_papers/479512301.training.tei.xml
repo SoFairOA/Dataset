@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Motivation:
 <rs xml:id="12965778" type="software">fastsimcoal2</rs> extends <rs xml:id="12965779" type="software">fastsimcoal</rs>, a continuous time coalescent-based genetic simulation program, by enabling the estimation of demographic parameters under very complex scenarios from the site frequency spectrum under a maximum-likelihood framework. Results: Other improvements include multi-threading, handling of population inbreeding, extended input file syntax facilitating the description of complex demographic scenarios, and more efficient simulations of sparsely structured populations and of large chromosomes. Availability and implementation: <rs xml:id="12965780" type="software">fastsimcoal2</rs> is freely available on <rs xml:id="12965781" type="url" corresp="12965780">http://cmpg.unibe.ch/software/fastsimcoal2/</rs>. It includes console versions for <rs xml:id="12965782" type="software">Linux</rs>, <rs xml:id="12965783" type="software">Windows</rs> and <rs xml:id="12965784" type="software">MacOS</rs>, additional <rs xml:id="12965785" type="software" subtype="implicit">scripts</rs> for the analysis and visualization of simulated and estimated scenarios, as well as a detailed documentation and ready-to-use examples.
 </p>
@@ -44,5 +45,6 @@ Ancestral Recombination Graph (e.g. Gronau et al., 2011;Kelleher et al., 2019). 
 <p>The authors thank the following people for their comments on and their testing of fsc2: Isabel Alves, Alexandre Thie ´ry, Matthieu Foll and Miguel Arenas Busto.</p>
 <p>This work was supported by the Swiss National Science Foundation [310030_188883 to L.E. and 31003A_163338 to L.E. and Ole Seehausen]. V.C.S. was funded by the Portuguese National Science Foundation À Fundac¸ão para a Cie ˆncia e a Tecnologia [FCT; CEECINST/00032/2018/ CP1523/CT0008 and UIDB/00329/2020 granted to cE3c].</p>
 <p>Conflict of Interest: none declared.</p>
+</body>
 </text>
 </tei>

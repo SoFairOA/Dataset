@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Objective: This review aimed to determine if the use of the patient, intervention, comparison, outcome (PICO) model as a search strategy tool affects the quality of a literature search.</p>
 <p>Methods: A comprehensive literature search was conducted in PubMed, Embase, CINAHL, PsycINFO, Cochrane Library, Web of Science, Library and Information Science Abstracts (LISA), Scopus, and the National Library of Medicine (NLM) catalog up until January 9, 2017. Reference lists were scrutinized, and citation searches were performed on the included studies. The primary outcome was the quality of literature searches and the secondary outcome was time spent on the literature search when the PICO model was used as a search strategy tool, compared to the use of another conceptualizing tool or unguided searching.</p>
 <p>Results: A total of 2,163 records were identified, and after removal of duplicates and initial screening, 22 full-text articles were assessed. Of these, 19 studies were excluded and 3 studies were included, data were extracted, risk of bias was assessed, and a qualitative analysis was conducted. The included studies compared PICO to the PIC truncation or links to related articles in PubMed, PICOS, and sample, phenomenon of interest, design, evaluation, research type (SPIDER). One study compared PICO to unguided searching. Due to differences in intervention, no quantitative analysis was performed.</p>
@@ -73,5 +74,6 @@ SPIDER: 6 search blocks), these results are expected.
 <p>jmla.mlanet.org 106 (4) October 2018 Journal of the Medical Library Association</p>
 <p>We thank the anonymous referees for their useful suggestions and Rasmus Højbjerg Jacobsen for carefully revising the manuscript.</p>
 <p>• Appendix A: Literature searches</p>
+</body>
 </text>
 </tei>

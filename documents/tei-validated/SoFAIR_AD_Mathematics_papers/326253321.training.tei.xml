@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Governments around the world restricted movement of people, using social distancing and lockdowns, to help stem the global coronavirus (COVID-19) pandemic. We examine crime effects for one UK police force area in comparison to 5-year averages. There is variation in the onset of change by crime type, some declining from the WHO 'global pandemic' announcement of 11 March, others later. By 1 week after the 23 March lockdown, all recorded crime had declined 41%, with variation: shoplifting (-62%), theft (-52%), domestic abuse (-45%), theft from vehicle (-43%), assault (-36%), burglary dwelling (-25%) and burglary non-dwelling (-25%). We use Google Covid-19 Community Mobility Reports to calculate the mobility elasticity of crime for four crime types, finding shoplifting and other theft inelastic but responsive to reduced retail sector mobility (MEC = 0.84, 0.71 respectively), burglary dwelling elastic to increases in residential area mobility (-1), with assault inelastic but responsive to reduced workplace mobility (0.56). We theorise that crime rate changes were primarily caused by those in mobility, suggesting a mobility theory of crime change in the pandemic. We identify implications for crime theory, policy and future research.</p>
 <p>In response to the coronavirus (covid-19) pandemic, governments around the world legislated for the cessation of non-essential contact. With the introduction of social distancing and lockdowns, it was soon apparent that the unanticipated effects upon crime could be dramatic (Farrell and Tilley 2020, Ashby 2020, Bump 2020, Mohler et al. 2020). Here we study the effects on crime in the days leading up to, and following, the introduction of a national stay-at-home lockdown. While we focus on one UK police service area, the methodological approach may be more broadly applicable, and the substantive findings of relevance for comparisons both to other regions of the UK and other countries with similar socio-demographic and economic profiles.</p>
 <p>The nature of the dramatic changes to mobility that occurred allow us to approach the study as a natural experiment. We use crime data spanning 5 years to compare rates in 2020 to what would have been expected based on trends from previous years. In addition, we use
@@ -85,5 +86,6 @@ Google COVID-19 Community Mobility Reports to compare area-based mobility to cri
 <p>• rapid publication on acceptance</p>
 <p>• support for research data, including large and complex data types • gold Open Access which fosters wider collaboration and increased citations maximum visibility for your research: over 100M website views per year</p>
 <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

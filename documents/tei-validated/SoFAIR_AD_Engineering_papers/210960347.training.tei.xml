@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Phase separation of mixtures of oppositely charged polymers provides a simple and direct route to compartmentalisation via complex coacervation, which may have been important for driving primitive reactions as part of the RNA world hypothesis. However, to date, RNA catalysis has not been reconciled with coacervation. Here we demonstrate that RNA catalysis is viable within coacervate microdroplets and further show that these membrane-free droplets can selectively retain longer length RNAs while permitting transfer of lower molecular weight oligonucleotides.</p>
 <p>ompartmentalisation driven by spontaneous self-assembly processes is crucial for spatial localisation and concentration of reactants in modern biology and may have been important during the origin of life. One route known as complex coacervation describes a complexation process 1,2 between two oppositely charged polymers such as polypeptides and nucleotides [3][4][5][6][7] . The resulting coacervate microdroplets are membrane free, chemically enriched and in dynamic equilibrium with a polymer poor phase. In addition to being stable over a broad range of physicochemical conditions, coacervate droplets are able to spatially localise and up-concentrate different molecules 3,8 and support biochemical reactions 9,10 .</p>
 <p>It has been hypothesised that compartments which form via coacervation could have played a crucial role during the origin of life by concentrating molecules and thus initiating the first biochemical reactions on Earth 11 . Coacervation has also been implicated in modern biology where it has been shown that the formation of membrane-free compartments or condensates such as P-bodies or stress granules within cells are driven by this mechanism 12,13 . These membrane-free organelles are chemically isolated from their surrounding cytoplasm through a diffusive phase boundary, permitting the exchange of molecules with their surroundings 14 . In addition, these compartments may localise specific biological reactions and play important roles in cellular functions such as spatial and temporal RNA localisation within the cell [15][16][17][18] .</p>
@@ -60,5 +61,6 @@
 <p>Supplementary Information accompanies this paper at https://doi.org/10.1038/s41467-018-06072-w.</p>
 <p>Competing interests: The authors declare no competing interests.</p>
 <p>Reprints and permission information is available online at http://npg.nature.com/ reprintsandpermissions/ Publisher's note: Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

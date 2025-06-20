@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Background: A positive surface charge has been largely associated with nanoparticle (NP) toxicity. However, by screening a carbon NP library in macrophages, we found that a cationic charge does not systematically translate into toxicity. To get deeper insight into this, we carried out a comprehensive study on 5 cationic carbon NPs (NP2 to NP6) exhibiting a similar zeta (ζ) potential value (from + 20.6 to + 26.9 mV) but displaying an increasing surface charge density (electrokinetic charge, Q ek from 0.23 to 4.39 µmol/g). An anionic and non-cytotoxic NP (NP1, ζ-potential = -38.5 mV) was used as control.</p>
 <p>The 5 cationic NPs induced high (NP6 and NP5, Q ek of 2.95 and 4.39 µmol/g, respectively), little (NP3 and NP4, Q ek of 0.78 and 1.35 µmol/g, respectively) or no (NP2, Q ek of 0.23 µmol/g) viability loss in THP-1-derived macrophages exposed for 24 h to escalating NP dose (3 to 200 µg/mL). A similar toxicity trend was observed in airway epithelial cells (A549 and Calu-3), with less viability loss than in THP-1 cells. NP3, NP5 and NP6 were taken up by THP-1 cells at 4 h, whereas NP1, NP2 and NP4 were not. Among the 6 NPs, only NP5 and NP6 with the highest surface charge density induced significant oxidative stress, IL-8 release, mitochondrial dysfunction and loss in lysosomal integrity in</p>
 <p>A large variety of nanoparticles (NPs), defined as particles with a size of less than 100 nm in one dimension, are currently developed for a wide range of applications including consumer goods manufacturing, foodstuff elaboration as well as medical applications [1]. These NPs are increasingly present in our professional and domestic environment, which raises the question of their potential adverse effects on human health [2]. Nanotoxicology, the branch of science that studies the hazard posed by NPs to humans and their environment aims at addressing this issue [3,4]. However, this task is made complex by the huge diversity of NPs in terms of physicochemical characteristics, including chemical composition, size, shape, and surface charge and chemistry [1,4]. One of the challenges of nanotoxicology is therefore to define the chemical and physical properties that drive NP adverse health effects in order to better predict NP toxicity and allow the production of safe-by-design NPs.</p>
@@ -74,5 +75,6 @@
 <p>Not applicable.</p>
 <p>The authors declare that they have no competing interests.</p>
 <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

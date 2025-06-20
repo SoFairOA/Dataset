@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>The COVID-19 pandemic has posed unprecedented challenges and threats to the health care system, particularly affecting the effective delivery of essential health services in resource-poor countries such as Nepal. This study aimed to explore community perceptions of COVID-19 and their experiences towards health services utilization during the pandemic in Province-2 of Nepal. Methods: The semi-structured qualitative interviews were conducted among purposively selected participants (n = 41) from a mix of rural and urban settings in all districts (n = 8) of the Province 2 of Nepal. Virtual interviews were conducted between July and August 2020 in local languages. The data were analyzed using thematic network analysis in <rs xml:id="12953682" type="software">NVivo</rs>
 <rs xml:id="12953683" type="version" corresp="12953682">12 Pro</rs>. Results: The findings of this research are categorized into four global themes: i) Community and stakeholders' perceptions towards COVID-19; ii) Impact of COVID-19 and lockdown on health services delivery; iii) Community perceptions and experiences of health services during COVID-19; and iv) COVID-19: testing, isolation, and quarantine services. Most participants shared their experience of being worried and anxious about COVID-19 and reported a lack of awareness, misinformation, and stigma as major factors contributing to the spread of COVID-19. Maternity services, immunization, and supply of essential medicine were found to be the most affected areas of health care delivery during the lockdown. Participants reported that the interruptions in health services were mostly due to the closure of health services at local health care facilities, limited affordability, and involvement of private health sectors during the pandemic, fears of COVID-19 transmission among health care workers and within health centers, and disruption of transportation services. In addition, the participants expressed frustrations on poor testing, isolation, and quarantine services related to COVID-19, and poor accountability from the government at all levels towards health services continuation/management during the COVID-19 pandemic.
 </p>
@@ -80,5 +81,6 @@
 <p>Not applicable.</p>
 <p>The authors have declared that no competing interest exists.</p>
 <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

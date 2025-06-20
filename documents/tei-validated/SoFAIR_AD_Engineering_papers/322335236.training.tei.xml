@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Ever growing population and progressive municipal business demands for constructing new buildings are known as the foremost contributor to greenhouse gasses. Therefore, improvement of energy efficiency of the building sector has become an essential target to reduce the amount of gas emission as well as fossil fuel consumption. One most effective approach to reducing CO2 emission and energy consumption with regards to new buildings is to consider energy efficiency at a very early design stage. On the other hand,efficient energy management and smart refurbishments can enhance energy performance of the existing stock. All these solutions entail accurate energy prediction for optimal decision making. In recent years, artificial intelligence (AI) in general and machine learning (ML) techniques in specific terms have been proposed for forecasting of building energy consumption and performance. This paper provides a substantial review on the four main ML approaches including artificial neural network, support vector machine, Gaussian-based regressions and clustering, which have commonly been applied in forecasting and improving building energy performance.</p>
 <p>Emission of greenhouse gases including carbon dioxide (CO 2 ) in higher layers of the atmosphere are known as the main cause of global warming phenomena. In UK buildings are responsible for 46 percent of all CO 2 emissions (Kelly et al. 2012). This figure is 40 percent in the USA and 27 percent in Australia (Filippin 2000). Therefore, enhancement of energy efficiency of the buildings has become an essential issue to reduce the amount of gas emission as well as fossil fuel consumption. An annual saving of 60 billion Euros is estimated by improvement of European Union (EU) buildings' energy performance by 20 percent (Li et al. 2010).</p>
 <p>The attempt to decrease the amount of greenhouse gases needs significant alteration in human behaviour in energy consumption, manufacturing of more environmental friendly products and identifying and mitigating the causes of these undesirable gases (Abrahamse et al. 2007). Therefore, enhancement of techniques for construction of more energy efficient buildings and improvement of current buildings' energy usage seem to be great moves in the reduction of global warming menace.</p>
@@ -120,5 +121,6 @@ Hanzou library building.
 <p>We have not used any personal data in any form in preparing the manuscript.</p>
 <p>The authors declare that they have no competing interests.</p>
 <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

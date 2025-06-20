@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Background: With restrictions on movement and stay-at-home orders in place due to the COVID-19 pandemic, social media platforms such as Twitter have become an outlet for users to express their concerns, opinions, and feelings about the pandemic. Individuals, health agencies, and governments are using Twitter to communicate about COVID-19.</p>
 <p>The aims of this study were to examine key themes and topics of English-language COVID-19-related tweets posted by individuals and to explore the trends and variations in how the COVID-19-related tweets, key topics, and associated sentiments changed over a period of time from before to after the disease was declared a pandemic.</p>
 <p>Methods: Building on the emergent stream of studies examining COVID-19-related tweets in English, we performed a temporal assessment covering the time period from January 1 to May 9, 2020, and examined variations in tweet topics and sentiment scores to uncover key trends. Combining data from two publicly available COVID-19 tweet data sets with those obtained in our own search, we compiled a data set of 13.9 million English-language COVID-19-related tweets posted by individuals. We use guided latent Dirichlet allocation (LDA) to infer themes and topics underlying the tweets, and we used <rs xml:id="12965914" type="software">VADER (Valence Aware Dictionary and sEntiment Reasoner)</rs> sentiment analysis to compute sentiment scores and examine weekly trends for 17 weeks.</p>
@@ -111,5 +112,6 @@ library <rs xml:id="12965963" type="bibr">[30]</rs>. We removed stop words, user
 <p>None declared.</p>
 <p>The confusion matrix.</p>
 <p>[DOCX File , 12 KB-Multimedia Appendix 1]</p>
+</body>
 </text>
 </tei>

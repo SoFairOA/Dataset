@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Background: Finding eligible studies for meta-analysis and systematic reviews relies on keyword-based searching as the gold standard, despite its inefficiency. Searching based on direct citations is not sufficiently comprehensive. We propose a novel strategy that ranks articles on their degree of co-citation with one or more "known" articles before reviewing their eligibility. Method: In two independent studies, we aimed to reproduce the results of literature searches for sets of published meta-analyses (n = 10 and n = 42). For each meta-analysis, we extracted co-citations for the randomly selected 'known' articles from the Web of Science database, counted their frequencies and screened all articles with a score above a selection threshold. In the second study, we extended the method by retrieving direct citations for all selected articles.</p>
 <p>Results: In the first study, we retrieved 82 % of the studies included in the meta-analyses while screening only 11 % as many articles as were screened for the original publications. Articles that we missed were published in non-English languages, published before 1975, published very recently, or available only as conference abstracts. In the second study, we retrieved 79 % of included studies while screening half the original number of articles. Conclusions: Citation searching appears to be an efficient and reasonably accurate method for finding articles similar to one or more articles of interest for meta-analysis and reviews.</p>
 <p>Meta-analysis is an increasingly popular statistical method for comparing and summarizing the results of multiple independent studies. First introduced to clinical research in the 1980s, meta-analysis is now a cornerstone of evidencebased medicine [1]. It has also become an important step in establishing the credibility of research findings, such as those from hypothesis-free discovery research studies [2]. The number of published meta-analyses indexed in PubMed is increasing by about 20 % per year (PubMed).</p>
@@ -59,5 +60,6 @@ Google Scholar. Some current research explores the use of computational algorith
 <p>Additional file 1: (DOCX 975 kb)</p>
 <p>Competing interests ACJWJ has filed a patent application for the method described in this article. MG declares that she has no competing interests.</p>
 <p>Authors' contributions ACJWJ developed the method, designed the study and carried out the analyses. MG critically reviewed the method, the study design and results. Both authors contributed to the writing of the manuscript and approved the final version.</p>
+</body>
 </text>
 </tei>
