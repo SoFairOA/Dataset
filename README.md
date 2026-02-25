@@ -4,6 +4,8 @@ This repository belongs to the Work Package T4.1, "Support for the creation of a
 
 ### SoFAIR Gold Standard Dataset 
 
+The SOFAIR Articles overview file provides a complete list of all publications included in this study. This file also includes DOIs for all papers. All papers used in this dataset have an explicit CC-BY license. 
+
 Description: 
 
 * `documents/` contains the selection of scientific articles used in the annotation process. 
