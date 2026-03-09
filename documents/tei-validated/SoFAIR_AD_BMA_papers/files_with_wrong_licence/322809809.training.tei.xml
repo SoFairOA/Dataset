@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Using panel data from the China Household Finance Survey (CHFS) in 2013, 2015, and 2017 and the digital inclusive finance index developed by Peking University, this study examined impacts of the digital inclusive finance on household consumption and explored its mechanisms.</p>
 <p>Results suggest that the digital inclusive finance could promote households consumption. A heterogeneity analysis showed that households with fewer assets, lower income, less financial literacy and in third-and fourth-tier cities experienced larger facilitating effects of digital finance on consumption compared to their counterparts. For consumption categories, digital finance was positively correlated with food, clothing, house maintenance, medical care, and education and entertainment expenditures. In terms of consumption structure, digital finance mainly promoted the recurring household expenditures rather than the non-recurring expenditures. Further analyses based on the mediating model found that online shopping, digital payment, obtainment of online credit, purchase of financing products on the internet and business insurance, were the main mediating variables through which digital finance affected household consumption.</p>
 <p>Since China's economy entered the new normal, consumption has been gradually becoming an important driving force for economic development. In recent years, the government has been working on the expansion of residents' consumption demand. However, Chinese households' consumption behavior indicates that the consumption demand is still low. The household consumption rate has declined from 47. 5% in 2000 to 35. 6% in 2010, which is far below the world average 1 . Inadequate consumption has become an important restraining factor for economic transformation and sustainable development in China. How to promote the growth of household consumption has become a major subject of concern among both policy makers and the academia. Existing research on inadequate consumption has suggested that liquidity constraints (Kuijs, 2005), imperfect security systems (Meng, 2003), and income inequality (Schmidt-Hebbel and Serven, 2000) are important enforcing factors for inadequate consumption.</p>
@@ -62,5 +63,6 @@
 <p>In</p>
 <p>Considering the stability of data, we use the samples of household consumption rate between 0 and 1. Thus, the observations in column (1),( 2),( 3) and ( 4) are 37705 which are less than the baseline regression of 66789. The same reason as the column ( 5) and ( 6) of table 3, column ( 5) and ( 6) only use the 2017 CHFS data in which the observations are 14017.</p>
 <p>Yu'E Bao is an internet financing product owned by Ant Financial Services Group.</p>
+</body>
 </text>
 </tei>

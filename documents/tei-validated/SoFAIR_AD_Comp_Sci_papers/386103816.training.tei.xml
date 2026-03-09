@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>With the development of deep connections between humans and Artificial Intelligence voice-based assistants (VAs), human and machine relationships have transformed.</p>
 <p>For relationships to work it is essential for trust to be established. Although the capabilities of VAs offer retailers and consumers enhanced opportunities, building trust with machines is inherently challenging. In this paper, we propose integrating Human-Computer Interaction Theories and Para-Social Relationship Theory to develop insight into how trust and attitudes toward VAs are established. By adopting a mixedmethod approach, first, we quantitatively examine the proposed model using Covariance-Based Structural Equation Modeling on 466 respondents; based on the findings of this study, a second qualitative study is employed to reveal four main themes. Findings show that while functional elements drive users' attitude toward using VAs, the social attributes, being social presence and social cognition, are the unique antecedents for developing trust. Additionally, the research illustrates a peculiar dynamic between privacy and trust and it shows how users distinguish two different sources of trustworthiness in their interactions with VAs, identifying the brand producers as the data collector. Taken together, these results reinforce the idea that individuals interact with VAs treating them as social entities and employing human social rules, thus supporting the adoption of a para-social perspective.</p>
 <p>academics, research on how trust develops between consumers and VAs remains scant (Foehr &amp; Germelmann, 2020), and an important question emerges: what are the factors that foster trust development in interactions with VAs?</p>
@@ -118,5 +119,6 @@ UTAUT
 <p>VAs is considered positive if doing so will provide users with a more personalised experience. This creates a win-win scenario in giving consumers what they want while enabling predictive analytics to optimize marketing efforts to forecast consumer behavior and subsequent spending. However, there seems to be a fine line between what consumers consider acceptable levels of data collection and use and which may not, of which practitioners must remain cognizant.</p>
 <p>T A B L E 4</p>
 <p>The data that support the findings of this study are available from the corresponding author upon reasonable request.</p>
+</body>
 </text>
 </tei>

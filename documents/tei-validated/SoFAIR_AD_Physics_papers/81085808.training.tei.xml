@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Clustering scientific publications in an important problem in bibliometric research. We demonstrate how two software tools,
 <rs xml:id="12971715" type="software">CitNetExplorer</rs> and
 <rs xml:id="12971716" type="software">VOSviewer</rs>, can be used to cluster publications and to analyze the resulting clustering solutions.
@@ -135,5 +136,6 @@
 <p>Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.</p>
 <p>We use the 'Astro data set' that is also used in other papers in this special issue. A general introduction to the data set is provided in the introductory paper by Gla ¨ser et al. (2017) in this special issue. The data set was extracted from the Web of Science bibliographic database. It includes all publications of the document types 'article', 'letter', and 'proceedings paper' published between 2003 and 2010 in journals belonging to the Web of Science subject category 'Astronomy and Astrophysics'. The number of publications in the</p>
 <p>See Table 4.</p>
+</body>
 </text>
 </tei>

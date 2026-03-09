@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>80% for moderate tooth wear, leading to the conclusion that these are common conditions in the Dutch adult population. Severe tooth wear (prevalence 6%) may however be characterized as rare. A tendency was found for there to be more tooth wear in older age groups, in men as compared with women, in persons with lower SES, and in the present survey as compared with the previous one.</p>
 <p>, due to the growing consumption of acidic drinks and food. Nevertheless, both mechanical and chemical wear should be taken into account when studying tooth wear.</p>
 <p>It is important to distinguish between the qualifying and quantifying aspects of the assessment of tooth wear. Many grading scales are available for the clinical quantification of hard tissue loss [Ganss and Lussi, 2014]. Unfortunately, some grading scales incorporate information about the etiology, such as attrition, abrasion, and erosion. As a result, the quantifying and qualifying aspects of the assessment process may be confused. A list of clinical appearances that can be used to qualify tooth wear -that is, to indicate which types of tooth wear are present -has been proposed by Gandara and Truelove [1999].</p>
@@ -48,5 +49,6 @@ IBM
 <p>This research was financed by the Dutch National Health Care Institute (ZIN).</p>
 <p>P.W., E.J.H.V., F.L., and A.A.S. conceived and designed the study. E.J.H.V. and A.A.S. performed the clinical examination. P.W., E.J.H.V., C.M.V., and A.A.S. analyzed the data. P.W. and E.J.H.V. wrote the paper. C.M.V., F.L., and A.A.S. subjected the main intellectual content of the manuscript to critical review. All authors read and approved the final manuscript.</p>
 <p>The authors declare no conflicts of interest.</p>
+</body>
 </text>
 </tei>

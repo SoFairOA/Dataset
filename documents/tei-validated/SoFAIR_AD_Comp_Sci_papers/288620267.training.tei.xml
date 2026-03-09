@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Ligand binding affinity calculations based on molecular dynamics (MD) simulations and non-physical (alchemical) thermodynamic cycles have shown great promise for structure-based drug design.</p>
 <p>However, their broad uptake and impact is held back by the notoriously complex setup of the calculations. Only a few tools other than the free energy perturbation approach by Schr ödinger Inc.</p>
 <p>(referred to as FEP+) currently enable end-to-end application. Here, we present for the first time an approach based on the open-source software
@@ -78,5 +79,6 @@ AUEs (<rs xml:id="12966079" type="software">CGenFF</rs> shows larger AUEs for on
 <p>We thank Dr James P. Edwards for reviewing the manuscript and the <rs xml:id="12966117" type="software">GROMACS</rs> development team for making their soware freely available. L. P. B. was partly funded by the European Union's Horizon 2020 Research and Innovation Programme under grant agreement No 675451 (CompBioMed project). The project was also partly funded by Vlaams Agentschap Innoveren &amp; Ondernemen Project 155028. V. G. and B. L. d. G. were supported by the BioExcel CoE (http://www.bioexcel.eu), a project funded by the European Union (Contract H2020-EINFRA-2015-1-675728). M. A. was supported by a Postdoctoral Research Fellowship of the Alexander von Humboldt Foundation.</p>
 <p>The manuscript was written through contributions of all authors. All authors have given approval to the nal version of the manuscript.</p>
 <p>There are no conicts to declare.</p>
+</body>
 </text>
 </tei>

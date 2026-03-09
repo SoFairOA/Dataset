@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>The work is part of a wider research project wherein we are trying to further explore the conceptual ecology of evolutionary theory of present and prospective teachers in Greece.</p>
 <p>Quantitative and qualitative research was applied. In the former a questionnaire was answered by 318 secondary school teachers who teach biology. We further interviewed eight of the teachers by means of semi structured interviews and analyzed the interviews using the <rs xml:id="12900035" type="software">QSR nVivo</rs> program.</p>
 <p>Results: Acceptance of evolution levels was found moderate both in the total cohort and among science teachers; on the one hand, this was correlated with the prevalence of low level of knowledge and understanding due to lack of previous instruction; on the other hand, their type of religiosity was not a serious obstacle to accepting evolution, since it was correlated with a high degree of thinking dispositions.</p>
@@ -100,5 +101,6 @@ MATE value. Furthermore, when we followed our first year students' MATE mean val
 <p>a Values for geologists refer to the original study with 20 teachers</p>
 <p>* Correlation is significant at the 0.05 level (2-tailed) ** Correlation is significant at the 0.01 level</p>
 <p>(2-tailed)</p>
+</body>
 </text>
 </tei>

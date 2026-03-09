@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Cumulative cultural evolution occurs when social traditions accumulate improvements over time. In humans cumulative cultural evolution is thought to depend on a unique suite of cognitive abilities, including teaching, language and imitation. Tool-making New Caledonian crows show some hallmarks of cumulative culture; but this claim is contentious, in part because these birds do not appear to imitate. one alternative hypothesis is that crows' tool designs could be culturally transmitted through a process of mental template matching. That is, individuals could use or observe conspecifics' tools, form a mental template of a particular tool design, and then reproduce this in their own manufacture -a process analogous to birdsong learning. Here, we provide the first evidence supporting this hypothesis, by demonstrating that New Caledonian crows have the cognitive capacity for mental template matching. Using a novel manufacture paradigm, crows were first trained to drop paper into a vending machine to retrieve rewards. they later learnt that only items of a particular size (large or small templates) were rewarded. At test, despite being rewarded at random, and with no physical templates present, crows manufactured items that were more similar in size to previously rewarded, than unrewarded, templates. Our results provide the first evidence that this cognitive ability may underpin the transmission of New Caledonian crows' natural tool designs.</p>
 <p>Cultural traditions are common in the animal kingdom 1-3 , but cumulative cultural evolution is rare 4 .</p>
 <p>Despite decades of study of animal traditions (group-typical behaviour patterns that rely on socially transmitted information 5 ) -such as the iconic sweet potato washing by macaques or milk bottle opening by tits 6,7 -there is minimal evidence that these, or any other, animal traditions have evolved and accumulated improvements over time (cumulative cultural evolution) 3,8 . This contrasts sharply with findings from the human archaeological record, where clear indications of cumulative culture are present from at least 100,000 years ago 9 . Moreover, technological transitions from Oldowan flake-based tools, to more standardised Acheulean bifacial hand-axes, suggest that the cumulative evolution of technology could have begun as early as 1.6 million years ago in our lineage 10 .</p>
@@ -46,5 +47,6 @@
 <p>Supplementary information accompanies this paper at https://doi.org/10.1038/s41598-018-27405-1.</p>
 <p>The authors declare no competing interests.</p>
 <p>Publisher's note: Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</body>
 </text>
 </tei>

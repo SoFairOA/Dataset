@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Integrated single-cell transcriptomic and BCR analyses reveal how antibody class switching influences human B cell fate and function.</p>
 <p>Protective humoral immune responses require the formation of a functional antibody repertoire by B cells within secondary lymphoid organs (SLOs) such as the spleen, peripheral lymph nodes and tonsils.</p>
 <p>After antigen encounter, activated B cells either differentiate into short-lived plasma cells or following cognate interaction with antigen-specific T cells can form germinal centres (GCs) (1). GCs are transient structures where B cells undergo iterative cycles of clonal expansion and somatic hypermutation (SHM) in the variable regions of their immunoglobulin heavy (IgH) and light chain genes followed by affinitybased selection of antigen-specific clones. This dynamic process occurs in spatially distinct dark and light zones (DZ and LZ) under the regulation of a network of specialised T follicular helper cells, follicular dendritic cells and macrophages (2).</p>
@@ -183,5 +184,6 @@ py</rs> align to correct for primer misalignment.
 <rs xml:id="12883209" type="software">bioMart</rs>. We re-annotated all non-lymphoid cell type clusters as antigen-presenting cells (APCs), naïve and effector T cell groups by CD4 or CD8 expression, Treg and Tfr as "Treg" and rare GC subsets (prePB and FCRL3 high ) as "GC" and exported cell type metadata for use with raw count data using the "<rs xml:id="12883210" type="software" subtype="component" corresp="12883211">statistical_analysis</rs>" command of
 <rs xml:id="12883211" type="software" subtype="environment">CellPhoneDB</rs> with database v2.0.0. The number of unique significant ligand-receptor co-expression pairs (putative interactions; p value&lt;0.05) between each cell type was then counted and visualised as a heatmap, while exemplar interacting pairs were visualised by calculating mean average expression level of gene 1 in cell type 1 and gene 2 in cell type 2 are indicated by colour and p values indicated by circle size.
 </p>
+</body>
 </text>
 </tei>

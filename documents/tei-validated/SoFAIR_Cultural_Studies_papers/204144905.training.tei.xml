@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Why did our ancestors combine the first consonant-and vowel-like utterances to produce the first syllable or word? To answer this question, it is essential to know what constituted the communicative function of proto-consonants vs. proto-vowels before their combined use became universal. Close to nothing is known, however, about consonant-like calls in the primate order 1,2 . Here, we investigate a large collection of voiceless consonant-like calls in nonhuman great apesour closest relativesnamely orangutans (Pongo spp.). We analyzed 4486 kiss-squeaks collected across 48 individuals in four wild populations. Despite idiosyncratic production mechanics, consonant-like calls displayed informationdense content and the same acoustic signatures found in nonhuman primate voiced vowel-like calls, implying similar biological functions. Selection regimes between proto-consonants and -vowels were, thus, probably indistinguishable at the dawn of spoken language evolution. Our findings suggest that the first protosyllables or -words in our lineage probably constituted message reiterations, instead of messages of increasing intricacy.</p>
 <p>Primate vocal behavior is a cornerstone in the theory of speech evolution 3 . Vocal homologies between human and nonhuman primates provide potential paths for the evolution of spoken language in humans 4 and several vocal traits exhibit evolutionary continuity between human and nonhuman primate (hereafter primate) vocal systems 5 .</p>
 <p>Primate literature has hitherto focused almost exclusively on primate voiced calls, or "vocalizations". That is, utterances that feature vocal fold action, namely vocal folds' regular oscillation as sound source 6 . Voiced calls characterize primate, and indeed mammalian repertoires as a whole, and they survive today in human speech predominantly in the form of vowels (as well as non-linguistic utterances, such as laughter and crying). Accordingly, voiced calls likely date back to a mammalian ancestor that lived some 125 million-years-ago 7 , 80Mya before the last common ancestor of all primates, some 45Mya 8 .</p>
@@ -50,5 +51,6 @@
 <p>Data availability. The data that support the findings of this study are available from the corresponding author upon request.</p>
 <p>AL conceived and designed the study. AL, RV, AA and MH collected data. AL, RV, AA and MH analyzed data. AL, GC, CK, SW contributed materials/data collection and analysis tools. AL, GC, CK, SW and MH wrote the manuscript.</p>
 <p>The authors reveal no conflicting interests.</p>
+</body>
 </text>
 </tei>

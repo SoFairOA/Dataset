@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>40 pharmaceuticals and 7 pesticides monitored in wastewater and river water.</p>
 <p>• Tertiary treatment notably improved the removal efficiency of pharmaceuticals. • 7 pharmaceuticals detected in the river showed moderate or high environmental risk. • 4 antibiotics and 7 pesticides investigated were included in the EU Watch List. • The results demonstrated the environmental impact of the treatment plant.</p>
 <p>The extensive contamination of the aquatic environment with anthropogenic micropollutants, among them those known as "emerging contaminants" (ECs), is a matter of concern in the last years. ECs comprise many different compounds, emphasizing pharmaceutical active substances (PhACs) and personal care products. Among PhACs, antibiotics are of particular concern (Voigt et al., 2020). The presence of these compounds in waters can pose threats to aquatic organisms, such as cyanobacteria, algae, crustaceans, fish, etc., and promote antibiotic resistance, which could be associated to inappropriate use and disposal of these medicines (Felis et al., 2020;Kumar et al., 2019;Kümmerer, 2009).</p>
@@ -84,5 +85,6 @@
 <p>The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</p>
 <p>Supplementary data to this article can be found online at https://doi. org/10.1016/j.scitotenv.2021.152567.</p>
 <p>Hazard Quotient (HQ) obtained in the four monitoring campaigns for the PhACs that represented moderate or high risk downstream.</p>
+</body>
 </text>
 </tei>

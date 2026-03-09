@@ -11,6 +11,7 @@
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
+<body>
         <p>The COVID-19 pandemic and subsequent lockdown and social distancing led to changes to breastfeeding support available to women in the United Kingdom. Faceto-face professional support was reduced, and face-to-face peer support was cancelled. Anecdotal media accounts highlighted practices separating some mothers and babies in hospitals, alongside inaccurate stories of the safety of breastfeeding circulating. Meanwhile, new families were confined to their homes, separated from families and support networks. Given that we know breastfeeding is best supported by practices that keep mother and baby together, high-quality professional and peer-topeer support, and positive maternal well-being, it is important to understand the impact of the pandemic upon the ability to breastfeed. To explore this, we conducted an online survey with 1219 breastfeeding mothers in the United Kingdom with a baby 0-12 months old to understand the impact of the pandemic upon breastfeeding duration, experiences and support. The results highlighted two very different experiences: 41.8% of mothers felt that breastfeeding was protected due to lockdown, but 27.0% of mothers struggled to get support and had numerous barriers stemming from lockdown with some stopped breastfeeding before they were ready. Mothers with a lower education, with more challenging living circumstances and from Black and minority ethnic backgrounds were more likely to find the impact of lockdown challenging and stop breastfeeding. The findings are vital in understanding how we now support those women who may be grieving their loss of breastfeeding and are affected by their negative experiences and how we can learn from those with a positive experience to make sure all breastfeeding women are better supported if similar future events arise.</p>
         <p>breastfeeding, breastfeeding support, COVID-19, formula feeding, lockdown, maternal mental health N.S. is a cofounder and nonremunerated Trustee of the Human Milk Foundation, a charity that operates the Hearts Milk Bank.</p>
         <p>The COVID-19 pandemic has challenged our approach to almost every aspect of life (Kickbusch et al., 2020). Since the onset of the pandemic, over five million cases of COVID-19 have occurred globally with 500,000 deaths (World Health Organization</p>
@@ -143,5 +144,6 @@
         <p>We thank the Breastfeeding Network for their support in developing the wider project from which this data is published. N.S. is supported by a UKRI Future Leaders Fellowship at Imperial College London.</p>
         <p>The authors declare that they have no conflicts of interest.</p>
         <p>AB and NS were both responsible for study design, data analysis, draft writing and critical revisions.</p>
-    </text>
+    </body>
+</text>
 </tei>

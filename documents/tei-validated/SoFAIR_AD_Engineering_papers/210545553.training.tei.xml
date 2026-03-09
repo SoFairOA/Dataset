@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Microplastic pollution causes a major concern in the marine environment due to their worldwide distribution, persistence, and adverse effects of these pollutants in the marine ecosystem. Despite its global presence, there is still a lack of information on the effect of microplastics on marine organisms at the molecular level. Herein we demonstrated ingestion and egestion of nano-(0.05 μm) and micro-sized (0.5 and 6 μm) polystyrene microbeads in the marine copepod Paracyclopina nana, and examined molecular responses to exposure to microbeads with in vivo endpoints such as growth rate and fecundity. Also, we proposed an adverse outcome pathway for microplastic exposure that covers molecular and individual levels. This study provides the first insight into the mode of action in terms of microplastic-induced oxidative stress and related signaling pathways in P. nana.</p>
 <p>Pollution by plastics is growing concern in aquatic environments, since approximately 299 million tons of plastics are were produced from the 1950 s to 2013 (Plastics Europe, 2015) 1 . At least 10% of plastics produced are discarded into the marine environment 2,3 with an estimated &gt; 5 trillion pieces of plastic debris polluting worldwide oceans including surface water, seafloors, estuaries, and shorelines 4 .</p>
 <p>The adverse impacts of ocean microplastics on the aquatic ecosystem are well supported by research 5 . In the marine environment, plastic debris are progressively broken into small fragments referred as microplastics (&lt; 5 mm) in response to wave action, ultraviolet (UV) radiation, and hydrolysis and also into nano-sized particles [6][7][8] . These small plastics have a long degradation time and high bioavailability due to their high volume-to-surface ratio [9][10][11] . The size of the plastic particle is considered as the most significant factor, causing adverse effects on marine invertebrates. For example, the size-dependent toxicity of microplastics has been observed in the rotifer Brachionus koreanus 12 . In the copepod Tigriopus japonicus 13 , exposure to 0.05-and 0.5-μ m polystyrene microbeads led to significant retardation of developmental time and decreased survival rate, while 6-μ m polystyrene microbeads exposure did not lead to significant growth retardation.</p>
@@ -50,5 +51,6 @@
 <p>Scientific RepoRts | 7:41323 | DOI: 10.1038/srep41323</p>
 <p>This work was supported by grants from the Development of Techniques for Assessment and Management of Hazardous Chemicals in the Marine Environment of the Ministry of Oceans and Fisheries, Korea to Jae-Seong Lee, and was also supported by a grant from the National Research Foundation (35423) of Korea to Heum Gi Park.</p>
 <p>Supplementary information accompanies this paper at http://www.nature.com/srep Competing financial interests: The authors declare no competing financial interests.</p>
+</body>
 </text>
 </tei>

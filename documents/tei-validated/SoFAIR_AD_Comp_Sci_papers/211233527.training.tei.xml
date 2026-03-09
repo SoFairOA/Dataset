@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>This paper explores the usage of Blockchain Technology for land records management in India.</p>
 <p>The paper highlights issues like minimal transparency, accountability, incoherent data sets with different Government Departments pertaining to the same piece of land and delays in the current Land Records Management process and how these problems can be overcome using Blockchain Technology. The paper describes the current process of land records maintenance and land registration in the country. The paper also discusses various challenges encountered during implementation of the Blockchain Technology like public key infrastructure and Internet, privacy rules and security issues. Finally, the paper illustrates system design using Blockchain Technology for implementation of Land Titling system in the country, so that land titles are tamper-proof and provides authentic and conclusive rights on ownership.</p>
 <p>In India, Land records can be defined as a generic expression that may include records such as, the Records of Rights (RoRs), tenancy and crop inspection register, mutation register, disputed cases register, etc. Land Records also include geographical information of each parcel of land with its boundary, size, soil-type of the land; and economic information related to irrigation and crops (Bal. Meghana, 2017). Land Titling is a form of land reform in which individuals and families are given formal property rights for land which they have previously occupied informally, or used on the basis of customary land tenure.</p>
@@ -98,5 +99,6 @@ Hyperledger, 2019)</rs>. keeping the track of the records and in determining the
 <p>The current process of designing of a Blockchain system is based on the subject or context.</p>
 <p>There is no generic and uniform design of Blockchain available. The research should be carried out in these directions. The load on the Blockchain system will gradually increase and the transactions will increase because of population growth. The legal requirements to meet the need of any disputes in case of the Blockchain Implementation also need to be notified by the Government. In future it is also very essential to integrate the Blockchain Technology with Artificial Intelligence (AI) for making the complete land management eco-system safer, faster, transparent and responsive.</p>
 <p>The views expressed by the authors are not necessarily of the organization to which they belong nor should the article be viewed as the policy matter of the organization/Government of India.</p>
+</body>
 </text>
 </tei>

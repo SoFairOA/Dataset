@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Comprehenders' perception of the world is mediated by the mental models they construct. During discourse processing, incoming information allows comprehenders to update their model of the events being described. At the same time, comprehenders use these models to generate expectations about who or what will be mentioned next. The temporal dynamics of this interdependence between language processing and mental event representation has been difficult to disentangle. The present visual world eye-tracking experiment measures listeners' coreference expectations during an intersentential pause between a sentence about a transfer-ofpossession event and a continuation mentioning either its Source or Goal.</p>
 <p>We found a temporally dispersed but sustained preference for fixating the Goal that was significantly greater when the event was described as completed rather than incomplete (passed versus was passing). This aligns with reported offline sensitivity to event structure, as conveyed via verb aspect, and provides new evidence that our mental model of an event leads to early and, crucially, proactive expectations about subsequent mention in the upcoming discourse.</p>
 <p>When we process discourse, we create mental models of the events being described (Johnson-Laird, 1983;Van Dijk &amp; Kintsch, 1983). We use incoming linguistic information, together with our knowledge of the world, to incrementally update these models as the discourse progresses. Subtle differences in linguistic choices can have measurable effects on our mental representations of a situation. For example, events described with imperfective-marked verbs (e.g., Leah was passing the salt to Eve) are construed as ongoing, with attention distributed across event participants, whereas perfective aspect (Leah passed the salt to Eve) evokes an event as completed, bringing participants associated with its end state into the focus of attention (Madden &amp; Ferretti, 2009;Magliano &amp; Schleich, 2000;Moens &amp; Steedman, 1988). In the domain of reference processing, this focus of attention on an event participant is linked to the probability of that participant being rementioned in the next sentence. An ambiguous pronoun following a perfective-marked transfer-of-possession event (e.g., Leah passed the salt to Eve.</p>
@@ -48,5 +49,6 @@
 <p>Appendix A: Linguistic materials.</p>
 <p>Appendix B: Output of statistical models. Imperf.</p>
 <p>-</p>
+</body>
 </text>
 </tei> 

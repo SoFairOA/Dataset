@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Objective: The overall aim of the present study was to compare the coverage of existing research funding information for articles indexed in Scopus, Web of Science, and PubMed databases.</p>
 <p>The numbers of articles with funding information published in 2015 were identified in the three selected databases and compared using bibliometric analysis of a sample of twenty-eight prestigious medical journals.</p>
 <p>Results: Frequency analysis of the number of articles with funding information showed statistically significant differences between Scopus, Web of Science, and PubMed databases. The largest proportion of articles with funding information was found in Web of Science (29.0%), followed by PubMed (14.6%) and Scopus (7.7%).</p>
@@ -36,5 +37,6 @@ Excel</rs> (
 <p>* NI=no information.</p>
 <p>We thank the journal editor and reviewers for their constructive comments and suggestion of an algorithm that enabled us to transfer PubMed funding data to <rs xml:id="12900914" type="software">Excel</rs>.</p>
 <p>Peter Kokol, PhD (corresponding author), peter.kokol@um.si, Faculty of Electrical Engineering and Computer Science, University of Maribor, Smetanova ulica 17, 2000 Maribor, Slovenia Helena Blažun Vošner, PhD, PhD, helena.blazun@um.si, Faculty of Health Sciences, Center for International Cooperation, University of Maribor, Žitna ulica 15, 2000 Maribor, Slovenia</p>
+</body>
 </text>
 </tei>

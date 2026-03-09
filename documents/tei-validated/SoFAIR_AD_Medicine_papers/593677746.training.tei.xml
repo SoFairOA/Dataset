@@ -11,6 +11,7 @@
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
+<body>
         <p>We evaluate modelled Antarctic ice sheet (AIS) near-surface climate, surface mass balance (SMB) and surface energy balance (SEB) from the updated polar version of the regional atmospheric climate model, RACMO2 (1979RACMO2 ( -2016)). The updated model, referred to as RACMO2.3p2, incorporates upper-air relaxation, a revised topography, tuned parameters in the cloud scheme to generate more precipitation towards the AIS interior and modified snow properties reducing drifting snow sublimation and increasing surface snowmelt.</p>
         <p>Comparisons of RACMO2 model output with several independent observational data show that the existing biases in AIS temperature, radiative fluxes and SMB components are further reduced with respect to the previous model version. The model-integrated annual average SMB for the ice sheet including ice shelves (minus the Antarctic Peninsula, AP) now amounts to 2229 Gt y -1 , with an interannual variability of 109 Gt y -1 . The largest improvement is found in modelled surface snowmelt, which now compares well with satellite and weather station observations. For the high-resolution (∼ 5.5 km) AP simulation, results remain comparable to earlier studies.</p>
         <p>The updated model provides a new, high-resolution data set of the contemporary near-surface climate and SMB of the AIS; this model version will be used for future climate scenario projections in a forthcoming study.</p>
@@ -113,5 +114,6 @@
         <p>Acknowledgements. We acknowledge financial contributions made by the Netherlands Organization for Scientific Research (grant 866.15.201) and the Netherlands Earth System Science Center (NESSC). We thank the ECMWF for the use of their supercomputing facilities. Drifting snow observations in Adélie Land (Charles Amory) would not have been possible without the</p>
         <p>Author contributions. JMW, BPYN, WJB and MB conceived this study, decided on the new model setting and performed the analysis and synthesis of the data sets. JMW performed the model simulations and led the writing of the manuscript. CA, GB, CLJ, KK SL, BM CHR, KT, LDT, BW and JW processed and provided observational data sets. JMW, BPYN, WJB, MB, JTML, SRML, CLJ, CHR, EM and LU contributed to the development of the model. All authors contributed to discussions on writing the manuscript.</p>
         <p>Competing interests. The authors declare that they have no conflict of interest.</p>
-    </text>
+    </body>
+</text>
 </tei>

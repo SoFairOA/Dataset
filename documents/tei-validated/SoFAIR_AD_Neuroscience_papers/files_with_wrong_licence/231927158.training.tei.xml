@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>This is a PDF file of an article that has undergone enhancements after acceptance, such as the addition of a cover page and metadata, and formatting for readability, but it is not yet the definitive version of record. This version will undergo additional copyediting, typesetting and review before it is published in its final form, but we are providing this version to give early visibility of the article. Please note that, during the production process, errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
 <p>Deep neural networks (DNNs) have enjoyed tremendous success in machine learning (Lecun et al., 2015). As such, there has been significant interest in the application of DNNs to neuroscience research. DNNs have been applied to neuroscience in at least two main ways.</p>
 <p>First, deep learning models have been used to simulate actual brain mechanisms, such as in vision (Khaligh-Razavi and Kriegeskorte, 2014;Yamins et al., 2014;Eickenberg et al., 2017) and auditory perception (Kell et al., 2018). Second, DNNs have been applied as tools to analyze neuroscience data, including lesion and tumor segmentation (Pinto et al., 2016;Havaei et al., 2017;Kamnitsas et al., 2017b;G. Zhao et al., 2018), anatomical segmentation (Wachinger et al., 2018;X. Zhao et al., 2018), image modality/quality transfer (Bahrami et al., 2016;Nie et al., 2017;Blumberg et al., 2018), image registration (Yang et al., 2017;Dalca et al., 2018), as well as behavioral and disease prediction (Plis et al., 2014;van der Burgh et al., 2017;Vieira et al., 2017;Nguyen et al., 2018).</p>
@@ -167,5 +168,6 @@ BrainNetCNN performed the best for age (measured using MAE) and pairs matching.
 <p>where @ is the -×kernel matrix, ? = 4 % , , … , &amp; 6 7 and λ is a hyperparameter that controls the regularization. By solving equation ( 3) with respect to ', we can predict a test subject's behavioral measure as:</p>
 <p>where C D = 4! , % , ! , , … , ! , &amp; 6.</p>
 <p>In the case of the HCP, λ was selected via inner-loop cross-validation. In the case of the UK biobank, λ was tuned on the validation set. For sex prediction in the UK Biobank, for</p>
+</body>
 </text>
 </tei>

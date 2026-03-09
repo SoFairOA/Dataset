@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Despite the growing research on the influence of stakeholder integration on organizational outcomes, our understanding of the specific firm-level conditions that may mediate the relationship between stakeholder integration and financial performance is lacking. Using primary data gathered from 233 small and medium-sized enterprises in Ghana, we found empirical support for our contention that the link between stakeholder integration and financial performance is mediated by a firm's environmental sustainability orientation (ESO). In addition, our study demonstrated that competitive intensity moderates the indirect relationship between stakeholder integration and financial performance in such a way that the indirect effect through environmental sustainability orientation is stronger for higher levels of industry competition. We discuss theoretical and managerial implications of these findings.</p>
 <p>In countries of the Global South characterized by institutional voids such as lack of an effective legal system, corporate malfeasance, inadequate institutional support and policy uncertainty, stakeholder integration may well be a catalyst in driving corporate behavior and firm performance (Khanna Palepu, 2005;Mair &amp; Marti, 2009). Stakeholder integration refers to partnerships where organizational stakeholders such as customers, communities and suppliers inform organizational practices to deliver improved performance (Amankwah-Amoah, Danso &amp; Adomako, 2018;Desai, 2018;Plaza-Úbeda, de Burgos-Jiménez &amp; Carmona-Moreno, 2010;Sharma &amp; Vredenburg, 1998).</p>
 <p>Indeed, some studies indicate that stakeholder engagement activities influence firms' competitiveness advantage (Vachon &amp; Klassen, 2008;Madsen &amp; Ulhøi, 2001). Accordingly, stakeholder integration has become a pivotal feature of the operation of firms.</p>
@@ -81,5 +82,6 @@
 <p>We present the results of the OLS regression following Baron and Kenny's approach in Table 3.</p>
 <p>In Model 1, we present the effects of the control variables. Model 2 includes the effect of the moderating variable (competitive intensity). Model 3 adds the main effect of stakeholder integration on financial performance. We find support for the main proposition of our research model in Model 3, as the effect of stakeholder integration on financial performance is positive and statistically significant (β = 0.18, p &lt; 0.01). Thus, we satisfy Baron and Kenny's (1986) first condition for mediation.</p>
 <p>In Model 4, we show the effect of the independent variable (i.e., stakeholder integration) on the proposed mediator (i.e., ESO). This step represents the second step of the mediation</p>
+</body>
 </text>
 </tei>

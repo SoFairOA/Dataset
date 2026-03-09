@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Background: Evolutionary trees illustrate relationships among taxa. Interpreting these relationships requires developing a set of "tree-thinking" skills that are typically included in introductory college biology courses. One of these skills is determining relationships among taxa using the most recent common ancestor, yet many students instead use one or more alternate strategies to determine relationships. Several alternate strategies have been well documented and these include using superficial similarity, proximity at the tips of a tree, or the fewest intervening nodes in the tree to group taxa.</p>
 <p>We administered interviews (n = 16) and pencil-and-paper questionnaires (n = 205), and constructed a valid and reliable assessment that measured how well students determined relationships among taxa on an evolutionary tree. Our questions asked students to consider a focal taxon and identify which of two additional taxa is most closely related to it. We paired the use of most recent common ancestor with one of three alternative strategies (i.e., similarity, proximity, or node-counting) to explicitly test students' understanding of the relationships among the taxa on each tree.</p>
 <p>Our assessment enables us to identify students who are effectively distracted by an alternative strategy, those who use the most recent common ancestor inconsistently, or who are guessing in order to determine relationships among taxa. Our 18-question tool (see Additional file 1) can be used for formative assessment of student understanding of how to interpret relationships on evolutionary trees. Because our assessment tests for the same skill throughout, students who answer incorrectly, even once, likely have an incomplete understanding of how to determine relationships on evolutionary trees and should receive follow-up instruction.</p>
@@ -52,5 +53,6 @@
 <p>The authors declare that they have no competing interests.</p>
 <p>Additional file 1. Valid, 18 question, assessment used to measure student ability to determine relationships on evolutionary trees. The assessment is composed of 18 forced-choice binomial questions with the following distracter types: proximity, node-counting, similarity, none, or multiple (see "Methods" and Table 6). 0% 5% 10% 15% 20% 25% 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18</p>
 <p>Fig. 9 Comparison of student scores on our evolutionary tree assessment containing 18 questions (N = 205) with the predicted binomial distribution of scores in a class of 205 if answers were randomly selected (n = 18, p = 0.5)</p>
+</body>
 </text>
 </tei>

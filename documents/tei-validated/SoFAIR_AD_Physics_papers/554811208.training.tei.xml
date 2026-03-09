@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>in collaboration with the Nature Geoscience team.</p>
 <p>Reprints and permissions information is available at www.nature.com/reprints.</p>
 <p>nature geoscience https://doi.org/10.1038/s41561-022-01084-0</p>
@@ -93,5 +94,6 @@ COMIMART, dust optical parameters were obtained using refractive indices in refs
 <p>All datasets of Mars 2020 are available via the Planetary Data System (PDS). Data are delivered to the PDS according to the Mars 2020 Data Management Plan available in the Mars 2020 PDS archive (https://doi. org/10.17189/1522849). Data from the MEDA instrument referenced in this paper are available from the PDS Atmospheres node. The direct link is https://pds-atmospheres.nmsu.edu/data_and_services/ atmospheres_data/PERSEVERANCE/meda.html.</p>
 <p>J.A.R.-M. is the principal investigator of the MEDA instrument; together with M.d.l.T.J. and A. Sanchez-Lavega, the three are the corresponding authors of this manuscript. These corresponding authors have led the review and editing of the document. In addition, all authors have contributed to the conceptualization of the instrument and of this work. J.A.R.-M., M.d.l.T.J., A. Sanchez-Lavega, M.G., I.A., A-M.H., L.M.-S., V.P. and R. participated in the operation of the instrument. J.A.R.-M., M.d.l.T.J., G.M., M.T.L., M.H., L.K.T., D.T., E.S., M.D.S., A.L., J.G.-E., V.A., J.B., J.C., M.D.-P., S.E., E.F., J.J.J., M.M., J.M.-S., L.M.-S., S.N., V.P., J.R. and J.T. took part in the curation and validation of data.</p>
 <p>The authors declare no competing interests.</p>
+</body>
 </text>
 </tei>

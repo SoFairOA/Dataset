@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>The internet is a ubiquitous medium for business, information and entertainment, but arguably it has had most profound impact as a means of interpersonal communication. Use of social networking sites grew exponentially after the launch of
 MySpace and Facebook in 2004. Within a few years, Facebook was being used by four-fifths of internet users aged 13-16 in the UK (Livingstone et al. 2011). Twitter, allowing short messages to be sent to unlimited Abstract Concerns are increasingly raised in academic and lay literature about the impact of the internet on young people's well-being. This systematic review examined empirical research on the relationship between social media use and depressive symptoms in the child and adolescent population. A systematic search of Medline, PsycInfo and Embase databases yielded eleven eligible studies. Relevant results were extracted from each study, with a total sample of 12,646. Analysis revealed a small but statistically significant correlation between social media use and depressive symptoms in young people. However, studies varied widely in methods, sample size and results, making the clinical significance of these findings nuanced. Over half of the studies were cross-sectional, while those of longitudinal design were of limited duration. This review justifies further investigation of this phenomenon, with a need for consensus on variables and measurement.
 </p>
@@ -74,5 +75,6 @@ MySpace use and depressive symptoms; this was statistically significant. Statist
 <p>Author contributions NM, SG and EP conceived of the study, participated in its design and coordination and drafted the manuscript; EP performed the statistical analysis; EP, NM and SG participated in interpretation of the data. All authors contributed to the writing, read and approved the final manuscript.</p>
 <p>Conflict of interest The authors declare that they have no conflicts of interest.</p>
 <p>Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http:// creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.</p>
+</body>
 </text>
 </tei>

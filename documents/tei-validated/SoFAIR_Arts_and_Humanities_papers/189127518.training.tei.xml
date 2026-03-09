@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>Objective: While many librarians have been asked to participate in systematic reviews with researchers, often these researchers are not familiar with the systematic review process or the appropriate role for librarians. The purpose of this study was to identify the challenges and barriers that librarians face when collaborating on systematic reviews. To take a wider view of the whole process of collaborating on systematic reviews, the authors deliberately focused on interpersonal and methodological issues other than searching itself.</p>
 <p>Methods: To characterize the biggest challenges that librarians face while collaborating on systematic review projects, we used a web-based survey. The thirteen-item survey included seventeen challenges grouped into two categories: methodological and interpersonal. Participants were required to indicate the frequency and difficulty of the challenges listed. Open-ended questions allowed survey participants to describe challenges not listed in the survey and to describe strategies used to overcome challenges.</p>
 <p>Results: Of the 17 challenges listed in the survey, 8 were reported as common by over 40% of respondents. These included methodological issues around having too broad or narrow research questions, lacking eligibility criteria, having unclear research questions, and not following established methods. The remaining challenges were interpersonal, including issues around student-led projects and the size of the research team. Of the top 8 most frequent challenges, 5 were also ranked as most difficult to handle. Open-ended responses underscored many of the challenges included in the survey and revealed several additional challenges.</p>
@@ -51,5 +52,6 @@
 <p>jmla.mlanet.org 105 (4) October 2017 Journal of the Medical Library Association</p>
 <p>• Appendix A: Survey • Appendix B: Free-text survey responses and coding results</p>
 <p>Joey Nicholson, MLIS, MPH, Joseph.Nicholson@med.nyu.edu, Education and Curriculum Librarian, Health Sciences Library, NYU School of Medicine, New York, NY</p>
+</body>
 </text>
 </tei>

@@ -11,6 +11,7 @@
         </encodingDesc>
     </teiHeader>
     <text xml:lang="en">
+<body>
         <p>Highlights d Hyperinflammation in MIS-C differs from that of acute COVID-19 d T cell subsets discriminate Kawasaki disease patients from MIS-C d IL-17A drives Kawasaki but not MIS-C hyperinflammation d Global profiling reveals candidate autoantibodies with pathogenic potential</p>
         <p>A systems immunology approach describes how multisystem inflammatory syndrome in children (MIS-C) is distinct from Kawasaki disease as well as the cytokine storm associated with severe COVID-19 in terms of its molecular and immune profiles.</p>
         <p>The severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) first emerged in Wuhan in December 2019 (Huang et al., 2020) and then spread rapidly to a number of countries and, in particular, to Europe and the northern regions of Italy in the early weeks of February 2020. The first reports from China showed that children presented with milder symptoms as compared to adults infected by SARS-CoV-2 (Lu et al., 2020). Reasons for this have not been established, but several theories have been discussed, involving immune system differences such as thymic function, cross-reactive immunity to common cold coronaviruses, as well as differences in the expression of the viral entry receptor ACE2, as well as a better overall health status among children as compared to the elderly (Brodin, 2020). The mild COVID-19 in children has been confirmed also in areas with high disease prevalence such as northern Italy (Parri et al., 2020). The view that COVID-19 disease course is always mild in children is now challenged by recent reports of children presenting with a rare, but very severe hyperinflammatory syndrome in the United Kingdom (Riphagen et al., 2020;Whittaker et al., 2020), Italy (Verdoni et al., 2020), Spain (Moraleda et al., 2020), and New York City (Cheung et al., 2020). In these case series, children present with high fevers, and a variable number of symptoms previously associated with Kawasaki disease such as conjunctivitis, lymphadenopathy, mucocutaneous rash, and coronary artery dilation, and in the most severe cases, cardiovascular shock, encephalitis, and multiple organ failure.</p>
@@ -80,5 +81,6 @@
         <p>Supplemental Information can be found online at https://doi.org/10.1016/j. cell.2020.09.016.</p>
         <p>The members of the CACTUS Consortium at the Children's Hospital ''Bambino Gesu `'' are Stefania Bernardi, MD, Emma Concetta Manno, MD, Paola Zangari, MD, Lorenza Romani, MD, Carlo Concato, Bsc, Paola Pansa, MD, Sara Chiurchiu, MD, Andrea Finocchi, MD, PhD, Caterina Cancrini, MD, PhD, Laura Lancella, MD, Laura Cursi, MD, Maia De Luca, MD, Renato Cutrera, MD, Libera Sessa, PhD, Elena Morrocchi, PhD, Lorenza Putignani, PhD, Francesca Calo Carducci, MD, Maria A. De Ioris, MD, Patrizia D'Argenio, MD, Marta Ciofi degli Atti, MD, and Carmen D'Amore, MD.</p>
         <p>Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact Petter Brodin (petter.brodin@ki.se).</p>
-    </text>
+    </body>
+</text>
 </tei>

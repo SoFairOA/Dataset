@@ -11,6 +11,7 @@
 </encodingDesc>
 </teiHeader>
 <text xml:lang="en">
+<body>
 <p>The copyright of individual parts of the supplement might differ from the CC BY 4.0 License.</p>
 <p>The coverage of FAO's Global Administrative Unit Layers (GAUL) is generally sufficient, despite some inconsistencies and incorrect assignments of administrative levels:</p>
 <p> The Bangladesh district Pirojpur is classified as belonging both to the Barisal division (which is correct) and the Khulna division (which is incorrect). The correct name of the district in the Khulna division is Bagerhat. Adjustments to the name for Bagerhat were made within the main code-link table, rather than the GAUL shapefile.</p>
@@ -166,5 +167,6 @@ MIRCA and SPAM and had a good discussion on that.
 <p>Kenya:</p>
 <p>There appears to be little correlation between the SPAM data for Kenya and the Province level study we discovered. Some of the areas appear to correlate with the highest producing areas, but there is little evidence of the vertical band of production which can be seen in 24 but this may just be due to the fact that the production is too low for the SPAM model to recognize.</p>
 <p>The confidence rating by users, local experts and collaborators is presented in Table S14. The rating is collected from the feedback and comments from users, local experts and collaborators. We combine all the information together to give a subjective rating on how confidence we, SPAM team, think of our final crop maps (both area and yield).</p>
+</body>
 </text>
 </tei>
